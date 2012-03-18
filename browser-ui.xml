@@ -13,17 +13,19 @@
 
         <!-- these are optional -->
         <progressbar name="progressbar" from="baseprogressbar">
-            <position>260,670</position>
+            <area>15,670,1250,38</area>
             <imagetype name="background">
                 <filename>mb_progressbar_background.png</filename>
+		<area>15,670,1250,38</area>
             </imagetype>
             <imagetype name="progressimage">
                 <filename>mb_progressbar_fill.png</filename>
+		<area>15,670,1250,38</area>
             </imagetype>
         </progressbar>
 
         <textarea name="status" from="basetextarea">
-            <area>270,670,740,38</area>
+            <area>50,670,1180,38</area>
             <align>left,vcenter</align>
             <multiline>no</multiline>
         </textarea>
