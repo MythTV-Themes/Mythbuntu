@@ -1691,6 +1691,19 @@
             <area>125,80,1030,190</area>
         </shape>
 
+        <shape name="clockbox" from="baseboxbackground">
+            <area>800,10,470,60</area>
+            <fill color="#000000" alpha="255" />
+            <cornerradius>30</cornerradius>
+        </shape>
+
+        <clock name="clock">
+            <area>800,10,450,60</area>
+            <font>baselarge</font>
+            <align>vcenter,right</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
         <shape name="options_background" from="baseboxbackground">
             <area>347,280,586,430</area>
         </shape>
@@ -1780,6 +1793,19 @@
             <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
+
+        <shape name="clockbox" from="baseboxbackground">
+            <area>800,10,470,60</area>
+            <fill color="#000000" alpha="255" />
+            <cornerradius>30</cornerradius>
+        </shape>
+
+        <clock name="clock">
+            <area>800,10,450,60</area>
+            <font>baselarge</font>
+            <align>vcenter,right</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
 
         <shape name="details_background" from="baseboxbackground">
             <area>125,80,1030,190</area>
@@ -1890,6 +1916,19 @@
             <font>baselarge</font>
         </textarea>
 
+        <shape name="clockbox" from="baseboxbackground">
+            <area>800,10,470,60</area>
+            <fill color="#000000" alpha="255" />
+            <cornerradius>30</cornerradius>
+        </shape>
+
+        <clock name="clock">
+            <area>800,10,450,60</area>
+            <font>baselarge</font>
+            <align>vcenter,right</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
         <shape name="details_background" from="baseboxbackground">
             <area>125,80,1030,190</area>
         </shape>
@@ -1979,6 +2018,19 @@
             <align>left,vcenter</align>
             <font>baselarge</font>
         </textarea>
+
+        <shape name="clockbox" from="baseboxbackground">
+            <area>800,10,470,60</area>
+            <fill color="#000000" alpha="255" />
+            <cornerradius>30</cornerradius>
+        </shape>
+
+        <clock name="clock">
+            <area>800,10,450,60</area>
+            <font>baselarge</font>
+            <align>vcenter,right</align>
+            <format>%DATE%, %TIME%</format>
+        </clock>
 
         <shape name="details_background" from="baseboxbackground">
             <area>125,80,1030,190</area>
@@ -2093,19 +2145,19 @@
             <area>125,80,1030,625</area>
         </shape>
 
-        <shape name="clockbox" from="baseboxbackground">
-            <area>800,10,470,60</area>
-            <fill color="#000000" alpha="255" />
-            <cornerradius>30</cornerradius>
-        </shape>
-
         <textarea name="windowtitle" from="basetextarea">
             <area>50,10,590,60</area>
             <value>Metadata Options</value>
             <align>left,vcenter</align>
             <font>baselarge</font>
         </textarea>
-	
+
+        <shape name="clockbox" from="baseboxbackground">
+            <area>800,10,470,60</area>
+            <fill color="#000000" alpha="255" />
+            <cornerradius>30</cornerradius>
+        </shape>
+
         <clock name="clock">
             <area>800,10,450,60</area>
             <font>baselarge</font>
@@ -2113,7 +2165,7 @@
             <format>%DATE%, %TIME%</format>
         </clock>
 
-	<textarea name="inet" from="basetextarea">
+        <textarea name="inet" from="basetextarea">
             <area>320,110,180,40</area>
             <align>right,vcenter</align>
             <value>TMDB/TVDB #:</value>
