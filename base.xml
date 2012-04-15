@@ -349,18 +349,24 @@
         <statetype name="background">
             <state name="active">
                 <imagetype name="background">
+                    <position>8,8</position>
                     <filename>shared/checkbox_background_off.png</filename>
                 </imagetype>
             </state>
             <state name="selected">
+                <shape name="selected">
+                  <area>0,0,30,30</area>
+                  <fill color="#ffffff" alpha="150" />  
+                </shape>
                 <imagetype name="background">
+                    <position>8,8</position>
                     <filename>shared/checkbox_background_selected.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" />
         </statetype>
         <statetype name="checkstate">
-            <position>1,1</position>
+            <position>9,9</position>
             <state type="off" />
             <state type="half">
                 <imagetype name="background">
@@ -1072,6 +1078,35 @@
 
     </window>
 
+   <window name="MythTimeInputDialog">
+        <area>-1,-1,580,165</area>
+
+        <shape name="backimg" from="basebackground">
+            <area>0,0,580,165</area>
+        </shape>
+        
+        <textarea name="message" from="basetextarea">
+            <area>10,8,560,50</area>
+            <align>allcenter</align>
+            <value>Select Time &amp; Date</value>
+            <multiline>true</multiline>
+        </textarea>
+
+        <buttonlist name="dates" from="baseselector">
+            <position>40,65</position>
+        </buttonlist>
+
+        <buttonlist name="times" from="baseselector">
+            <position>330,65</position>
+        </buttonlist>
+
+        <button name="ok" from="basebutton">
+            <position>220,115</position>
+            <value>OK</value>
+        </button>
+
+    </window>
+       
     <window name="videowindow">
         <area>0,0,1280,720</area>
         <imagetype name="backimg">
