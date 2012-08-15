@@ -113,11 +113,11 @@
                         <font state="running">basesmallgreen</font>
                         <align>vcenter</align>
                     </textarea>
-                    <textarea name="shortdate" from="titlesubtitle">
+                    <textarea name="shortstartdate" from="titlesubtitle">
                         <area>480,1,120,31</area>
                         <align>right,vcenter</align>
                     </textarea>
-                    <textarea name="starttime" from="shortdate">
+                    <textarea name="starttime" from="shortstartdate">
                         <area>611,1,105,31</area>
                         <align>right,vcenter</align>
                     </textarea>
