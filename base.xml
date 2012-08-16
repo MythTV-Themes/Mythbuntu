@@ -569,6 +569,59 @@
         </statetype>
     </buttonlist>
 
+    <!-- Base definition of a narrow list in 'selector' configuration -->
+    <buttonlist name="basemidselector">
+        <area>0,0,125,40</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,0,105,40</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,5,105,30</area>
+                <shape name="background" from="basewidgetshape">
+                    <cornerradius>15</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <area>15,0,95,30</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>left,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="background" from="baseselectedwidgetshape">
+                    <cornerradius>15</cornerradius>
+                </shape>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>105,2</position>
+            <state type="off">
+                <imagetype name="dnon">
+                    <filename>lb-rtarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnoff">
+                    <filename>lb-rtarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>105,21</position>
+            <state type="off">
+                <imagetype name="upon">
+                    <filename>lb-ltarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upoff">
+                    <filename>lb-ltarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
     <!-- Base definition of a longer list in 'selector' configuration -->
     <buttonlist name="basemediumselector">
         <area>0,0,375,40</area>
