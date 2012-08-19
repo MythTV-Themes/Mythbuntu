@@ -91,12 +91,13 @@
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="resolution" from="basetextarea">
+        <textarea name="aspect-label" from="basetextarea">
             <area>680,575,280,30</area>
             <multiline>no</multiline>
             <font>basesmall</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
+            <value>Theme Aspect Ratio:</value>
         </textarea>
 
         <textarea name="aspect" from="basetextarea">
