@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 
 <mythuitheme>
@@ -7,6 +7,52 @@
     <fontdef name="basesmall" face="DejaVu Sans">
         <size>15</size>
         <color>#FFFFFF</color>
+    </fontdef>
+
+    <fontdef name="basesupersmall" from="basesmall">
+        <pixelsize>11</pixelsize>
+        <weight>bold</weight>
+    </fontdef>
+
+    <fontdef name="baseextrasmall" from="basesmall">
+        <weight>bold</weight>
+        <pixelsize>13</pixelsize>
+    </fontdef>
+
+    <fontdef name="baseevensmaller" from="basesmall">
+        <weight>bold</weight>
+        <pixelsize>16</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesmaller" from="basesmall">
+        <pixelsize>18</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesomewhatsmaller" from="basesmall">
+        <pixelsize>19</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesupersmall" from="basesmall">
+        <pixelsize>11</pixelsize>
+        <weight>bold</weight>
+    </fontdef>
+
+    <fontdef name="baseextrasmall" from="basesmall">
+        <weight>bold</weight>
+        <pixelsize>13</pixelsize>
+    </fontdef>
+
+    <fontdef name="baseevensmaller" from="basesmall">
+        <weight>bold</weight>
+        <pixelsize>16</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesmaller" from="basesmall">
+        <pixelsize>18</pixelsize>
+    </fontdef>
+
+    <fontdef name="basesomewhatsmaller" from="basesmall">
+        <pixelsize>19</pixelsize>
     </fontdef>
 
     <fontdef name="basesmalldrop" from="basesmall">
@@ -529,6 +575,59 @@
                 </shape>
                 <textarea name="buttontext">
                     <area>15,0,70,30</area>
+                    <font>basesmall</font>
+                    <cutdown>yes</cutdown>
+                    <align>left,vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active">
+                <shape name="background" from="baseselectedwidgetshape">
+                    <cornerradius>15</cornerradius>
+                </shape>
+            </state>
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>105,2</position>
+            <state type="off">
+                <imagetype name="dnon">
+                    <filename>lb-rtarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="dnoff">
+                    <filename>lb-rtarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>105,21</position>
+            <state type="off">
+                <imagetype name="upon">
+                    <filename>lb-ltarrow-reg.png</filename>
+                </imagetype>
+            </state>
+            <state type="full">
+                <imagetype name="upoff">
+                    <filename>lb-ltarrow-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a narrow list in 'selector' configuration -->
+    <buttonlist name="basemidselector">
+        <area>0,0,125,40</area>
+        <layout>horizontal</layout>
+        <buttonarea>0,0,105,40</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,5,105,30</area>
+                <shape name="background" from="basewidgetshape">
+                    <cornerradius>15</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <area>15,0,95,30</area>
                     <font>basesmall</font>
                     <cutdown>yes</cutdown>
                     <align>left,vcenter</align>
@@ -1148,35 +1247,48 @@
                         <cornerradius>15</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>10,10,150,80</area>
+                        <area>-5,10,150,80</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
                         <area>0,0,0,0</area>
                     </textarea>
                     <textarea name="title">
-                        <area>170,10,780,40</area>
+                        <area>140,10,827,80</area>
                         <align>left,vcenter</align>
-                        <font>basemedium</font>
-                    </textarea>
-                    <textarea name="subtitle">
-                        <area>170,60,880,40</area>
-                        <align>left,vcenter</align>
-                        <font>basesmall</font>
-                    </textarea>
-                    <textarea name="year">
-                        <area>950,10,100,40</area>
-                        <align>right,vcenter</align>
-                        <font>basemedium</font>
+                        <font>baselarge</font>
+			<template>%TITLE%% - |SUBTITLE%% (|YEAR|)%</template>
+			<multiline>yes</multiline>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active">
+                <state name="selectedactive">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
-                        <area>0,0,100%,100</area>
-                        <fill color="#FFFFFF" alpha="50" />
+                        <area>0,-25,100%,150</area>
+                        <fill color="#666666" alpha="255" />
                         <cornerradius>15</cornerradius>
                     </shape>
+                    <imagetype name="buttonimage">
+                        <area>-80,-30,300,160</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="buttontext">
+                        <area>0,0,0,0</area>
+                    </textarea>
+                    <textarea name="title">
+                        <area>140,-17,905,30</area>
+                        <align>left</align>
+                        <font>basemedium</font>
+			<template>%TITLE%% - |SUBTITLE%% (|YEAR|)%</template>
+			<multiline>yes</multiline>
+                    </textarea>
+                    <textarea name="description">
+                        <area>140,20,905,110</area>
+                        <align>justify</align>
+                        <font>basesmall</font>
+			<template>%DESCRIPTION%</template>
+			<multiline>yes</multiline>
+		    </textarea>
                 </state>
             </statetype>
         </buttonlist>
@@ -1197,25 +1309,31 @@
                         <cornerradius>15</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>10,10,300,80</area>
+                        <area>380,10,300,80</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
-                    <textarea name="buttontext">
-                        <area>0,0,0,0</area>
-                    </textarea>
                     <textarea name="resolution">
-                        <area>310,10,900,80</area>
-                        <align>left,vcenter</align>
+                        <area>800,10,260,80</area>
+                        <align>center,vcenter</align>
                         <font>basemedium</font>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
-                        <area>0,0,100%,100</area>
-                        <fill color="#FFFFFF" alpha="50" />
+                        <area>0,-25,100%,150</area>
+                        <fill color="#666666" alpha="255" />
                         <cornerradius>15</cornerradius>
                     </shape>
+                    <imagetype name="buttonimage">
+                        <area>193,-40,675,180</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+                    <textarea name="resolution">
+                        <area>800,10,260,80</area>
+                        <align>center,vcenter</align>
+                        <font>baselarge</font>
+                    </textarea>
                 </state>
             </statetype>
         </buttonlist>

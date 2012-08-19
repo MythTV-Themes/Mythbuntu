@@ -46,12 +46,14 @@
             <area>25,90,449,325</area>
             <spacing>4</spacing>
             <showarrow>yes</showarrow>
+            <wrapstyle>items</wrapstyle>
         </buttonlist>
 
         <buttonlist name="articleslist" from="basebuttonlist">
             <area>504,90,741,325</area>
             <spacing>4</spacing>
             <showarrow>yes</showarrow>
+            <wrapstyle>items</wrapstyle>
         </buttonlist>
 
         <textarea name="nosites" from="basetextarea">
@@ -63,7 +65,8 @@
         <textarea name="title" from="basetextarea">
             <area>40,460,1020,70</area>
             <font>baselarge</font>
-            <multiline>yes</multiline>
+            <multiline>no</multiline>
+	    <scroll direction="left"/>
         </textarea>
 
         <textarea name="description" from="basetextarea">
@@ -73,6 +76,7 @@
 
         <textarea name="updated" from="basetextarea">
             <area>40,660,1080,35</area>
+            <font>basesmallgrey</font>
         </textarea>
 
         <imagetype name="thumbnail">

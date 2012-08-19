@@ -1,8 +1,8 @@
 <themeinfo>
     <name>Mythbuntu</name>
     <author>
-        <name>Gary Butters</name>
-        <email>gbutters@gmail.com</email>
+        <name>Thomas Mashos</name>
+        <email>tgm4883@mythbuntu.org</email>
     </author>
 
     <!-- The Theme Types (Required) -->
@@ -16,7 +16,7 @@
 
     <version>
         <major>25</major>
-        <minor>14</minor>
+        <minor>1</minor>
     </version>
 
     <detail>
