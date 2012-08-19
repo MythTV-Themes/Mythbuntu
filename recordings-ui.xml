@@ -40,9 +40,9 @@
         </shape>
 
         <clock name="clock">
-            <area>420,10,520,60</area>
-            <font>baselarge</font>
-            <align>vcenter,left</align>
+            <area>930,10,300,60</area>
+            <align>vcenter,right</align>
+	    <font>basesmallgrey</font>
             <format>%DATE%, %TIME%</format>
         </clock>
 
@@ -107,14 +107,14 @@
                         <cornerradius>15</cornerradius>
                     </shape>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>46,1,515,31</area>
+                        <area>46,1,421,31</area>
                         <font>basesmallgrey</font>
                         <font state="error">basesmallred</font>
                         <font state="running">basesmallgreen</font>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="shortstartdate" from="titlesubtitle">
-                        <area>490,1,120,31</area>
+                        <area>480,1,120,31</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="starttime" from="shortstartdate">
@@ -169,26 +169,26 @@
 
         <imagetype name="autoexpire">
             <filename>type/autoexpire.png</filename>
-            <position>850,670</position>
+            <position>218,670</position>
         </imagetype>
 
         <imagetype name="commflagged">
             <filename>type/commflagged.png</filename>
-            <position>900,670</position>
+            <position>268,670</position>
         </imagetype>
 
         <imagetype name="bookmark">
             <filename>type/bookmark.png</filename>
-            <position>950,670</position>
+            <position>318,670</position>
         </imagetype>
 
         <imagetype name="cutlist">
             <filename>type/cutlist.png</filename>
-            <position>1000,670</position>
+            <position>368,670</position>
         </imagetype>
 
         <statetype name="audioprops">
-            <position>1050,670</position>
+            <position>418,670</position>
             <showempty>yes</showempty>
             <state name="stereo">
                 <imagetype name="stereo">
@@ -213,7 +213,7 @@
         </statetype>
 
         <statetype name="subtitletypes">
-            <position>1100,670</position>
+            <position>468,670</position>
             <showempty>yes</showempty>
             <state name="cc">
                 <imagetype name="cc">
@@ -233,7 +233,7 @@
         </statetype>
 
         <statetype name="videoprops">
-            <position>1150,670</position>
+            <position>518,670</position>
             <showempty>yes</showempty>
             <state name="hd1080">
                 <imagetype name="hd1080">
@@ -259,34 +259,61 @@
 
         <imagetype name="processing">
             <filename>type/processing.png</filename>
-            <position>1200,670</position>
+            <position>568,670</position>
+        </imagetype>
+
+        <imagetype name="coverart">
+            <area>25,448,168,252</area>
+            <preserveaspect>no</preserveaspect>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>25,448,700,40</area>
+            <area>218,448,504,40</area>
             <font>baselarge</font>
-            <cutdown>yes</cutdown>
             <align>vcenter</align>
+	    <scroll direction="left"/>
+        </textarea>
+
+        <textarea name="category" from="basetextarea">
+            <area>737,448,160,40</area>
+            <font>basesmall</font>
+            <align>vcenter,right</align>
+	    <scroll direction="left"/>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
-            <area>25,498,160,30</area>
+            <area>218,498,260,30</area>
         </textarea>
 
         <textarea name="timedate" from="basetextarea">
-            <area>195,498,480,30</area>
+            <area>488,498,409,30</area>
+	    <align>right</align>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>25,538,750,160</area>
+            <area>218,538,679,122</area>
             <align>justify</align>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
-            <template>%|"SUBTITLE|"% %STARS% %DESCRIPTION%</template>
+            <!-- <template>%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template> -->
+            <!-- <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template> -->
+            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
+        <textarea name="freereport" from="basetextarea">
+            <area>618,670,283,30</area>
+            <align>vcenter,right</align>
+            <font>basesmallgrey</font>
+            <template>%1</template>
+        </textarea>
+
+        <imagetype name="banner">
+            <area>926,643,329,57</area>
+            <preserveaspect>false</preserveaspect>
+        </imagetype>
+
         <imagetype name="preview">
-            <area>790,448,464,212</area>
+            <area>926,448,329,185</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 

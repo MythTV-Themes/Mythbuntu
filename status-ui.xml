@@ -9,6 +9,13 @@
            <cornerradius>30</cornerradius>
        </shape>
 
+        <clock name="clock">
+            <area>950,10,300,60</area>
+            <align>vcenter,right</align>
+	    <font>basesmallgrey</font>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
         <shape name="infobox">
             <area>-10,595,1300,370</area>
             <type>box</type>
@@ -111,14 +118,14 @@
             </statetype>
         </buttonlist>
 
-        <textarea name="helplabel">
-            <area>30,605,1220,30</area>
-            <value>Details</value>
-            <font>basemedium</font>
-        </textarea>
+        <!-- <textarea name="helplabel"> -->
+        <!--     <area>30,605,1220,30</area> -->
+        <!--     <value>Details</value> -->
+        <!--     <font>basemedium</font> -->
+        <!-- </textarea> -->
 
         <textarea name="helptext">
-            <area>30,645,1220,75</area>
+            <area>30,605,1220,180</area>
             <value>This screen displays the status of various system components</value>
             <multiline>yes</multiline>
         </textarea>
