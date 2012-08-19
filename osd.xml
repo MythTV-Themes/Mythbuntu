@@ -297,26 +297,26 @@
             <template>%DATE%, %TIME%</template>
             <align>right,top</align>
         </clock>
-        <textarea name="channum">
+        <textarea name="channum" depends="!coverart">
             <font>small</font>
-            <area>20,100,150,30</area>
+            <area>25,100,150,30</area>
             <align>hcenter,vcenter</align>
         </textarea>
         <imagetype name="iconpath" depends="channum">
-            <area>30,140,130,100</area>
-        </imagetype>
-        <imagetype name="coverart" depends="!channum">
-            <area>45,100,100,150</area>
+            <area>35,140,130,100</area>
         </imagetype>
         <textarea name="callsign" depends="channum">
             <font>smaller</font>
-            <area>20,250,150,30</area>
+            <area>25,250,150,30</area>
             <align>hcenter,vcenter</align>
         </textarea>
+        <imagetype name="coverart" depends="coverart">
+            <area>40,100,120,180</area>
+        </imagetype>
         <textarea name="description">
             <font>small</font>
-            <area>200,100,860,180</area>
-            <align>left,top</align>
+            <area>200,100,845,180</area>
+            <align>justify,top</align>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
@@ -375,8 +375,8 @@
         </textarea>
         <textarea name="description">
             <font>small</font>
-            <area>200,100,860,180</area>
-            <align>left,top</align>
+            <area>200,100,845,180</area>
+            <align>justify,top</align>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>

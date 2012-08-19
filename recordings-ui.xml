@@ -262,8 +262,15 @@
             <position>568,670</position>
         </imagetype>
 
+        <textarea name="diskspacepercentused" from="basetextarea">
+            <area>618,670,208,30</area>
+            <align>vcenter</align>
+            <font>basesmallgrey</font>
+            <template>%diskspacepercentused|%% used</template>
+        </textarea>
+
         <imagetype name="coverart">
-            <area>25,448,168,252</area>
+            <area>25,453,168,252</area>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
@@ -282,11 +289,11 @@
         </textarea>
 
         <textarea name="channel" from="basetextarea">
-            <area>218,498,260,30</area>
+            <area>218,498,234,30</area>
         </textarea>
 
         <textarea name="timedate" from="basetextarea">
-            <area>488,498,409,30</area>
+            <area>462,498,435,30</area>
 	    <align>right</align>
         </textarea>
 
@@ -300,20 +307,20 @@
             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
-        <textarea name="freereport" from="basetextarea">
-            <area>618,670,283,30</area>
-            <align>vcenter,right</align>
-            <font>basesmallgrey</font>
-            <template>%1</template>
-        </textarea>
+        <!-- <textarea name="freereport" from="basetextarea"> -->
+        <!--     <area>618,670,283,30</area> -->
+        <!--     <align>vcenter,right</align> -->
+        <!--     <font>basesmallgrey</font> -->
+        <!--     <template>%1</template> -->
+        <!-- </textarea> -->
 
         <imagetype name="banner">
-            <area>926,643,329,57</area>
+            <area>926,648,329,57</area>
             <preserveaspect>false</preserveaspect>
         </imagetype>
 
         <imagetype name="preview">
-            <area>926,448,329,185</area>
+            <area>926,453,329,185</area>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
