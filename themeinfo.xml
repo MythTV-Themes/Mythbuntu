@@ -16,8 +16,7 @@
 
     <version>
         <major>26</major>
-        <minor>1</minor>
-    </version>
+        <minor>2</minor>
 
     <detail>
         <thumbnail name="preview">preview.png</thumbnail>
