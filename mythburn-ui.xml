@@ -52,7 +52,7 @@ MythArchive GUI theme
 
         <button name="ok_button" from="basebutton">
             <position>125,350</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
     </window>
 
@@ -451,7 +451,7 @@ MythArchive GUI theme
         -->
         <button name="ok_button" from="basebutton">
             <position>250,540</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
 
         <button name="cancel_button" from="basebutton">

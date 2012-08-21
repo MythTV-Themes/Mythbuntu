@@ -262,23 +262,35 @@
             <position>568,670</position>
         </imagetype>
 
-        <textarea name="diskspacepercentused" from="basetextarea">
-            <area>618,670,208,30</area>
+        <textarea name="filesize_str" from="basetextarea">
+            <area>618,670,169,30</area>
             <align>vcenter</align>
             <font>basesmallgrey</font>
-            <template>%diskspacepercentused|%% used</template>
         </textarea>
+
+        <!-- <textarea name="diskspacepercentused" from="basetextarea"> -->
+        <!--     <area>797,670,100,30</area> -->
+        <!--     <align>right,vcenter</align> -->
+        <!--     <font>basesmallgrey</font> -->
+        <!--     <template>%diskspacepercentused|%% full</template> -->
+        <!-- </textarea> -->
 
         <imagetype name="coverart">
             <area>25,453,168,252</area>
             <preserveaspect>no</preserveaspect>
         </imagetype>
 
+        <textarea name="freereport" from="basetextarea" depends="!coverart">
+	    <area>25,538,168,252</area>
+            <align>hcenter,top</align>
+            <font>basesmallgrey</font>
+	    <multiline>yes</multiline>
+        </textarea>
+
         <textarea name="title" from="basetextarea">
             <area>218,448,504,40</area>
             <font>baselarge</font>
             <align>vcenter</align>
-	    <scroll direction="left"/>
         </textarea>
 
         <textarea name="category" from="basetextarea">
@@ -328,7 +340,7 @@
             <font>basemedium</font>
             <value>No Recordings available, or screen loading...</value>
             <multiline>yes</multiline>
-            <align>allcenter</align>
+            <align>top</align>
         </textarea>
     </window>
 

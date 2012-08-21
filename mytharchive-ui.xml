@@ -246,7 +246,7 @@ Common MythArchive window definitions
 
         <button name="ok_button" from="basebutton">
             <position>1060,650</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
 
     </window>
@@ -325,7 +325,7 @@ Common MythArchive window definitions
 
         <button name="ok_button" from="basebutton">
             <position>1060,650</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
 
     </window>
@@ -448,7 +448,7 @@ Common MythArchive window definitions
 
         <button name="ok_button" from="basebutton">
             <position>1060,650</position>
-            <value>Ok</value>
+            <value>OK</value>
         </button>
 
     </window>

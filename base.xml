@@ -9,50 +9,12 @@
         <color>#FFFFFF</color>
     </fontdef>
 
-    <fontdef name="basesupersmall" from="basesmall">
-        <pixelsize>11</pixelsize>
-        <weight>bold</weight>
-    </fontdef>
-
     <fontdef name="baseextrasmall" from="basesmall">
-        <weight>bold</weight>
-        <pixelsize>13</pixelsize>
-    </fontdef>
-
-    <fontdef name="baseevensmaller" from="basesmall">
-        <weight>bold</weight>
-        <pixelsize>16</pixelsize>
-    </fontdef>
-
-    <fontdef name="basesmaller" from="basesmall">
-        <pixelsize>18</pixelsize>
-    </fontdef>
-
-    <fontdef name="basesomewhatsmaller" from="basesmall">
-        <pixelsize>19</pixelsize>
+        <size>13</size>
     </fontdef>
 
     <fontdef name="basesupersmall" from="basesmall">
-        <pixelsize>11</pixelsize>
-        <weight>bold</weight>
-    </fontdef>
-
-    <fontdef name="baseextrasmall" from="basesmall">
-        <weight>bold</weight>
-        <pixelsize>13</pixelsize>
-    </fontdef>
-
-    <fontdef name="baseevensmaller" from="basesmall">
-        <weight>bold</weight>
-        <pixelsize>16</pixelsize>
-    </fontdef>
-
-    <fontdef name="basesmaller" from="basesmall">
-        <pixelsize>18</pixelsize>
-    </fontdef>
-
-    <fontdef name="basesomewhatsmaller" from="basesmall">
-        <pixelsize>19</pixelsize>
+        <size>11</size>
     </fontdef>
 
     <fontdef name="basesmalldrop" from="basesmall">
@@ -1238,6 +1200,8 @@
         </shape>
         <buttonlist name="results" from="basebuttonlist">
             <area>20,20,1060,560</area>
+	    <wrapstyle>selection</wrapstyle>
+	    <scrollstyle>center</scrollstyle>
             <statetype name="buttonitem">
                 <state name="active">
                     <shape name="buttonbackground">
@@ -1300,6 +1264,8 @@
         </shape>
         <buttonlist name="results" from="basebuttonlist">
             <area>20,20,1060,560</area>
+	    <wrapstyle>selection</wrapstyle>
+	    <scrollstyle>center</scrollstyle>
             <statetype name="buttonitem">
                 <state name="active">
                     <shape name="buttonbackground">
@@ -1326,7 +1292,7 @@
                         <cornerradius>15</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>193,-40,675,180</area>
+                        <area>61,-75,938,250</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">

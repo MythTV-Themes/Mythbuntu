@@ -70,6 +70,13 @@
             <fill color="#000000" alpha="200" />
         </shape>
 
+        <textarea name="pagetitle" from="basetextarea">
+            <area>50,10,670,60</area>
+            <font>baselarge</font>
+            <align>vcenter,left</align>
+            <value>Theme Chooser</value>
+        </textarea>
+
         <shape name="preview-shape">
             <area>660,60,600,460</area>
             <type>roundbox</type>
@@ -84,32 +91,24 @@
         </imagetype>
 
         <textarea name="name" from="basetextarea">
-            <area>680,540,280,35</area>
+            <area>680,520,280,35</area>
             <multiline>no</multiline>
             <font>basemedium</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
-        <textarea name="aspect-label" from="basetextarea">
-            <area>680,575,280,30</area>
-            <multiline>no</multiline>
-            <font>basesmall</font>
-            <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-            <value>Theme Aspect Ratio:</value>
-        </textarea>
-
         <textarea name="aspect" from="basetextarea">
-            <area>960,575,280,30</area>
+            <area>680,555,100%,30</area>
             <multiline>no</multiline>
-            <font>basesmall</font>
+            <font>baseextrasmall</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
+	    <template>For %ASPECT% displays. By %AUTHORNAME%.</template>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>680,605,560,125</area>
+            <area>680,585,560,125</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>left,top</align>
@@ -117,7 +116,7 @@
         </textarea>
 
         <buttonlist name="themes">
-            <area>40,60,600,660</area>
+            <area>40,60,660,660</area>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
@@ -130,7 +129,7 @@
                 <state name="active">
                     <area>0,0,600,66</area>
                     <shape name="item">
-                        <area>0,0,600,66</area>
+                        <area>0,0,100%,66</area>
                         <type>box</type>
                         <fill color="#000000" alpha="180" />
                     </shape>
@@ -146,45 +145,17 @@
                         <alpha>210</alpha>
                     </textarea>
 
-<!-- State to show whether a theme is locally installed or remotely downloadable
                     <statetype name="themelocation">
-                        <area>0,0,30,30</area>
-                        <state name="local">
-                            <shape name="location">
-                                <area>0,0,30,30</area>
-                                <type>ellipse</type>
-                                <fill color="#00FF00" />
-                            </shape>
-                        </state>
+                        <area>3%,40%,12,12</area>
                         <state name="remote">
-                            <shape name="location">
-                                <area>0,0,30,30</area>
+                            <shape name="status">
+                                <area>0,0,12,12</area>
                                 <type>ellipse</type>
-                                <fill color="#FF0000" />
+                                <fill color="#00FF00" alpha="255"/>
                             </shape>
                         </state>
                     </statetype>
--->
 
-<!-- State to indicate whether an installed downloadable theme is up to date or not
-                    <statetype name="themestatus">
-                        <area>0,30,60,30</area>
-                        <state name="uptodate">
-                            <shape name="status">
-                                <area>0,0,60,30</area>
-                                <type>ellipse</type>
-                                <fill color="#00FF00" />
-                            </shape>
-                        </state>
-                        <state name="updateavailable">
-                            <shape name="status">
-                                <area>0,0,60,30</area>
-                                <type>ellipse</type>
-                                <fill color="#0000FF" />
-                            </shape>
-                        </state>
-                    </statetype>
--->
                 </state>
 
                 <state name="selectedactive" from="active">
@@ -224,6 +195,20 @@
                     </imagetype>
                 </state>
             </statetype>
+
+        <shape name="update_icon">
+            <area>4%,86%,8,8</area>
+            <type>ellipse</type>
+            <fill color="#00FF00" alpha="200" />
+        </shape>
+        <textarea name="update_text" from="basetextarea">
+            <area>6%,82%,90%,60</area>
+            <align>left,vcenter</align>
+	    <multiline>yes</multiline>
+	    <font>baseextrasmall</font>
+           <value>Update available</value>
+        </textarea>
+
         </buttonlist>
 
         <progressbar name="downloadprogressbar" from="baseprogressbar">
