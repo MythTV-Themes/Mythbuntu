@@ -183,7 +183,6 @@
             <area>167,10,738,60</area>
             <align>left,vcenter</align>
             <font>baseextralarge</font>
-	    <scroll direction="left"/>
         </textarea>
 
         <clock name="time">
@@ -197,7 +196,6 @@
             <area>167,80,703,30</area>
             <align>left,vcenter</align>
             <font>basesmall</font>
-	    <scroll direction="left"/>
 	    <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>
         </textarea>
 
@@ -416,7 +414,6 @@
             <area>167,10,488,60</area>
             <align>left,vcenter</align>
             <font>baseextralarge</font>
-	    <scroll direction="left"/>
         </textarea>
 
         <clock name="time">
@@ -430,7 +427,6 @@
             <area>167,80,353,30</area>
             <align>left,vcenter</align>
             <font>basesmall</font>
-	    <scroll direction="left"/>
 	    <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>
         </textarea>
 
@@ -988,6 +984,7 @@
 
         <button name="ok_button" from="basebutton">
             <position>12,440</position>
+	    <value>Search</value>
         </button>
 
         <button name="delete_button" from="basebutton">
@@ -1137,6 +1134,7 @@
 
         <button name="ok_button" from="basebutton">
             <position>170,490</position>
+	    <value>Search</value>
         </button>
 
     </window>
@@ -1253,7 +1251,7 @@
         <textarea name="title" from="basetextarea">
             <area>80,20,720,40</area>
             <font>baselarge</font>
-            <value>Program Details:</value>
+            <value>Program Details</value>
         </textarea>
 
         <shape name="background" from="baseboxbackground">
