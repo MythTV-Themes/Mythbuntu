@@ -2103,36 +2103,32 @@
             <position>377,473</position>
         </checkbox>
 
-        <textarea name="userjob1label" from="basetextarea">
+        <textarea name="userjob1text" from="basetextarea">
             <area>407,477,526,30</area>
-            <value>Run User Job #1</value>
         </textarea>
 
         <checkbox name="userjob2" from="basecheckbox">
             <position>377,518</position>
         </checkbox>
 
-        <textarea name="userjob2label" from="basetextarea">
+        <textarea name="userjob2text" from="basetextarea">
             <area>407,522,526,30</area>
-            <value>Run User job #2</value>
         </textarea>
 
         <checkbox name="userjob3" from="basecheckbox">
             <position>377,563</position>
         </checkbox>
 
-        <textarea name="userjob3label" from="basetextarea">
+        <textarea name="userjob3text" from="basetextarea">
             <area>407,567,526,30</area>
-            <value>Run User Job #3</value>
         </textarea>
 
         <checkbox name="userjob4" from="basecheckbox">
             <position>377,608</position>
         </checkbox>
 
-        <textarea name="userjob4label" from="basetextarea">
+        <textarea name="userjob4text" from="basetextarea">
             <area>407,612,526,30</area>
-            <value>Run User Job #4</value>
         </textarea>
 
         <button name="back" from="basebutton">
