@@ -9,6 +9,10 @@
         <color>#FFFFFF</color>
     </fontdef>
 
+    <fontdef name="basesmallbold" from="basesmall">
+        <weight>bold</weight>
+    </fontdef>
+
     <fontdef name="baseextrasmall" from="basesmall">
         <size>13</size>
     </fontdef>
@@ -50,6 +54,10 @@
         <color>#bcbcbc</color>
     </fontdef>
 
+    <fontdef name="basesmallgreybold" from="basesmallgrey">
+        <weight>bold</weight>
+    </fontdef>
+
     <fontdef name="basesmalldarkgrey" from="basesmall">
         <color>#666666</color>
     </fontdef>
@@ -70,12 +78,20 @@
         <color>#80d400</color>
     </fontdef>
 
+    <fontdef name="basesmallbrightgreen" from="basesmallgreen">
+        <color>#c7ff72</color>
+    </fontdef>
+
     <fontdef name="basesmallblue" from="basesmall">
         <color>#0492A7</color>
     </fontdef>
 
     <fontdef name="basesmallred" from="basesmall">
         <color>#800900</color>
+    </fontdef>
+
+    <fontdef name="basesmallbrightred" from="basesmallred">
+        <color>#ff2e1e</color>
     </fontdef>
 
     <fontdef name="basemediumgrey" from="basemedium">
