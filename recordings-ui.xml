@@ -59,28 +59,33 @@
             <spacing>6</spacing>
             <wrapstyle>items</wrapstyle>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
+	    <!-- <scrollstyle>center</scrollstyle> -->
             <statetype name="buttonitem">
                 <state name="active">
                     <shape name="buttonbackground"> 
                         <area>0,0,434,30</area> 
                     </shape> 
                     <textarea name="name" from="buttontext">
-                        <font>basesmallgrey</font>
-                        <cutdown>yes</cutdown>
+                        <font>basesmall</font>
                     </textarea>
                 </state>
-                <state name="selectedinactive">
+                <state name="inactive" from="active">
+                    <textarea name="name" from="buttontext">
+                        <font>basesmallgrey</font>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <textarea name="name" from="buttontext">
+                        <font>basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive">
                     <shape name="buttonbackground">                         
                         <area>0,0,434,30</area>
                     </shape> 
                     <textarea name="name" from="buttontext">
                         <font>basesmall</font>
                     </textarea>
-                </state>
-                <state name="selectedactive" from="selectedinactive">
-                    <shape name="buttonbackground">                         
-                        <area>0,0,434,30</area>
-                    </shape> 
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
@@ -97,6 +102,7 @@
             <spacing>6</spacing>
             <wrapstyle>items</wrapstyle>
             <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
+	    <!-- <scrollstyle>center</scrollstyle> -->
             <statetype name="buttonitem">
                 <state name="active">
                     <shape name="buttonbackground">
@@ -108,9 +114,9 @@
                     </shape>
                     <textarea name="titlesubtitle" from="buttontext">
                         <area>46,1,421,31</area>
-                        <font>basesmallgrey</font>
-                        <font state="error">basesmallred</font>
-                        <font state="running">basesmallgreen</font>
+                        <font>basesmall</font>
+                        <font state="error">basesmallbrightred</font>
+                        <font state="running">basesmallbrightgreen</font>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="shortstartdate" from="titlesubtitle">
@@ -140,6 +146,23 @@
                         <state name="no" />
                     </statetype>
                 </state>
+                <state name="inactive" from="active">
+                    <textarea name="titlesubtitle" from="buttontext">
+                        <area>46,1,421,31</area>
+                        <font>basesmallgrey</font>
+                        <font state="error">basesmallred</font>
+                        <font state="running">basesmallgreen</font>
+                        <align>vcenter</align>
+                    </textarea>
+                    <textarea name="shortstartdate" from="titlesubtitle">
+                        <area>480,1,120,31</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                    <textarea name="starttime" from="shortstartdate">
+                        <area>611,1,105,31</area>
+                        <align>right,vcenter</align>
+                    </textarea>
+                </state>
                 <state name="selectedactive" from="active">
                     <shape name="buttonbackground">
                         <area>30,0,706,30</area>
@@ -147,15 +170,6 @@
                         <fill color="#ffffff" alpha="50" />
                         <cornerradius>15</cornerradius>
                     </shape>
-                    <textarea name="titlesubtitle">
-                        <font>basesmall</font>
-                    </textarea>
-                    <textarea name="shortdate">
-                        <font>basesmall</font>
-                    </textarea>
-                    <textarea name="starttime">
-                        <font>basesmall</font>
-                    </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
@@ -294,10 +308,10 @@
         </textarea>
 
         <textarea name="category" from="basetextarea">
-            <area>737,448,160,40</area>
-            <font>basesmall</font>
+            <area>737,443,160,50</area>
+            <font>baseextrasmall</font>
             <align>vcenter,right</align>
-	    <scroll direction="left"/>
+	    <multiline>yes</multiline>
         </textarea>
 
         <textarea name="channel" from="basetextarea">
