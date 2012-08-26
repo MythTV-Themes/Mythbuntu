@@ -154,6 +154,18 @@
                                 <fill color="#00FF00" alpha="255"/>
                             </shape>
                         </state>
+                        <state name="local">
+                        </state>
+                    </statetype>
+
+                    <statetype name="themestatus">
+                        <area>3%,40%,12,12</area>
+                        <state name="updateavailable">
+                        </state>
+                        <state name="uptodate">
+                        </state>
+                        <state name="default">
+                        </state>
                     </statetype>
 
                 </state>
@@ -206,7 +218,7 @@
             <align>left,vcenter</align>
 	    <multiline>yes</multiline>
 	    <font>baseextrasmall</font>
-           <value>Update available</value>
+           <value>= Update available</value>
         </textarea>
 
         </buttonlist>

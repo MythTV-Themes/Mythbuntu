@@ -227,7 +227,7 @@
         </shape>
         <textarea name="title">
             <font>small</font>
-            <area>10,10,600,30</area>
+            <area>10,10,850,30</area>
             <align>left,top</align>
         </textarea>
         <textarea name="description">
@@ -237,9 +237,9 @@
             <template>%DESCRIPTION% %VALUE%%UNITS%</template>
         </textarea>
         <clock name="clock">
-            <area>770,10,300,30</area>
+            <area>870,10,200,30</area>
             <font>basesmallgrey</font>
-            <template>%DATE%, %TIME%</template>
+            <template>%TIME%</template>
             <align>right,top</align>
         </clock>
         <progressbar name="position">
@@ -282,7 +282,7 @@
         </shape>
         <textarea name="title">
             <font>medium</font>
-            <area>10,10,600,30</area>
+            <area>10,10,850,30</area>
             <align>left,top</align>
         </textarea>
         <textarea name="starttime">
@@ -292,9 +292,9 @@
             <template>%STARTTIME%-%ENDTIME% : %LENMINS%</template>
         </textarea>
         <clock name="clock">
-            <area>770,10,300,30</area>
+            <area>870,10,200,30</area>
             <font>basesmallgrey</font>
-            <template>%DATE%, %TIME%</template>
+            <template>%TIME%</template>
             <align>right,top</align>
         </clock>
         <textarea name="channum" depends="!coverart">
@@ -345,7 +345,7 @@
         </shape>
         <textarea name="title">
             <font>medium</font>
-            <area>10,10,600,30</area>
+            <area>10,10,850,30</area>
             <align>left,top</align>
         </textarea>
         <textarea name="starttime">
@@ -355,22 +355,22 @@
             <template>%STARTTIME%-%ENDTIME% : %LENMINS%</template>
         </textarea>
         <clock name="clock">
-            <area>770,10,300,30</area>
+            <area>870,10,200,30</area>
             <font>basesmallgrey</font>
-            <template>%DATE%, %TIME%</template>
+            <template>%TIME%</template>
             <align>right,top</align>
         </clock>
         <textarea name="channum">
             <font>small</font>
-            <area>20,100,150,30</area>
+            <area>25,100,150,30</area>
             <align>hcenter,vcenter</align>
         </textarea>
         <imagetype name="iconpath">
-            <area>30,140,130,100</area>
+            <area>35,140,130,100</area>
         </imagetype>
         <textarea name="callsign">
             <font>smaller</font>
-            <area>20,250,150,30</area>
+            <area>25,250,150,30</area>
             <align>hcenter,vcenter</align>
         </textarea>
         <textarea name="description">
