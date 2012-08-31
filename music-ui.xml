@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 
 <mythuitheme>
@@ -167,13 +167,13 @@
         <group name="infopanel" from="baseinfopanel">
             <area>0,475,1250,235</area>
         </group>
-<!--
+
         <imagetype name="animation">
             <area>40,40,105,105</area>
-            <filepattern low="0" high="24">busyimages/%1.png</filepattern>
-            <delay>250</delay>
+            <filepattern low="0" high="47">busyimages/%1.png</filepattern>
+            <delay>50</delay>
         </imagetype>
--->
+
     </window>
 
     <window name="playlisteditorview_tree" include="music-base.xml">
