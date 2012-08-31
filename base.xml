@@ -932,13 +932,14 @@
             <area>0,0,580,165</area>
         </shape>
         <imagetype name="animation">
-            <position>40,40</position>
-            <filepattern low="0" high="24">busyimages/%1.png</filepattern>
-            <delay>250</delay>
+            <position>40,30</position>
+            <filepattern low="0" high="47">busyimages/%1.png</filepattern>
+            <delay>50</delay>
         </imagetype>
         <textarea name="message" from="basetextarea">
-            <area>170,20,390,125</area>
+            <area>185,20,355,125</area>
             <align>allcenter</align>
+	    <multiline>yes</multiline>
         </textarea>
     </window>
 
