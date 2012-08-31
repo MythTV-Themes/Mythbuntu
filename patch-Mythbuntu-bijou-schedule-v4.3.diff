@@ -1,0 +1,431 @@
+diff -urN Mythbuntu/schedule-ui.xml Mythbuntu-bijou/schedule-ui.xml
+--- Mythbuntu/schedule-ui.xml	2012-08-26 11:07:56.936656624 -0700
++++ Mythbuntu-bijou/schedule-ui.xml	2012-08-28 19:38:51.910655575 -0700
+@@ -175,7 +175,7 @@
+             </statetype>
+         </buttonlist>
+ 
+-       <imagetype name="channelicon">
++	<imagetype name="channelicon">
+             <area>30,20,127,95</area>
+         </imagetype>
+ 
+@@ -208,7 +208,7 @@
+         <textarea name="description" from="basetextarea">
+             <area>40,130,1210,90</area>
+             <multiline>yes</multiline>
+-	    <align>justified</align>
++	    <align>justify</align>
+             <!-- <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template> -->
+             <template>%YEARSTARS| %%DESCRIPTION%</template>
+         </textarea>
+@@ -439,7 +439,7 @@
+         <textarea name="description" from="basetextarea">
+             <area>40,130,870,90</area>
+             <multiline>yes</multiline>
+-	    <align>justified</align>
++	    <align>justify</align>
+             <!-- <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template> -->
+             <template>%YEARSTARS| %%DESCRIPTION%</template>
+         </textarea>
+@@ -569,7 +569,7 @@
+         </textarea>
+ 
+         <textarea name="rectypestatus" from="basetextarea">
+-            <area>830,430,420,30</area>
++            <area>840,430,420,30</area>
+             <align>right</align>
+             <font>basesmallyellow</font>
+         </textarea>
+@@ -598,24 +598,33 @@
+         </buttonlist>
+ 
+         <textarea name="title" from="basetextarea">
+-            <area>20,460,1240,40</area>
++            <area>20,470,1070,40</area>
+             <font>baselarge</font>
++	    <align>vcenter</align>
++        </textarea>
++
++        <textarea name="category" from="basetextarea">
++            <area>1100,465,160,50</area>
++            <font>baseextrasmall</font>
++            <align>vcenter,right</align>
++	    <multiline>yes</multiline>
+         </textarea>
+ 
+         <textarea name="channel" from="basetextarea">
+-            <area>20,500,170,30</area>
++            <area>20,510,170,30</area>
+         </textarea>
+ 
+         <textarea name="timedate" from="basetextarea">
+-            <area>200,500,500,30</area>
++            <area>200,510,500,30</area>
+         </textarea>
+ 
+         <textarea name="description" from="basetextarea">
+-            <area>20,530,1240,160</area>
++            <area>20,540,1240,130</area>
+             <multiline>yes</multiline>
+             <cutdown>yes</cutdown>
+             <!-- <template>%|"SUBTITLE|"%\n%YEARSTARS%%DESCRIPTION%</template> -->
+             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
++	    <align>justify</align>
+         </textarea>
+ 
+         <textarea name="norecordings_info">
+@@ -659,17 +668,21 @@
+                     <statetype name="status">
+                         <position>30,0</position>
+                     </statetype>
+-                    <textarea name="channum" from="buttontext">
++                    <textarea name="chanstr" from="buttontext">
+                         <area>60,1,150,24</area>
++			<align>center</align>
++                    </textarea>
++                    <textarea name="callsign" from="chanstr">
++                        <area>220,1,200,24</area>
+                     </textarea>
+-                    <textarea name="callsign" from="channum">
+-                        <area>220,1,250,24</area>
++                    <textarea name="channelname" from="chanstr">
++                        <area>520,1,440,24</area>
+                     </textarea>
+-                    <textarea name="name" from="channum">
+-                        <area>570,1,500,24</area>
++                    <textarea name="channelsourcename" from="chanstr">
++                        <area>970,1,140,24</area>
+                     </textarea>
+-                    <textarea name="priority" from="channum">
+-                        <area>1140,1,30,24</area>
++                    <textarea name="priority" from="chanstr">
++                        <area>1120,1,50,24</area>
+                         <align>right</align>
+                     </textarea>
+                 </state>
+@@ -699,7 +712,7 @@
+             <value>Source:</value>
+         </textarea>
+ 
+-        <textarea name="sourcename" from="basetextarea">
++        <textarea name="channelsourcename" from="basetextarea">
+             <area>660,515,400,30</area>
+         </textarea>
+ 
+@@ -712,14 +725,14 @@
+             <area>660,550,400,30</area>
+         </textarea>
+ 
+-        <textarea name="recprioritylabel" from="basetextarea">
+-            <area>540,585,100,30</area>
+-            <value>Priority:</value>
+-        </textarea>
+-
+-        <textarea name="priority" from="basetextarea">
+-            <area>660,585,400,30</area>
+-        </textarea>
++        <!-- <textarea name="recprioritylabel" from="basetextarea"> -->
++        <!--     <area>540,575,100,30</area> -->
++        <!--     <value>Priority:</value> -->
++        <!-- </textarea> -->
++
++        <!-- <textarea name="priority" from="basetextarea"> -->
++        <!--     <area>540,585,400,30</area> -->
++        <!-- </textarea> -->
+ 
+         <textarea name="norecordings_info">
+             <area>0,210,1280,70</area>
+@@ -789,8 +802,16 @@
+         </buttonlist>
+ 
+         <textarea name="title" from="basetextarea">
+-            <area>230,450,740,40</area>
++            <area>230,440,610,40</area>
+             <font>basemedium</font>
++	    <align>vcenter</align>
++        </textarea>
++
++        <textarea name="category" from="basetextarea">
++            <area>850,435,160,50</area>
++            <font>baseextrasmall</font>
++            <align>vcenter,right</align>
++	    <multiline>yes</multiline>
+         </textarea>
+ 
+         <textarea name="scheduleinfo" from="basetextarea">
+@@ -880,17 +901,17 @@
+ 
+         <textarea name="clauseslabel" from="ruleslabel">
+             <area>340,300,600,40</area>
+-            <value>Select a clause from the list.</value>
++            <value>Add example clauses, or create your own.</value>
+             <align>allcenter</align>
+         </textarea>
+ 
+         <buttonlist name="clauses" from="basewideselector">
+-            <position>360,350</position>
++            <position>300,350</position>
+         </buttonlist>
+ 
+         <button name="add" from="basebutton">
+-            <position>770,350</position>
+-            <value>Add Clause</value>
++            <position>830,350</position>
++            <value>Add Example</value>
+         </button>
+ 
+         <textedit name="description">
+@@ -1141,9 +1162,9 @@
+ 
+     <window name="programlist">
+ 
+-        <shape name="list_background" from="baseboxbackground">
+-            <area>20,49,1240,360</area>
+-        </shape>
++        <!-- <shape name="list_background" from="baseboxbackground"> -->
++        <!--     <area>20,49,1240,360</area> -->
++        <!-- </shape> -->
+ 
+         <shape name="titlebox" from="baseboxbackground">
+             <area>50,10,570,40</area>
+@@ -1172,12 +1193,8 @@
+             <area>15,80,1250,360</area>
+         </shape>
+ 
+-        <shape name="description_background" from="baseboxbackground">
+-            <area>250,450,780,260</area>
+-        </shape>
+-
+         <textarea name="curview" from="basetextarea">
+-           <area>770,25,460,40</area>
++           <area>770,10,460,40</area>
+            <align>right,vcenter</align>
+         </textarea>
+ 
+@@ -1211,9 +1228,20 @@
+             </statetype>
+         </buttonlist>
+ 
++        <shape name="description_background" from="baseboxbackground">
++            <area>250,450,780,260</area>
++        </shape>
++
+         <textarea name="title" from="basetextarea">
+-            <area>265,455,1200,50</area>
++            <area>265,455,580,50</area>
+             <font>baselarge</font>
++	    <align>vcenter</align>
++        </textarea>
++        <textarea name="category" from="basetextarea">
++            <area>855,450,160,50</area>
++            <font>baseextrasmall</font>
++            <align>vcenter,right</align>
++	    <multiline>yes</multiline>
+         </textarea>
+         <textarea name="channel" from="basetextarea">
+             <area>265,500,170,30</area>
+@@ -1233,7 +1261,7 @@
+             <font>basesmallgrey</font>
+         </textarea>
+         <textarea name="rectypestatus" from="basetextarea">
+-            <area>575,670,420,30</area>
++            <area>595,670,420,30</area>
+             <align>right</align>
+             <font>basesmallyellow</font>
+         </textarea>
+@@ -1370,10 +1398,11 @@
+                 <area>0,0,580,25</area>
+                 <state name="active">
+                     <textarea name="buttontext">
+-                        <area>5,0,565,25</area>
++                        <area>5,0,385,25</area>
+                         <font>basesmall</font>
+                         <cutdown>yes</cutdown>
+                         <align>left,vcenter</align>
++			<template>%1</template>
+                     </textarea>
+                 </state>
+                 <state name="selectedactive" from="active">
+@@ -1403,13 +1432,21 @@
+         </buttonlist>
+ 
+         <textarea name="title" from="basetextarea">
+-            <area>90,50,1040,45</area>
++            <area>90,50,900,45</area>
+             <font>baselarge</font>
++	    <align>vcenter</align>
++        </textarea>
++        <textarea name="category" from="basetextarea">
++            <area>1000,45,160,50</area>
++            <font>baseextrasmall</font>
++            <align>vcenter,right</align>
++	    <multiline>yes</multiline>
+         </textarea>
+         <textarea name="description" from="basetextarea">
+-            <area>90,110,1040,185</area>
++            <area>90,110,1070,185</area>
+             <multiline>yes</multiline>
+             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
++	    <align>justify</align>
+         </textarea>
+ 
+         <textarea name="channel" from="basetextarea">
+@@ -1460,7 +1497,7 @@
+         </shape>
+ 
+         <textarea name="callsignlabel" from="basetextarea">
+-            <area>680,15,100,40</area>
++            <area>630,15,100,40</area>
+             <value>Channel</value>
+             <align>right</align>
+         </textarea>
+@@ -1486,18 +1523,18 @@
+                         <align>hcenter</align>
+                     </textarea>
+                     <textarea name="title" from="buttontext">
+-                        <area>60,1,590,24</area>
++                        <area>60,1,540,24</area>
+                     </textarea>
+                     <textarea name="callsign" from="buttontext">
+-                        <area>660,1,100,24</area>
++                        <area>610,1,100,24</area>
+                         <align>right</align>
+                     </textarea>
+                     <textarea name="lastrecorded" from="buttontext">
+-                        <area>770,1,290,24</area>
++                        <area>720,1,340,24</area>
+                         <align>right</align>
+                     </textarea>
+                     <textarea name="finalpriority" from="buttontext">
+-                        <area>1130,1,40,24</area>
++                        <area>1100,1,40,24</area>
+                         <align>right</align>
+                     </textarea>
+                 </state>
+@@ -1741,8 +1778,16 @@
+         </textarea>
+ 
+         <textarea name="title" from="basetextarea">
+-            <area>150,90,980,45</area>
++            <area>150,90,810,45</area>
+             <font>baselarge</font>
++	    <align>vcenter</align>
++        </textarea>
++
++        <textarea name="category" from="basetextarea">
++            <area>970,85,160,50</area>
++            <font>baseextrasmall</font>
++            <align>vcenter,right</align>
++	    <multiline>yes</multiline>
+         </textarea>
+ 
+         <textarea name="timedate" from="basetextarea">
+@@ -1750,14 +1795,15 @@
+         </textarea>
+ 
+         <textarea name="channel" from="basetextarea">
+-            <area>925,235,200,35</area>
++            <area>891,235,234,35</area>
+             <align>right</align>
+         </textarea>
+ 
+         <textarea name="description" from="basetextarea">
+-            <area>150,125,980,100</area>
++            <area>150,135,980,90</area>
+             <multiline>yes</multiline>
+             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
++	    <align>justify</align>
+         </textarea>
+ 
+         <buttonlist name="rules" from="basewideselector">
+@@ -1843,8 +1889,16 @@
+         </textarea>
+ 
+         <textarea name="title" from="basetextarea">
+-            <area>150,90,980,45</area>
++            <area>150,90,810,45</area>
+             <font>baselarge</font>
++	    <align>vcenter</align>
++        </textarea>
++
++        <textarea name="category" from="basetextarea">
++            <area>970,85,160,50</area>
++            <font>baseextrasmall</font>
++            <align>vcenter,right</align>
++	    <multiline>yes</multiline>
+         </textarea>
+ 
+         <textarea name="timedate" from="basetextarea">
+@@ -1857,9 +1911,10 @@
+         </textarea>
+ 
+         <textarea name="description" from="basetextarea">
+-            <area>150,125,980,100</area>
++            <area>150,135,980,90</area>
+             <multiline>yes</multiline>
+             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
++	    <align>justify</align>
+         </textarea>
+ 
+         <spinbox name="priority" from="basewidespinbox">
+@@ -1952,8 +2007,16 @@
+         </shape>
+ 
+         <textarea name="title" from="basetextarea">
+-            <area>150,90,1180,45</area>
++            <area>150,90,810,45</area>
+             <font>baselarge</font>
++	    <align>vcenter</align>
++        </textarea>
++
++        <textarea name="category" from="basetextarea">
++            <area>970,85,160,50</area>
++            <font>baseextrasmall</font>
++            <align>vcenter,right</align>
++	    <multiline>yes</multiline>
+         </textarea>
+ 
+         <textarea name="timedate" from="basetextarea">
+@@ -1966,9 +2029,10 @@
+         </textarea>
+ 
+         <textarea name="description" from="basetextarea">
+-            <area>150,125,980,100</area>
++            <area>150,135,980,90</area>
+             <multiline>yes</multiline>
+             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
++	    <align>justify</align>
+         </textarea>
+ 
+         <buttonlist name="recprofile" from="basewideselector">
+@@ -2048,8 +2112,16 @@
+         </shape>
+ 
+         <textarea name="title" from="basetextarea">
+-            <area>150,90,980,45</area>
++            <area>150,90,810,45</area>
+             <font>baselarge</font>
++	    <align>vcenter</align>
++        </textarea>
++
++        <textarea name="category" from="basetextarea">
++            <area>970,85,160,50</area>
++            <font>baseextrasmall</font>
++            <align>vcenter,right</align>
++	    <multiline>yes</multiline>
+         </textarea>
+ 
+         <textarea name="timedate" from="basetextarea">
+@@ -2062,9 +2134,10 @@
+         </textarea>
+ 
+         <textarea name="description" from="basetextarea">
+-            <area>150,125,980,150</area>
++            <area>150,135,980,90</area>
+             <multiline>yes</multiline>
+             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
++	    <align>justify</align>
+         </textarea>
+ 
+         <checkbox name="metadatalookup" from="basecheckbox">
