@@ -836,6 +836,14 @@
 
     <!-- Popup Dialogue Box -->
     <window name="MythPopupBox">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,500</area>
         <shape name="backimg" from="basebackground">
             <area>0,0,500,500</area>
@@ -878,6 +886,13 @@
 
     <!-- Fullscreen Dialogue Box -->
     <window name="MythDialogBox">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
 
         <shape name="background" from="basebackground">
             <area>10,10,1260,700</area>
@@ -927,6 +942,14 @@
     </window>
 
     <window name="MythBusyDialog">
+
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,580,165</area>
         <shape name="backimg" from="basebackground">
             <area>0,0,580,165</area>
@@ -944,6 +967,14 @@
     </window>
 
     <window name="MythProgressDialog">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,580,165</area>
         <shape name="backimg" from="basebackground">
             <area>0,0,580,165</area>
@@ -964,6 +995,14 @@
     </window>
 
     <window name="MythConfirmationDialog">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,580,165</area>
 
         <shape name="backimg" from="basebackground">
@@ -989,6 +1028,14 @@
     </window>
 
     <window name="MythTextInputDialog">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,580,165</area>
 
         <shape name="backimg" from="basebackground">
@@ -1010,6 +1057,14 @@
     </window>
 
     <window name="MythSearchDialog">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,500</area>
 
         <shape name="backimg" from="basebackground">
@@ -1061,6 +1116,14 @@
     </window>
 
     <window name="MythFileBrowser">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,730,510</area>
         <shape name="backimg" from="basebackground">
             <area>0,0,730,510</area>
@@ -1157,6 +1220,14 @@
     </window>
 
    <window name="MythTimeInputDialog">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,580,165</area>
 
         <shape name="backimg" from="basebackground">
@@ -1186,10 +1257,7 @@
     </window>
        
     <window name="videowindow">
-        <area>0,0,1280,720</area>
-        <imagetype name="backimg">
-            <filename>background.png</filename>
-        </imagetype>
+        <area>0,0,1281,721</area>
 
         <textarea name="title" from="basetextarea">
             <area>500,325,280,50</area>
@@ -1197,6 +1265,12 @@
             <align>allcenter</align>
             <value>Please Wait...</value>
         </textarea>
+
+       <!-- <imagetype name="animation">
+            <position>114,64</position>
+            <filename>videobackground.png</filename>
+        </imagetype>
+       -->
 
         <progressbar name="progress" from="baseprogressbar">
             <position>372,425</position>
@@ -1211,6 +1285,14 @@
     </window>
 
     <window name="MythMetadataResults">
+
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,1100,600</area>
         <shape name="backimg" from="basebackground">
             <area>0,0,1100,600</area>
@@ -1228,7 +1310,7 @@
                         <cornerradius>15</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>-5,10,150,80</area>
+                        <area>45,0,50,100</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
@@ -1250,7 +1332,7 @@
                         <cornerradius>15</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>-80,-30,300,160</area>
+                        <area>10,-40,120,180</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
@@ -1275,6 +1357,14 @@
         </buttonlist>
     </window>
     <window name="MythArtworkResults">
+
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,1100,600</area>
         <shape name="backimg" from="basebackground">
             <area>0,0,1100,600</area>
