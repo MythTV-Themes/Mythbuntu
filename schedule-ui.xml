@@ -2,6 +2,13 @@
 
     <window name="programguide">
 
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+                <position start="-1,-720," end="-1,-1" />
+	    </section>
+	</animation>
+
         <shape name="shape2" from="baseboxbackground">
             <area>20,125,1240,100</area>
             <type>roundbox</type>
@@ -216,6 +223,13 @@
     </window>
 
     <window name="programguide-video">
+
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+                <position start="-1,-720," end="-1,-1" />
+	    </section>
+	</animation>
 
         <imagetype name="video">
             <area>940,40,300,170</area>
@@ -540,6 +554,13 @@
     </window>
 
     <window name="viewscheduled">
+
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+                <position start="-1,-720," end="-1,-1" />
+	    </section>
+	</animation>
 
         <textarea name="pagetitle">
             <area>50,10,570,40</area>
@@ -963,6 +984,14 @@
     </window>
 
     <window name="phrasepopup">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,500</area>
 
         <shape name="box" from="basebackground">
@@ -1019,6 +1048,14 @@
     </window>
 
     <window name="timepopup">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,580,165</area>
 
         <shape name="box" from="basebackground">
@@ -1047,6 +1084,14 @@
     </window>
 
     <window name="powersearchpopup">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,500</area>
 
         <shape name="box" from="basebackground">
@@ -1098,6 +1143,14 @@
     </window>
 
     <window name="editpowersearchpopup">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,550</area>
 
         <shape name="box" from="basebackground">
@@ -1162,17 +1215,24 @@
 
     <window name="programlist">
 
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+                <position start="-1,-720," end="-1,-1" />
+	    </section>
+	</animation>
+
         <!-- <shape name="list_background" from="baseboxbackground"> -->
         <!--     <area>20,49,1240,360</area> -->
         <!-- </shape> -->
 
         <shape name="titlebox" from="baseboxbackground">
-            <area>50,10,570,40</area>
+            <area>10,10,780,60</area>
             <cornerradius>30</cornerradius>
         </shape>
 
         <shape name="currviewbox" from="baseboxbackground">
-            <area>770,10,460,40</area>
+            <area>810,10,460,60</area>
             <cornerradius>30</cornerradius>
         </shape>
 
@@ -1194,7 +1254,7 @@
         </shape>
 
         <textarea name="curview" from="basetextarea">
-           <area>770,10,460,40</area>
+           <area>770,10,460,60</area>
            <align>right,vcenter</align>
         </textarea>
 
@@ -1276,10 +1336,25 @@
 
     <window name="progdetails">
 
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+                <position start="-1,-720," end="-1,-1" />
+	    </section>
+	</animation>
+
         <textarea name="title" from="basetextarea">
             <area>80,20,720,40</area>
             <font>baselarge</font>
+	    <align>vcenter</align>
             <value>Program Details</value>
+        </textarea>
+
+        <textarea name="help" from="basetextarea">
+            <area>80,660,390,40</area>
+            <font>basesmall</font>
+	    <align>vcenter</align>
+            <value>Press INFO for more</value>
         </textarea>
 
         <shape name="background" from="baseboxbackground">
@@ -1295,6 +1370,14 @@
     </window>
 
     <window name="searchpopup" from="MythTextInputDialog">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,10,580,165</area>
 
         <shape name="backimg" from="basebackground">
@@ -1319,6 +1402,13 @@
     </window>
 
     <window name="programfind">
+
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+                <position start="-1280,-1," end="-1,-1" />
+	    </section>
+	</animation>
 
         <shape name="details_background" from="baseboxbackground">
             <area>70,40,1120,290</area>
