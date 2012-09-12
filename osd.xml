@@ -289,7 +289,7 @@
             <font>smaller</font>
             <area>10,50,700,30</area>
             <align>left,top</align>
-            <template>%STARTTIME%-%ENDTIME% : %LENMINS%</template>
+            <template>%STARTTIME%%-|ENDTIME| : %%LENMINS%</template>
         </textarea>
         <clock name="clock">
             <area>870,10,200,30</area>
@@ -312,6 +312,7 @@
         </textarea>
         <imagetype name="coverart" depends="coverart">
             <area>40,100,120,180</area>
+            <preserveaspect>yes</preserveaspect>
         </imagetype>
         <textarea name="description">
             <font>small</font>
@@ -352,7 +353,7 @@
             <font>smaller</font>
             <area>10,50,700,30</area>
             <align>left,top</align>
-            <template>%STARTTIME%-%ENDTIME% : %LENMINS%</template>
+            <template>%STARTTIME%%-|ENDTIME| : %%LENMINS%</template>
         </textarea>
         <clock name="clock">
             <area>870,10,200,30</area>
