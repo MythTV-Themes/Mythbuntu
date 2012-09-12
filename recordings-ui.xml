@@ -8,358 +8,463 @@
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 
-        <shape name="titlebox">
-            <area>10,10,780,60</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <line color="#FFFFFF" alpha="0" width="0" />
-            <cornerradius>30</cornerradius>
-        </shape>
+        <!-- <shape name="titlebox"> -->
+        <!--     <area>370,10,360,60</area> -->
+        <!--     <type>roundbox</type> -->
+        <!--     <fill color="#000000" alpha="150" /> -->
+        <!--     <line color="#FFFFFF" alpha="0" width="0" /> -->
+        <!--     <cornerradius>30</cornerradius> -->
+        <!-- </shape> -->
 
-        <shape name="groupbox">
-            <area>15,80,474,348</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <line color="#FFFFFF" alpha="0" width="0" />
-            <cornerradius>10</cornerradius>
-        </shape>
-
-        <shape name="recordingsbox">
-            <area>494,80,771,348</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <line color="#FFFFFF" alpha="0" width="0" />
-            <cornerradius>10</cornerradius>
-        </shape>
-
-        <shape name="infobox">
-            <area>0,438,1280,282</area>
-            <type>box</type>
-            <fill color="#000000" alpha="150" />
-            <line color="#FFFFFF" alpha="0" width="0" />
-        </shape>
-
-        <clock name="clock">
-            <area>930,10,300,60</area>
-            <align>vcenter,right</align>
-	    <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
-        </clock>
-
-        <textarea name="pagetitle" from="basetextarea">
-            <area>50,10,670,60</area>
-            <font>baselarge</font>
-            <align>vcenter,left</align>
-            <value>Watch Recordings</value>
-        </textarea>
-
-        <buttonlist name="groups" from="basebuttonlist">
-            <area>15,86,474,338</area>
-            <buttonarea>32,5,434,328</buttonarea>
-            <spacing>6</spacing>
-            <wrapstyle>items</wrapstyle>
-            <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
-	    <!-- <scrollstyle>center</scrollstyle> -->
-            <statetype name="buttonitem">
-                <state name="active">
-                    <shape name="buttonbackground"> 
-                        <area>0,0,434,30</area> 
-                    </shape> 
-                    <textarea name="name" from="buttontext">
-                        <font>basesmall</font>
-                    </textarea>
-                </state>
-                <state name="inactive" from="active">
-                    <textarea name="name" from="buttontext">
-                        <font>basesmallgrey</font>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active">
-                    <textarea name="name" from="buttontext">
-                        <font>basesmall</font>
-                    </textarea>
-                </state>
-                <state name="selectedactive">
-                    <shape name="buttonbackground">                         
-                        <area>0,0,434,30</area>
-                    </shape> 
-                    <textarea name="name" from="buttontext">
-                        <font>basesmall</font>
-                    </textarea>
-                </state>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>0,0</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>0,303</position>
-            </statetype>
-        </buttonlist>
-
-        <buttonlist name="recordings" from="basebuttonlist">
-            <area>499,86,776,338</area>
-            <buttonarea>0,5,731,338</buttonarea>
-            <spacing>6</spacing>
-            <wrapstyle>items</wrapstyle>
-            <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
-	    <!-- <scrollstyle>center</scrollstyle> -->
-            <statetype name="buttonitem">
-                <state name="active">
-                    <shape name="buttonbackground">
-                        <area>30,0,706,30</area>
-                        <type>roundbox</type>
-                        <fill color="#666666" alpha="50" />
-                        <line color="#FFFFFF" alpha="0" width="0" />
-                        <cornerradius>15</cornerradius>
-                    </shape>
-                    <textarea name="titlesubtitle" from="buttontext">
-                        <area>46,1,421,31</area>
-                        <font>basesmall</font>
-                        <font state="error">basesmallbrightred</font>
-                        <font state="running">basesmallbrightgreen</font>
-                        <align>vcenter</align>
-                    </textarea>
-                    <textarea name="shortstartdate" from="titlesubtitle">
-                        <area>480,1,120,31</area>
-                        <align>right,vcenter</align>
-                    </textarea>
-                    <textarea name="starttime" from="shortstartdate">
-                        <area>611,1,105,31</area>
-                        <align>right,vcenter</align>
-                    </textarea>
-                    <statetype name="watched">
-                        <state name="yes">
-                            <imagetype name="yes">
-                                <area>0,7,15,15</area>
-                                <filename>type/watched.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="no" />
-                    </statetype>
-                    <statetype name="playlist">
-                        <state name="yes">
-                            <imagetype name="playlistyes">
-                                <position>10,0</position>
-                                <filename>shared/playlist_yes.png</filename>
-                            </imagetype>
-                        </state>
-                        <state name="no" />
-                    </statetype>
-                </state>
-                <state name="inactive" from="active">
-                    <textarea name="titlesubtitle" from="buttontext">
-                        <area>46,1,421,31</area>
-                        <font>basesmallgrey</font>
-                        <font state="error">basesmallred</font>
-                        <font state="running">basesmallgreen</font>
-                        <align>vcenter</align>
-                    </textarea>
-                    <textarea name="shortstartdate" from="titlesubtitle">
-                        <area>480,1,120,31</area>
-                        <align>right,vcenter</align>
-                    </textarea>
-                    <textarea name="starttime" from="shortstartdate">
-                        <area>611,1,105,31</area>
-                        <align>right,vcenter</align>
-                    </textarea>
-                </state>
-                <state name="selectedactive" from="active">
-                    <shape name="buttonbackground">
-                        <area>30,0,706,30</area>
-                        <type>roundbox</type>
-                        <fill color="#ffffff" alpha="50" />
-                        <cornerradius>15</cornerradius>
-                    </shape>
-                </state>
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>738,0</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>738,303</position>
-            </statetype>
-        </buttonlist>
-
-        <imagetype name="autoexpire">
-            <filename>type/autoexpire.png</filename>
-            <position>218,670</position>
-        </imagetype>
-
-        <imagetype name="commflagged">
-            <filename>type/commflagged.png</filename>
-            <position>268,670</position>
-        </imagetype>
-
-        <imagetype name="bookmark">
-            <filename>type/bookmark.png</filename>
-            <position>318,670</position>
-        </imagetype>
-
-        <imagetype name="cutlist">
-            <filename>type/cutlist.png</filename>
-            <position>368,670</position>
-        </imagetype>
-
-        <statetype name="audioprops">
-            <position>418,670</position>
-            <showempty>yes</showempty>
-            <state name="stereo">
-                <imagetype name="stereo">
-                    <filename>type/stereo.png</filename>
-                </imagetype>
-            </state>
-            <state name="surround">
-                <imagetype name="surround">
-                    <filename>type/surround.png</filename>
-                </imagetype>
-            </state>
-            <state name="dolby">
-                <imagetype name="dolby">
-                    <filename>type/dd.png</filename>
-                </imagetype>
-            </state>
-            <state name="mono">
-                <imagetype name="mono">
-                    <filename>type/mono.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-
-        <statetype name="subtitletypes">
-            <position>468,670</position>
-            <showempty>yes</showempty>
-            <state name="cc">
-                <imagetype name="cc">
-                    <filename>type/cc.png</filename>
-                </imagetype>
-            </state>
-            <state name="subtitles">
-                <imagetype name="subtitles">
-                    <filename>subs.png</filename>
-                </imagetype>
-            </state>
-            <state name="onscreensub">
-                <imagetype name="onscreensub">
-                    <filename>type/subs_onscreen.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-
-        <statetype name="videoprops">
-            <position>518,670</position>
-            <showempty>yes</showempty>
-            <state name="hd1080">
-                <imagetype name="hd1080">
-                    <filename>type/hd1080.png</filename>
-                </imagetype>
-            </state>
-            <state name="hd720">
-                <imagetype name="hd720">
-                    <filename>type/hd720.png</filename>
-                </imagetype>
-            </state>
-            <state name="hdtv">
-                <imagetype name="hdtv">
-                    <filename>type/hd.png</filename>
-                </imagetype>
-            </state>
-            <state name="widescreen">
-                <imagetype name="widescreen">
-                    <filename>type/wide.png</filename>
-                </imagetype>
-            </state>
-        </statetype>
-
-        <imagetype name="processing">
-            <filename>type/processing.png</filename>
-            <position>568,670</position>
-        </imagetype>
-
-        <textarea name="filesize_str" from="basetextarea">
-            <area>618,670,169,30</area>
-            <align>vcenter</align>
-            <font>basesmallgrey</font>
-        </textarea>
-
-        <!-- <textarea name="diskspacepercentused" from="basetextarea"> -->
-        <!--     <area>797,670,100,30</area> -->
-        <!--     <align>right,vcenter</align> -->
-        <!--     <font>basesmallgrey</font> -->
-        <!--     <template>%diskspacepercentused|%% full</template> -->
+        <!-- <textarea name="pagetitle" from="basetextarea"> -->
+        <!--     <area>410,10,300,60</area> -->
+        <!--     <font>baselarge</font> -->
+        <!--     <align>vcenter,left</align> -->
+        <!--     <value>Watch Recordings</value> -->
         <!-- </textarea> -->
 
-        <imagetype name="coverart">
-            <area>25,453,168,252</area>
-            <preserveaspect>no</preserveaspect>
-        </imagetype>
+	<group name="groupgroup" depends="!coverart">
 
-        <textarea name="freereport" from="basetextarea" depends="!coverart">
-	    <area>25,538,168,252</area>
-            <align>hcenter,top</align>
-            <font>basesmallgrey</font>
-	    <multiline>yes</multiline>
-        </textarea>
+	    <animation trigger="AboutToShow">
+		<section>
+		    <alpha start="0" end="255" easingcurve="OutQuart"/>
+                    <position start="-1280,-1," end="-1,-1" />
+		</section>
+	    </animation>
 
-        <textarea name="title" from="basetextarea">
-            <area>218,448,504,40</area>
-            <font>baselarge</font>
-            <align>vcenter</align>
-        </textarea>
+            <shape name="groupbox">
+		<area>15,15,320,413</area>
+		<type>roundbox</type>
+		<fill color="#000000" alpha="150" />
+		<line color="#FFFFFF" alpha="0" width="0" />
+		<cornerradius>10</cornerradius>
+            </shape>
 
-        <textarea name="category" from="basetextarea">
-            <area>737,443,160,50</area>
-            <font>baseextrasmall</font>
-            <align>vcenter,right</align>
-	    <multiline>yes</multiline>
-        </textarea>
+            <buttonlist name="groups" from="basebuttonlist">
+		<area>15,20,300,408</area>
+		<buttonarea>32,5,260,398</buttonarea>
+		<spacing>6</spacing>
+		<wrapstyle>items</wrapstyle>
+		<triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
+		<!-- <scrollstyle>center</scrollstyle> -->
+		<statetype name="buttonitem">
+		    <!-- Active = the focused pane. Selected = the
+			 highlighted entry. -->
+                    <state name="active">
+			<area>0,0,0,0</area>
+			<shape name="buttonbackground"> 
+                            <area>0,0,280,30</area> 
+                            <type>roundbox</type>
+                            <fill color="#666666" alpha="50" />
+                            <line color="#FFFFFF" alpha="0" width="0" />
+                            <cornerradius>15</cornerradius>
+			</shape> 
+			<textarea name="name" from="buttontext">
+                            <font>basesmallgrey</font>
+			    <area>0,0,0,31</area>
+			</textarea>
+                    </state>
+                    <state name="inactive" from="active">
+                    </state>
+                    <state name="selectedactive" from="active">
+			<shape name="buttonbackground">                         
+                            <area>0,0,280,30</area>
+                            <type>roundbox</type>
+                            <fill color="#ffffff" alpha="50" />
+                            <cornerradius>15</cornerradius>
+			</shape> 
+			<textarea name="name" from="buttontext">
+                            <font>basesmall</font>
+			</textarea>
+                    </state>
+                    <state name="selectedinactive" from="active">
+			<shape name="buttonbackground">                         
+                            <area>0,0,280,30</area>
+                            <type>roundbox</type>
+                            <fill color="#ffffff" alpha="50" />
+                            <cornerradius>15</cornerradius>
+			</shape> 
+                    </state>
+		</statetype>
+		<statetype name="upscrollarrow">
+                    <position>0,0</position>
+		</statetype>
+		<statetype name="downscrollarrow">
+                    <position>0,370</position>
+		</statetype>
+            </buttonlist>
 
-        <textarea name="channel" from="basetextarea">
-            <area>218,498,234,30</area>
-        </textarea>
+	</group>
 
-        <textarea name="timedate" from="basetextarea">
-            <area>462,498,435,30</area>
-	    <align>right</align>
-        </textarea>
+	<group name="coverartgroup">
+	    <area>46,15,289,413</area>
+            <minsize vanish="yes">100%,100%</minsize>
 
-        <textarea name="description" from="basetextarea">
-            <area>218,538,679,122</area>
-            <align>justify</align>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-            <!-- <template>%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template> -->
-            <!-- <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template> -->
-            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-        </textarea>
+	    <animation trigger="AboutToShow">
+		<section>
+		    <alpha start="0" end="255" easingcurve="OutQuart"/>
+                    <position start="-1280,-1," end="-1,-1" />
+		</section>
+	    </animation>
 
-        <!-- <textarea name="freereport" from="basetextarea"> -->
-        <!--     <area>618,670,283,30</area> -->
-        <!--     <align>vcenter,right</align> -->
-        <!--     <font>basesmallgrey</font> -->
-        <!--     <template>%1</template> -->
-        <!-- </textarea> -->
+            <shape name="groupbox">
+		<area>0,0,100%,100%</area>
+		<type>roundbox</type>
+		<fill color="#000000" alpha="150" />
+		<line color="#FFFFFF" alpha="0" width="0" />
+		<cornerradius>10</cornerradius>
+                <minsize vanish="yes">100%,100%</minsize>
+            </shape>
 
-        <imagetype name="banner">
-            <area>926,648,329,57</area>
-            <preserveaspect>false</preserveaspect>
-        </imagetype>
+	    <imagetype name="coverart">
+		<area>10,5,269,403</area>
+		<preserveaspect>yes</preserveaspect>
+                <minsize vanish="yes">100%,100%</minsize>
+	    </imagetype>
 
-        <imagetype name="preview">
-            <area>926,453,329,185</area>
-            <preserveaspect>true</preserveaspect>
-        </imagetype>
+	</group>
 
-        <textarea name="norecordings" from="description">
-            <font>basemedium</font>
-            <value>No Recordings available, or screen loading...</value>
-            <multiline>yes</multiline>
-            <align>top</align>
-        </textarea>
+	<group name="recordingsgroup">
+
+	    <animation trigger="AboutToShow">
+		<section>
+		    <alpha start="0" end="255" easingcurve="OutQuart"/>
+                    <position start="1280,-1," end="-1,-1" />
+		</section>
+	    </animation>
+
+            <shape name="recordingsbox">
+		<area>340,15,925,413</area>
+		<type>roundbox</type>
+		<fill color="#000000" alpha="150" />
+		<line color="#FFFFFF" alpha="0" width="0" />
+		<cornerradius>10</cornerradius>
+            </shape>
+
+            <buttonlist name="recordings" from="basebuttonlist">
+		<area>15,20,1250,408</area>
+		<buttonarea>0,5,756,398</buttonarea>
+		<spacing>6</spacing>
+		<wrapstyle>items</wrapstyle>
+		<triggerevent context="Global" action="MENU">RIGHT</triggerevent>
+		<!-- <scrollstyle>center</scrollstyle> -->
+		<statetype name="buttonitem">
+		    <!-- Active = the focused pane. Selected = the
+			 highlighted entry. -->
+                    <state name="active">
+			<shape name="buttonbackground">
+                            <area>360,0,859,30</area>
+                            <type>roundbox</type>
+                            <fill color="#666666" alpha="50" />
+                            <line color="#FFFFFF" alpha="0" width="0" />
+                            <cornerradius>15</cornerradius>
+			</shape>
+			<textarea name="titlesubtitle" from="buttontext">
+                            <area>376,1,574,31</area>
+                            <font>basesmallgrey</font>
+                            <font state="error">basesmallred</font>
+                            <font state="running">basesmallgreen</font>
+                            <align>vcenter</align>
+			</textarea>
+			<textarea name="shortstartdate" from="titlesubtitle">
+                            <area>963,1,120,31</area>
+                            <align>right,vcenter</align>
+			</textarea>
+			<textarea name="starttime" from="shortstartdate">
+                            <area>1094,1,105,31</area>
+                            <align>right,vcenter</align>
+			</textarea>
+			<statetype name="watched">
+                            <state name="yes">
+				<imagetype name="yes">
+                                    <area>330,7,15,15</area>
+                                    <filename>type/watched.png</filename>
+				</imagetype>
+                            </state>
+                            <state name="no" />
+			</statetype>
+			<statetype name="playlist">
+                            <state name="yes">
+				<imagetype name="playlistyes">
+                                    <position>340,0</position>
+                                    <filename>shared/playlist_yes.png</filename>
+				</imagetype>
+                            </state>
+                            <state name="no" />
+			</statetype>
+                    </state>
+                    <state name="inactive" from="active">
+                    </state>
+                    <state name="selectedactive" from="active">
+			<shape name="buttonbackground">
+                            <area>360,0,859,30</area>
+                            <type>roundbox</type>
+                            <fill color="#ffffff" alpha="50" />
+                            <cornerradius>15</cornerradius>
+			</shape>
+			<textarea name="titlesubtitle" from="buttontext">
+                            <area>376,1,574,31</area>
+                            <font>basesmall</font>
+                            <font state="error">basesmallbrightred</font>
+                            <font state="running">basesmallbrightgreen</font>
+                            <align>vcenter</align>
+			</textarea>
+			<textarea name="shortstartdate" from="titlesubtitle">
+                            <area>963,1,120,31</area>
+                            <align>right,vcenter</align>
+			</textarea>
+			<textarea name="starttime" from="shortstartdate">
+                            <area>1094,1,105,31</area>
+                            <align>right,vcenter</align>
+			</textarea>
+                    </state>
+                    <state name="selectedinactive" from="active">
+			<shape name="buttonbackground">
+                            <area>360,0,859,30</area>
+                            <type>roundbox</type>
+                            <fill color="#ffffff" alpha="50" />
+                            <cornerradius>15</cornerradius>
+			</shape>
+		    </state>
+		</statetype>
+		<statetype name="upscrollarrow">
+                    <position>1220,0</position>
+		</statetype>
+		<statetype name="downscrollarrow">
+                    <position>1220,370</position>
+		</statetype>
+            </buttonlist>
+
+	</group>
+
+        <!-- <imagetype name="banner"> -->
+        <!--     <area>25,453,330,57</area> -->
+        <!--     <preserveaspect>false</preserveaspect> -->
+        <!-- </imagetype> -->
+
+	<group name="infogroup">
+
+	    <animation trigger="AboutToShow">
+		<section>
+		    <alpha start="0" end="255" easingcurve="OutQuart"/>
+                    <position start="-1,720," end="-1,-1" />
+		</section>
+	    </animation>
+
+            <shape name="infobox">
+		<area>0,438,1280,282</area>
+		<type>box</type>
+		<fill color="#000000" alpha="150" />
+		<line color="#FFFFFF" alpha="0" width="0" />
+            </shape>
+
+	    <group name="previewgroup">
+
+		<!-- Originally 330x186, but rounding meant that one pixel of -->
+		<!-- the grey backing shape would stick out in some direction -->
+		<!-- depending on aspect ratio of preview -->
+		<area>25,454,328,185</area>
+		<minsize vanish="yes">100%,100%</minsize>
+
+		<shape name="previewshape">
+                    <area>0,0,100%,100%</area>
+                    <minsize vanish="yes">100%,100%</minsize>
+                    <type>box</type>
+                    <fill color="#555555" alpha="255" />
+		</shape>
+
+		<imagetype name="preview">
+		    <area>0,0,100%,100%</area>
+		    <preserveaspect>true</preserveaspect>
+                    <minsize vanish="yes">100%,100%</minsize>
+		</imagetype>
+
+	    </group>
+
+	    <group name="statusbargroup">
+
+		<imagetype name="autoexpire">
+		    <filename>type/autoexpire.png</filename>
+		    <position>25,670</position>
+		</imagetype>
+
+		<imagetype name="commflagged">
+		    <filename>type/commflagged.png</filename>
+		    <position>65,670</position>
+		</imagetype>
+
+		<imagetype name="bookmark">
+		    <filename>type/bookmark.png</filename>
+		    <position>105,670</position>
+		</imagetype>
+
+		<imagetype name="cutlist">
+		    <filename>type/cutlist.png</filename>
+		    <position>145,670</position>
+		</imagetype>
+
+		<statetype name="audioprops">
+		    <position>185,670</position>
+		    <showempty>yes</showempty>
+		    <state name="stereo">
+			<imagetype name="stereo">
+			    <filename>type/stereo.png</filename>
+			</imagetype>
+		    </state>
+		    <state name="surround">
+			<imagetype name="surround">
+			    <filename>type/surround.png</filename>
+			</imagetype>
+		    </state>
+		    <state name="dolby">
+			<imagetype name="dolby">
+			    <filename>type/dd.png</filename>
+			</imagetype>
+		    </state>
+		    <state name="mono">
+			<imagetype name="mono">
+			    <filename>type/mono.png</filename>
+			</imagetype>
+		    </state>
+		</statetype>
+
+		<statetype name="subtitletypes">
+		    <position>225,670</position>
+		    <showempty>yes</showempty>
+		    <state name="cc">
+			<imagetype name="cc">
+			    <filename>type/cc.png</filename>
+			</imagetype>
+		    </state>
+		    <state name="subtitles">
+			<imagetype name="subtitles">
+			    <filename>type/subs.png</filename>
+			</imagetype>
+		    </state>
+		    <state name="onscreensub">
+			<imagetype name="onscreensub">
+			    <filename>type/subs_onscreen.png</filename>
+			</imagetype>
+		    </state>
+		</statetype>
+
+		<statetype name="videoprops">
+		    <position>265,670</position>
+		    <showempty>yes</showempty>
+		    <state name="hd1080">
+			<imagetype name="hd1080">
+			    <filename>type/hd1080.png</filename>
+			</imagetype>
+		    </state>
+		    <state name="hd720">
+			<imagetype name="hd720">
+			    <filename>type/hd720.png</filename>
+			</imagetype>
+		    </state>
+		    <state name="hdtv">
+			<imagetype name="hdtv">
+			    <filename>type/hd.png</filename>
+			</imagetype>
+		    </state>
+		    <state name="widescreen">
+			<imagetype name="widescreen">
+			    <filename>type/wide.png</filename>
+			</imagetype>
+		    </state>
+		</statetype>
+
+		<imagetype name="processing">
+		    <filename>type/processing.png</filename>
+		    <position>315,670</position>
+		</imagetype>
+
+		<textarea name="filesize_str" from="basetextarea">
+		    <area>370,670,169,30</area>
+		    <align>vcenter,left</align>
+		    <font>basesmallgrey</font>
+		</textarea>
+
+		<textarea name="freereport" from="basetextarea">
+		    <area>549,670,396,30</area>
+		    <align>vcenter,right</align>
+		    <font>basesmallgrey</font>
+		    <template>%1</template>
+		</textarea>
+
+		<clock name="clock">
+		    <area>955,670,300,30</area>
+		    <align>vcenter,right</align>
+		    <font>basesmallgrey</font>
+		    <format>%DATE%, %TIME%</format>
+		</clock>
+
+	    </group>
+
+            <!-- <textarea name="diskspacepercentused" from="basetextarea"> -->
+            <!--     <area>797,670,100,30</area> -->
+            <!--     <align>right,vcenter</align> -->
+            <!--     <font>basesmallgrey</font> -->
+            <!--     <template>%diskspacepercentused|%% full</template> -->
+            <!-- </textarea> -->
+
+	    <group name="titledescgroup">
+
+		<textarea name="title" from="basetextarea">
+		    <area>370,448,710,40</area>
+		    <font>baselarge</font>
+		    <align>vcenter</align>
+		</textarea>
+
+		<textarea name="category" from="basetextarea">
+		    <area>1095,443,160,50</area>
+		    <font>baseextrasmall</font>
+		    <align>vcenter,right</align>
+		    <multiline>yes</multiline>
+		</textarea>
+
+		<textarea name="longchannel" from="basetextarea">
+		    <area>370,498,431,30</area>
+		</textarea>
+
+		<textarea name="timedate" from="basetextarea">
+		    <area>816,498,439,30</area>
+		    <align>right</align>
+		</textarea>
+
+		<textarea name="description" from="basetextarea">
+		    <area>370,538,885,122</area>
+		    <align>justify</align>
+		    <multiline>yes</multiline>
+		    <cutdown>yes</cutdown>
+		    <!-- <template>%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template> -->
+		    <!-- <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template> -->
+		    <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
+		</textarea>
+
+		<textarea name="norecordings" from="description">
+		    <font>basemedium</font>
+		    <value>No Recordings available, or screen loading...</value>
+		    <multiline>yes</multiline>
+		    <align>top</align>
+		</textarea>
+
+	    </group>
+
+	</group>
+
     </window>
 
     <window name="groupselector">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,500</area>
+
         <shape name="backimg" from="basebackground">
             <area>0,0,500,500</area>
         </shape>
@@ -378,6 +483,14 @@
     </window>
 
     <window name="changeview">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,500</area>
         <shape name="backimg" from="basebackground">
             <area>0,0,500,500</area>
@@ -460,6 +573,14 @@
     </window>
 
     <window name="passwordchanger">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,500</area>
 
         <shape name="backimg" from="basebackground">
@@ -498,6 +619,14 @@
     </window>
 
     <window name="editmetadata">
+
+	<animation trigger="AboutToShow">
+	    <section duration="125">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,500,500</area>
 
         <shape name="backimg" from="basebackground">
@@ -572,6 +701,14 @@
     </window>
 
     <window name="iconhelp">
+
+	<animation trigger="AboutToShow">
+	    <section duration="250">
+		<alpha start="0" end="255" easingcurve="OutQuart"/>
+		<zoom start="0" end="100" />
+	    </section>
+	</animation>
+
         <area>-1,-1,700,500</area>
 
         <shape name="backimg" from="basebackground">
@@ -678,7 +815,7 @@
                                 <filename>type/hd1080.png</filename>
                             </imagetype>
                         </state>
-                         <state name="avchd">
+                        <state name="avchd">
                             <imagetype name="statusimage">
                                 <filename>type/avchd.png</filename>
                             </imagetype>
