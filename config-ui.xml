@@ -75,8 +75,8 @@
         </button>
 
         <textarea name="nochannumlabel" from="basetextarea">
-            <area>70,541,500,60</area>
-            <value>Hide Channels without channel number.</value>
+            <area>70,535,500,30</area>
+            <value>Hide Channels without channel number</value>
         </textarea>
 
         <checkbox name="nochannum" from="basecheckbox">
