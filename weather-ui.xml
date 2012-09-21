@@ -573,23 +573,23 @@
         </textarea>
 
         <imagetype name="18icon-0">
-            <area>181,190,167,125</area>
+            <area>181,207,167,125</area>
             <filename>weather/unknown.png</filename>
         </imagetype>
         <imagetype name="18icon-1" from="18icon-0">
-            <position>556,190</position>
+            <position>556,207</position>
         </imagetype>
         <imagetype name="18icon-2" from="18icon-0">
-            <position>931,190</position>
+            <position>931,207</position>
         </imagetype>
         <imagetype name="18icon-3" from="18icon-0">
-            <position>181,430</position>
+            <position>181,447</position>
         </imagetype>
         <imagetype name="18icon-4" from="18icon-0">
-            <position>556,430</position>
+            <position>556,447</position>
         </imagetype>
         <imagetype name="18icon-5" from="18icon-0">
-            <position>931,430</position>
+            <position>931,447</position>
         </imagetype>
 
         <textarea name="tmplbl0" from="basetextarea">
@@ -746,13 +746,13 @@
         </buttonlist>
 
         <textarea name="helptxt" from="basetextarea">
-            <area>50,420,1180,220</area>
+            <area>50,350,1180,220</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <button name="finishbutton" from="basebutton">
-            <position>900,660</position>
+            <position>560,600</position>
         </button>
 
     </window>
@@ -809,45 +809,45 @@
     <window name="setup-location">
 
         <textarea name="header" from="basetextarea">
-            <area>0,15,800,40</area>
+            <area>0,15,1280,40</area>
             <value>Location Search</value>
             <font>baselarge</font>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="helptxt" from="basetextarea">
-            <area>0,50,800,60</area>
+            <area>0,50,1280,60</area>
             <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="editlbl" from="basetextarea">
-            <area>25,115,170,40</area>
+            <area>265,115,170,40</area>
             <value>Enter Location:</value>
-            <align>right,top</align>
+            <align>right</align>
         </textarea>
 
         <textedit name="loc-edit" from="basetextedit">
-            <position>215,110</position>
+            <position>455,115</position>
         </textedit>
 
         <button name="searchbtn" from="basebutton">
-            <position>610,120</position>
+            <position>850,110</position>
         </button>
 
         <buttonlist name="results" from="basebuttonlist">
-            <area>25,190,700,380</area>
+            <area>25,190,1230,380</area>
         </buttonlist>
 
-        <textarea name="numresults" from="basetextarea">
-            <area>200,550,400,40</area>
-            <align>allcenter</align>
+        <textarea name="source" from="basetextarea">
+            <area>200,550,880,40</area>
+            <align>center</align>
         </textarea>
 
-        <textarea name="source" from="basetextarea">
-            <area>600,550,200,40</area>
-            <align>allcenter</align>
+        <textarea name="numresults" from="basetextarea">
+            <area>200,600,880,40</area>
+            <align>center</align>
         </textarea>
 
     </window>

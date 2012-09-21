@@ -2,12 +2,12 @@
 
     <window name="programguide">
 
-	<animation trigger="AboutToShow">
-	    <section duration="250">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-                <position start="-1,-720," end="-1,-1" />
-	    </section>
-	</animation>
+	<!-- <animation trigger="AboutToShow"> -->
+	<!--     <section duration="250"> -->
+	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <position start="-1,-720," end="-1,-1" /> -->
+	<!--     </section> -->
+	<!-- </animation> -->
 
         <shape name="shape2" from="baseboxbackground">
             <area>20,125,1240,100</area>
@@ -50,6 +50,12 @@
 
         <guidegrid name="guidegrid">
             <area>220,295,1032,392</area>
+	    <!-- <animation trigger="AboutToShow"> -->
+	    <!-- 	<section duration="250"> -->
+	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <position start="1280,-1," end="-1,-1" /> -->
+	    <!-- 	</section> -->
+	    <!-- </animation> -->
             <layout>horizontal</layout>
             <channels>7</channels>
             <timeslots>4</timeslots>
@@ -224,12 +230,12 @@
 
     <window name="programguide-video">
 
-	<animation trigger="AboutToShow">
-	    <section duration="250">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-                <position start="-1,-720," end="-1,-1" />
-	    </section>
-	</animation>
+	<!-- <animation trigger="AboutToShow"> -->
+	<!--     <section duration="250"> -->
+	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <position start="-1,-720," end="-1,-1" /> -->
+	<!--     </section> -->
+	<!-- </animation> -->
 
         <imagetype name="video">
             <area>940,40,300,170</area>
@@ -290,6 +296,12 @@
 
         <guidegrid name="guidegrid">
             <area>220,295,1032,392</area>
+	    <!-- <animation trigger="AboutToShow"> -->
+	    <!-- 	<section duration="250"> -->
+	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <position start="1280,-1," end="-1,-1" /> -->
+	    <!-- 	</section> -->
+	    <!-- </animation> -->
             <layout>horizontal</layout>
             <channels>7</channels>
             <timeslots>4</timeslots>
@@ -555,12 +567,12 @@
 
     <window name="viewscheduled">
 
-	<animation trigger="AboutToShow">
-	    <section duration="250">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-                <position start="-1,-720," end="-1,-1" />
-	    </section>
-	</animation>
+	<!-- <animation trigger="AboutToShow"> -->
+	<!--     <section duration="250"> -->
+	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <position start="-1,-720," end="-1,-1" /> -->
+	<!--     </section> -->
+	<!-- </animation> -->
 
         <textarea name="pagetitle">
             <area>50,10,570,40</area>
@@ -618,35 +630,9 @@
             </statetype>
         </buttonlist>
 
-        <textarea name="title" from="basetextarea">
-            <area>20,470,1070,40</area>
-            <font>baselarge</font>
-	    <align>vcenter</align>
-        </textarea>
-
-        <textarea name="category" from="basetextarea">
-            <area>1100,465,160,50</area>
-            <font>baseextrasmall</font>
-            <align>vcenter,right</align>
-	    <multiline>yes</multiline>
-        </textarea>
-
-        <textarea name="channel" from="basetextarea">
-            <area>20,510,170,30</area>
-        </textarea>
-
-        <textarea name="timedate" from="basetextarea">
-            <area>200,510,500,30</area>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>20,540,1240,130</area>
-            <multiline>yes</multiline>
-            <cutdown>yes</cutdown>
-            <!-- <template>%|"SUBTITLE|"%\n%YEARSTARS%%DESCRIPTION%</template> -->
-            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-	    <align>justify</align>
-        </textarea>
+	<group name="details" from="detailsgroup">
+	    <position>-1,390</position>
+	</group>
 
         <textarea name="norecordings_info">
             <area>0,210,1280,70</area>
@@ -659,7 +645,7 @@
         </textarea>
 
         <textarea name="helptext" from="basetextarea">
-            <area>0,680,1280,30</area>
+            <area>0,670,1280,30</area>
             <value>(1) All (2) Important</value>
             <align>center</align>
         </textarea>
@@ -825,7 +811,6 @@
         <textarea name="title" from="basetextarea">
             <area>230,440,610,40</area>
             <font>basemedium</font>
-	    <align>vcenter</align>
         </textarea>
 
         <textarea name="category" from="basetextarea">
@@ -876,7 +861,7 @@
         </textarea>
 
         <textarea name="keyinstr">
-            <area>0,660,1280,30</area>
+            <area>0,670,1280,30</area>
             <value>(1) Title (2) Priority (4) Type</value>
             <align>allcenter</align>
         </textarea>
@@ -922,7 +907,7 @@
 
         <textarea name="clauseslabel" from="ruleslabel">
             <area>340,300,600,40</area>
-            <value>Add example clauses, or create your own.</value>
+            <value>Select a clause from the list.</value>
             <align>allcenter</align>
         </textarea>
 
@@ -932,7 +917,7 @@
 
         <button name="add" from="basebutton">
             <position>830,350</position>
-            <value>Add Example</value>
+            <value>Add Clause</value>
         </button>
 
         <textedit name="description">
@@ -1006,23 +991,23 @@
         </textarea>
 
         <buttonlist name="phrase_list" from="basebuttonlist">
-            <area>20,60,460,270</area>
+            <area>10,60,480,270</area>
             <align>left</align>
             <showarrow>no</showarrow>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext">
-                        <area>5,0,450,30</area>
+                        <area>10,0,460,30</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                     <textarea name="buttontext">
-                        <area>5,0,450,30</area>
+                        <area>10,0,460,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <textarea name="buttontext">
-                        <area>5,0,450,30</area>
+                        <area>10,0,460,30</area>
                     </textarea>
                 </state>
             </statetype>
@@ -1033,16 +1018,16 @@
         </textedit>
 
         <button name="ok_button" from="basebutton">
-            <position>12,440</position>
+            <position>15,440</position>
 	    <value>Search</value>
         </button>
 
         <button name="delete_button" from="basebutton">
-            <position>173,440</position>
+            <position>175,440</position>
         </button>
 
         <button name="record_button" from="basebutton">
-            <position>333,440</position>
+            <position>335,440</position>
         </button>
 
     </window>
@@ -1106,38 +1091,38 @@
         </textarea>
 
         <buttonlist name="phrase_list" from="basebuttonlist">
-            <area>20,60,450,350</area>
+            <area>10,60,480,350</area>
             <align>left</align>
             <showarrow>no</showarrow>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="buttontext">
-                        <area>5,0,450,30</area>
+                        <area>10,0,460,30</area>
                     </textarea>
                 </state>
                 <state name="selectedinactive">
                     <textarea name="buttontext">
-                        <area>5,0,450,30</area>
+                        <area>10,0,460,30</area>
                     </textarea>
                 </state>
                 <state name="selectedactive">
                     <textarea name="buttontext">
-                        <area>5,0,450,30</area>
+                        <area>10,0,460,30</area>
                     </textarea>
                 </state>
             </statetype>
         </buttonlist>
 
         <button name="edit_button" from="basebutton">
-            <position>12,440</position>
+            <position>15,440</position>
         </button>
 
         <button name="delete_button" from="basebutton">
-            <position>173,440</position>
+            <position>175,440</position>
         </button>
 
         <button name="record_button" from="basebutton">
-            <position>333,440</position>
+            <position>335,440</position>
         </button>
 
     </window>
@@ -1215,16 +1200,12 @@
 
     <window name="programlist">
 
-	<animation trigger="AboutToShow">
-	    <section duration="250">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-                <position start="-1,-720," end="-1,-1" />
-	    </section>
-	</animation>
-
-        <!-- <shape name="list_background" from="baseboxbackground"> -->
-        <!--     <area>20,49,1240,360</area> -->
-        <!-- </shape> -->
+	<!-- <animation trigger="AboutToShow"> -->
+	<!--     <section duration="250"> -->
+	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <position start="-1,-720," end="-1,-1" /> -->
+	<!--     </section> -->
+	<!-- </animation> -->
 
         <shape name="titlebox" from="baseboxbackground">
             <area>10,10,780,60</area>
@@ -1288,40 +1269,16 @@
             </statetype>
         </buttonlist>
 
-        <shape name="description_background" from="baseboxbackground">
-            <area>250,450,780,260</area>
-        </shape>
+	<group name="details" from="detailsgroup">
+	    <position>-1,390</position>
+	</group>
 
-        <textarea name="title" from="basetextarea">
-            <area>265,455,580,50</area>
-            <font>baselarge</font>
-	    <align>vcenter</align>
-        </textarea>
-        <textarea name="category" from="basetextarea">
-            <area>855,450,160,50</area>
-            <font>baseextrasmall</font>
-            <align>vcenter,right</align>
-	    <multiline>yes</multiline>
-        </textarea>
-        <textarea name="channel" from="basetextarea">
-            <area>265,500,170,30</area>
-        </textarea>
-        <textarea name="timedate" from="basetextarea">
-            <area>445,500,570,30</area>
-            <align>right</align>
-        </textarea>
-        <textarea name="description" from="basetextarea">
-            <area>265,540,750,140</area>
-            <align>justify</align>
-            <multiline>yes</multiline>
-            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-        </textarea>
         <textarea name="programid" from="basetextarea">
-            <area>265,670,440,30</area>
+            <area>149,670,440,30</area>
             <font>basesmallgrey</font>
         </textarea>
         <textarea name="rectypestatus" from="basetextarea">
-            <area>595,670,420,30</area>
+            <area>711,670,420,30</area>
             <align>right</align>
             <font>basesmallyellow</font>
         </textarea>
@@ -1336,26 +1293,72 @@
 
     <window name="progdetails">
 
-	<animation trigger="AboutToShow">
-	    <section duration="250">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-                <position start="-1,-720," end="-1,-1" />
-	    </section>
-	</animation>
+	<!-- <animation trigger="AboutToShow"> -->
+	<!--     <section duration="250"> -->
+	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <position start="-1,-720," end="-1,-1" /> -->
+	<!--     </section> -->
+	<!-- </animation> -->
 
         <textarea name="title" from="basetextarea">
             <area>80,20,720,40</area>
             <font>baselarge</font>
-	    <align>vcenter</align>
-            <value>Program Details</value>
+            <value>Program Details:</value>
         </textarea>
 
-        <textarea name="help" from="basetextarea">
-            <area>80,660,390,40</area>
-            <font>basesmall</font>
-	    <align>vcenter</align>
-            <value>Press INFO for more</value>
-        </textarea>
+	<group name="infohelpgroup">
+	    <area>0,670,640,0</area>
+	    <minsize>50,100%</minsize>
+
+	    <group name="infobutton" from="basekeybutton">
+
+		<area>10%,0,100,40</area>
+
+		<group name="keybutton">
+                    <textarea name="text">
+			<value>INFO</value>
+                    </textarea>
+		</group>
+
+	    </group>
+
+            <textarea name="infohelptext" from="basetextarea">
+		<area>24%,0,200,40</area>
+		<value>for more</value>
+		<minsize>50,100%</minsize>
+            </textarea>
+
+	    <group name="zoominbutton" from="infobutton">
+
+		<area>30%,0,100%,100%</area>
+
+		<group name="keybutton">
+                    <textarea name="text">
+			<value>ZOOMIN</value>
+                    </textarea>
+		</group>
+
+	    </group>
+
+	    <group name="zoomoutbutton" from="infobutton">
+
+		<area>65%,0,100%,100%</area>
+
+		<group name="keybutton">
+                    <textarea name="text">
+			<value>ZOOMOUT</value>
+                    </textarea>
+		</group>
+
+	    </group>
+
+            <textarea name="menuhelptext" from="basetextarea">
+		<area>93%,0,200,40</area>
+		<value>to adjust text size</value>
+		<minsize>50,100%</minsize>
+            </textarea>
+
+	</group>
 
         <shape name="background" from="baseboxbackground">
             <area>70,60,1140,600</area>
@@ -1403,39 +1406,44 @@
 
     <window name="programfind">
 
-	<animation trigger="AboutToShow">
-	    <section duration="250">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-                <position start="-1280,-1," end="-1,-1" />
-	    </section>
-	</animation>
+	<!-- <animation trigger="AboutToShow"> -->
+	<!--     <section duration="250"> -->
+	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <position start="-1280,-1," end="-1,-1" /> -->
+	<!--     </section> -->
+	<!-- </animation> -->
 
-        <shape name="details_background" from="baseboxbackground">
-            <area>70,40,1120,290</area>
-        </shape>
+        <textarea name="screentitle" from="basetextarea">
+            <area>50,10,738,60</area>
+            <align>left,vcenter</align>
+            <font>baseextralarge</font>
+	    <value>Program Finder</value>
+        </textarea>
+
+        <clock name="time">
+            <area>930,10,300,60</area>
+            <align>vcenter,right</align>
+            <font>basesmallgrey</font>
+            <format>%DATE%, %TIME%</format>
+        </clock>
+
+        <textarea name="searchlabel" from="basetextarea">
+            <area>102,80,190,30</area>
+            <font>basesmallyellow</font>
+            <align>right</align>
+            <value>Search For:</value>
+        </textarea>
+        <textarea name="search" from="basetextarea">
+            <area>370,80,300,30</area>
+	    <template>%1</template>
+        </textarea>
 
         <shape name="alphabet_background" from="baseboxbackground">
-            <area>70,386,80,300</area>
-        </shape>
-
-        <shape name="shows_background" from="baseboxbackground">
-            <area>165,386,620,300</area>
-        </shape>
-
-        <shape name="times_background" from="baseboxbackground">
-            <area>800,386,390,300</area>
-        </shape>
-
-        <shape name="select_background">
-            <area>70,521,1120,30</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#FFFFFF" alpha="255" width="2" />
-            <cornerradius>12</cornerradius>
+            <area>70,120,80,300</area>
         </shape>
 
         <buttonlist name="alphabet" from="basebuttonlist2">
-            <area>70,400,80,288</area>
+            <area>70,125,80,288</area>
             <scrollstyle>center</scrollstyle>
             <spacing>6</spacing>
             <buttonarea>0,0,80,288</buttonarea>
@@ -1482,8 +1490,12 @@
             </statetype>
         </buttonlist>
 
+        <shape name="shows_background" from="baseboxbackground">
+            <area>165,120,620,300</area>
+        </shape>
+
         <buttonlist name="shows" from="alphabet">
-            <area>175,400,590,295</area>
+            <area>175,125,590,295</area>
             <statetype name="buttonitem">
                 <area>0,0,580,25</area>
                 <state name="active">
@@ -1504,8 +1516,12 @@
             </statetype>
         </buttonlist>
 
+        <shape name="times_background" from="baseboxbackground">
+            <area>800,120,390,300</area>
+        </shape>
+
         <buttonlist name="times" from="alphabet">
-            <area>810,400,350,295</area>
+            <area>810,125,350,295</area>
             <statetype name="buttonitem">
                 <area>0,0,30,25</area>
                 <state name="active">
@@ -1521,55 +1537,34 @@
             </statetype>
         </buttonlist>
 
-        <textarea name="title" from="basetextarea">
-            <area>90,50,900,45</area>
-            <font>baselarge</font>
-	    <align>vcenter</align>
-        </textarea>
-        <textarea name="category" from="basetextarea">
-            <area>1000,45,160,50</area>
-            <font>baseextrasmall</font>
-            <align>vcenter,right</align>
-	    <multiline>yes</multiline>
-        </textarea>
-        <textarea name="description" from="basetextarea">
-            <area>90,110,1070,185</area>
-            <multiline>yes</multiline>
-            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-	    <align>justify</align>
-        </textarea>
+        <shape name="select_background">
+            <area>70,242,1120,35</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="0" />
+            <line color="#FFFFFF" alpha="255" width="2" />
+            <cornerradius>12</cornerradius>
+        </shape>
 
-        <textarea name="channel" from="basetextarea">
-            <area>90,290,280,35</area>
-            <font>basesmallpurple</font>
-        </textarea>
-        <textarea name="timedate" from="basetextarea">
-            <area>400,290,540,35</area>
-            <font>basesmallpurple</font>
+	<group name="details" from="detailsgroup">
+	    <position>-1,390</position>
+	</group>
+
+        <textarea name="programid" from="basetextarea">
+            <area>149,670,440,30</area>
+            <font>basesmallgrey</font>
         </textarea>
         <textarea name="rectypestatus" from="basetextarea">
-            <area>740,290,420,35</area>
+            <area>711,670,420,30</area>
             <font>basesmallyellow</font>
 	    <align>right</align>
         </textarea>
 
         <textarea name="help1text" from="basetextarea">
-            <area>90,80,1000,40</area>
+            <area>149,480,1000,40</area>
         </textarea>
         <textarea name="help2text" from="basetextarea">
-            <area>90,140,1000,120</area>
+            <area>149,520,1000,120</area>
             <multiline>yes</multiline>
-        </textarea>
-
-        <textarea name="searchlable" from="basetextarea">
-            <area>102,350,190,30</area>
-            <font>basesmallyellow</font>
-            <align>right</align>
-            <value>Search For:</value>
-        </textarea>
-        <textarea name="search" from="basetextarea">
-            <area>370,350,300,30</area>
-            <value></value>
         </textarea>
 
     </window>
@@ -1697,7 +1692,7 @@
             <area>840,580,160,30</area>
         </textarea>
 
-        <textarea name="keyinstr">
+        <textarea name="keyinstr" from="basetextarea">
             <area>0,660,1280,30</area>
             <value>(1) Title (2) Priority (4) Type</value>
             <align>allcenter</align>
@@ -1845,10 +1840,6 @@
             <cornerradius>30</cornerradius>
         </shape>
 
-        <shape name="details_background" from="baseboxbackground">
-            <area>125,80,1030,190</area>
-        </shape>
-
         <clock name="time">
             <area>930,10,300,60</area>
             <align>vcenter,right</align>
@@ -1867,34 +1858,7 @@
             <font>baselarge</font>
         </textarea>
 
-        <textarea name="title" from="basetextarea">
-            <area>150,90,810,45</area>
-            <font>baselarge</font>
-	    <align>vcenter</align>
-        </textarea>
-
-        <textarea name="category" from="basetextarea">
-            <area>970,85,160,50</area>
-            <font>baseextrasmall</font>
-            <align>vcenter,right</align>
-	    <multiline>yes</multiline>
-        </textarea>
-
-        <textarea name="timedate" from="basetextarea">
-            <area>150,235,440,27</area>
-        </textarea>
-
-        <textarea name="channel" from="basetextarea">
-            <area>891,235,234,35</area>
-            <align>right</align>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>150,135,980,90</area>
-            <multiline>yes</multiline>
-            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-	    <align>justify</align>
-        </textarea>
+	<group name="details" from="detailsgroup" />
 
         <buttonlist name="rules" from="basewideselector">
             <position>377,310</position>
@@ -1963,10 +1927,6 @@
             <format>%DATE%, %TIME%</format>
         </clock>
 
-        <shape name="details_background" from="baseboxbackground">
-            <area>125,80,1030,190</area>
-        </shape>
-
         <shape name="options_background" from="baseboxbackground">
             <area>347,280,586,430</area>
         </shape>
@@ -1978,34 +1938,7 @@
             <font>baselarge</font>
         </textarea>
 
-        <textarea name="title" from="basetextarea">
-            <area>150,90,810,45</area>
-            <font>baselarge</font>
-	    <align>vcenter</align>
-        </textarea>
-
-        <textarea name="category" from="basetextarea">
-            <area>970,85,160,50</area>
-            <font>baseextrasmall</font>
-            <align>vcenter,right</align>
-	    <multiline>yes</multiline>
-        </textarea>
-
-        <textarea name="timedate" from="basetextarea">
-            <area>150,235,440,27</area>
-        </textarea>
-
-        <textarea name="channel" from="basetextarea">
-            <area>925,235,200,35</area>
-            <align>right</align>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>150,135,980,90</area>
-            <multiline>yes</multiline>
-            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-	    <align>justify</align>
-        </textarea>
+	<group name="details" from="detailsgroup" />
 
         <spinbox name="priority" from="basewidespinbox">
             <position>377,310</position>
@@ -2057,7 +1990,7 @@
         </checkbox>
 
         <textarea name="ruleactivelabel" from="basetextarea">
-            <area>550,631,300,30</area>
+            <area>550,627,300,30</area>
             <value>Recording Rule Active</value>
         </textarea>
 
@@ -2088,42 +2021,11 @@
             <format>%DATE%, %TIME%</format>
         </clock>
 
-        <shape name="details_background" from="baseboxbackground">
-            <area>125,80,1030,190</area>
-        </shape>
-
         <shape name="options_background" from="baseboxbackground">
             <area>347,280,586,430</area>
         </shape>
 
-        <textarea name="title" from="basetextarea">
-            <area>150,90,810,45</area>
-            <font>baselarge</font>
-	    <align>vcenter</align>
-        </textarea>
-
-        <textarea name="category" from="basetextarea">
-            <area>970,85,160,50</area>
-            <font>baseextrasmall</font>
-            <align>vcenter,right</align>
-	    <multiline>yes</multiline>
-        </textarea>
-
-        <textarea name="timedate" from="basetextarea">
-            <area>150,235,440,27</area>
-        </textarea>
-
-        <textarea name="channel" from="basetextarea">
-            <area>925,235,200,35</area>
-            <align>right</align>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>150,135,980,90</area>
-            <multiline>yes</multiline>
-            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-	    <align>justify</align>
-        </textarea>
+	<group name="details" from="detailsgroup" />
 
         <buttonlist name="recprofile" from="basewideselector">
             <position>377,310</position>
@@ -2162,7 +2064,7 @@
         </checkbox>
 
         <textarea name="autoexpirelabel" from="basetextarea">
-            <area>500,592,450,30</area>
+            <area>500,588,450,30</area>
             <value>Allow recordings to expire?</value>
         </textarea>
 
@@ -2193,49 +2095,18 @@
             <format>%DATE%, %TIME%</format>
         </clock>
 
-        <shape name="details_background" from="baseboxbackground">
-            <area>125,80,1030,190</area>
-        </shape>
+	<group name="details" from="detailsgroup" />
 
         <shape name="options_background" from="baseboxbackground">
             <area>347,280,586,430</area>
         </shape>
-
-        <textarea name="title" from="basetextarea">
-            <area>150,90,810,45</area>
-            <font>baselarge</font>
-	    <align>vcenter</align>
-        </textarea>
-
-        <textarea name="category" from="basetextarea">
-            <area>970,85,160,50</area>
-            <font>baseextrasmall</font>
-            <align>vcenter,right</align>
-	    <multiline>yes</multiline>
-        </textarea>
-
-        <textarea name="timedate" from="basetextarea">
-            <area>150,235,440,27</area>
-        </textarea>
-
-        <textarea name="channel" from="basetextarea">
-            <area>925,235,200,35</area>
-            <align>right</align>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>150,135,980,90</area>
-            <multiline>yes</multiline>
-            <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-	    <align>justify</align>
-        </textarea>
 
         <checkbox name="metadatalookup" from="basecheckbox">
             <position>377,293</position>
         </checkbox>
 
         <textarea name="mlookuplabel" from="basetextarea">
-            <area>407,297,526,30</area>
+            <area>407,293,526,30</area>
             <value>Automatically Look Up Metadata</value>
         </textarea>
 
@@ -2243,8 +2114,8 @@
             <position>377,338</position>
         </checkbox>
 
-        <textarea name="autocommflaglabel" from="basetextarea">
-            <area>407,342,526,30</area>
+        <textarea name="autocommflaglabel" from="mlookuplabel">
+            <area>407,338,526,30</area>
             <value>Commercial Flag new recordings</value>
         </textarea>
 
@@ -2252,8 +2123,8 @@
             <position>377,383</position>
         </checkbox>
 
-        <textarea name="autotranscodelabel" from="basetextarea">
-            <area>407,387,526,30</area>
+        <textarea name="autotranscodelabel" from="mlookuplabel">
+            <area>407,383,526,30</area>
             <value>Transcode new recordings</value>
         </textarea>
 
@@ -2266,32 +2137,32 @@
             <position>377,473</position>
         </checkbox>
 
-        <textarea name="userjob1text" from="basetextarea">
-            <area>407,477,526,30</area>
+        <textarea name="userjob1text" from="mlookuplabel">
+            <area>407,473,526,30</area>
         </textarea>
 
         <checkbox name="userjob2" from="basecheckbox">
             <position>377,518</position>
         </checkbox>
 
-        <textarea name="userjob2text" from="basetextarea">
-            <area>407,522,526,30</area>
+        <textarea name="userjob2text" from="mlookuplabel">
+            <area>407,518,526,30</area>
         </textarea>
 
         <checkbox name="userjob3" from="basecheckbox">
             <position>377,563</position>
         </checkbox>
 
-        <textarea name="userjob3text" from="basetextarea">
-            <area>407,567,526,30</area>
+        <textarea name="userjob3text" from="mlookuplabel">
+            <area>407,563,526,30</area>
         </textarea>
 
         <checkbox name="userjob4" from="basecheckbox">
             <position>377,608</position>
         </checkbox>
 
-        <textarea name="userjob4text" from="basetextarea">
-            <area>407,612,526,30</area>
+        <textarea name="userjob4text" from="mlookuplabel">
+            <area>407,608,526,30</area>
         </textarea>
 
         <button name="back" from="basebutton">
