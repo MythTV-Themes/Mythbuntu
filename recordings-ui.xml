@@ -25,12 +25,12 @@
 
 	<group name="groupgroup" depends="!coverart">
 
-	    <animation trigger="AboutToShow">
-		<section>
-		    <alpha start="0" end="255" easingcurve="OutQuart"/>
-                    <position start="-1280,-1," end="-1,-1" />
-		</section>
-	    </animation>
+	    <!-- <animation trigger="AboutToShow"> -->
+	    <!-- 	<section duration="500"> -->
+	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <position start="-1280,-1," end="-1,-1" /> -->
+	    <!-- 	</section> -->
+	    <!-- </animation> -->
 
             <shape name="groupbox">
 		<area>15,15,320,413</area>
@@ -100,12 +100,12 @@
 	    <area>46,15,289,413</area>
             <minsize vanish="yes">100%,100%</minsize>
 
-	    <animation trigger="AboutToShow">
-		<section>
-		    <alpha start="0" end="255" easingcurve="OutQuart"/>
-                    <position start="-1280,-1," end="-1,-1" />
-		</section>
-	    </animation>
+	    <!-- <animation trigger="AboutToShow"> -->
+	    <!-- 	<section duration="500"> -->
+	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <position start="-1280,-1," end="-1,-1" /> -->
+	    <!-- 	</section> -->
+	    <!-- </animation> -->
 
             <shape name="groupbox">
 		<area>0,0,100%,100%</area>
@@ -126,12 +126,12 @@
 
 	<group name="recordingsgroup">
 
-	    <animation trigger="AboutToShow">
-		<section>
-		    <alpha start="0" end="255" easingcurve="OutQuart"/>
-                    <position start="1280,-1," end="-1,-1" />
-		</section>
-	    </animation>
+	    <!-- <animation trigger="AboutToShow"> -->
+	    <!-- 	<section duration="500"> -->
+	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <position start="1280,-1," end="-1,-1" /> -->
+	    <!-- 	</section> -->
+	    <!-- </animation> -->
 
             <shape name="recordingsbox">
 		<area>340,15,925,413</area>
@@ -182,6 +182,14 @@
 				</imagetype>
                             </state>
                             <state name="no" />
+			</statetype>
+			<statetype name="videoprops">
+                            <state name="damaged">
+				<imagetype name="damaged">
+                                    <area>330,7,15,15</area>
+                                    <filename>type/damaged.png</filename>
+				</imagetype>
+                            </state>
 			</statetype>
 			<statetype name="playlist">
                             <state name="yes">
@@ -244,12 +252,12 @@
 
 	<group name="infogroup">
 
-	    <animation trigger="AboutToShow">
-		<section>
-		    <alpha start="0" end="255" easingcurve="OutQuart"/>
-                    <position start="-1,720," end="-1,-1" />
-		</section>
-	    </animation>
+	    <!-- <animation trigger="AboutToShow"> -->
+	    <!-- 	<section duration="500"> -->
+	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <position start="-1,720," end="-1,-1" /> -->
+	    <!-- 	</section> -->
+	    <!-- </animation> -->
 
             <shape name="infobox">
 		<area>0,438,1280,282</area>
@@ -270,7 +278,7 @@
                     <area>0,0,100%,100%</area>
                     <minsize vanish="yes">100%,100%</minsize>
                     <type>box</type>
-                    <fill color="#555555" alpha="255" />
+                    <fill color="#555555" alpha="150" />
 		</shape>
 
 		<imagetype name="preview">
@@ -378,6 +386,16 @@
 		    <position>315,670</position>
 		</imagetype>
 
+		<statetype name="jobstate">
+		    <position>315,670</position>
+		    <showempty>yes</showempty>
+		    <state name="transcoding">
+			<imagetype name="transcoding">
+			    <filename>type/processing.png</filename>
+			</imagetype>
+		    </state>
+		</statetype>
+
 		<textarea name="filesize_str" from="basetextarea">
 		    <area>370,670,169,30</area>
 		    <align>vcenter,left</align>
@@ -412,7 +430,6 @@
 		<textarea name="title" from="basetextarea">
 		    <area>370,448,710,40</area>
 		    <font>baselarge</font>
-		    <align>vcenter</align>
 		</textarea>
 
 		<textarea name="category" from="basetextarea">
@@ -668,7 +685,7 @@
         </textedit>
 
         <textarea name="season_label" from="basetextarea">
-            <area>10,170,175,30</area>
+            <area>10,174,175,30</area>
             <value>Season:</value>
         </textarea>
 
@@ -677,7 +694,7 @@
         </spinbox>
 
         <textarea name="episode_label" from="season_label">
-            <position>225,170</position>
+            <position>225,174</position>
             <value>Episode:</value>
         </textarea>
 
@@ -686,7 +703,7 @@
         </spinbox>
 
         <textarea name="description_label" from="basetextarea">
-            <area>10,205,250,250</area>
+            <area>10,205,250,30</area>
             <value>Description:</value>
         </textarea>
 
@@ -703,7 +720,7 @@
     <window name="iconhelp">
 
 	<animation trigger="AboutToShow">
-	    <section duration="250">
+	    <section duration="125">
 		<alpha start="0" end="255" easingcurve="OutQuart"/>
 		<zoom start="0" end="100" />
 	    </section>
@@ -850,7 +867,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>590,390</position>
+                <position>5,390</position>
                 <state type="full">
                     <imagetype name="upoff">
                         <filename>shared/uparrow.png</filename>
@@ -858,7 +875,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>620,390</position>
+                <position>35,390</position>
                 <state type="full">
                     <imagetype name="dnoff">
                         <filename>shared/downarrow.png</filename>

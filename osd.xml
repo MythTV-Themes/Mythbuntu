@@ -12,7 +12,7 @@
         <area>50,50,1180,105</area>
         <shape name="background">
             <area>0,0,100%,100%</area>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="150" />
         </shape>
         <textarea name="file">
             <font>file</font>
@@ -177,8 +177,8 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
-            <line color="#222222" alpha="255" width="2" />
+            <fill color="#000000" alpha="150" />
+            <line color="#222222" alpha="170" width="2" />
             <cornerradius>12</cornerradius>
         </shape>
         <textarea name="message_text">
@@ -199,8 +199,8 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
-            <line color="#222222" alpha="255" width="2" />
+            <fill color="#000000" alpha="150" />
+            <line color="#222222" alpha="170" width="2" />
             <cornerradius>12</cornerradius>
         </shape>
         <textarea name="osd_number_entry">
@@ -221,8 +221,8 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
-            <line color="#222222" alpha="255" width="2" />
+            <fill color="#000000" alpha="150" />
+            <line color="#222222" alpha="170" width="2" />
             <cornerradius>12</cornerradius>
         </shape>
         <textarea name="title">
@@ -276,8 +276,8 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
-            <line color="#222222" alpha="255" width="2" />
+            <fill color="#000000" alpha="150" />
+            <line color="#222222" alpha="170" width="2" />
             <cornerradius>12</cornerradius>
         </shape>
         <textarea name="title">
@@ -287,9 +287,9 @@
         </textarea>
         <textarea name="starttime">
             <font>smaller</font>
-            <area>10,50,700,30</area>
+            <area>10,50,730,30</area>
             <align>left,top</align>
-            <template>%STARTTIME%%-|ENDTIME| : %%LENMINS%</template>
+            <template>%STARTDATE|, %%STARTTIME%% - |ENDTIME|: %%LENMINS%</template>
         </textarea>
         <clock name="clock">
             <area>870,10,200,30</area>
@@ -297,6 +297,224 @@
             <template>%TIME%</template>
             <align>right,top</align>
         </clock>
+        <textarea name="category">
+            <font>smaller</font>
+            <area>750,50,320,30</area>
+            <align>right,top</align>
+        </textarea>
+
+	<statetype name="videodescrip">
+	    <position>795,265</position>
+	    <showempty>yes</showempty>
+	    <state name="SD">
+		<imagetype name="sd480">
+		    <area>0,0,65,25</area>
+		    <filename>osd/resolution/480.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="HD_720_P">
+		<imagetype name="hd720">
+		    <area>0,0,65,25</area>
+		    <filename>osd/resolution/720.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="HD_1080_I">
+		<imagetype name="hd1080">
+		    <area>0,0,65,25</area>
+		    <filename>osd/resolution/1080.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="HD_1080_P">
+		<imagetype name="hd1080">
+		    <area>0,0,65,25</area>
+		    <filename>osd/resolution/1080.png</filename>
+		</imagetype>
+	    </state>
+	</statetype>
+
+	<statetype name="videocodec">
+	    <position>865,265</position>
+	    <showempty>yes</showempty>
+	    <state name="MPEG-2">
+		<imagetype name="mpeg-2">
+		    <area>0,0,65,25</area>
+		    <filename>osd/video_codec/mpeg2.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="H.263">
+		<imagetype name="h.263">
+		    <area>0,0,65,25</area>
+		    <filename>osd/video_codec/h264.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="H.264">
+		<imagetype name="h.264">
+		    <area>0,0,65,25</area>
+		    <filename>osd/video_codec/h264.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="MPEG-4">
+		<imagetype name="mpeg-4">
+		    <area>0,0,65,25</area>
+		    <filename>osd/video_codec/mpeg4.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="RTjpeg">
+		<imagetype name="rtjpeg">
+		    <area>0,0,65,25</area>
+		    <filename>osd/video_codec/mpeg1.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="VC-1">
+		<imagetype name="vc-1">
+		    <area>0,0,65,25</area>
+		    <filename>osd/video_codec/vc-1.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="WMV3">
+		<imagetype name="wmv3">
+		    <area>0,0,65,25</area>
+		    <filename>osd/video_codec/wmv.png</filename>
+		</imagetype>
+	    </state>
+	</statetype>
+
+	<statetype name="audiochannels">
+	    <position>935,265</position>
+	    <showempty>yes</showempty>
+	    <state name="1">
+		<imagetype name="1.0">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio/1.0.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="2">
+		<imagetype name="2.0">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio/2.0.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="3">
+		<imagetype name="2.1">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio/2.0.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="4">
+		<imagetype name="4.0">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio/4.1.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="5">
+		<imagetype name="4.1">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio/4.1.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="6">
+		<imagetype name="5.1">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio/5.1.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="7">
+		<imagetype name="6.1">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio/6.1.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="8">
+		<imagetype name="7.1">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio/7.1.png</filename>
+		</imagetype>
+	    </state>
+	</statetype>
+
+	<statetype name="audiocodec">
+	    <position>1005,265</position>
+	    <showempty>yes</showempty>
+	    <state name="AAC">
+		<imagetype name="aac">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/aac.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="AAC/LATM">
+		<imagetype name="aac/latm">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/aac.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="AC3">
+		<imagetype name="ac3">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/ac3.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="E-AC3">
+		<imagetype name="ac3">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/eac3.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="DTS">
+		<imagetype name="dts">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/dts.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="MP2">
+		<imagetype name="mp2">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/mp2.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="MP3">
+		<imagetype name="mp3">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/mp3.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="PCM_DVD">
+		<imagetype name="dolbydigital">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/dolbydigital.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="PCM_BLURAY">
+		<imagetype name="dolbydigital">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/dolbydigital.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="TRUEHD">
+		<imagetype name="truehd">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/truehd.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="VORBIS">
+		<imagetype name="vorbis">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/vorbis.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="WMAPRO">
+		<imagetype name="wmapro">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/wmapro.png</filename>
+		</imagetype>
+	    </state>
+	    <state name="WMAV2">
+		<imagetype name="wmav2">
+		    <area>0,0,65,25</area>
+		    <filename>osd/audio_codec/wmapro.png</filename>
+		</imagetype>
+	    </state>
+	</statetype>
+
         <textarea name="channum" depends="!coverart">
             <font>small</font>
             <area>25,100,150,30</area>
@@ -316,7 +534,7 @@
         </imagetype>
         <textarea name="description">
             <font>small</font>
-            <area>200,100,845,180</area>
+            <area>200,100,845,155</area>
             <align>justify,top</align>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
@@ -340,8 +558,8 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
-            <line color="#222222" alpha="255" width="2" />
+            <fill color="#000000" alpha="150" />
+            <line color="#222222" alpha="170" width="2" />
             <cornerradius>12</cornerradius>
         </shape>
         <textarea name="title">
@@ -351,9 +569,9 @@
         </textarea>
         <textarea name="starttime">
             <font>smaller</font>
-            <area>10,50,700,30</area>
+            <area>10,50,730,30</area>
             <align>left,top</align>
-            <template>%STARTTIME%%-|ENDTIME| : %%LENMINS%</template>
+            <template>%STARTTIME%% - |ENDTIME|: %%LENMINS%</template>
         </textarea>
         <clock name="clock">
             <area>870,10,200,30</area>
@@ -361,6 +579,11 @@
             <template>%TIME%</template>
             <align>right,top</align>
         </clock>
+        <textarea name="category">
+            <font>smaller</font>
+            <area>750,50,320,30</area>
+            <align>right,top</align>
+        </textarea>
         <textarea name="channum">
             <font>small</font>
             <area>25,100,150,30</area>
@@ -376,7 +599,7 @@
         </textarea>
         <textarea name="description">
             <font>small</font>
-            <area>200,100,845,180</area>
+            <area>200,100,845,155</area>
             <align>justify,top</align>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
@@ -393,7 +616,7 @@
         <fontdef name="smaller" from="small">
             <pixelsize>18</pixelsize>
         </fontdef>
-        <area>390,110,500,500</area>
+        <area>-1,-1,600,500</area>
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
@@ -403,28 +626,28 @@
         </shape>
         <textarea name="title">
             <font>small</font>
-            <area>15,15,470,150</area>
+            <area>15,15,600,150</area>
             <align>allcenter</align>
             <value>Channel Editor</value>
         </textarea>
 
         <textarea name="callsign_label">
             <font>small</font>
-            <area>10,180,130,50</area>
-            <align>allcenter</align>
+            <area>10,182,180,50</area>
+            <align>right</align>
             <value>Callsign</value>
         </textarea>
-        <textedit name="callsign">
-            <area>150,180,340,50</area>
+        <textedit name="callsign" from="basetextedit">
+            <area>210,180,340,50</area>
             <statetype name="background">
                 <state name="active">
                     <shape name="textbackground">
-                        <fill color="#BBBBBB" alpha="255" />
+			<fill color="#666666" alpha="175" />
                     </shape>
                 </state>
                 <state name="selected" from="active">
                     <shape name="textbackground">
-                        <fill color="#BBBBBB" alpha="200" />
+			<fill color="#FFFFFF" alpha="200" />
                     </shape>
                 </state>
                 <state name="inactive" from="active" />
@@ -433,37 +656,38 @@
                 <filename>cursor.png</filename>
             </imagetype>
             <textarea name="text">
-                <font>small</font>
+                <!-- <area>0,0,100%,100%</area> -->
+                <!-- <font>small</font> -->
                 <align>left,vcenter</align>
             </textarea>
         </textedit>
 
         <textarea name="channum_label" from="callsign_label">
-            <area>10,250,130,50</area>
+            <area>10,252,180,50</area>
             <value>Channel #</value>
         </textarea>
         <textedit name="channum" from="callsign">
-            <area>150,250,340,50</area>
+            <area>210,250,340,50</area>
         </textedit>
 
         <textarea name="channame_label" from="callsign_label">
-            <area>10,320,130,50</area>
+            <area>10,322,180,50</area>
             <value>Channel Name</value>
         </textarea>
         <textedit name="channame" from="callsign">
-            <area>150,320,340,50</area>
+            <area>210,320,340,50</area>
         </textedit>
 
         <textarea name="xmltv_label" from="callsign_label">
-            <area>10,390,130,50</area>
+            <area>10,392,180,50</area>
             <value>XMLTV ID</value>
         </textarea>
         <textedit name="XMLTV" from="callsign">
-            <area>150,390,340,50</area>
+            <area>210,390,340,50</area>
         </textedit>
 
         <button name="probe">
-            <area>45,440,150,40</area>
+            <area>95,440,150,40</area>
             <value>Probe</value>
             <statetype name="buttonstate">
                 <state name="active">
@@ -491,7 +715,7 @@
             </statetype>
         </button>
         <button name="ok" from="probe">
-            <position>305,440</position>
+            <position>345,440</position>
             <value>OK</value>
         </button>
     </window>
@@ -507,8 +731,8 @@
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
-            <line color="#222222" alpha="255" width="2" />
+            <fill color="#000000" alpha="150" />
+            <line color="#222222" alpha="170" width="2" />
             <cornerradius>12</cornerradius>
         </shape>
         <textarea name="title">
@@ -570,19 +794,13 @@
     </window>
 
     <window name="MythPopupBox">
-        <fontdef name="basesmall" face="DejaVu Sans">
-            <size>15</size>
-            <color>#FFFFFF</color>
-        </fontdef>
-        <fontdef name="basesmallgrey" from="basesmall">
-            <color>#bcbcbc</color>
-        </fontdef>
+
         <area>-1,-1,500,500</area>
         <shape name="basebackground">
             <area>0,0,500,500</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="200" />
-            <line color="#222222" alpha="255" width="2" />
+            <fill color="#000000" alpha="150" />
+            <line color="#222222" alpha="170" width="2" />
             <cornerradius>12</cornerradius>
         </shape>
         <textarea name="messagearea">
@@ -613,7 +831,7 @@
                         <font>basesmallgrey</font>
                         <cutdown>yes</cutdown>
                         <align>allcenter</align>
-                        <area>0,0,100%,30</area>
+                        <area>2%,0,96%,30</area>
                     </textarea>
                     <imagetype name="buttonarrow">
                         <area>94%,7,16,16</area>
@@ -644,20 +862,20 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>10,96%</position>
+                <position>10,94%</position>
                 <state type="full">
                     <imagetype name="upoff">
                         <area>0,0,30,30</area>
-                        <filename>uparrow_alt.png</filename>
+                        <filename>shared/uparrow.png</filename>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>40,96%</position>
+                <position>40,94%</position>
                 <state type="full">
                     <imagetype name="dnoff">
                         <area>0,0,30,30</area>
-                        <filename>downarrow_alt.png</filename>
+                        <filename>shared/downarrow.png</filename>
                     </imagetype>
                 </state>
             </statetype>

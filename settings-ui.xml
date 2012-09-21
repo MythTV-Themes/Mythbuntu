@@ -67,13 +67,13 @@
 
         <shape name="background" from="basebackground">
             <area>0,0,1280,720</area>
-            <fill color="#000000" alpha="200" />
+            <fill color="#000000" alpha="255" />
         </shape>
 
         <textarea name="pagetitle" from="basetextarea">
             <area>50,10,670,60</area>
             <font>baselarge</font>
-            <align>vcenter,left</align>
+            <align>top,left</align>
             <value>Theme Chooser</value>
         </textarea>
 
@@ -120,7 +120,7 @@
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
-            <spacing>2</spacing>
+            <spacing>16</spacing>
             <drawfrombottom>false</drawfrombottom>
             <buttonarea>0,0,100%,560</buttonarea>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
@@ -129,9 +129,11 @@
                 <state name="active">
                     <area>0,0,600,66</area>
                     <shape name="item">
-                        <area>0,0,100%,66</area>
-                        <type>box</type>
-                        <fill color="#000000" alpha="180" />
+                        <area>0,0,600,66</area>
+                        <type>roundbox</type>
+			<cornerradius>30</cornerradius>
+                        <fill color="#666666" alpha="50" />
+                        <line color="#FFFFFF" alpha="0" width="0" />
                     </shape>
                     <imagetype name="buttonimage">
                         <area>30,5,110,56</area>
@@ -141,17 +143,18 @@
                     <textarea name="buttontext">
                         <area>150,5,450,56</area>
                         <align>left,vcenter</align>
-                        <font>basemedium</font>
+                        <font>basemediumgrey</font>
                         <alpha>210</alpha>
                     </textarea>
 
                     <statetype name="themelocation">
-                        <area>3%,40%,12,12</area>
+                        <area>0,40%,12,12</area>
                         <state name="remote">
                             <shape name="status">
                                 <area>0,0,12,12</area>
                                 <type>ellipse</type>
                                 <fill color="#00FF00" alpha="255"/>
+                                <line color="#ffffff" thickness="1" alpha="255"/>
                             </shape>
                         </state>
                         <state name="local">
@@ -159,7 +162,7 @@
                     </statetype>
 
                     <statetype name="themestatus">
-                        <area>3%,40%,12,12</area>
+                        <area>-2%,40%,12,12</area>
                         <state name="updateavailable">
                         </state>
                         <state name="uptodate">
@@ -172,49 +175,59 @@
 
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <fill color="#0767AB" alpha="240" />
+                        <area>-10,-5,620,76</area>
+                        <fill color="#ffffff" alpha="50" />
                     </shape>
                     <textarea name="buttontext">
+                        <area>177,5,423,56</area>
                         <alpha>200</alpha>
-                        <font>basemedium</font>
+                        <font>baselarge</font>
                     </textarea>
                     <imagetype name="buttonimage">
+                        <area>2,-9,165,84</area>
                         <alpha>255</alpha>
+                        <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <imagetype name="divider">
                         <filename />
                     </imagetype>
+
+                    <statetype name="themelocation">
+                        <area>0,31%,0,0</area>
+                    </statetype>
+
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-                <position>520,630</position>
+                <position>0%,93%</position>
                 <state type="off"></state>
                 <state type="full">
                     <imagetype name="upon">
-                        <filename>lb-uparrow-reg.png</filename>
+                        <filename>shared/uparrow.png</filename>
                         <alpha>230</alpha>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>550,630</position>
+                <position>4%,93%</position>
                 <state type="off"></state>
                 <state type="full">
                     <imagetype name="dnon">
-                        <filename>lb-dnarrow-reg.png</filename>
+                        <filename>shared/downarrow.png</filename>
                         <alpha>230</alpha>
                     </imagetype>
                 </state>
             </statetype>
 
         <shape name="update_icon">
-            <area>4%,86%,8,8</area>
+            <area>4%,89%,8,8</area>
             <type>ellipse</type>
             <fill color="#00FF00" alpha="200" />
+            <line color="#ffffff" thickness="1" alpha="255"/>
         </shape>
         <textarea name="update_text" from="basetextarea">
-            <area>6%,82%,90%,60</area>
+            <area>6%,85%,90%,60</area>
             <align>left,vcenter</align>
 	    <multiline>yes</multiline>
 	    <font>baseextrasmall</font>
@@ -224,7 +237,7 @@
         </buttonlist>
 
         <progressbar name="downloadprogressbar" from="baseprogressbar">
-            <position>680,30</position>
+            <position>690,15</position>
         </progressbar>
 
         <statetype name="fullpreviewstate">
