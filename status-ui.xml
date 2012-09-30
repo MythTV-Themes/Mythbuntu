@@ -132,5 +132,72 @@
 
     </window>
 
+    <window name="standbymode">
+        <area>1,1,100%,100%</area>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <fill color="#000000" alpha="200" />
+        </shape>
+
+        <group name="popup">
+            <area>200,200,400,200</area>
+            <shape name="background" from="basebackground">
+                <area>0,0,100%,100%</area>
+                <fill color="#000000" alpha="255" />
+            </shape>
+
+            <textarea name="heading">
+                <area>20,20,360,40</area>
+                <font>baselarge</font>
+                <align>allcenter</align>
+                <value>MythTV is in standby</value>
+            </textarea>
+
+            <statetype name="backendstatus">
+                <area>20,75,360,100</area>
+                <state name="idle">
+                    <area>0,0,360,100</area>
+                    <!--<imagetype name="icon">-->
+                    <shape name="iconplaceholder">
+                        <area>30,10,80,80</area>
+                        <fill color="#666666" />
+                    </shape>
+                    <!-- </imagetype>-->
+                    <textarea name="status">
+                        <area>130,10,220,80</area>
+                        <font>basemedium</font>
+                        <value>Backend is idle</value>
+                        <align>allcenter</align>
+                        <multiline>true</multiline>
+                    </textarea>
+                </state>
+                <state name="recording" from="idle">
+                    <shape name="iconplaceholder">
+                        <fill color="#80DF00" />
+                    </shape>
+                    <textarea name="status">
+                        <value>Backend is recording</value>
+                    </textarea>
+                </state>
+                <state name="shuttingdown" from="idle">
+                    <shape name="iconplaceholder">
+                        <fill color="#FFFF33" />
+                    </shape>
+                    <textarea name="status">
+                        <value>Backend is shutting down</value>
+                    </textarea>
+                </state>
+                <state name="offline" from="idle">
+                    <shape name="iconplaceholder">
+                        <fill color="#800900" />
+                    </shape>
+                    <textarea name="status">
+                        <value>Backend is offline</value>
+                    </textarea>
+                </state>
+            </statetype>
+        </group>
+    </window>
+
 </mythuitheme>
 

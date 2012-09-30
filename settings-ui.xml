@@ -78,40 +78,40 @@
         </textarea>
 
         <shape name="preview-shape">
-            <area>660,60,600,460</area>
+            <area>660,60,600,440</area>
             <type>roundbox</type>
             <fill color="#000000" />
             <cornerradius>20</cornerradius>
         </shape>
 
         <imagetype name="preview">
-            <area>680,80,560,420</area>
+            <area>680,70,560,420</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="name" from="basetextarea">
-            <area>680,520,280,35</area>
+            <area>680,500,280,35</area>
             <multiline>no</multiline>
-            <font>basemedium</font>
+	    <font>basemedium</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
 
         <textarea name="aspect" from="basetextarea">
-            <area>680,555,100%,30</area>
+            <area>680,540,560,40</area>
             <multiline>no</multiline>
             <font>baseextrasmall</font>
             <align>left,vcenter</align>
-            <cutdown>yes</cutdown>
-	    <template>For %ASPECT% displays. By %AUTHORNAME%.</template>
+	    <template>For %ASPECT% displays.% By |AUTHORNAME%% &lt;|AUTHOREMAIL|&gt;%.</template>
+	    <multiline>yes</multiline>
         </textarea>
 
         <textarea name="description" from="basetextarea">
             <area>680,585,560,125</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
-            <align>left,top</align>
+            <align>justify,top</align>
             <cutdown>yes</cutdown>
         </textarea>
 
