@@ -167,11 +167,11 @@
                             <align>vcenter</align>
 			</textarea>
 			<textarea name="shortstartdate" from="titlesubtitle">
-                            <area>963,1,120,31</area>
+                            <area>948,1,120,31</area>
                             <align>right,vcenter</align>
 			</textarea>
 			<textarea name="starttime" from="shortstartdate">
-                            <area>1094,1,105,31</area>
+                            <area>1079,1,120,31</area>
                             <align>right,vcenter</align>
 			</textarea>
 			<statetype name="watched">
@@ -218,11 +218,11 @@
                             <align>vcenter</align>
 			</textarea>
 			<textarea name="shortstartdate" from="titlesubtitle">
-                            <area>963,1,120,31</area>
+                            <area>948,1,120,31</area>
                             <align>right,vcenter</align>
 			</textarea>
 			<textarea name="starttime" from="shortstartdate">
-                            <area>1094,1,105,31</area>
+                            <area>1079,1,120,31</area>
                             <align>right,vcenter</align>
 			</textarea>
                     </state>
@@ -521,11 +521,11 @@
         </textarea>
 
         <checkbox name="titles" from="basecheckbox">
-            <position>90,100</position>
+            <position>90,90</position>
         </checkbox>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>140,100,300,30</area>
+            <area>140,90,300,30</area>
             <value>Show Titles</value>
         </textarea>
 
@@ -644,75 +644,76 @@
 	    </section>
 	</animation>
 
-        <area>-1,-1,500,500</area>
+        <area>-1,-1,600,500</area>
 
         <shape name="backimg" from="basebackground">
-            <area>0,0,500,500</area>
+            <area>0,0,600,500</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>10,15,480,50</area>
+            <area>-1,15,100%,50</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
             <value>Edit Recording Metadata</value>
         </textarea>
 
         <textarea name="title_label" from="basetextarea">
-            <area>10,65,300,30</area>
+            <area>30,65,160,30</area>
             <value>Title:</value>
+	    <align>right,vcenter</align>
         </textarea>
 
         <textedit name="title" from="basetextedit">
-            <position>100,65</position>
+            <position>200,65</position>
         </textedit>
 
-        <textarea name="subtitlelabel" from="basetextarea">
-            <area>10,100,300,30</area>
+        <textarea name="subtitlelabel" from="title_label">
+            <position>30,100</position>
             <value>Subtitle:</value>
         </textarea>
 
         <textedit name="subtitle" from="basetextedit">
-            <position>100,100</position>
+            <position>200,100</position>
         </textedit>
 
         <textarea name="inetref_label" from="title_label">
-            <position>10,135</position>
+            <position>30,135</position>
             <value>Inetref:</value>
         </textarea>
 
         <textedit name="inetref" from="basetextedit">
-            <position>100,135</position>
+            <position>200,135</position>
         </textedit>
 
-        <textarea name="season_label" from="basetextarea">
-            <area>10,174,175,30</area>
+        <textarea name="season_label" from="title_label">
+            <area>30,174,135,30</area>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season" from="basespinbox">
-            <position>100,170</position>
+            <position>175,170</position>
         </spinbox>
 
         <textarea name="episode_label" from="season_label">
-            <position>225,174</position>
+            <position>285,174</position>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode" from="basespinbox">
-            <position>315,170</position>
+            <position>425,170</position>
         </spinbox>
 
-        <textarea name="description_label" from="basetextarea">
-            <area>10,205,250,30</area>
+        <textarea name="description_label" from="title_label">
+            <position>30,215</position>
             <value>Description:</value>
         </textarea>
 
         <textedit name="description" from="basemultilinetextedit">
-            <area>50,235,100%,100%</area>
+            <area>110,245,100%,100%</area>
         </textedit>
         
         <button name="ok" from="basebutton">
-            <position>175,435</position>
+            <position>225,435</position>
             <value>OK</value>
         </button>
     </window>

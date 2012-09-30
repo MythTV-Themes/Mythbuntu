@@ -99,7 +99,7 @@
 
         <textarea name="windlbl" from="humiditylbl">
             <area>125,345,300,50</area>
-            <value>Wind(Gust):</value>
+            <value>Wind (Gust):</value>
         </textarea>
 
         <textarea name="wind_spdgst" from="relative_humidity">

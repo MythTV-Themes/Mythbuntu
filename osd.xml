@@ -626,28 +626,29 @@
         </shape>
         <textarea name="title">
             <font>small</font>
-            <area>15,15,600,150</area>
+            <area>15,15,600,100</area>
             <align>allcenter</align>
             <value>Channel Editor</value>
         </textarea>
 
         <textarea name="callsign_label">
             <font>small</font>
-            <area>10,182,180,50</area>
-            <align>right</align>
+            <area>10,120,180,50</area>
+            <align>right,vcenter</align>
+	    <multiline>yes</multiline>
             <value>Callsign</value>
         </textarea>
         <textedit name="callsign" from="basetextedit">
-            <area>210,180,340,50</area>
+            <area>210,130,340,50</area>
             <statetype name="background">
                 <state name="active">
                     <shape name="textbackground">
 			<fill color="#666666" alpha="175" />
                     </shape>
                 </state>
-                <state name="selected" from="active">
+                <state name="selected">
                     <shape name="textbackground">
-			<fill color="#FFFFFF" alpha="200" />
+			<fill color="#ffffff" alpha="100" />
                     </shape>
                 </state>
                 <state name="inactive" from="active" />
@@ -663,31 +664,31 @@
         </textedit>
 
         <textarea name="channum_label" from="callsign_label">
-            <area>10,252,180,50</area>
+            <area>10,190,180,50</area>
             <value>Channel #</value>
         </textarea>
         <textedit name="channum" from="callsign">
-            <area>210,250,340,50</area>
+            <area>210,200,340,50</area>
         </textedit>
 
         <textarea name="channame_label" from="callsign_label">
-            <area>10,322,180,50</area>
+            <area>10,260,180,50</area>
             <value>Channel Name</value>
         </textarea>
         <textedit name="channame" from="callsign">
-            <area>210,320,340,50</area>
+            <area>210,270,340,50</area>
         </textedit>
 
         <textarea name="xmltv_label" from="callsign_label">
-            <area>10,392,180,50</area>
+            <area>10,330,180,50</area>
             <value>XMLTV ID</value>
         </textarea>
         <textedit name="XMLTV" from="callsign">
-            <area>210,390,340,50</area>
+            <area>210,340,340,50</area>
         </textedit>
 
         <button name="probe">
-            <area>95,440,150,40</area>
+            <area>95,420,150,40</area>
             <value>Probe</value>
             <statetype name="buttonstate">
                 <state name="active">
@@ -715,7 +716,7 @@
             </statetype>
         </button>
         <button name="ok" from="probe">
-            <position>345,440</position>
+            <position>345,420</position>
             <value>OK</value>
         </button>
     </window>

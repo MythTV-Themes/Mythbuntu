@@ -168,11 +168,11 @@
             <area>0,475,1250,235</area>
         </group>
 
-        <imagetype name="animation">
-            <area>40,40,105,105</area>
-            <filepattern low="0" high="47">busyimages/%1.png</filepattern>
-            <delay>50</delay>
-        </imagetype>
+        <!-- <imagetype name="animation"> -->
+        <!--     <area>40,40,105,105</area> -->
+        <!--     <filepattern low="0" high="47">busyimages/%1.png</filepattern> -->
+        <!--     <delay>50</delay> -->
+        <!-- </imagetype> -->
 
     </window>
 
