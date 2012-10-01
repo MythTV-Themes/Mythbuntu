@@ -110,9 +110,11 @@
         <textarea name="description" from="basetextarea">
             <area>680,585,560,125</area>
             <multiline>yes</multiline>
-            <font>basesmall</font>
+            <font>basesmallgrey</font>
             <align>justify,top</align>
             <cutdown>yes</cutdown>
+	    <template>%DESCRIPTION%\n%ERRATA%</template>
+	    <scroll direction="up" />
         </textarea>
 
         <buttonlist name="themes">
