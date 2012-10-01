@@ -21,7 +21,7 @@
             current myth status
         -->
         <textarea name="status_text" from="basetextarea">
-            <area>32,80,1216,30</area>
+            <area>32,80,1216,60</area>
             <multiline>yes</multiline>
 	    <font>basesmallgrey</font>
             <align>center</align>
@@ -32,14 +32,14 @@
             current recordings status
         -->
         <textarea name="recording_label" from="basetextarea">
-            <area>32,120,1216,30</area>
+            <area>32,180,1216,30</area>
             <font>basemedium</font>
             <align>center</align>
             <value>Current Recording(s)</value>
         </textarea>
 
         <textarea name="recording_text" from="status_text">
-            <area>32,155,1216,180</area>
+            <area>32,215,1216,150</area>
             <value>Retrieving Recording Status...</value>
         </textarea>
 
@@ -47,12 +47,12 @@
             next scheduled recording status
         -->
         <textarea name="scheduled_label" from="recording_label">
-            <area>32,345,1216,30</area>
+            <area>32,375,1216,30</area>
             <value>Next Scheduled Recording(s)</value>
         </textarea>
 
         <textarea name="scheduled_text" from="recording_text">
-            <area>32,380,1216,180</area>
+            <area>32,410,1216,150</area>
             <value>Retrieving Scheduled Recordings...</value>
         </textarea>
 
