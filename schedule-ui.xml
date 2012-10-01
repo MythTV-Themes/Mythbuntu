@@ -437,17 +437,10 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>167,10,488,60</area>
+            <area>167,10,743,60</area>
             <align>left,vcenter</align>
             <font>baseextralarge</font>
         </textarea>
-
-        <clock name="time">
-            <area>670,10,240,60</area>
-            <align>vcenter,right</align>
-            <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
-        </clock>
 
         <textarea name="subtitle" from="basetextarea">
             <area>167,80,353,30</area>
@@ -662,7 +655,7 @@
                         <position>45,0</position>
                     </statetype>
                     <textarea name="chanstr" from="buttontext">
-                        <area>105,1,60,24</area>
+                        <area>95,1,100,24</area>
 			<align>center</align>
                     </textarea>
                     <textarea name="callsign" from="chanstr">
@@ -1966,10 +1959,10 @@
 	    </section>
 	</animation>
 
-        <area>-1,-1,500,500</area>
+        <area>-1,-1,500,415</area>
 
         <shape name="box" from="basebackground">
-            <area>0,0,500,500</area>
+            <area>0,0,500,415</area>
         </shape>
 
         <textarea name="title_text" from="basetextarea">
@@ -2008,7 +2001,7 @@
         </buttonlist>
 
         <button name="back" from="basebutton">
-            <position>175,440</position>
+            <position>175,355</position>
             <value>Back</value>
         </button>
     </window>
