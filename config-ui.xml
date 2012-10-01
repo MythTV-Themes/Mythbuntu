@@ -51,10 +51,20 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1140,530</position>
+                <position>1150,530</position>
+		<state type="full">
+                    <imagetype name="upoff">
+			<filename>shared/uparrow.png</filename>
+                    </imagetype>
+		</state>
             </statetype>
             <statetype name="downscrollarrow">
                 <position>1180,530</position>
+		<state type="full">
+                    <imagetype name="dnoff">
+			<filename>shared/downarrow.png</filename>
+                    </imagetype>
+		</state>
             </statetype>
         </buttonlist>
 
@@ -63,12 +73,12 @@
         </textarea>
 
         <textarea name="manuallabel" from="basetextarea">
-            <area>30,605,300,25</area>
+            <area>30,610,300,30</area>
             <value>Search terms:</value>
         </textarea>
 
         <textedit name="manualsearch" from="basetextedit">
-            <position>30,635</position>
+            <position>30,643</position>
         </textedit>
 
         <button name="search" from="basebutton">
@@ -128,8 +138,19 @@
                         <area>860,1,275,24</area>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active" />
+                <state name="selectedactive" from="active">
+                    <imagetype name="icon">
+                        <area>1105,-18,80,60</area>
+                        <preserveaspect>true</preserveaspect>
+                    </imagetype>
+		</state>
                 <state name="selectedinactive" from="active" />
+            </statetype>
+            <statetype name="upscrollarrow">
+		<position>1190,0</position>
+            </statetype>
+            <statetype name="downscrollarrow">
+		<position>1190,310</position>
             </statetype>
         </buttonlist>
 
