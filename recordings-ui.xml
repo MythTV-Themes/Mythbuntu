@@ -51,7 +51,6 @@
 		    <!-- Active = the focused pane. Selected = the
 			 highlighted entry. -->
                     <state name="active">
-			<area>0,0,0,0</area>
 			<shape name="buttonbackground"> 
                             <area>0,0,280,30</area> 
                             <type>roundbox</type>
@@ -61,7 +60,6 @@
 			</shape> 
 			<textarea name="name" from="buttontext">
                             <font>basesmallgrey</font>
-			    <area>0,0,0,31</area>
 			</textarea>
                     </state>
                     <state name="inactive" from="active">
