@@ -62,38 +62,52 @@
     </window>
 
     <window name="castpopup">
-        <area>-1,-1,413,426</area>
+        <area>-1,-1,500,500</area>
 
-        <shape name="castpopupbox" from="basebackground">
-	        <area>0,0,413,426</area>
+        <shape name="castbox" from="basebackground">
+            <area>0,0,500,500</area>
         </shape>
 
+        <textarea name="title_text" from="basetextarea">
+            <area>20,15,460,40</area>
+            <font>basemedium</font>
+            <align>hcenter,top</align>
+            <value>Cast</value>
+        </textarea>
+
         <buttonlist name="cast" from="basebuttonlist">
-            <area>18,18,377,325</area>
+            <area>20,60,460,350</area>
             <showarrow>no</showarrow>
         </buttonlist>
 
         <button name="ok" from="basebutton">
-            <position>119,350</position>
+            <position>175,440</position>
             <value>OK</value>
         </button>
     </window>
 
     <window name="descriptionpopup">
-        <area>-1,-1,413,426</area>
+        <area>-1,-1,500,500</area>
 
-        <shape name="movieselbox" from="basebackground">
-            <area>0,0,413,426</area>
+        <shape name="descriptionbox" from="basebackground">
+            <area>0,0,500,500</area>
         </shape>
 
+        <textarea name="title_text" from="basetextarea">
+            <area>20,15,460,40</area>
+            <font>basemedium</font>
+            <align>hcenter,top</align>
+            <value>Description</value>
+        </textarea>
+
         <textarea name="description" from="basetextarea">
-            <area>10,10,393,390</area>
+            <area>20,60,460,370</area>
             <multiline>yes</multiline>
             <align>justify</align>
         </textarea>
 
         <button name="ok" from="basebutton">
-            <position>119,400</position>
+            <position>175,440</position>
             <value>OK</value>
         </button>
     </window>
@@ -841,7 +855,7 @@
         </shape>
 
         <shape name="treetitlebox"> 
-            <area>10,10,780,60</area>
+            <area>10,10,1260,60</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="150" />
             <line color="#FFFFFF" alpha="0" width="0" />
@@ -849,9 +863,10 @@
         </shape>
         
         <textarea name="breadcrumbs" from="basetextarea">
-            <area>50,10,740,60</area>
+            <area>50,10,1180,60</area>
             <font>basemedium</font>
             <align>left,vcenter</align>
+            <cutdown>left</cutdown>
         </textarea>
 
         <buttontree name="videos">
@@ -865,15 +880,10 @@
         </buttontree>
 
         <textarea name="title" from="basetextarea">
-            <area>220,505,505,40</area>
+            <area>220,505,1020,40</area>
             <case>capitaliseall</case>
             <font>baselarge</font>
-        </textarea>
-
-        <textarea name="subtitle" from="basetextarea">
-            <area>735,505,505,30</area>
-            <align>right</align>
-            <font>basemedium</font>
+	    <template>%TITLE%% - |SUBTITLE%</template>
         </textarea>
 
         <textarea name="director" from="basetextarea">
