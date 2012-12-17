@@ -165,14 +165,17 @@
                             <font state="error">basesmallred</font>
                             <font state="running">basesmallgreen</font>
                             <align>vcenter</align>
+                            <template>%TITLESUBTITLE% %YEARSTARS%</template>
 			</textarea>
 			<textarea name="shortstartdate" from="titlesubtitle">
                             <area>948,1,120,31</area>
                             <align>right,vcenter</align>
+                            <template>%1</template>
 			</textarea>
 			<textarea name="starttime" from="shortstartdate">
                             <area>1079,1,120,31</area>
                             <align>right,vcenter</align>
+                            <template>%1</template>
 			</textarea>
 			<statetype name="watched">
                             <state name="yes">
@@ -216,14 +219,17 @@
                             <font state="error">basesmallbrightred</font>
                             <font state="running">basesmallbrightgreen</font>
                             <align>vcenter</align>
+                            <template>%TITLESUBTITLE% %YEARSTARS%</template>
 			</textarea>
 			<textarea name="shortstartdate" from="titlesubtitle">
                             <area>948,1,120,31</area>
                             <align>right,vcenter</align>
+                            <template>%1</template>
 			</textarea>
 			<textarea name="starttime" from="shortstartdate">
                             <area>1079,1,120,31</area>
                             <align>right,vcenter</align>
+                            <template>%1</template>
 			</textarea>
                     </state>
                     <state name="selectedinactive" from="active">
