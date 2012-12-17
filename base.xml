@@ -152,6 +152,7 @@
         <area>0,0,300,250</area>
         <layout>vertical</layout>
         <spacing>5</spacing>
+        <wrapstyle>selection</wrapstyle>
         <buttonarea>0,0,100%,97%</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
@@ -1613,6 +1614,7 @@
                     </textarea>
                     <textarea name="titlesubtitle" from="shortstarttimedate">
                         <area>488,1,657,24</area>
+                        <template>%TITLESUBTITLE% %YEARSTARS%</template>
                     </textarea>
                     <textarea name="card" from="shortstarttimedate">
                         <area>1160,1,35,24</area>

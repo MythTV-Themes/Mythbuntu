@@ -219,7 +219,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>40,130,1210,90</area>
+            <area>50,130,1180,90</area>
             <multiline>yes</multiline>
 	    <align>justify</align>
             <!-- <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template> -->
@@ -772,6 +772,7 @@
                     </textarea>
                     <textarea name="titlesubtitle" from="buttontext">
                         <area>60,1,850,24</area>
+                        <template>%TITLESUBTITLE% %YEARSTARS%</template>
                     </textarea>
                     <textarea name="progpriority" from="buttontext">
                         <area>935,1,40,24</area>
@@ -1400,11 +1401,12 @@
                     <textarea name="buttontext" from="basetextarea">
                         <area>0,0,80,25</area>
                         <align>allcenter</align>
+                        <font>basesmallgrey</font>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
                     <textarea name="buttontext">
-                        <font>basesmallyellow</font>
+                        <font>basesmall</font>
                     </textarea>
                     <shape name="selectbar">
                         <area>0,0,0,0</area>
@@ -1448,8 +1450,7 @@
                 <area>0,0,580,25</area>
                 <state name="active">
                     <textarea name="buttontext">
-                        <area>5,0,385,25</area>
-                        <font>basesmall</font>
+                        <area>5,0,580,25</area>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
 			<template>%1</template>
@@ -1457,7 +1458,7 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <textarea name="buttontext">
-                        <font>basesmallyellow</font>
+                        <font>basesmall</font>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active"/>
@@ -1475,12 +1476,15 @@
                 <state name="active">
                     <textarea name="buttontext">
                         <area>35,0,330,25</area>
-                        <font>basesmall</font>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active"/>
+                <state name="selectedactive" from="active">
+                    <textarea name="buttontext">
+                        <font>basesmall</font>
+                    </textarea>
+                </state>
                 <state name="selectedinactive" from="active"/>
             </statetype>
         </buttonlist>
@@ -2219,6 +2223,7 @@
                     </textarea>
                     <textarea name="titlesubtitle" from="shortstarttimedate">
                         <area>488,1,612,24</area>
+                        <template>%TITLESUBTITLE% %YEARSTARS%</template>
                     </textarea>
                     <textarea name="statusbefore" from="shortstarttimedate">
                         <area>1115,1,35,24</area>
