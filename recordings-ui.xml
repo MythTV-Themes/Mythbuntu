@@ -51,8 +51,9 @@
 		    <!-- Active = the focused pane. Selected = the
 			 highlighted entry. -->
                     <state name="active">
+			<area>0,0,0,0</area>
 			<shape name="buttonbackground"> 
-                            <area>0,0,280,30</area> 
+                            <area>0,0,280,31</area> 
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
                             <line color="#FFFFFF" alpha="0" width="0" />
@@ -60,13 +61,14 @@
 			</shape> 
 			<textarea name="name" from="buttontext">
                             <font>basesmallgrey</font>
+			    <area>0,0,0,0</area>
 			</textarea>
                     </state>
                     <state name="inactive" from="active">
                     </state>
                     <state name="selectedactive" from="active">
 			<shape name="buttonbackground">                         
-                            <area>0,0,280,30</area>
+                            <area>0,0,280,31</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>15</cornerradius>
@@ -77,7 +79,7 @@
                     </state>
                     <state name="selectedinactive" from="active">
 			<shape name="buttonbackground">                         
-                            <area>0,0,280,30</area>
+                            <area>0,0,280,31</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>15</cornerradius>
@@ -151,14 +153,14 @@
 			 highlighted entry. -->
                     <state name="active">
 			<shape name="buttonbackground">
-                            <area>360,0,859,30</area>
+                            <area>360,0,859,31</area>
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
                             <line color="#FFFFFF" alpha="0" width="0" />
                             <cornerradius>15</cornerradius>
 			</shape>
 			<textarea name="titlesubtitle" from="buttontext">
-                            <area>376,1,574,31</area>
+                            <area>376,0,574,31</area>
                             <font>basesmallgrey</font>
                             <font state="error">basesmallred</font>
                             <font state="running">basesmallgreen</font>
@@ -166,12 +168,12 @@
                             <template>%TITLESUBTITLE% %YEARSTARS%</template>
 			</textarea>
 			<textarea name="shortstartdate" from="titlesubtitle">
-                            <area>948,1,120,31</area>
+                            <area>948,0,120,31</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
 			</textarea>
 			<textarea name="starttime" from="shortstartdate">
-                            <area>1079,1,120,31</area>
+                            <area>1079,0,120,31</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
 			</textarea>
@@ -206,13 +208,13 @@
                     </state>
                     <state name="selectedactive" from="active">
 			<shape name="buttonbackground">
-                            <area>360,0,859,30</area>
+                            <area>360,0,859,31</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>15</cornerradius>
 			</shape>
 			<textarea name="titlesubtitle" from="buttontext">
-                            <area>376,1,574,31</area>
+                            <area>376,0,574,31</area>
                             <font>basesmall</font>
                             <font state="error">basesmallbrightred</font>
                             <font state="running">basesmallbrightgreen</font>
@@ -220,19 +222,19 @@
                             <template>%TITLESUBTITLE% %YEARSTARS%</template>
 			</textarea>
 			<textarea name="shortstartdate" from="titlesubtitle">
-                            <area>948,1,120,31</area>
+                            <area>948,0,120,31</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
 			</textarea>
 			<textarea name="starttime" from="shortstartdate">
-                            <area>1079,1,120,31</area>
+                            <area>1079,0,120,31</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
 			</textarea>
                     </state>
                     <state name="selectedinactive" from="active">
 			<shape name="buttonbackground">
-                            <area>360,0,859,30</area>
+                            <area>360,0,859,31</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>15</cornerradius>
@@ -616,25 +618,25 @@
         </textarea>
 
         <textarea name="oldpasslabel" from="basetextarea">
-            <area>58,180,300,30</area>
+            <area>180,160,300,30</area>
             <value>Old Password:</value>
         </textarea>
 
         <textedit name="oldpassword" from="basetextedit">
-            <position>58,210</position>
+            <position>75,200</position>
         </textedit>
 
         <textarea name="newpasslabel" from="basetextarea">
-            <area>58,310,300,30</area>
+            <area>180,290,300,30</area>
             <value>New Password:</value>
         </textarea>
 
         <textedit name="newpassword" from="basetextedit">
-            <position>58,340</position>
+            <position>75,330</position>
         </textedit>
 
         <button name="ok" from="basebutton">
-            <position>175,435</position>
+            <position>175,410</position>
             <value>OK</value>
         </button>
     </window>
