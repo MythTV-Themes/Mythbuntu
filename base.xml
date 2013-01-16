@@ -4,7 +4,7 @@
 <mythuitheme>
 
     <!-- Base Font Definitions -->
-    <fontdef name="basesmall" face="DejaVu Sans">
+    <fontdef name="basesmall" face="Ubuntu">
         <size>15</size>
         <color>#FFFFFF</color>
     </fontdef>
