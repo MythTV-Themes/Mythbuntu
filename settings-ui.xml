@@ -156,7 +156,7 @@
                                 <area>0,0,12,12</area>
                                 <type>ellipse</type>
                                 <fill color="#00FF00" alpha="255"/>
-                                <line color="#ffffff" thickness="1" alpha="255"/>
+                                <line color="#ffffff" width="1" alpha="255"/>
                             </shape>
                         </state>
                         <state name="local">
@@ -164,7 +164,7 @@
                     </statetype>
 
                     <statetype name="themestatus">
-                        <area>-2%,40%,12,12</area>
+                        <area>0,40%,12,12</area>
                         <state name="updateavailable">
                         </state>
                         <state name="uptodate">
@@ -226,7 +226,7 @@
             <area>4%,89%,8,8</area>
             <type>ellipse</type>
             <fill color="#00FF00" alpha="200" />
-            <line color="#ffffff" thickness="1" alpha="255"/>
+            <line color="#ffffff" width="1" alpha="255"/>
         </shape>
         <textarea name="update_text" from="basetextarea">
             <area>6%,85%,90%,60</area>

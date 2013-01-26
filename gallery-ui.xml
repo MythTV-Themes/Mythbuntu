@@ -11,7 +11,8 @@
         <fontdef name="title" face="baselarge">
             <color>#ffffff</color>
             <shadowcolor>#666666</shadowcolor>
-            <shadow>2,2</shadow>
+            <shadowoffset>2,2</shadowoffset>
+            <shadowalpha>64</shadowalpha>
             <size>24</size>
         </fontdef>
 
@@ -75,14 +76,14 @@
             <line color="#FFFFFF" alpha="200" width="3" />
         </shape>
 
-        <textarea name="help1" draworder="1">
+        <textarea name="help1">
             <area>0,620,1280,35</area>
             <font>menu</font>
             <align>allcenter</align>
             <value>SELECT: View</value>
         </textarea>
 
-        <textarea name="help2" draworder="1">
+        <textarea name="help2">
             <area>0,660,1280,35</area>
             <font>menu</font>
             <align>allcenter</align>

@@ -809,7 +809,7 @@
             <area>100,642,1120,60</area>
             <font>clock</font>
             <align>right</align>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
     </window>

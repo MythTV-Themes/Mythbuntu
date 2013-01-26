@@ -8,9 +8,10 @@
 
     <fontdef name="largetitle" face="DejaVu Sans">
         <color>#ffffff</color>
-        <dropcolor>#000000</dropcolor>
         <size>32</size>
-        <shadow>3,3</shadow>
+        <shadowcolor>#000000</shadowcolor>
+        <shadowoffset>3,3</shadowoffset>
+        <shadowalpha>64</shadowalpha>
     </fontdef>
 
     <fontdef name="infofont" face="DejaVu Sans">
@@ -98,7 +99,7 @@
 
     <textarea name="title" from="basetextarea">
         <area>10,50,1260,50</area>
-        <value>Game Information</value>
+        <value>Game Intemplateion</value>
         <align>hcenter,vcenter</align>
         <font>baselarge</font>
     </textarea>
@@ -228,7 +229,7 @@
 
     <textarea name="title" from="basetextarea">
         <area>10,50,1260,50</area>
-        <value>Edit Game Information</value>
+        <value>Edit Game Intemplateion</value>
         <align>hcenter,vcenter</align>
         <font>baselarge</font>
     </textarea>

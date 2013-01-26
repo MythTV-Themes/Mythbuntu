@@ -93,7 +93,7 @@
         <webbrowser name="webbrowser">
             <area>20,20,1240,600</area>
             <zoom>1.0</zoom>
-            <background color="black" alpha="1" />
+            <background color="#000000" alpha="1" />
         </webbrowser>
 
         <button name="done" from="basebutton">
@@ -132,7 +132,7 @@
             <area>840,10,380,60</area>
             <font>baselarge</font>
             <align>vcenter,right</align>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         
@@ -365,7 +365,7 @@
     <window name="visualizerview">
 
         <video name="visualizer">
-            <area>0,0,1280,720,</area>
+            <area>0,0,1280,720</area>
         </video>
 
     </window>
@@ -1149,7 +1149,7 @@
         <textarea name="title" from="basetextarea">
             <area>15,5,800,50</area>
             <font>baselarge</font>
-            <value>Edit Track Information</value>
+            <value>Edit Track Intemplateion</value>
         </textarea>
 
         <!-- Labels -->
@@ -2032,7 +2032,7 @@
 
     </window>
 
-   <!-- shows some information for the currently selected or playing track -->
+   <!-- shows some intemplateion for the currently selected or playing track -->
     <window name="smartplresultviewer">
         <textarea name="title" from="basetextarea">
             <area>15,5,800,50</area>
@@ -2106,7 +2106,7 @@
 
     </window>
 
-    <!-- shows some information for the currently selected or playing track -->
+    <!-- shows some intemplateion for the currently selected or playing track -->
     <window name="trackdetail_popup">
         <area>-1,-1,1250,700</area>
 

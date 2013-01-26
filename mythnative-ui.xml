@@ -13,9 +13,10 @@ MythTV Archive GUI theme
 
         <fontdef name="title" from="basesmall">
             <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
+            <shadowcolor>#000000</shadowcolor>
+            <shadowoffset>3,3</shadowoffset>
+            <shadowalpha>64</shadowalpha>
             <size>24</size>
-            <shadow>3,3</shadow>
         </fontdef>
 
         <fontdef name="description" from="basesmall">
@@ -107,7 +108,6 @@ MythTV Archive GUI theme
         </textarea>
 
         <textarea name="filesize" from="basetextarea">
-            <context>2</context>
             <area>1010,555,100,40</area>
             <font>detail</font>
             <align>right</align>
@@ -175,9 +175,10 @@ MythTV Archive GUI theme
     <window name="archivefile_selector">
         <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
+            <shadowcolor>#000000</shadowcolor>
+            <shadowoffset>3,3</shadowoffset>
+            <shadowalpha>64</shadowalpha>
             <size>24</size>
-            <shadow>3,3</shadow>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
@@ -214,12 +215,20 @@ MythTV Archive GUI theme
                 </state>
                 <state name="selectedactive" from="active">
                     <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="255" />
+                        <shape name="nativegradient1">
+                            <fill style="gradient">
+                                <gradient start="#52CA38" end="#349838" alpha="255" />
+                            </fill>
+                        </shape>
                     </imagetype>
                 </state>
                 <state name="selectedinactive" from="active">
                     <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="100" />
+                        <shape name="nativegradient2">
+                            <fill style="gradient">
+                                <gradient start="#52CA38" end="#349838" alpha="100" />
+                            </fill>
+                        </shape>
                     </imagetype>
                     <textarea name="buttontext">
                         <font>basesmallpurple</font>
@@ -284,9 +293,10 @@ MythTV Archive GUI theme
   <window name="importnative">
         <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
+            <shadowcolor>#000000</shadowcolor>
+            <shadowoffset>3,3</shadowoffset>
+            <shadowalpha>64</shadowalpha>
             <size>24</size>
-            <shadow>3,3</shadow>
         </fontdef>
 
         <textarea name="title1" from="basetextarea">

@@ -202,7 +202,7 @@
             <area>950,10,300,60</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <textarea name="subtitle" from="basetextarea">
@@ -1142,7 +1142,7 @@
         </textarea>
 
         <textedit name="title_edit" from="basetextedit">
-            <area>15%,80,-10%,100%</area>
+            <area>15%,80,10%,100%</area>
         </textedit>
 
         <textarea name="subtitlelabel" from="titlelabel">
@@ -1373,7 +1373,7 @@
             <area>930,10,300,60</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <textarea name="searchlabel" from="basetextarea">
@@ -1662,7 +1662,7 @@
             <area>930,10,300,60</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <textarea name="pagetitle" from="basetextarea">
@@ -1798,7 +1798,7 @@
             <area>930,10,300,60</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <shape name="options_background" from="baseboxbackground">
@@ -1878,7 +1878,7 @@
             <area>930,10,300,60</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <shape name="options_background" from="baseboxbackground">
@@ -2028,7 +2028,7 @@
             <area>930,10,300,60</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <shape name="options_background" from="baseboxbackground">
@@ -2102,7 +2102,7 @@
             <area>930,10,300,60</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
 	<group name="details" from="detailsgroup" />
@@ -2278,7 +2278,7 @@
             <area>930,10,300,60</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <shape name="options_background" from="baseboxbackground">

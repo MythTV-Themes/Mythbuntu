@@ -64,9 +64,10 @@ MythArchive GUI theme
 
         <fontdef name="title" from="basesmall">
             <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
+            <shadowcolor>#000000</shadowcolor>
+            <shadowoffset>3,3</shadowoffset>
+            <shadowalpha>64</shadowalpha>
             <size>24</size>
-            <shadow>3,3</shadow>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
@@ -180,9 +181,10 @@ MythArchive GUI theme
 
         <fontdef name="title" from="basesmall">
             <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
+            <shadowcolor>#000000</shadowcolor>
+            <shadowoffset>3,3</shadowoffset>
+            <shadowalpha>64</shadowalpha>
             <size>24</size>
-            <shadow>3,3</shadow>
         </fontdef>
 
         <fontdef name="smallstatsfont" from="basesmall">
@@ -216,7 +218,11 @@ MythArchive GUI theme
                 <state name="active">
                     <imagetype name="buttonbackground">
                         <area>0,0,1145,100</area>
-                        <gradient start="#505050" end="#000000" alpha="200" />
+                        <shape name="burngradient1">
+                            <fill style="gradient">
+                                <gradient start="#505050" end="#000000" alpha="200" />
+                            </fill>
+                        </shape>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
                         <area>10,5,470,30</area>
@@ -268,7 +274,11 @@ MythArchive GUI theme
                 </state>
                 <state name="selectedactive" from="active">
                     <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="255" />
+                        <shape name="burngradient2">
+                            <fill style="gradient">
+                                <gradient start="#52CA38" end="#349838" alpha="255" />
+                            </fill>
+                        </shape>
                     </imagetype>
 
                     <textarea name="buttontext">
@@ -277,7 +287,11 @@ MythArchive GUI theme
                 </state>
                 <state name="selectedinactive" from="active">
                     <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="100" />
+                        <shape name="burngradient3">
+                            <fill style="gradient">
+                                <gradient start="#52CA38" end="#349838" alpha="100" />
+                            </fill>
+                        </shape>
                     </imagetype>
 
                     <textarea name="buttontext">
@@ -379,9 +393,10 @@ MythArchive GUI theme
 
         <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
+            <shadowcolor>#000000</shadowcolor>
+            <shadowoffset>3,3</shadowoffset>
+            <shadowalpha>64</shadowalpha>
             <size>24</size>
-            <shadow>3,3</shadow>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
@@ -464,9 +479,10 @@ MythArchive GUI theme
 
         <fontdef name="title" from="baselarge">
             <color>#ffff00</color>
-            <dropcolor>#000000</dropcolor>
+            <shadowcolor>#000000</shadowcolor>
+            <shadowoffset>3,3</shadowoffset>
+            <shadowalpha>64</shadowalpha>
             <size>24</size>
-            <shadow>3,3</shadow>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
@@ -564,7 +580,11 @@ MythArchive GUI theme
                     <area>0,0,144,125</area>
                     <imagetype name="buttonbackground">
                         <area>0,0,144,125</area>
-                        <gradient start="#505050" end="#000000" alpha="200" />
+                        <shape name="burngradient6">
+                            <fill style="gradient">
+                                <gradient start="#505050" end="#000000" alpha="200" />
+                            </fill>
+                        </shape>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
                         <area>5,100,134,30</area>
@@ -579,7 +599,11 @@ MythArchive GUI theme
                 </state>
                 <state name="selectedactive" from="active">
                     <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="255" />
+                        <shape name="burngradient5">
+                            <fill style="gradient">
+                                <gradient start="#52CA38" end="#349838" alpha="255" />
+                            </fill>
+                        </shape>
                     </imagetype>
                     <textarea name="buttontext">
                         <font>basesmall</font>
@@ -587,7 +611,11 @@ MythArchive GUI theme
                 </state>
                 <state name="selectedinactive" from="active">
                     <imagetype name="buttonbackground">
-                        <gradient start="#52CA38" end="#349838" alpha="100" />
+                        <shape name="burngradient6">
+                            <fill style="gradient">
+                                <gradient start="#52CA38" end="#349838" alpha="100" />
+                            </fill>
+                        </shape>
                     </imagetype>
                     <textarea name="buttontext">
                         <font>basesmallpurple</font>

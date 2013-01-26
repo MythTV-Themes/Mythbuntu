@@ -720,11 +720,11 @@
 
         <imagetype name="visualizer_border">
             <filename>mm_blackhole_border.png</filename>
-            <area>1082,9,162,162,</area>
+            <area>1082,9,162,162</area>
         </imagetype>
 
         <video name="visualizer">
-            <area>1085,13,156,155,</area>
+            <area>1085,13,156,155</area>
         </video>
 
         <textarea name="visualizername" from="basetextarea">

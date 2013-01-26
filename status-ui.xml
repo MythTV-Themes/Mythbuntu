@@ -13,7 +13,7 @@
             <area>950,10,300,60</area>
             <align>vcenter,right</align>
 	    <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
         <shape name="infobox">

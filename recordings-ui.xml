@@ -419,7 +419,7 @@
 		    <area>955,670,300,30</area>
 		    <align>vcenter,right</align>
 		    <font>basesmallgrey</font>
-		    <format>%DATE%, %TIME%</format>
+		    <template>%DATE%, %TIME%</template>
 		</clock>
 
 	    </group>

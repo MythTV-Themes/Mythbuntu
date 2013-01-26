@@ -320,7 +320,7 @@
 
         <textarea name="title" from="basetextarea">
             <area>40,15,1200,100</area>
-            <multiline></multiline>
+            <multiline>0</multiline>
             <font>baseextralarge</font>
         </textarea>
 
