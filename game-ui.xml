@@ -99,7 +99,7 @@
 
     <textarea name="title" from="basetextarea">
         <area>10,50,1260,50</area>
-        <value>Game Intemplateion</value>
+        <value>Game Information</value>
         <align>hcenter,vcenter</align>
         <font>baselarge</font>
     </textarea>
@@ -229,7 +229,7 @@
 
     <textarea name="title" from="basetextarea">
         <area>10,50,1260,50</area>
-        <value>Edit Game Intemplateion</value>
+        <value>Edit Game Information</value>
         <align>hcenter,vcenter</align>
         <font>baselarge</font>
     </textarea>

@@ -1149,7 +1149,7 @@
         <textarea name="title" from="basetextarea">
             <area>15,5,800,50</area>
             <font>baselarge</font>
-            <value>Edit Track Intemplateion</value>
+            <value>Edit Track Information</value>
         </textarea>
 
         <!-- Labels -->
@@ -2032,7 +2032,7 @@
 
     </window>
 
-   <!-- shows some intemplateion for the currently selected or playing track -->
+   <!-- shows some information for the currently selected or playing track -->
     <window name="smartplresultviewer">
         <textarea name="title" from="basetextarea">
             <area>15,5,800,50</area>

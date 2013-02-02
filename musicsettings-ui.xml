@@ -47,12 +47,12 @@
             <position>410,220</position>
         </checkbox>
 
-        <textarea name="nonid3filenametemplate_label" from="basetextarea">
+        <textarea name="nonid3filenameformat_label" from="basetextarea">
             <area>20,260,380,50</area>
             <align>right,vcenter</align>
             <value>Filename Format:</value>
         </textarea>
-        <textedit name="nonid3filenametemplate" from="basetextedit">
+        <textedit name="nonid3filenameformat" from="basetextedit">
             <position>410,260</position>
         </textedit>
 

@@ -1021,7 +1021,7 @@
 
         <textarea name="title" from="basetextarea">
             <area>10,30,1260,50</area>
-            <value>Edit Video Intemplateion</value>
+            <value>Edit Video Information</value>
             <align>hcenter,vcenter</align>
             <font>baselarge</font>
         </textarea>
