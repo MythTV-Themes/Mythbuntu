@@ -19,6 +19,7 @@
         <buttonlist name="images">
             <area>0,70,1280,520</area>
             <layout>grid</layout>
+            <wrapstyle>flowing</wrapstyle>
             <spacing>19</spacing>
             <buttonarea>60,0,1170,520</buttonarea>
             <statetype name="buttonitem">
