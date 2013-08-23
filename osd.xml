@@ -167,7 +167,7 @@
     </window>
 
     <window name="osd_message">
-        <fontdef name="medium" face="DejaVu Sans">
+        <fontdef name="medium" face="Ubuntu">
             <pixelsize>26</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
@@ -189,7 +189,7 @@
     </window>
 
     <window name="osd_input">
-        <fontdef name="medium" face="DejaVu Sans">
+        <fontdef name="medium" face="Ubuntu">
             <pixelsize>26</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
@@ -211,7 +211,7 @@
     </window>
 
     <window name="osd_status">
-        <fontdef name="small" face="DejaVu Sans">
+        <fontdef name="small" face="Ubuntu">
             <pixelsize>22</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
@@ -260,7 +260,7 @@
     </window>
 
     <window name="program_info">
-        <fontdef name="small" face="DejaVu Sans">
+        <fontdef name="small" face="Ubuntu">
             <pixelsize>22</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
@@ -282,12 +282,12 @@
         </shape>
         <textarea name="title">
             <font>medium</font>
-            <area>10,10,850,30</area>
+            <area>200,10,660,30</area>
             <align>left,top</align>
         </textarea>
         <textarea name="starttime">
             <font>smaller</font>
-            <area>10,50,730,30</area>
+            <area>200,50,540,30</area>
             <align>left,top</align>
             <template>%STARTDATE|, %%STARTTIME%% - |ENDTIME|: %%LENMINS%</template>
         </textarea>
@@ -517,24 +517,24 @@
 
         <textarea name="channum" depends="!coverart">
             <font>small</font>
-            <area>25,100,150,30</area>
+            <area>25,60,150,30</area>
             <align>hcenter,vcenter</align>
         </textarea>
         <imagetype name="iconpath" depends="channum">
-            <area>35,140,130,100</area>
+            <area>35,100,130,100</area>
         </imagetype>
         <textarea name="callsign" depends="channum">
             <font>smaller</font>
-            <area>25,250,150,30</area>
+            <area>25,210,150,30</area>
             <align>hcenter,vcenter</align>
         </textarea>
         <imagetype name="coverart" depends="coverart">
-            <area>40,100,120,180</area>
+            <area>10,15,180,270</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
         <textarea name="description">
             <font>small</font>
-            <area>200,100,845,155</area>
+            <area>200,100,870,155</area>
             <align>justify,top</align>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
@@ -542,7 +542,7 @@
     </window>
 
     <window name="browse_info">
-        <fontdef name="small" face="DejaVu Sans">
+        <fontdef name="small" face="Ubuntu">
             <pixelsize>22</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
@@ -554,7 +554,7 @@
         <fontdef name="medium" from="small">
             <pixelsize>26</pixelsize>
         </fontdef>
-        <area>100,370,1080,300</area>
+        <area>100,420,1080,200</area>
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
@@ -564,12 +564,12 @@
         </shape>
         <textarea name="title">
             <font>medium</font>
-            <area>10,10,850,30</area>
+            <area>200,10,660,30</area>
             <align>left,top</align>
         </textarea>
         <textarea name="starttime">
             <font>smaller</font>
-            <area>10,50,730,30</area>
+            <area>200,50,540,30</area>
             <align>left,top</align>
             <template>%STARTTIME%% - |ENDTIME|: %%LENMINS%</template>
         </textarea>
@@ -586,20 +586,20 @@
         </textarea>
         <textarea name="channum">
             <font>small</font>
-            <area>25,100,150,30</area>
+            <area>25,10,150,30</area>
             <align>hcenter,vcenter</align>
         </textarea>
         <imagetype name="iconpath">
-            <area>35,140,130,100</area>
+            <area>35,50,130,100</area>
         </imagetype>
         <textarea name="callsign">
             <font>smaller</font>
-            <area>25,250,150,30</area>
+            <area>25,160,150,30</area>
             <align>hcenter,vcenter</align>
         </textarea>
         <textarea name="description">
             <font>small</font>
-            <area>200,100,845,155</area>
+            <area>200,90,870,100</area>
             <align>justify,top</align>
             <multiline>yes</multiline>
             <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
@@ -607,7 +607,7 @@
     </window>
 
     <window name="ChannelEditor">
-        <fontdef name="small" face="DejaVu Sans">
+        <fontdef name="small" face="Ubuntu">
             <pixelsize>22</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
@@ -722,7 +722,7 @@
     </window>
 
     <window name="osd_program_editor">
-        <fontdef name="small" face="DejaVu Sans">
+        <fontdef name="small" face="Ubuntu">
             <pixelsize>22</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
