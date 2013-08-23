@@ -485,52 +485,25 @@
         </imagetype>
 
         <shape name="videosbox">
-            <area>0,500,1280,220</area>
+            <area>0,560,1280,180</area>
     	    <type>box</type>
             <fill color="#000000" alpha="150" />
             <line color="#FFFFFF" alpha="0" width="0" />
         </shape>
         
-        <shape name="titlebox">
-            <area>10,10,780,60</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>30</cornerradius>
-        </shape>
-
-        <shape name="descriptionbox">
-            <area>370,80,895,290</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>10</cornerradius>
-        </shape>
-        
-        <shape name="coverbox" from="descriptionbox">
-            <area>15,80,345,410</area>
-        </shape>
-        
-        <shape name="ratingbox" from="descriptionbox">
-            <area>370,380,900,50</area>
-            <cornerradius>25</cornerradius>
-        </shape>
-        
-        <shape name="runtimebox" from="ratingbox">
-            <area>370,440,900,50</area>
-        </shape>
-        
         <buttonlist name="videos">
-            <area>15,550,1260,170</area>
+            <area>0,550,1280,170</area>
             <layout>horizontal</layout>
             <wrapstyle>items</wrapstyle>
             <scrollstyle>center</scrollstyle>
             <spacing>7</spacing>
-            <buttonarea>0,0,1260,150</buttonarea>
+            <buttonarea>15,10,1260,150</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,90,150</area>
                     <shape name="buttonbackground" />
                     <imagetype name="buttonimage">
-                        <area>10,10,70,130</area>
+                        <area>10,0,70,130</area>
                         <alpha>150</alpha>
                         <preserveaspect>true</preserveaspect>
                         <filename>mv_browse_nocover.png</filename>
@@ -539,7 +512,7 @@
                         <position>35,80</position>
                         <state name="subfolder">
                             <imagetype name="icon">
-                                <area>0,0,50,50</area>
+                                <area>0,0,50,150</area>
                                 <filename>mv_gallery-folder-reg.png</filename>
                                 <alpha>75</alpha>
                                 <preserveaspect>yes</preserveaspect>
@@ -554,15 +527,10 @@
                             </imagetype>
                         </state>
                     </statetype>
-                    <textarea name="childcount" from="basetextarea">
-                        <area>37,97,40,20</area>
-                        <font>basesmallblack</font>
-                        <align>right</align>
-                    </textarea>
                 </state>
                 <state name="selectedactive" from="active">
                     <imagetype name="buttonimage">
-                        <area>-10,-10,110,170</area>
+                        <area>10,0,70,130</area>
                         <alpha>255</alpha>
                         <filename>mv_browse_nocover.png</filename>
                     </imagetype>
@@ -571,144 +539,20 @@
         </buttonlist>
 
         <textarea name="title" from="basetextarea">
-            <area>50,10,780,60</area>
-            <align>left,vcenter</align>
+            <area>0,680,1280,40</area>
+            <align>top,hcenter</align>
             <case>capitaliseall</case>
             <multiline>no</multiline>
             <font>baseextralarge</font>
         </textarea>
 
-        <imagetype name="coverart">
-            <area>55,95,270,380</area>
-            <preserveaspect>yes</preserveaspect>
-            <filename>mv_browse_nocover.png</filename>
-        </imagetype>
-
-        <textarea name="currentvideo" from="basetextarea">
-            <area>0,486,1280,50</area>
-            <align>center</align>
-        </textarea>
-
-        <textarea name="dirlbl" from="basetextarea">
-            <area>395,92,840,35</area>
-            <value>Directed by:</value>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="director" from="basetextarea">
-            <area>540,92,675,35</area>
-        </textarea>
-
-        <textarea name="description" from="basetextarea">
-            <area>395,127,845,233</area>
-            <multiline>yes</multiline>
-            <align>justify</align>
-        </textarea>
-
-        <textarea name="ratinglbl" from="basetextarea">
-            <area>395,380,150,50</area>
-            <value>Rated:</value>
-        </textarea>
-
-        <textarea name="rating" from="basetextarea">
-            <area>480,380,280,50</area>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="seasonlbl" from="basetextarea">
-            <area>780,380,90,50</area>
-            <value>Season:</value>
-            <align>right,vcenter</align>
-        </textarea>
-
-        <textarea name="season" from="basetextarea">
-            <area>880,380,100,50</area>
-        </textarea>
-
-        <textarea name="episodelbl" from="basetextarea">
-            <area>1015,380,150,50</area>
-            <align>right,vcenter</align>
-            <value>Episode:</value>
-        </textarea>
-
-        <textarea name="episode" from="basetextarea">
-            <area>1175,380,100,50</area>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="lenlbl" from="basetextarea">
-            <area>395,440,150,50</area>
-            <value>Runtime:</value>
-        </textarea>
-
-        <textarea name="length" from="basetextarea">
-            <area>500,440,340,50</area>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="yrlbl" from="basetextarea">
-            <area>780,440,90,50</area>
-            <value>Year:</value>
-            <align>right,vcenter</align>
-        </textarea>
-
-        <textarea name="year" from="basetextarea">
-            <area>880,440,100,50</area>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="userratinglbl" from="basetextarea">
-            <area>1015,440,150,50</area>
-            <align>right,vcenter</align>
-            <value>User Rating:</value>
-        </textarea>
-
-        <textarea name="userrating" from="basetextarea">
-            <area>1175,440,100,50</area>
-            <align>left,vcenter</align>
-        </textarea>
-
-        <textarea name="position" from="basetextarea">
-            <area>0,505,1280,40</area>
-            <align>center</align>
-            <font>basemedium</font>
-        </textarea>
-
         <textarea name="novideos" from="basetextarea">
-            <area>450,130,840,70</area>
+            <area>200,200,1080,520</area>
             <multiline>yes</multiline>
             <align>hcenter,vcenter</align>
-            <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value> 
+            <value>No videos in library, or no files found. If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value> 
         </textarea>
 
-<!--        <statetype name="parentallevel">
-            <position>1230,10</position>
-            <state name="None">
-                <imagetype name="icon">
-                    <filename>mv_level_none.png</filename>
-                </imagetype>
-            </state>
-            <state name="Lowest">
-                <imagetype name="icon">
-                    <filename>mv_level_lowest.png</filename>
-                </imagetype>
-            </state>
-            <state name="Low">
-                <imagetype name="icon">
-                    <filename>mv_level_low.png</filename>
-                </imagetype>
-            </state>
-            <state name="Medium">
-                <imagetype name="icon">
-                    <filename>mv_level_medium.png</filename>
-                </imagetype>
-            </state>
-            <state name="High">
-                <imagetype name="icon">
-                    <filename>mv_level_high.png</filename>
-                </imagetype>
-            </state>
-        </statetype>  -->
     </window>
 
     <window name="gallery">
@@ -736,8 +580,8 @@
         <buttonlist name="videos">
             <area>20,80,1260,640</area>
             <layout>grid</layout>
-            <spacing>20</spacing>
-            <wrapstyle>items</wrapstyle>
+            <spacing>10</spacing>
+            <wrapstyle>flowing</wrapstyle>
             <buttonarea>0,0,1260,640</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,300,350</area>
