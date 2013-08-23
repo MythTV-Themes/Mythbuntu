@@ -49,7 +49,7 @@
         </textarea>
 
         <guidegrid name="guidegrid">
-            <area>220,295,1032,392</area>
+            <area>220,295,1032,395</area>
 	    <!-- <animation trigger="AboutToShow"> -->
 	    <!-- 	<section duration="250"> -->
 	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
@@ -67,7 +67,7 @@
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <textoffset>9,6</textoffset>
+            <textoffset>9,5</textoffset>
             <recordstatus type="SingleRecord" image="shared/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="shared/gg-rs-timeslot.png"></recordstatus>
             <recordstatus type="ChannelRecord" image="shared/gg-rs-channel.png"></recordstatus>
@@ -131,10 +131,10 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>25,295,190,395</area>
+            <area>25,295,190,398</area>
             <layout>vertical</layout>
-            <spacing>0</spacing>
-            <buttonarea>5,0,190,395</buttonarea>
+            <spacing>1</spacing>
+            <buttonarea>5,0,190,398</buttonarea>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <area>0,0,190,74</area>
@@ -149,7 +149,7 @@
                         <area>10,6,59,44</area>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>75,0,105,55</area>
+                        <area>75,1,105,55</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
@@ -295,7 +295,7 @@
         </textarea>
 
         <guidegrid name="guidegrid">
-            <area>220,295,1032,392</area>
+            <area>220,295,1032,395</area>
 	    <!-- <animation trigger="AboutToShow"> -->
 	    <!-- 	<section duration="250"> -->
 	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
@@ -313,7 +313,7 @@
             <conflictingcolor>#ff6600</conflictingcolor>
             <cutdown>yes</cutdown>
             <multiline>yes</multiline>
-            <textoffset>9,6</textoffset>
+            <textoffset>9,5</textoffset>
             <recordstatus type="SingleRecord" image="shared/gg-rs-single.png"></recordstatus>
             <recordstatus type="TimeslotRecord" image="shared/gg-rs-timeslot.png"></recordstatus>
             <recordstatus type="ChannelRecord" image="shared/gg-rs-channel.png"></recordstatus>
@@ -375,10 +375,10 @@
         </buttonlist>
 
         <buttonlist name="channellist">
-            <area>25,295,190,395</area>
+            <area>25,295,190,398</area>
             <layout>vertical</layout>
-            <spacing>0</spacing>
-            <buttonarea>5,0,190,395</buttonarea>
+            <spacing>1</spacing>
+            <buttonarea>5,0,190,398</buttonarea>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <area>0,0,190,74</area>
@@ -393,7 +393,7 @@
                         <area>10,6,59,44</area>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>75,0,105,55</area>
+                        <area>75,1,105,55</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
                         <font state="unavailable">basesmallblue</font>
