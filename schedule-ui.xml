@@ -209,7 +209,7 @@
             <area>167,80,703,30</area>
             <align>left,vcenter</align>
             <font>basesmall</font>
-	    <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>
+	    <template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
@@ -446,7 +446,7 @@
             <area>167,80,353,30</area>
             <align>left,vcenter</align>
             <font>basesmall</font>
-	    <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>
+	    <template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
