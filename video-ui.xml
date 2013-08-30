@@ -240,7 +240,7 @@
         </shape>
         
         <textarea name="novideos" from="basetextarea">
-            <area>0,110,800,70</area>
+            <area>300,300,800,70</area>
             <multiline>yes</multiline>
             <align>hcenter,vcenter</align>
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value> 
@@ -544,10 +544,19 @@
             <case>capitaliseall</case>
             <multiline>no</multiline>
             <font>baseextralarge</font>
+            <template>%TITLE%% - |SUBTITLE%</template>
+        </textarea>
+
+        <textarea name="##x##" from="basetextarea">
+            <area>0,565,1280,40</area>
+            <align>top,hcenter</align>
+            <case>capitaliseall</case>
+            <multiline>no</multiline>
+            <font>baselarge</font>
         </textarea>
 
         <textarea name="novideos" from="basetextarea">
-            <area>200,200,1080,520</area>
+            <area>200,0,880,720</area>
             <multiline>yes</multiline>
             <align>hcenter,vcenter</align>
             <value>No videos in library, or no files found. If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value> 
@@ -656,7 +665,7 @@
             <align>vcenter,left</align>
         </textarea>
 
-        <textarea name="s##e##">
+        <textarea name="##x##">
             <area>600,10,140,60</area>
             <font>basesmallgrey</font>
             <align>vcenter,right</align>
@@ -669,7 +678,7 @@
         </textarea>
 
         <textarea name="novideos" from="basetextarea">
-            <area>250,130,540,70</area>
+            <area>200,0,880,720</area>
             <multiline>yes</multiline>
             <align>hcenter,vcenter</align>
             <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value> 
@@ -798,6 +807,12 @@
                 </imagetype>
             </state>
         </statetype> -->
+        <textarea name="novideos" from="basetextarea">
+            <area>200,0,880,720</area>
+            <multiline>yes</multiline>
+            <align>hcenter,vcenter</align>
+            <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value> 
+        </textarea>
     </window>
 
     <window name="file_associations">
