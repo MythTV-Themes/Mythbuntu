@@ -9,7 +9,7 @@
         </imagetype>
 
         <shape name="groupbox">
-            <area>10,520,300,195</area>
+            <area>10,60,300,650</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="150" />
             <line color="#FFFFFF" alpha="0" width="0" />
@@ -17,11 +17,18 @@
         </shape>
         
         <shape name="recordingsbox">
-                <area>320,520,945,195</area>
-                <type>roundbox</type>
-                <fill color="#000000" alpha="150" />
-                <line color="#FFFFFF" alpha="0" width="0" />
-                <cornerradius>10</cornerradius>
+            <area>320,60,950,650</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="150" />
+            <line color="#FFFFFF" alpha="0" width="0" />
+            <cornerradius>10</cornerradius>
+        </shape>
+        
+        <shape name="infobox">
+            <area>0,0,1280,50</area>
+            <type>box</type>
+            <fill color="#000000" alpha="150" />
+            <line color="#FFFFFF" alpha="0" width="0" />
         </shape>
         
         <group name="groupgroup" depends="!filesize_str">
@@ -29,13 +36,13 @@
             <animation trigger="AboutToShow"> 
                 <section duration="2000"> 
                     <alpha start="0" end="255" easingcurve="InQuart"/> 
-                    <position start="-1,300," end="-1,-1" /> 
+                    <position start="-1,-1," end="-1,-1" /> 
                 </section> 
             </animation>
             
             <buttonlist name="groups" from="basebuttonlist">
-                <area>10,520,300,200</area>
-                <buttonarea>10,10,260,200</buttonarea>
+                <area>10,65,300,640</area>
+                <buttonarea>10,10,260,635</buttonarea>
                 <scrollstyle>center</scrollstyle>
                 <spacing>6</spacing>
                 <wrapstyle>items</wrapstyle>
@@ -84,7 +91,7 @@
                     <position>0,0</position>
                 </statetype>
                 <statetype name="downscrollarrow">
-                    <position>0,170</position>
+                    <position>0,610</position>
                 </statetype>
             </buttonlist>
 
@@ -95,13 +102,13 @@
             <animation trigger="AboutToShow"> 
                 <section duration="2000"> 
                     <alpha start="0" end="255" easingcurve="InQuart"/> 
-                    <position start="-1,300," end="-1,-1" />
+                    <position start="-1,-1," end="-1,-1" />
                 </section>
             </animation> 
 
             <buttonlist name="recordings" from="basebuttonlist">
-                <area>10,520,1270,200</area>
-                <buttonarea>0,10,756,200</buttonarea>
+                <area>10,65,1270,640</area>
+                <buttonarea>0,10,756,635</buttonarea>
                 <spacing>6</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
@@ -246,7 +253,7 @@
                     <position>1220,0</position>
                 </statetype>
                 <statetype name="downscrollarrow">
-                    <position>1220,170</position>
+                    <position>1220,610</position>
                 </statetype>
             </buttonlist>
 
@@ -260,13 +267,6 @@
             <!--        <position start="-1,720," end="-1,-1" /> -->
             <!--    </section> -->
             <!-- </animation> -->
-
-            <shape name="infobox">
-                <area>0,0,1280,50</area>
-                <type>box</type>
-                <fill color="#000000" alpha="150" />
-                <line color="#FFFFFF" alpha="0" width="0" />
-            </shape>
 
             <group name="statusbargroup">
 
@@ -412,25 +412,44 @@
             <!-- </textarea> -->
 
             <group name="titledescgroup" depends="filesize_str">
+
+                <imagetype name="coverart">
+                    <area>335,70,204,300</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+
+                
+                <imagetype name="banner">
+                    <area>550,70,710,131</area>
+                    <preserveaspect>true</preserveaspect>
+                </imagetype>
+                
                 <textarea name="title" from="basetextarea">
-                    <area>335,530,710,40</area>
+                    <area>550,210,710,40</area>
                     <font>baselarge</font>
                 </textarea>
 
                 <textarea name="longchannel" from="basetextarea">
-                    <area>335,565,431,30</area>
+                    <area>550,280,431,30</area>
                 </textarea>
 
                 <textarea name="timedate" from="basetextarea">
-                    <area>781,565,439,30</area>
+                    <area>781,250,431,30</area>
                     <align>right</align>
                 </textarea>
-                <textarea name="description" from="basetextarea">
-                    <area>335,595,885,110</area>
+                
+                <textarea name="description1" from="basetextarea">
+                    <area>550,250,431,30</area>
+                    <cutdown>yes</cutdown>
+                    <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS%</template>
+                </textarea>
+                
+                <textarea name="description2" from="basetextarea">
+                    <area>335,380,885,320</area>
                     <align>justify</align>
                     <multiline>yes</multiline>
                     <cutdown>yes</cutdown>
-                    <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
+                    <template>%DESCRIPTION%</template>
                 </textarea>
 
                 <textarea name="norecordings" from="description">
