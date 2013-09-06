@@ -67,7 +67,7 @@
     </textarea>
 
     <buttonlist name="grabbers" from="basebuttonlist">
-        <area>280,110,700,390</area>
+        <area>290,110,700,390</area>
     </buttonlist>
 
   </window>
@@ -232,7 +232,7 @@
       <textarea name="description" from="basetextarea">
           <area>330,500,910,115</area>
           <multiline>true</multiline>
-          <template>Description: %1</template>
+          <template>%1</template>
       </textarea>
 
       <textarea name="nosites" from="description">
