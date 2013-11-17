@@ -730,7 +730,7 @@
         </textarea>
 
         <textarea name="timeout_text" from="basetextarea">
-            <area>225,105,400,30</area>
+            <area>225,105,400,60</area>
             <value>Seconds to display each page:</value>
         </textarea>
 
@@ -739,7 +739,7 @@
         </spinbox>
 
         <textarea name="backgroundlbl" from="basetextarea">
-            <area>225,270,500,30</area>
+            <area>225,270,500,60</area>
             <value>Retrieve data in the background:</value>
         </textarea>
 

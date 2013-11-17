@@ -111,10 +111,10 @@
             <buttonarea>0,0,1170,440</buttonarea>
 
             <statetype name="upscrollarrow">
-                <position>1190,-8</position>
+                <position>1165,410</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1190,401</position>
+                <position>1195,410</position>
             </statetype>
         </buttonlist>
 
@@ -124,12 +124,10 @@
         <!--     <font>basemedium</font> -->
         <!-- </textarea> -->
 
-        <textarea name="helptext" from="basetextarea">
-            <area>65,600,1185,180</area>
+        <textarea name="helptext">
+            <area>30,605,1220,180</area>
             <value>This screen displays the status of various system components</value>
             <multiline>yes</multiline>
-	    <font>basesmallgrey</font>
-	    <align>top</align>
         </textarea>
 
     </window>
@@ -176,7 +174,6 @@
                 <state name="recording" from="idle">
                     <shape name="iconplaceholder">
                         <fill color="#80DF00" />
-                        <alphapulse min="128" max="255"  change="1" />
                     </shape>
                     <textarea name="status">
                         <value>Backend is recording</value>
@@ -185,7 +182,6 @@
                 <state name="shuttingdown" from="idle">
                     <shape name="iconplaceholder">
                         <fill color="#FFFF33" />
-                        <alphapulse min="128" max="255"  change="1" />
                     </shape>
                     <textarea name="status">
                         <value>Backend is shutting down</value>

@@ -16,7 +16,7 @@
         </shape>
 
         <shape name="siteslistbox">
-            <area>35,80,449,360</area>
+            <area>15,80,469,360</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="150" />
             <cornerradius>12</cornerradius>
@@ -43,7 +43,7 @@
         </textarea>
 
         <buttonlist name="siteslist" from="basebuttonlist">
-            <area>35,90,439,325</area>
+            <area>25,90,449,325</area>
             <spacing>4</spacing>
             <showarrow>yes</showarrow>
             <wrapstyle>items</wrapstyle>
@@ -72,7 +72,6 @@
         <textarea name="description" from="basetextarea">
             <area>40,515,1020,150</area>
             <multiline>yes</multiline>
-            <align>top</align>
         </textarea>
 
         <textarea name="updated" from="basetextarea">
@@ -179,7 +178,7 @@
         </buttonlist>
 
         <buttonlist name="sites" from="basebuttonlist">
-            <area>590,40,650,550</area>
+            <area>560,40,670,550</area>
             <showarrow>no</showarrow>
         </buttonlist>
 

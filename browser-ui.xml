@@ -283,7 +283,7 @@
         </textarea>
 
         <textedit name="command" from="basetextedit">
-            <position>445,150</position>
+            <position>445,140</position>
         </textedit>
 
         <textarea name="zoomlabel" from="basetextarea">
@@ -293,12 +293,12 @@
         </textarea>
 
         <textedit name="zoom" from="basetextedit">
-            <position>445,250</position>
+            <position>445,240</position>
         </textedit>
 
         <textarea name="pluginslabel" from="basetextarea">
-            <area>445,350,450,30</area>
-            <align>vcenter</align>
+            <area>445,345,450,30</area>
+            <align>allcenter</align>
             <value>Enable browser plugins (Flash, etc)</value>
         </textarea>
                             

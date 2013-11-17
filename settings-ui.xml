@@ -113,7 +113,7 @@
             <font>basesmallgrey</font>
             <align>justify,top</align>
             <cutdown>yes</cutdown>
-	    <template>%DESCRIPTION|\n%%ERRATA%</template>
+	    <template>%DESCRIPTION%\n%ERRATA%</template>
 	    <scroll direction="up" />
         </textarea>
 
