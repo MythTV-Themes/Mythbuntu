@@ -17,27 +17,27 @@
         </fontdef>
 
         <buttonlist name="images">
-            <area>0,70,1280,520</area>
+            <area>0,105,1920,780</area>
             <layout>grid</layout>
             <wrapstyle>flowing</wrapstyle>
             <spacing>19</spacing>
-            <buttonarea>60,0,1170,520</buttonarea>
+            <buttonarea>90,0,1755,780</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,150,115</area>
+                <area>0,0,225,172</area>
                 <state name="active">
             	    <shape name="btnbckgrnd">
-                        <area>0,0,150,115</area>
+                        <area>0,0,225,172</area>
                         <type>roundbox</type> 
                         <fill color="#666666" alpha="50" />
                         <line color="#FFFFFF" alpha="0" width="0" /> 
-                        <cornerradius>10</cornerradius> 
+                        <cornerradius>15</cornerradius> 
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>5,5,140,105</area>
+                        <area>7,7,210,157</area>
                         <preserveaspect>yes</preserveaspect>
                     </imagetype>
                     <statetype name="buttoncheck">
-                        <position>130,100</position>
+                        <position>195,150</position>
                         <showempty>yes</showempty>
                         <state type="full">
                             <imagetype name="marked">
@@ -53,7 +53,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>5,0</position>
+                <position>7,0</position>
                 <state type="full">
                     <imagetype name="upoff">
                         <filename>uparrow.png</filename>
@@ -61,7 +61,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>5,485</position>
+                <position>7,727</position>
                 <state type="full">
                     <imagetype name="dnoff">
                         <filename>downarrow.png</filename>
@@ -71,35 +71,35 @@
         </buttonlist>
 
         <shape name="infobox">
-            <area>-10,600,1300,150</area>
+            <area>-15,900,1950,225</area>
             <type>box</type>
             <fill color="#000000" alpha="100" />
             <line color="#FFFFFF" alpha="200" width="3" />
         </shape>
 
         <textarea name="help1">
-            <area>0,620,1280,35</area>
+            <area>0,930,1920,52</area>
             <font>menu</font>
             <align>allcenter</align>
             <value>SELECT: View</value>
         </textarea>
 
         <textarea name="help2">
-            <area>0,660,1280,35</area>
+            <area>0,990,1920,52</area>
             <font>menu</font>
             <align>allcenter</align>
             <value>MENU: Activate Menu</value>
         </textarea>
 
         <shape name="titlebox">
-            <area>-10,-10,1300,65</area>
+            <area>-15,-15,1950,97</area>
             <type>box</type>
             <fill color="#000000" alpha="100" />
             <line color="#FFFFFF" alpha="200" width="3" />
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>0,0,1280,50</area>
+            <area>0,0,1920,75</area>
             <font>title</font>
             <align>allcenter</align>
         </textarea>
@@ -107,7 +107,7 @@
         <!-- optional - shows a message when no images are available
              in the current directory -->
         <textarea name="noimages" from="basetextarea">
-            <area>15,20,770,560</area>
+            <area>22,30,1155,840</area>
             <font>basemedium</font>
             <align>allcenter</align>
         </textarea>

@@ -4,20 +4,20 @@
 
         <imagetype name="fanart">
             <filename>background.png</filename>
-            <area>0,0,1280,720</area>
+            <area>0,0,1920,1080</area>
             <preserveaspect>yes</preserveaspect>
         </imagetype>
 
         <!-- <shape name="titlebox"> -->
-        <!--     <area>370,10,360,60</area> -->
+        <!--     <area>555,15,540,90</area> -->
         <!--     <type>roundbox</type> -->
         <!--     <fill color="#000000" alpha="150" /> -->
         <!--     <line color="#FFFFFF" alpha="0" width="0" /> -->
-        <!--     <cornerradius>30</cornerradius> -->
+        <!--     <cornerradius>45</cornerradius> -->
         <!-- </shape> -->
 
         <!-- <textarea name="pagetitle" from="basetextarea"> -->
-        <!--     <area>410,10,300,60</area> -->
+        <!--     <area>615,15,450,90</area> -->
         <!--     <font>baselarge</font> -->
         <!--     <align>vcenter,left</align> -->
         <!--     <value>Watch Recordings</value> -->
@@ -33,16 +33,16 @@
 	    <!-- </animation> -->
 
             <shape name="groupbox">
-		<area>15,15,320,413</area>
+		<area>22,22,480,619</area>
 		<type>roundbox</type>
 		<fill color="#000000" alpha="150" />
 		<line color="#FFFFFF" alpha="0" width="0" />
-		<cornerradius>10</cornerradius>
+		<cornerradius>15</cornerradius>
             </shape>
 
             <buttonlist name="groups" from="basebuttonlist">
-		<area>15,20,300,408</area>
-		<buttonarea>32,5,260,398</buttonarea>
+		<area>22,30,450,612</area>
+		<buttonarea>48,7,390,597</buttonarea>
 		<spacing>6</spacing>
 		<wrapstyle>items</wrapstyle>
 		<triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
@@ -53,11 +53,11 @@
                     <state name="active">
 			<area>0,0,0,0</area>
 			<shape name="buttonbackground"> 
-                            <area>0,0,280,31</area> 
+                            <area>0,0,420,46</area> 
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
                             <line color="#FFFFFF" alpha="0" width="0" />
-                            <cornerradius>15</cornerradius>
+                            <cornerradius>22</cornerradius>
 			</shape> 
 			<textarea name="name" from="buttontext">
                             <font>basesmallgrey</font>
@@ -68,10 +68,10 @@
                     </state>
                     <state name="selectedactive" from="active">
 			<shape name="buttonbackground">                         
-                            <area>0,0,280,31</area>
+                            <area>0,0,420,46</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
-                            <cornerradius>15</cornerradius>
+                            <cornerradius>22</cornerradius>
 			</shape> 
 			<textarea name="name" from="buttontext">
                             <font>basesmall</font>
@@ -79,10 +79,10 @@
                     </state>
                     <state name="selectedinactive" from="active">
 			<shape name="buttonbackground">                         
-                            <area>0,0,280,31</area>
+                            <area>0,0,420,46</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
-                            <cornerradius>15</cornerradius>
+                            <cornerradius>22</cornerradius>
 			</shape> 
                     </state>
 		</statetype>
@@ -90,14 +90,14 @@
                     <position>0,0</position>
 		</statetype>
 		<statetype name="downscrollarrow">
-                    <position>0,370</position>
+                    <position>0,555</position>
 		</statetype>
             </buttonlist>
 
 	</group>
 
 	<group name="coverartgroup">
-	    <area>46,15,289,413</area>
+	    <area>69,22,433,619</area>
             <minsize vanish="yes">100%,100%</minsize>
 
 	    <!-- <animation trigger="AboutToShow"> -->
@@ -112,12 +112,12 @@
 		<type>roundbox</type>
 		<fill color="#000000" alpha="150" />
 		<line color="#FFFFFF" alpha="0" width="0" />
-		<cornerradius>10</cornerradius>
+		<cornerradius>15</cornerradius>
                 <minsize vanish="yes">100%,100%</minsize>
             </shape>
 
 	    <imagetype name="coverart">
-		<area>10,5,269,403</area>
+		<area>15,7,403,604</area>
 		<preserveaspect>yes</preserveaspect>
                 <minsize vanish="yes">100%,100%</minsize>
 	    </imagetype>
@@ -134,16 +134,16 @@
 	    <!-- </animation> -->
 
             <shape name="recordingsbox">
-		<area>340,15,925,413</area>
+		<area>510,22,1387,619</area>
 		<type>roundbox</type>
 		<fill color="#000000" alpha="150" />
 		<line color="#FFFFFF" alpha="0" width="0" />
-		<cornerradius>10</cornerradius>
+		<cornerradius>15</cornerradius>
             </shape>
 
             <buttonlist name="recordings" from="basebuttonlist">
-		<area>15,20,1250,408</area>
-		<buttonarea>0,5,756,398</buttonarea>
+		<area>22,30,1875,612</area>
+		<buttonarea>0,7,1134,597</buttonarea>
 		<spacing>6</spacing>
 		<wrapstyle>items</wrapstyle>
 		<triggerevent context="Global" action="MENU">RIGHT</triggerevent>
@@ -153,14 +153,14 @@
 			 highlighted entry. -->
                     <state name="active">
 			<shape name="buttonbackground">
-                            <area>360,0,859,31</area>
+                            <area>540,0,1288,46</area>
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
                             <line color="#FFFFFF" alpha="0" width="0" />
-                            <cornerradius>15</cornerradius>
+                            <cornerradius>22</cornerradius>
 			</shape>
 			<textarea name="titlesubtitle" from="buttontext">
-                            <area>376,0,574,31</area>
+                            <area>564,0,861,46</area>
                             <font>basesmallgrey</font>
                             <font state="error">basesmallred</font>
                             <font state="running">basesmallgreen</font>
@@ -168,19 +168,19 @@
                             <template>%TITLESUBTITLE% %YEARSTARS%</template>
 			</textarea>
 			<textarea name="shortstartdate" from="titlesubtitle">
-                            <area>948,0,120,31</area>
+                            <area>1422,0,180,46</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
 			</textarea>
 			<textarea name="starttime" from="shortstartdate">
-                            <area>1079,0,120,31</area>
+                            <area>1618,0,180,46</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
 			</textarea>
 			<statetype name="watched">
                             <state name="yes">
 				<imagetype name="yes">
-                                    <area>330,7,15,15</area>
+                                    <area>495,10,22,22</area>
                                     <filename>type/watched.png</filename>
 				</imagetype>
                             </state>
@@ -189,7 +189,7 @@
 			<statetype name="videoprops">
                             <state name="damaged">
 				<imagetype name="damaged">
-                                    <area>330,7,15,15</area>
+                                    <area>495,10,22,22</area>
                                     <filename>type/damaged.png</filename>
 				</imagetype>
                             </state>
@@ -197,7 +197,7 @@
 			<statetype name="playlist">
                             <state name="yes">
 				<imagetype name="playlistyes">
-                                    <position>340,0</position>
+                                    <position>510,0</position>
                                     <filename>shared/playlist_yes.png</filename>
 				</imagetype>
                             </state>
@@ -208,13 +208,13 @@
                     </state>
                     <state name="selectedactive" from="active">
 			<shape name="buttonbackground">
-                            <area>360,0,859,31</area>
+                            <area>540,0,1288,46</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
-                            <cornerradius>15</cornerradius>
+                            <cornerradius>22</cornerradius>
 			</shape>
 			<textarea name="titlesubtitle" from="buttontext">
-                            <area>376,0,574,31</area>
+                            <area>564,0,861,46</area>
                             <font>basesmall</font>
                             <font state="error">basesmallbrightred</font>
                             <font state="running">basesmallbrightgreen</font>
@@ -222,37 +222,37 @@
                             <template>%TITLESUBTITLE% %YEARSTARS%</template>
 			</textarea>
 			<textarea name="shortstartdate" from="titlesubtitle">
-                            <area>948,0,120,31</area>
+                            <area>1422,0,180,46</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
 			</textarea>
 			<textarea name="starttime" from="shortstartdate">
-                            <area>1079,0,120,31</area>
+                            <area>1618,0,180,46</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
 			</textarea>
                     </state>
                     <state name="selectedinactive" from="active">
 			<shape name="buttonbackground">
-                            <area>360,0,859,31</area>
+                            <area>540,0,1288,46</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
-                            <cornerradius>15</cornerradius>
+                            <cornerradius>22</cornerradius>
 			</shape>
 		    </state>
 		</statetype>
 		<statetype name="upscrollarrow">
-                    <position>1220,0</position>
+                    <position>1830,0</position>
 		</statetype>
 		<statetype name="downscrollarrow">
-                    <position>1220,370</position>
+                    <position>1830,555</position>
 		</statetype>
             </buttonlist>
 
 	</group>
 
         <!-- <imagetype name="banner"> -->
-        <!--     <area>25,453,330,57</area> -->
+        <!--     <area>37,679,495,85</area> -->
         <!--     <preserveaspect>false</preserveaspect> -->
         <!-- </imagetype> -->
 
@@ -266,7 +266,7 @@
 	    <!-- </animation> -->
 
             <shape name="infobox">
-		<area>0,438,1280,282</area>
+		<area>0,657,1920,423</area>
 		<type>box</type>
 		<fill color="#000000" alpha="150" />
 		<line color="#FFFFFF" alpha="0" width="0" />
@@ -277,7 +277,7 @@
 		<!-- Originally 330x186, but rounding meant that one pixel of -->
 		<!-- the grey backing shape would stick out in some direction -->
 		<!-- depending on aspect ratio of preview -->
-		<area>25,454,328,185</area>
+		<area>37,681,492,277</area>
 		<minsize vanish="yes">100%,100%</minsize>
 
 		<shape name="previewshape">
@@ -299,26 +299,26 @@
 
 		<imagetype name="autoexpire">
 		    <filename>type/autoexpire.png</filename>
-		    <position>25,670</position>
+		    <position>37,1005</position>
 		</imagetype>
 
 		<imagetype name="commflagged">
 		    <filename>type/commflagged.png</filename>
-		    <position>65,670</position>
+		    <position>97,1005</position>
 		</imagetype>
 
 		<imagetype name="bookmark">
 		    <filename>type/bookmark.png</filename>
-		    <position>105,670</position>
+		    <position>157,1005</position>
 		</imagetype>
 
 		<imagetype name="cutlist">
 		    <filename>type/cutlist.png</filename>
-		    <position>145,670</position>
+		    <position>217,1005</position>
 		</imagetype>
 
 		<statetype name="audioprops">
-		    <position>185,670</position>
+		    <position>277,1005</position>
 		    <showempty>yes</showempty>
 		    <state name="stereo">
 			<imagetype name="stereo">
@@ -343,7 +343,7 @@
 		</statetype>
 
 		<statetype name="subtitletypes">
-		    <position>225,670</position>
+		    <position>337,1005</position>
 		    <showempty>yes</showempty>
 		    <state name="cc">
 			<imagetype name="cc">
@@ -363,7 +363,7 @@
 		</statetype>
 
 		<statetype name="videoprops">
-		    <position>265,670</position>
+		    <position>397,1005</position>
 		    <showempty>yes</showempty>
 		    <state name="hd1080">
 			<imagetype name="hd1080">
@@ -389,11 +389,11 @@
 
 		<imagetype name="processing">
 		    <filename>type/processing.png</filename>
-		    <position>315,670</position>
+		    <position>472,1005</position>
 		</imagetype>
 
 		<statetype name="jobstate">
-		    <position>315,670</position>
+		    <position>472,1005</position>
 		    <showempty>yes</showempty>
 		    <state name="transcoding">
 			<imagetype name="transcoding">
@@ -403,20 +403,20 @@
 		</statetype>
 
 		<textarea name="filesize_str" from="basetextarea">
-		    <area>370,670,169,30</area>
+		    <area>555,1005,253,45</area>
 		    <align>vcenter,left</align>
 		    <font>basesmallgrey</font>
 		</textarea>
 
 		<textarea name="freereport" from="basetextarea">
-		    <area>549,670,396,30</area>
+		    <area>823,1005,594,45</area>
 		    <align>vcenter,right</align>
 		    <font>basesmallgrey</font>
 		    <template>%1</template>
 		</textarea>
 
 		<clock name="clock">
-		    <area>955,670,300,30</area>
+		    <area>1432,1005,450,45</area>
 		    <align>vcenter,right</align>
 		    <font>basesmallgrey</font>
 		    <template>%DATE%, %TIME%</template>
@@ -425,7 +425,7 @@
 	    </group>
 
             <!-- <textarea name="diskspacepercentused" from="basetextarea"> -->
-            <!--     <area>797,670,100,30</area> -->
+            <!--     <area>1195,1005,150,45</area> -->
             <!--     <align>right,vcenter</align> -->
             <!--     <font>basesmallgrey</font> -->
             <!--     <template>%diskspacepercentused|%% full</template> -->
@@ -434,28 +434,28 @@
 	    <group name="titledescgroup">
 
 		<textarea name="title" from="basetextarea">
-		    <area>370,448,710,40</area>
+		    <area>555,672,1065,60</area>
 		    <font>baselarge</font>
 		</textarea>
 
 		<textarea name="category" from="basetextarea">
-		    <area>1095,443,160,50</area>
+		    <area>1642,664,240,75</area>
 		    <font>baseextrasmall</font>
 		    <align>vcenter,right</align>
 		    <multiline>yes</multiline>
 		</textarea>
 
 		<textarea name="longchannel" from="basetextarea">
-		    <area>370,498,431,30</area>
+		    <area>555,747,646,45</area>
 		</textarea>
 
 		<textarea name="timedate" from="basetextarea">
-		    <area>816,498,439,30</area>
+		    <area>1224,747,658,45</area>
 		    <align>right</align>
 		</textarea>
 
 		<textarea name="description" from="basetextarea">
-		    <area>370,538,885,122</area>
+		    <area>555,807,1327,183</area>
 		    <align>justify</align>
 		    <multiline>yes</multiline>
 		    <cutdown>yes</cutdown>
@@ -486,21 +486,21 @@
 	    </section>
 	</animation>
 
-        <area>-1,-1,500,500</area>
+        <area>-1,-1,750,750</area>
 
         <shape name="backimg" from="basebackground">
-            <area>0,0,500,500</area>
+            <area>0,0,750,750</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>10,5,480,90</area>
+            <area>15,7,720,135</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
             <font>basesmall</font>
         </textarea>
 
         <buttonlist name="groups" from="basebuttonlist">
-            <area>10,110,480,370</area>
+            <area>15,165,720,555</area>
             <showarrow>no</showarrow>
         </buttonlist>
     </window>
@@ -514,83 +514,83 @@
 	    </section>
 	</animation>
 
-        <area>-1,-1,500,500</area>
+        <area>-1,-1,750,750</area>
         <shape name="backimg" from="basebackground">
-            <area>0,0,500,500</area>
+            <area>0,0,750,750</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>10,35,480,30</area>
+            <area>15,52,720,45</area>
             <align>allcenter</align>
             <font>basemedium</font>
             <value>Change View</value>
         </textarea>
 
         <checkbox name="titles" from="basecheckbox">
-            <position>90,90</position>
+            <position>135,135</position>
         </checkbox>
 
         <textarea name="titlelabel" from="basetextarea">
-            <area>140,90,300,30</area>
+            <area>210,135,450,45</area>
             <value>Show Titles</value>
         </textarea>
 
         <checkbox name="categories" from="basecheckbox">
-            <position>90,140</position>
+            <position>135,210</position>
         </checkbox>
 
         <textarea name="catlabel" from="titlelabel">
-            <position>140,140</position>
+            <position>210,210</position>
             <value>Show Categories</value>
         </textarea>
 
         <checkbox name="recgroups" from="basecheckbox">
-            <position>90,190</position>
+            <position>135,285</position>
         </checkbox>
 
         <textarea name="grouplabel" from="titlelabel">
-            <position>140,190</position>
+            <position>210,285</position>
             <value>Show Recording Groups</value>
         </textarea>
 
         <checkbox name="watchlist" from="basecheckbox">
-            <position>90,240</position>
+            <position>135,360</position>
         </checkbox>
 
         <textarea name="watchlabel" from="titlelabel">
-            <position>140,240</position>
+            <position>210,360</position>
             <value>Show Watch List</value>
         </textarea>
 
         <checkbox name="searches" from="basecheckbox">
-            <position>90,290</position>
+            <position>135,435</position>
         </checkbox>
 
         <textarea name="searchlabel" from="titlelabel">
-            <position>140,290</position>
+            <position>210,435</position>
             <value>Show Searches</value>
         </textarea>
 
         <checkbox name="livetv" from="basecheckbox">
-            <position>90,340</position>
+            <position>135,510</position>
         </checkbox>
 
         <textarea name="livelabel" from="titlelabel">
-            <position>140,340</position>
+            <position>210,510</position>
             <value>Show LiveTV</value>
         </textarea>
 
         <checkbox name="watched" from="basecheckbox">
-            <position>90,390</position>
+            <position>135,585</position>
         </checkbox>
 
         <textarea name="watchedlabel" from="titlelabel">
-            <position>140,390</position>
+            <position>210,585</position>
             <value>Show Watched Programs</value>
         </textarea>
 
         <button name="save" from="basebutton">
-            <position>315,435</position>
+            <position>472,652</position>
             <value>Save</value>
         </button>
     </window>
@@ -604,39 +604,39 @@
 	    </section>
 	</animation>
 
-        <area>-1,-1,500,500</area>
+        <area>-1,-1,750,750</area>
 
         <shape name="backimg" from="basebackground">
-            <area>0,0,500,500</area>
+            <area>0,0,750,750</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>10,15,480,160</area>
+            <area>15,22,720,240</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
             <value>Change Recording Group Password</value>
         </textarea>
 
         <textarea name="oldpasslabel" from="basetextarea">
-            <area>180,160,300,30</area>
+            <area>270,240,450,45</area>
             <value>Old Password:</value>
         </textarea>
 
         <textedit name="oldpassword" from="basetextedit">
-            <position>75,200</position>
+            <position>112,300</position>
         </textedit>
 
         <textarea name="newpasslabel" from="basetextarea">
-            <area>180,290,300,30</area>
+            <area>270,435,450,45</area>
             <value>New Password:</value>
         </textarea>
 
         <textedit name="newpassword" from="basetextedit">
-            <position>75,330</position>
+            <position>112,495</position>
         </textedit>
 
         <button name="ok" from="basebutton">
-            <position>175,410</position>
+            <position>262,615</position>
             <value>OK</value>
         </button>
     </window>
@@ -650,76 +650,76 @@
 	    </section>
 	</animation>
 
-        <area>-1,-1,600,500</area>
+        <area>-1,-1,900,750</area>
 
         <shape name="backimg" from="basebackground">
-            <area>0,0,600,500</area>
+            <area>0,0,900,750</area>
         </shape>
 
         <textarea name="label" from="basetextarea">
-            <area>-1,15,100%,50</area>
+            <area>-1,22,100%,75</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
             <value>Edit Recording Metadata</value>
         </textarea>
 
         <textarea name="title_label" from="basetextarea">
-            <area>30,65,160,30</area>
+            <area>45,97,240,45</area>
             <value>Title:</value>
 	    <align>right,vcenter</align>
         </textarea>
 
         <textedit name="title" from="basetextedit">
-            <position>200,65</position>
+            <position>300,97</position>
         </textedit>
 
         <textarea name="subtitlelabel" from="title_label">
-            <position>30,100</position>
+            <position>45,150</position>
             <value>Subtitle:</value>
         </textarea>
 
         <textedit name="subtitle" from="basetextedit">
-            <position>200,100</position>
+            <position>300,150</position>
         </textedit>
 
         <textarea name="inetref_label" from="title_label">
-            <position>30,135</position>
+            <position>45,202</position>
             <value>Inetref:</value>
         </textarea>
 
         <textedit name="inetref" from="basetextedit">
-            <position>200,135</position>
+            <position>300,202</position>
         </textedit>
 
         <textarea name="season_label" from="title_label">
-            <area>30,174,135,30</area>
+            <area>45,261,202,45</area>
             <value>Season:</value>
         </textarea>
 
         <spinbox name="season" from="basespinbox">
-            <position>175,170</position>
+            <position>262,255</position>
         </spinbox>
 
         <textarea name="episode_label" from="season_label">
-            <position>285,174</position>
+            <position>427,261</position>
             <value>Episode:</value>
         </textarea>
 
         <spinbox name="episode" from="basespinbox">
-            <position>425,170</position>
+            <position>637,255</position>
         </spinbox>
 
         <textarea name="description_label" from="title_label">
-            <position>30,215</position>
+            <position>45,322</position>
             <value>Description:</value>
         </textarea>
 
         <textedit name="description" from="basemultilinetextedit">
-            <area>110,245,100%,100%</area>
+            <area>165,367,100%,100%</area>
         </textedit>
         
         <button name="ok" from="basebutton">
-            <position>225,435</position>
+            <position>337,652</position>
             <value>OK</value>
         </button>
     </window>
@@ -733,36 +733,36 @@
 	    </section>
 	</animation>
 
-        <area>-1,-1,700,500</area>
+        <area>-1,-1,1050,750</area>
 
         <shape name="backimg" from="basebackground">
-            <area>0,0,700,500</area>
+            <area>0,0,1050,750</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>0,0,700,50</area>
+            <area>0,0,1050,75</area>
             <value>Status Icons</value>
             <font>basemedium</font>
             <align>center</align>
         </textarea>
 
         <buttonlist name="iconlist">
-            <area>20,70,660,450</area>
+            <area>30,105,990,675</area>
             <layout>vertical</layout>
             <spacing>4</spacing>
             <wrapstyle>selection</wrapstyle>
-            <buttonarea>0,0,660,410</buttonarea>
+            <buttonarea>0,0,990,615</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,660,40</area>
+                <area>0,0,990,60</area>
                 <state name="active">
                     <shape name="selectbar">
-                        <area>0,0,650,40</area>
+                        <area>0,0,975,60</area>
                         <type>roundbox</type>
                         <fill color="#666666" alpha="50" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>30</cornerradius>
                     </shape>
                     <statetype name="icons">
-                        <position>5,5</position>
+                        <position>7,7</position>
                         <state name="commflagged">
                             <imagetype name="statusimage">
                                 <filename>type/commflagged.png</filename>
@@ -857,7 +857,7 @@
                     </statetype>
 
                     <textarea name="buttontext">
-                        <area>53,1,600,40</area>
+                        <area>79,1,900,60</area>
                         <multiline>yes</multiline>
                         <font>basesmall</font>
                         <align>vcenter</align>
@@ -866,15 +866,15 @@
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,650,40</area>
+                        <area>0,0,975,60</area>
                         <type>roundbox</type>
                         <fill color="#ffffff" alpha="50" />
-                        <cornerradius>20</cornerradius>
+                        <cornerradius>30</cornerradius>
                     </shape>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>5,390</position>
+                <position>7,585</position>
                 <state type="full">
                     <imagetype name="upoff">
                         <filename>shared/uparrow.png</filename>
@@ -882,7 +882,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>35,390</position>
+                <position>52,585</position>
                 <state type="full">
                     <imagetype name="dnoff">
                         <filename>shared/downarrow.png</filename>

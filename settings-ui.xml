@@ -4,94 +4,94 @@
 
     <window name="rawsettingseditor">
         <textarea name="heading" from="basetextarea">
-            <area>20,20,1240,40</area>
+            <area>30,30,1860,60</area>
             <align>allcenter</align>
             <font>baselarge</font>
         </textarea>
 
         <buttonlist name="settings" from="basebuttonlist">
-            <area>20,80,400,400</area>
+            <area>30,120,600,600</area>
             <layout>vertical</layout>
             <spacing>5</spacing>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>none</wrapstyle>
-            <buttonarea>0,0,400,380</buttonarea>
+            <buttonarea>0,0,600,570</buttonarea>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
         </buttonlist>
 
         <shape name="label-shape">
-            <area>20,500,400,30</area>
+            <area>30,750,600,45</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="130" />
-            <cornerradius>4</cornerradius>
+            <cornerradius>6</cornerradius>
         </shape>
 
         <textarea name="label-text">
-            <area>24,500,392,30</area>
+            <area>36,750,588,45</area>
             <font>basesmallgreen</font>
             <align>left,vcenter</align>
         </textarea>
 
         <shape name="background">
-            <area>428,500,830,30</area>
+            <area>642,750,1245,45</area>
             <type>roundbox</type>
             <fill color="#FFFFFF" />
-            <cornerradius>4</cornerradius>
+            <cornerradius>6</cornerradius>
         </shape>
 
         <textedit name="settingvalue">
-            <area>428,500,830,30</area>
+            <area>642,750,1245,45</area>
             <imagetype name="cursor">
                 <filename>cursor.png</filename>
             </imagetype>
             <textarea name="text">
-                <area>5,0,820,30</area>
+                <area>7,0,1230,45</area>
                 <font>basesmallblack</font>
             </textarea>
         </textedit>
 
         <button name="cancel" from="basebutton">
-            <position>20,660</position>
+            <position>30,990</position>
             <value>Cancel</value>
         </button>
 
         <button name="save" from="basebutton">
-            <position>1110,660</position>
+            <position>1665,990</position>
             <value>Save</value>
         </button>
 
     </window>
 
     <window name="themechooser">
-        <area>0,0,1280,720</area>
+        <area>0,0,1920,1080</area>
 
         <shape name="background" from="basebackground">
-            <area>0,0,1280,720</area>
+            <area>0,0,1920,1080</area>
             <fill color="#000000" alpha="255" />
         </shape>
 
         <textarea name="pagetitle" from="basetextarea">
-            <area>50,10,670,60</area>
+            <area>75,15,1005,90</area>
             <font>baselarge</font>
             <align>top,left</align>
             <value>Theme Chooser</value>
         </textarea>
 
         <shape name="preview-shape">
-            <area>660,60,600,440</area>
+            <area>990,90,900,660</area>
             <type>roundbox</type>
             <fill color="#000000" />
-            <cornerradius>20</cornerradius>
+            <cornerradius>30</cornerradius>
         </shape>
 
         <imagetype name="preview">
-            <area>680,70,560,420</area>
+            <area>1020,105,840,630</area>
             <filename />
             <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="name" from="basetextarea">
-            <area>680,500,280,35</area>
+            <area>1020,750,420,52</area>
             <multiline>no</multiline>
 	    <font>basemedium</font>
             <align>left,vcenter</align>
@@ -99,7 +99,7 @@
         </textarea>
 
         <textarea name="aspect" from="basetextarea">
-            <area>680,540,560,40</area>
+            <area>1020,810,840,60</area>
             <multiline>no</multiline>
             <font>baseextrasmall</font>
             <align>left,vcenter</align>
@@ -108,7 +108,7 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>680,585,560,125</area>
+            <area>1020,877,840,187</area>
             <multiline>yes</multiline>
             <font>basesmallgrey</font>
             <align>justify,top</align>
@@ -118,42 +118,42 @@
         </textarea>
 
         <buttonlist name="themes">
-            <area>40,60,660,660</area>
+            <area>60,90,990,990</area>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>items</wrapstyle>
             <layout>vertical</layout>
             <spacing>16</spacing>
             <drawfrombottom>false</drawfrombottom>
-            <buttonarea>0,0,100%,560</buttonarea>
+            <buttonarea>0,0,100%,840</buttonarea>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,600,66</area>
+                    <area>0,0,900,99</area>
                     <shape name="item">
-                        <area>0,0,600,66</area>
+                        <area>0,0,900,99</area>
                         <type>roundbox</type>
-			<cornerradius>30</cornerradius>
+			<cornerradius>45</cornerradius>
                         <fill color="#666666" alpha="50" />
                         <line color="#FFFFFF" alpha="0" width="0" />
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>30,5,110,56</area>
+                        <area>45,7,165,84</area>
                         <alpha>160</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="buttontext">
-                        <area>150,5,450,56</area>
+                        <area>225,7,675,84</area>
                         <align>left,vcenter</align>
                         <font>basemediumgrey</font>
                         <alpha>210</alpha>
                     </textarea>
 
                     <statetype name="themelocation">
-                        <area>0,40%,12,12</area>
+                        <area>0,40%,18,18</area>
                         <state name="remote">
                             <shape name="status">
-                                <area>0,0,12,12</area>
+                                <area>0,0,18,18</area>
                                 <type>ellipse</type>
                                 <fill color="#00FF00" alpha="255"/>
                                 <line color="#ffffff" width="1" alpha="255"/>
@@ -164,7 +164,7 @@
                     </statetype>
 
                     <statetype name="themestatus">
-                        <area>0,40%,12,12</area>
+                        <area>0,40%,18,18</area>
                         <state name="updateavailable">
                         </state>
                         <state name="uptodate">
@@ -177,16 +177,16 @@
 
                 <state name="selectedactive" from="active">
                     <shape name="item">
-                        <area>-10,-5,620,76</area>
+                        <area>-15,-7,930,114</area>
                         <fill color="#ffffff" alpha="50" />
                     </shape>
                     <textarea name="buttontext">
-                        <area>177,5,423,56</area>
+                        <area>265,7,634,84</area>
                         <alpha>200</alpha>
                         <font>baselarge</font>
                     </textarea>
                     <imagetype name="buttonimage">
-                        <area>2,-9,165,84</area>
+                        <area>3,-13,247,126</area>
                         <alpha>255</alpha>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
@@ -223,13 +223,13 @@
             </statetype>
 
         <shape name="update_icon">
-            <area>4%,89%,8,8</area>
+            <area>4%,89%,12,12</area>
             <type>ellipse</type>
             <fill color="#00FF00" alpha="200" />
             <line color="#ffffff" width="1" alpha="255"/>
         </shape>
         <textarea name="update_text" from="basetextarea">
-            <area>6%,85%,90%,60</area>
+            <area>6%,85%,90%,90</area>
             <align>left,vcenter</align>
 	    <multiline>yes</multiline>
 	    <font>baseextrasmall</font>
@@ -239,25 +239,25 @@
         </buttonlist>
 
         <progressbar name="downloadprogressbar" from="baseprogressbar">
-            <position>690,15</position>
+            <position>1035,22</position>
         </progressbar>
 
         <statetype name="fullpreviewstate">
-            <area>0,0,1280,720</area>
+            <area>0,0,1920,1080</area>
             <state name="fullscreen">
-                <area>0,0,1280,720</area>
+                <area>0,0,1920,1080</area>
                 <imagetype name="fullscreenpreview">
-                    <area>0,0,1280,720</area>
+                    <area>0,0,1920,1080</area>
                     <filename />
                 </imagetype>
 
                 <shape name="fullscreennameback" from="basebackground">
-                    <area>440,10,400,80</area>
+                    <area>660,15,600,120</area>
                     <fill color="#000000" alpha="220" />
                 </shape>
 
                 <textarea name="fullscreenname" from="basetextarea">
-                    <area>450,20,380,60</area>
+                    <area>675,30,570,90</area>
                     <multiline>no</multiline>
                     <font>basemediumgreen</font>
                     <align>center,vcenter</align>

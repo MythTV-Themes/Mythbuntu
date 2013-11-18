@@ -2,23 +2,23 @@
 <mythuitheme>
 
     <window name="keygrabpopup">
-        <area>390,150,500,500</area>
+        <area>585,225,750,750</area>
         <shape name="backimg" from="basebackground">
-            <area>0,0,500,500</area>
+            <area>0,0,750,750</area>
         </shape>
 
         <textarea name="message" from="basetextarea">
-            <area>18,18,460,400</area>
+            <area>27,27,690,600</area>
             <multiline>yes</multiline>
         </textarea>
 
         <button name="cancel" from="basebutton">
-            <position>85,420</position>
+            <position>127,630</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="basebutton">
-            <position>265,420</position>
+            <position>397,630</position>
             <value>OK</value>
         </button>
     </window>
@@ -26,43 +26,43 @@
     <window name="controls">
 
         <textarea name="leftdesc" from="basetextarea">
-            <area>64,46,560,30</area>
+            <area>96,69,840,45</area>
             <value>Contexts</value>
             <align>center</align>
         </textarea>
 
         <buttonlist name="leftlist" from="basebuttonlist">
-            <area>64,86,560,440</area>
+            <area>96,129,840,660</area>
             <showarrow>no</showarrow>
         </buttonlist>
 
         <textarea name="rightdesc" from="leftdesc">
-            <area>656,46,560,30</area>
+            <area>984,69,840,45</area>
             <value>Actions</value>
         </textarea>
 
         <buttonlist name="rightlist" from="leftlist">
-            <area>656,86,560,440</area>
+            <area>984,129,840,660</area>
         </buttonlist>
 
         <button name="action_0" from="basebutton">
-            <position>275,560</position>
+            <position>412,840</position>
         </button>
 
         <button name="action_1" from="action_0">
-            <position>465,560</position>
+            <position>697,840</position>
         </button>
 
         <button name="action_2" from="action_0">
-            <position>655,560</position>
+            <position>982,840</position>
         </button>
 
         <button name="action_3" from="action_0">
-            <position>845,560</position>
+            <position>1267,840</position>
         </button>
 
         <textarea name="description" from="basetextarea">
-            <area>64,600,1152,90</area>
+            <area>96,900,1728,135</area>
             <multiline>yes</multiline>
             <align>center</align>
         </textarea>
