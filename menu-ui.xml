@@ -787,13 +787,13 @@
             </state>
         </statetype>
 
-        <shape name="titleboxshadow">
+<!--        <shape name="titleboxshadow">
             <area>-15,165,1950,15</area>
             <fill style="gradient">
                 <gradient start="#ffffff" end="#000000" alpha="50" />
             </fill>
         </shape>
-
+-->
         <imagetype name="overlay">
             <area>0,0,1920,1080</area>
             <filename>panels-with-drop.png</filename>
