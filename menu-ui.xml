@@ -27,7 +27,7 @@
         <buttonlist name="menu">
             <area>60,142,1110,870</area>
             <layout>vertical</layout>
-            <spacing>30</spacing>
+            <spacing>20</spacing>
             <wrapstyle>items</wrapstyle>
             <buttonarea>60,82,1095,690</buttonarea>
             <triggerevent context="Global" action="SELECT">RIGHT</triggerevent>
@@ -50,17 +50,11 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="slctbr">
-                        <area>-15,-15,1050,120</area>
+                        <area>0,0,1020,90</area>
                         <type>roundbox</type> 
                         <fill color="#FFFFFF" alpha="50" />
                         <cornerradius>60</cornerradius> 
                     </shape>
-                    <textarea name="buttontext">
-                        <area>45,-15,960,120</area>
-                        <font>selectedmenufont</font>
-                        <align>left,vcenter</align>
-                        <cutdown>yes</cutdown>
-                    </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
