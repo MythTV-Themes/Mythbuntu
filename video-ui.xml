@@ -499,12 +499,12 @@
         </clock>
         
         <buttonlist name="videos">
-            <area>-70,770,1980,255</area>
+            <area>-70,770,2000,255</area>
             <layout>horizontal</layout>
             <wrapstyle>items</wrapstyle>
             <scrollstyle>center</scrollstyle>
             <spacing>3</spacing>
-            <buttonarea>0,0,2060,225</buttonarea>
+            <buttonarea>0,0,2080,225</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,135,225</area>
