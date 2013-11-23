@@ -491,8 +491,15 @@
             <line color="#FFFFFF" alpha="0" width="0" />
         </shape>
         
+        <clock name="clock">
+            <area>1300,1000,600,50</area>
+            <font>clock</font>
+            <align>right</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+        
         <buttonlist name="videos">
-            <area>-70,800,1980,255</area>
+            <area>-70,770,1980,255</area>
             <layout>horizontal</layout>
             <wrapstyle>items</wrapstyle>
             <scrollstyle>center</scrollstyle>
@@ -542,21 +549,30 @@
             </statetype>
         </buttonlist>
 
-        <textarea name="title" from="basetextarea">
-            <area>0,1020,1920,60</area>
+        <textarea name="##x##" from="basetextarea">
+            <area>600,1020,720,50</area>
+            <align>top,hcenter</align>
+            <case>capitaliseall</case>
+            <multiline>no</multiline>
+            <font>baselarge</font>
+        </textarea>
+
+        <textarea name="title" from="basetextarea" depends="!##x##">
+            <area>600,960,720,120</area>
+            <align>vcenter,hcenter</align>
+            <case>capitaliseall</case>
+            <multiline>yes</multiline>
+            <font>baseextralarge</font>
+            <template>%TITLE%% - |SUBTITLE%</template>
+        </textarea>
+
+        <textarea name="title2" from="basetextarea" depends="##x##">
+            <area>600,970,720,50</area>
             <align>top,hcenter</align>
             <case>capitaliseall</case>
             <multiline>no</multiline>
             <font>baseextralarge</font>
             <template>%TITLE%% - |SUBTITLE%</template>
-        </textarea>
-
-        <textarea name="##x##" from="basetextarea">
-            <area>0,755,1920,60</area>
-            <align>top,hcenter</align>
-            <case>capitaliseall</case>
-            <multiline>no</multiline>
-            <font>baselarge</font>
         </textarea>
 
         <textarea name="novideos" from="basetextarea">
