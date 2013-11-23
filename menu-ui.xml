@@ -800,7 +800,7 @@
         </imagetype>
 
         <clock name="clock">
-            <area>150,963,1680,90</area>
+            <area>1300,1000,600,50</area>
             <font>clock</font>
             <align>right</align>
             <template>%DATE%, %TIME%</template>

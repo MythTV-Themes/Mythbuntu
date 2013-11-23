@@ -46,7 +46,7 @@
                 </state>
                 <state name="selectedactive">
                     <imagetype name="buttonimage">
-                        <area>0,0,600,285</area>
+                        <area>15,0,450,120</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">

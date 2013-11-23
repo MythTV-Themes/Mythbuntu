@@ -409,14 +409,14 @@
 		</textarea>
 
 		<textarea name="freereport" from="basetextarea">
-		    <area>823,1005,594,45</area>
+		    <area>823,1000,450,50</area>
 		    <align>vcenter,left</align>
 		    <font>basesmallgrey</font>
 		    <template>%1</template>
 		</textarea>
 
         <clock name="clock">
-            <area>1450,1000,420,50</area>
+            <area>1300,1000,600,50</area>
             <font>clock</font>
             <align>right</align>
             <template>%DATE%, %TIME%</template>
