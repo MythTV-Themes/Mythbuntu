@@ -12,27 +12,27 @@ Common MythArchive window definitions
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <fontdef name="description" from="basesmall">
             <color>#ffffff</color>
-            <size>18</size>
+            <size>27</size>
         </fontdef>
 
         <fontdef name="detail" from="basesmall">
             <color>#ffffff</color>
-            <size>14</size>
+            <size>21</size>
         </fontdef>
 
         <fontdef name="detailtitle" from="basesmall">
             <color>#ffff00</color>
-            <size>14</size>
+            <size>21</size>
         </fontdef>
 
         <fontdef name="label" from="basesmall">
             <color>#ffff00</color>
-            <size>16</size>
+            <size>24</size>
         </fontdef>
 
         <!--
@@ -147,7 +147,7 @@ Common MythArchive window definitions
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <shape name="topbackground" from="basebackground">
@@ -270,7 +270,7 @@ Common MythArchive window definitions
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <textarea name="title_text" from="basetextarea">
@@ -358,7 +358,7 @@ Common MythArchive window definitions
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <shape name="topbackground" from="basebackground">
@@ -487,7 +487,7 @@ Common MythArchive window definitions
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <textarea name="title1" from="basetextarea">

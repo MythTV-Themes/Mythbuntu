@@ -5,7 +5,7 @@
 
     <!-- Base Font Definitions -->
     <fontdef name="basesmall" face="Ubuntu">
-        <size>15</size>
+        <size>22</size>
         <color>#FFFFFF</color>
     </fontdef>
 
@@ -14,11 +14,11 @@
     </fontdef>
 
     <fontdef name="baseextrasmall" from="basesmall">
-        <size>13</size>
+        <size>19</size>
     </fontdef>
 
     <fontdef name="basesupersmall" from="basesmall">
-        <size>11</size>
+        <size>16</size>
     </fontdef>
 
     <fontdef name="basesmalldrop" from="basesmall">
@@ -28,22 +28,22 @@
     </fontdef>
 
     <fontdef name="basemedium" from="basesmall">
-        <size>20</size>
+        <size>30</size>
     </fontdef>
 
     <fontdef name="basegallerymedium" from="basesmall">
-        <size>18</size>
+        <size>27</size>
     </fontdef>
 
     <fontdef name="baselarge" from="basesmall">
-        <size>22</size>
+        <size>33</size>
         <shadowcolor>#000000</shadowcolor>
         <shadowoffset>4,4</shadowoffset>
         <shadowalpha>64</shadowalpha>
     </fontdef>
 
     <fontdef name="baseextralarge" from="basesmall">
-        <size>24</size>
+        <size>36</size>
         <shadowcolor>#000000</shadowcolor>
         <shadowoffset>4,4</shadowoffset>
         <shadowalpha>64</shadowalpha>
@@ -55,11 +55,11 @@
     </fontdef>
 
     <fontdef name="baseextrasmallgrey" from="basesmallgrey">
-        <size>13</size>
+        <size>19</size>
     </fontdef>
 
     <fontdef name="basesupersmallgrey" from="basesmallgrey">
-        <size>11</size>
+        <size>16</size>
     </fontdef>
 
     <fontdef name="basesmallstrikeout" from="basesmallgrey">
@@ -83,11 +83,11 @@
     </fontdef>
 
     <fontdef name="baseextrasmallblack" from="basesmallblack">
-        <size>13</size>
+        <size>19</size>
     </fontdef>
 
     <fontdef name="basesupersmallblack" from="basesmallblack">
-        <size>11</size>
+        <size>16</size>
     </fontdef>
 
     <fontdef name="basesmallyellow" from="basesmall">
@@ -135,7 +135,7 @@
     </fontdef>
 
     <fontdef name="clock" from="basesmall">
-         <size>20</size>
+         <size>30</size>
         <color>#666666</color>
     </fontdef>
 

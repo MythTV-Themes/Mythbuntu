@@ -8,7 +8,7 @@
 
         <fontdef name="title" from="basesmall">
             <color>#ffffff</color>
-            <size>18</size>
+            <size>27</size>
         </fontdef>
 
         <textarea name="part">
