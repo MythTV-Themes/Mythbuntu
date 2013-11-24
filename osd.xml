@@ -3,7 +3,7 @@
 <mythuitheme>
     <window name="osd_debug">
         <fontdef name="medium" face="DejaVu Sans">
-            <pixelsize>16</pixelsize>
+            <pixelsize>24</pixelsize>
             <color>#FFFFFF</color>
         </fontdef>
         <fontdef name="file" from="medium">
@@ -168,7 +168,7 @@
 
     <window name="osd_message">
         <fontdef name="medium" face="Ubuntu">
-            <pixelsize>26</pixelsize>
+            <pixelsize>39</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
@@ -190,7 +190,7 @@
 
     <window name="osd_input">
         <fontdef name="medium" face="Ubuntu">
-            <pixelsize>26</pixelsize>
+            <pixelsize>39</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
@@ -212,7 +212,7 @@
 
     <window name="osd_status">
         <fontdef name="small" face="Ubuntu">
-            <pixelsize>22</pixelsize>
+            <pixelsize>33</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
@@ -261,22 +261,22 @@
 
     <window name="program_info">
         <fontdef name="small" face="Ubuntu">
-            <pixelsize>22</pixelsize>
+            <pixelsize>33</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="smallblack" face="Ubuntu">
-            <pixelsize>22</pixelsize>
+            <pixelsize>33</pixelsize>
             <color>#000000</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="smaller" from="small">
-            <pixelsize>18</pixelsize>
+            <pixelsize>27</pixelsize>
         </fontdef>
         <fontdef name="medium" from="small">
-            <pixelsize>26</pixelsize>
+            <pixelsize>39</pixelsize>
         </fontdef>
         <area>-1,637,1564,367</area>
         <shape name="background">
@@ -616,22 +616,22 @@
 
     <window name="browse_info">
         <fontdef name="small" face="Ubuntu">
-            <pixelsize>22</pixelsize>
+            <pixelsize>33</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="smallblack" face="Ubuntu">
-            <pixelsize>22</pixelsize>
+            <pixelsize>33</pixelsize>
             <color>#000000</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
         <fontdef name="smaller" from="small">
-            <pixelsize>18</pixelsize>
+            <pixelsize>27</pixelsize>
         </fontdef>
         <fontdef name="medium" from="small">
-            <pixelsize>26</pixelsize>
+            <pixelsize>39</pixelsize>
         </fontdef>
         <area>-1,637,1564,300</area>
         <shape name="background">
@@ -790,7 +790,7 @@
 
     <window name="osd_program_editor">
         <fontdef name="small" face="Ubuntu">
-            <pixelsize>22</pixelsize>
+            <pixelsize>33</pixelsize>
             <color>#FFFFFF</color>
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
