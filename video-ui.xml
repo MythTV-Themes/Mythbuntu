@@ -499,7 +499,7 @@
         </clock>
         
         <buttonlist name="videos">
-            <area>-70,770,2000,255</area>
+            <area>-70,770,1980,255</area>
             <layout>horizontal</layout>
             <wrapstyle>items</wrapstyle>
             <scrollstyle>center</scrollstyle>
