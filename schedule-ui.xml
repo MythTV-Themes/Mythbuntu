@@ -1417,144 +1417,153 @@
             <area>75,15,1107,90</area>
             <align>left,vcenter</align>
             <font>baselarge</font>
-	    <value>Program Finder</value>
+            <value>Program Finder</value>
         </textarea>
 
-        <clock name="time">
-            <area>1395,15,450,90</area>
-            <align>vcenter,right</align>
-            <font>basesmallgrey</font>
+        <clock name="clock">
+            <area>1400,1000,500,50</area>
+            <font>clock</font>
+            <align>right</align>
             <template>%DATE%, %TIME%</template>
         </clock>
 
-        <textarea name="searchlabel" from="basetextarea">
-            <area>142,120,285,45</area>
-            <font>basesmallyellow</font>
-            <align>right,vcenter</align>
-            <value>Search For:</value>
-        </textarea>
-        <textarea name="search" from="basetextarea">
-            <area>442,120,450,45</area>
-            <font>basesmall</font>
-	    <align>vcenter</align>
-	    <template>%1</template>
-        </textarea>
+        <group name="findergroup">
+            <area>50,100,100%-50,550</area>
 
-        <shape name="alphabet_background" from="baseboxbackground">
-            <area>105,180,120,450</area>
-        </shape>
+            <shape name="finder_background" from="baseboxbackground">
+                <area>0,0,100%,100%</area>
+            </shape>
 
-        <buttonlist name="alphabet" from="basebuttonlist2">
-            <area>105,187,120,432</area>
-            <scrollstyle>center</scrollstyle>
-            <spacing>6</spacing>
-            <buttonarea>0,0,120,432</buttonarea>
-            <statetype name="buttonitem">
-                <state name="active">
-                    <textarea name="buttontext" from="basetextarea">
-                        <area>0,0,120,37</area>
-                        <align>allcenter</align>
-                        <font>basesmallgrey</font>
-                    </textarea>
-                </state>
-                <state name="selectedactive" from="active">
-                    <textarea name="buttontext">
-                        <font>basesmall</font>
-                    </textarea>
-                    <shape name="selectbar">
-                        <area>0,0,0,0</area>
-                    </shape>
-                </state>
-                <state name="selectedinactive" from="active"/>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <state type="off">
-                    <imagetype name="upon">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="upoff">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <state type="off">
-                    <imagetype name="dnon">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-                <state type="full">
-                    <imagetype name="dnoff">
-                        <filename></filename>
-                    </imagetype>
-                </state>
-            </statetype>
-        </buttonlist>
+            <buttonlist name="alphabet" from="basebuttonlist2">
+                <area>20,20,50,100%-20</area>
+                <buttonarea>0,0,50,100%</buttonarea>
+                <scrollstyle>center</scrollstyle>
+                <wrapstyle>items</wrapstyle>
+                <spacing>6</spacing>
+                <statetype name="buttonitem">
+                    <state name="active">
+                        <textarea name="buttontext" from="basetextarea">
+                            <area>0,0,50,50</area>
+                            <align>allcenter</align>
+                            <font>basesmallgrey</font>
+                        </textarea>
+                    </state>
+                    <state name="selectedactive" from="active">
+                        <textarea name="buttontext">
+                            <font>basesmall</font>
+                        </textarea>
+                        <shape name="selectbar">
+                            <area>0,0,0,0</area>
+                        </shape>
+                        <shape name="buttonbackground">
+                            <area>0,0,50,50</area>
+                            <type>roundbox</type>
+                            <fill color="#ffffff" alpha="75" />
+                            <cornerradius>22</cornerradius>
+                        </shape>
+                    </state>
+                    <state name="selectedinactive" from="active">
+                        <shape name="buttonbackground">
+                        <area>0,0,50,50</area>
+                        <type>roundbox</type>
+                        <fill color="#ffffff" alpha="50" />
+                        <cornerradius>22</cornerradius>
+                        </shape>
+                    </state>
+                </statetype>
+                <statetype name="upscrollarrow">
+                    <state type="off">
+                        <imagetype name="upon">
+                            <filename></filename>
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="upoff">
+                            <filename></filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+                <statetype name="downscrollarrow">
+                    <state type="off">
+                        <imagetype name="dnon">
+                            <filename></filename>
+                        </imagetype>
+                    </state>
+                    <state type="full">
+                        <imagetype name="dnoff">
+                            <filename></filename>
+                        </imagetype>
+                    </state>
+                </statetype>
+            </buttonlist>
 
-        <shape name="shows_background" from="baseboxbackground">
-            <area>247,180,930,450</area>
-        </shape>
+            <buttonlist name="shows" from="alphabet">
+                <area>80,20,1310,100%-20</area>
+                <buttonarea>0,0,1310,100%</buttonarea>
+                <statetype name="buttonitem">
+                    <area>10,0,1300,50</area>
+                    <state name="active">
+                        <textarea name="buttontext">
+                            <area>10,0,1300,50</area>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
+                            <template>%1</template>
+                        </textarea>
+                    </state>
+                    <state name="selectedactive" from="active">
+                        <textarea name="buttontext">
+                            <font>basesmall</font>
+                        </textarea>
+                        <shape name="buttonbackground">
+                            <area>0,0,1300,50</area>
+                            <type>roundbox</type>
+                            <fill color="#ffffff" alpha="75" />
+                            <cornerradius>22</cornerradius>
+                        </shape>
+                    </state>
+                    <state name="selectedinactive" from="active">
+                        <shape name="buttonbackground">
+                            <area>0,0,1300,50</area>
+                            <type>roundbox</type>
+                            <fill color="#ffffff" alpha="50" />
+                            <cornerradius>22</cornerradius>
+                        </shape>
+                    </state>
+                </statetype>
+            </buttonlist>
+            
+            <buttonlist name="times" from="alphabet">
+                <area>1400,20,420,100%-20</area>
+                <buttonarea>0,0,420,100%</buttonarea>
+                <wrapstyle>selection</wrapstyle>
+                <statetype name="buttonitem">
+                    <area>0,0,420,50</area>
+                    <state name="active">
+                        <textarea name="buttontext">
+                            <area>20,0,380,50</area>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
+                        </textarea>
+                    </state>
+                    <state name="selectedactive" from="active">
+                        <textarea name="buttontext">
+                            <font>basesmall</font>
+                        </textarea>
+                        <shape name="buttonbackground">
+                            <area>0,0,420,50</area>
+                            <type>roundbox</type>
+                            <fill color="#ffffff" alpha="75" />
+                            <cornerradius>22</cornerradius>
+                        </shape>
+                    </state>
+                    <state name="selectedinactive" from="active"/>
+                </statetype>
+            </buttonlist>
+        </group>
 
-        <buttonlist name="shows" from="alphabet">
-            <area>262,187,885,442</area>
-            <statetype name="buttonitem">
-                <area>0,0,870,37</area>
-                <state name="active">
-                    <textarea name="buttontext">
-                        <area>7,0,870,37</area>
-                        <cutdown>yes</cutdown>
-                        <align>left,vcenter</align>
-			<template>%1</template>
-                    </textarea>
-                </state>
-                <state name="selectedactive" from="active">
-                    <textarea name="buttontext">
-                        <font>basesmall</font>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active"/>
-            </statetype>
-        </buttonlist>
-
-        <shape name="times_background" from="baseboxbackground">
-            <area>1200,180,585,450</area>
-        </shape>
-
-        <buttonlist name="times" from="alphabet">
-            <area>1215,187,525,442</area>
-            <statetype name="buttonitem">
-                <area>0,0,45,37</area>
-                <state name="active">
-                    <textarea name="buttontext">
-                        <area>52,0,495,37</area>
-                        <cutdown>yes</cutdown>
-                        <align>left,vcenter</align>
-                    </textarea>
-                </state>
-                <state name="selectedactive" from="active">
-                    <textarea name="buttontext">
-                        <font>basesmall</font>
-                    </textarea>
-                </state>
-                <state name="selectedinactive" from="active"/>
-            </statetype>
-        </buttonlist>
-
-        <shape name="select_background">
-            <area>105,363,1680,52</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="0" />
-            <line color="#FFFFFF" alpha="255" width="2" />
-            <cornerradius>18</cornerradius>
-        </shape>
-
-	<group name="details" from="detailsgroup">
-	    <position>-1,555</position>
-	</group>
-
-	<group name="idstatus" from="idstatusgroup" />
+        <group name="details" from="detailsgroup">
+            <position>-1,555</position>
+        </group>
 
         <textarea name="help1text" from="basetextarea">
             <area>223,720,1500,60</area>
@@ -2003,12 +2012,12 @@
 
     <window name="schedulefiltereditor">
 
-	<animation trigger="AboutToShow">
-	    <section duration="125">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-		<zoom start="0" end="100" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="125">
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" />
+            </section>
+        </animation>
 
         <area>-1,-1,750,622</area>
 
