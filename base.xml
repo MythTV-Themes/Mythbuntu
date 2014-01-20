@@ -135,8 +135,8 @@
     </fontdef>
 
     <fontdef name="clock" from="basesmall">
-         <size>30</size>
-        <color>#666666</color>
+        <size>30</size>
+        <color>#FFFFFF</color>
     </fontdef>
 
     <!-- Base definition of a shape used as a background on many screens -->

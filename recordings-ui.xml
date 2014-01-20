@@ -450,7 +450,7 @@
         </group>
 
         <clock name="clock">
-            <area>1400,1000,500,50</area>
+            <area>1350,1000,550,50</area>
             <font>clock</font>
             <align>right</align>
             <template>%DATE%, %TIME%</template>
