@@ -3,29 +3,29 @@
 
     <window name="browser">
         <buttonlist name="pagelist" from="basebuttonlist">
-            <area>20,10,1240,45</area>
+            <area>30,15,1860,67</area>
         </buttonlist>
 
         <webbrowser name="webbrowser">
-            <area>20,55,1240,600</area>
+            <area>30,82,1860,900</area>
             <zoom>1.4</zoom>
         </webbrowser>
 
         <!-- these are optional -->
         <progressbar name="progressbar" from="baseprogressbar">
-            <area>15,670,1250,38</area>
+            <area>22,1005,1875,57</area>
             <imagetype name="background">
                 <filename>mb_progressbar_background.png</filename>
-		<area>15,670,1250,38</area>
+		<area>22,1005,1875,57</area>
             </imagetype>
             <imagetype name="progressimage">
                 <filename>mb_progressbar_fill.png</filename>
-		<area>15,670,1250,38</area>
+		<area>22,1005,1875,57</area>
             </imagetype>
         </progressbar>
 
         <textarea name="status" from="basetextarea">
-            <area>50,670,1180,38</area>
+            <area>75,1005,1770,57</area>
             <align>left,vcenter</align>
             <multiline>no</multiline>
         </textarea>
@@ -33,14 +33,14 @@
 
     <window name="bookmarkmanager">
         <shape name="headingbox">
-            <area>10,10,780,60</area>
+            <area>15,15,1170,90</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="150" />
-            <cornerradius>30</cornerradius>
+            <cornerradius>45</cornerradius>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>50,10,680,60</area>
+            <area>75,15,1020,90</area>
             <align>left,vcenter</align>
             <multiline>no</multiline>
             <value>Bookmark Manager</value>
@@ -48,35 +48,35 @@
         </textarea>
 
         <shape name="topbackground">
-            <area>15,80,1250,110</area>
+            <area>22,120,1875,165</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="120" />
-            <cornerradius>12</cornerradius>
+            <cornerradius>18</cornerradius>
         </shape>
 
         <textarea name="categorylabel">
-            <area>90,90,130,30</area>
+            <area>135,135,195,45</area>
             <font>basesmall</font>
             <value>Category</value>
         </textarea>
 
         <buttonlist name="grouplist">
-            <area>70,130,1250,30</area>
+            <area>105,195,1875,45</area>
             <layout>horizontal</layout>
             <spacing>6</spacing>
-            <buttonarea>20,0,1210,30</buttonarea>
+            <buttonarea>30,0,1815,45</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,180,30</area>
+                <area>0,0,270,45</area>
                 <state name="active">
-            		<area>0,0,180,30</area>
+            		<area>0,0,270,45</area>
             	    <shape name="buttonbackground">
-            		<area>0,0,180,30</area>
+            		<area>0,0,270,45</area>
             		<type>roundbox</type>
 	                <fill color="#666666" alpha="50" />
-            		<cornerradius>15</cornerradius>
+            		<cornerradius>22</cornerradius>
             	    </shape>
                     <textarea name="buttontext">
-                        <area>10,0,160,30</area>
+                        <area>15,0,240,45</area>
                         <font>basesmall</font>
                         <font state="error">basesmallred</font>
                         <font state="warning">basesmallyellow</font>
@@ -91,7 +91,7 @@
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1130,10</position>
+                <position>1695,15</position>
                 <state type="off">
                     <imagetype name="dnon">
                         <filename>lb-rtarrow-reg.png</filename>
@@ -104,7 +104,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>0,10</position>
+                <position>0,15</position>
                 <state type="off">
                     <imagetype name="upon">
                         <filename>lb-ltarrow-reg.png</filename>
@@ -119,42 +119,42 @@
         </buttonlist>
 
         <textarea name="label">
-            <area>40,205,130,30</area>
+            <area>60,307,195,45</area>
             <font>basesmall</font>
             <value>[x]</value>
         </textarea>
 
         <textarea name="namelabel" from="label">
-            <area>80,205,130,30</area>
+            <area>120,307,195,45</area>
             <value>Name</value>
         </textarea>
 
         <textarea name="urllabel" from="label">
-            <area>435,205,130,30</area>
+            <area>652,307,195,45</area>
             <value>URL</value>
         </textarea>
 
         <shape name="bottombackground">
-            <area>15,240,1250,450</area>
+            <area>22,360,1875,675</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="120" />
-            <cornerradius>12</cornerradius>
+            <cornerradius>18</cornerradius>
         </shape>
 
 
         <buttonlist name="bookmarklist" from="basebuttonlist2">
-            <area>40,260,1200,420</area>
+            <area>60,390,1800,630</area>
             <spacing>4</spacing>
             <layout>vertical</layout>
             <showarrow>no</showarrow>
-            <buttonarea>0,0,1180,420</buttonarea>
+            <buttonarea>0,0,1770,630</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <shape name="buttonbackground">
-                        <area>30,0,1130,30</area>
+                        <area>45,0,1695,45</area>
                     </shape>
                     <statetype name="buttoncheck">
-                        <position>5,5</position>
+                        <position>7,7</position>
                         <state type="off">
                             <imagetype name="checkoff">
                                 <filename>lb-check-empty.png</filename>
@@ -172,19 +172,19 @@
                         </state>
                     </statetype> 
                     <textarea name="name">
-                        <area>40,0,350,30</area>
+                        <area>60,0,525,45</area>
                         <font>basesmall</font>
                         <align>left,vcenter</align>
                     </textarea>
                     <textarea name="url">
-                        <area>395,0,515,30</area>
+                        <area>592,0,772,45</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="selectbar">
-                        <area>30,0,1130,30</area>
+                        <area>45,0,1695,45</area>
                     </shape>
                 </state>
                 <state name="selectedinactive" from="active">
@@ -197,16 +197,16 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1170,5</position>
+                <position>1755,7</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1170,390</position>
+                <position>1755,585</position>
             </statetype>
         </buttonlist>
 
         <textarea name="messagetext" from="basetextarea">
             <font>basemedium</font>
-            <area>40,230,720,290</area>
+            <area>60,345,1080,435</area>
             <align>allcenter</align>
             <multiline>yes</multiline>
         </textarea>
@@ -217,52 +217,52 @@
 
         <textarea name="title" from="basetextarea">
             <font>baselarge</font>
-            <area>0,50,1280,50</area>
+            <area>0,75,1920,75</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="categorylabel" from="basetextarea">
-            <area>180,150,200,30</area>
+            <area>270,225,300,45</area>
             <align>right,vcenter</align>
             <value>Category:</value>
         </textarea>
 
         <textedit name="category" from="basetextedit">
-            <position>395,140</position>
+            <position>592,210</position>
         </textedit>
 
         <button name="findcategory" from="basebutton">
-            <position>790,145</position>
+            <position>1185,217</position>
             <value>Find...</value>
         </button>
 
         <textarea name="namelabel" from="basetextarea">
-            <area>180,250,200,30</area>
+            <area>270,375,300,45</area>
             <align>right,vcenter</align>
             <value>Name:</value>
         </textarea>
 
         <textedit name="name" from="basetextedit">
-            <position>395,240</position>
+            <position>592,360</position>
         </textedit>
 
         <textarea name="urllabel" from="basetextarea">
-            <area>180,350,200,30</area>
+            <area>270,525,300,45</area>
             <align>right,vcenter</align>
             <value>URL:</value>
         </textarea>
 
         <textedit name="url" from="basetextedit">
-            <position>395,340</position>
+            <position>592,510</position>
         </textedit>
 
         <button name="cancel" from="basebutton">
-            <position>395,480</position>
+            <position>592,720</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="basebutton">
-            <position>620,480</position>
+            <position>930,720</position>
             <value>OK</value>
         </button>
 
@@ -272,59 +272,59 @@
 
         <textarea name="title" from="basetextarea">
             <font>baselarge</font>
-            <area>0,50,1280,50</area>
+            <area>0,75,1920,75</area>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="commandlabel" from="basetextarea">
-            <area>130,150,300,30</area>
+            <area>195,225,450,45</area>
             <align>right,vcenter</align>
             <value>Browser Command:</value>
         </textarea>
 
         <textedit name="command" from="basetextedit">
-            <position>445,140</position>
+            <position>667,225</position>
         </textedit>
 
         <textarea name="zoomlabel" from="basetextarea">
-            <area>130,250,300,30</area>
+            <area>195,375,450,45</area>
             <align>right,vcenter</align>
             <value>Text Size:</value>
         </textarea>
 
         <textedit name="zoom" from="basetextedit">
-            <position>445,240</position>
+            <position>667,375</position>
         </textedit>
 
         <textarea name="pluginslabel" from="basetextarea">
-            <area>445,345,450,30</area>
-            <align>allcenter</align>
+            <area>667,525,675,45</area>
+            <align>vcenter</align>
             <value>Enable browser plugins (Flash, etc)</value>
         </textarea>
                             
         <checkbox name="enablepluginscheck" from="basecheckbox">
-            <position>405,350</position>
+            <position>607,525</position>
         </checkbox>
 
         <shape name="background">
-            <area>200,400,800,140</area>
+            <area>300,600,1200,210</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="70" />
-            <cornerradius>8</cornerradius>
+            <cornerradius>12</cornerradius>
         </shape>
 
         <textarea name="description" from="basetextarea">
-            <area>210,410,780,120</area>
+            <area>315,615,1170,180</area>
             <multiline>yes</multiline>
         </textarea>
 
         <button name="cancel" from="basebutton">
-            <position>260,570</position>
+            <position>390,855</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="basebutton">
-            <position>790,570</position>
+            <position>1185,855</position>
             <value>OK</value>
         </button>
 

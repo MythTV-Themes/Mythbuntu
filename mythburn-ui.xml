@@ -6,30 +6,30 @@ MythArchive GUI theme
 <mythuitheme>
 
     <window name="profilepopup">
-        <area>-1,-1,413,426</area>
+        <area>-1,-1,619,639</area>
 
         <imagetype name="box">
             <filename>mz_function_popup.png</filename>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>20,20,360,40</area>
+            <area>30,30,540,60</area>
             <font>basemedium</font>
             <align>hcenter,top</align>
             <value>Change Encoding Profile</value>
         </textarea>
 
         <textarea name="caption_text" from="basetextarea">
-            <area>20,70,360,30</area>
+            <area>30,105,540,45</area>
             <align>hcenter,top</align>
         </textarea>
 
         <buttonlist name="profile_list" from="baseselector">
-            <position>90,130</position>
+            <position>135,195</position>
         </buttonlist>
 
         <textarea name="description_text" from="basetextarea">
-            <area>25,180,350,90</area>
+            <area>37,270,525,135</area>
             <align>allcenter</align>
             <font>basesmallgrey</font>
             <multiline>yes</multiline>
@@ -37,21 +37,21 @@ MythArchive GUI theme
         </textarea>
 
        <textarea name="oldsize_text" from="basetextarea">
-            <area>30,300,200,60</area>
+            <area>45,450,300,90</area>
             <font>basesmallpurple</font>
             <align>left</align>
             <value>12.34 GB</value>
         </textarea>
 
        <textarea name="newsize_text" from="basetextarea">
-            <area>170,300,200,60</area>
+            <area>255,450,300,90</area>
             <font>basesmallpurple</font>
             <align>right</align>
             <value>12.34 GB</value>
         </textarea>
 
         <button name="ok_button" from="basebutton">
-            <position>125,350</position>
+            <position>187,525</position>
             <value>OK</value>
         </button>
     </window>
@@ -67,32 +67,32 @@ MythArchive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
-            <area>0,10,1280,50</area>
+            <area>0,15,1920,75</area>
             <font>title</font>
             <align>allcenter</align>
             <value>DVD Menu Theme</value>
         </textarea>
 
         <shape name="topbackground" from="basebackground">
-            <area>30,70,1220,170</area>
+            <area>45,105,1830,255</area>
         </shape>
 
         <textarea name="themetitle" from="basetextarea">
-            <area>60,95,500,50</area>
+            <area>90,142,750,75</area>
             <font>basesmallyellow</font>
             <value>Select a theme</value>
         </textarea>
 
         <buttonlist name="theme_selector" from="basewideselector">
-            <position>60,180</position>
+            <position>90,270</position>
         </buttonlist>
 
         <imagetype name="theme_image" >
-            <area>1060,100,145,125</area>
+            <area>1590,150,217,187</area>
         </imagetype>
 
         <!--
@@ -100,43 +100,43 @@ MythArchive GUI theme
         -->
 
         <shape name="middlebackground" from="basebackground">
-            <area>30,260,1220,220</area>
+            <area>45,390,1830,330</area>
         </shape>
 
         <imagetype name="intro_image">
-            <area>100,275,195,162</area>
+            <area>150,412,292,243</area>
         </imagetype>
 
         <textarea name="introtitle" from="basetextarea">
-            <area>100,435,162,40</area>
+            <area>150,652,243,60</area>
             <align>center</align>
             <value>Intro</value>
         </textarea>
 
         <imagetype name="mainmenu_image">
-            <area>390,275,195,162</area>
+            <area>585,412,292,243</area>
         </imagetype>
 
         <textarea name="menutitle" from="introtitle">
-            <area>390,435,195,40</area>
+            <area>585,652,292,60</area>
             <value>Main Menu</value>
         </textarea>
 
         <imagetype name="chapter_image">
-            <area>680,275,195,162</area>
+            <area>1020,412,292,243</area>
         </imagetype>
 
         <textarea name="chaptertitle" from="introtitle">
-            <area>680,435,195,40</area>
+            <area>1020,652,292,60</area>
             <value>Chapter Menu</value>
         </textarea>
 
         <imagetype name="details_image">
-            <area>970,275,195,162</area>
+            <area>1455,412,292,243</area>
         </imagetype>
 
         <textarea name="detailtitle" from="introtitle">
-            <area>970,435,195,40</area>
+            <area>1455,652,292,60</area>
             <value>Details</value>
         </textarea>
 
@@ -145,27 +145,27 @@ MythArchive GUI theme
         -->
 
         <shape name="bottombackground" from="basebackground">
-            <area>30,500,1220,120</area>
+            <area>45,750,1830,180</area>
         </shape>
 
         <textarea name="themedescription" from="basetextarea">
-            <area>60,515,1170,90</area>
+            <area>90,772,1755,135</area>
             <value>description goes here.</value>
             <multiline>yes</multiline>
         </textarea>
 
         <button name="cancel_button" from="basebutton">
-            <position>55,650</position>
+            <position>82,975</position>
             <value>Cancel</value>
         </button>
 
         <button name="prev_button" from="basebutton">
-            <position>900,650</position>
+            <position>1350,975</position>
             <value>Previous</value>
         </button>
 
         <button name="next_button" from="basebutton">
-            <position>1060,650</position>
+            <position>1590,975</position>
             <value>Next</value>
         </button>
 
@@ -184,40 +184,40 @@ MythArchive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <fontdef name="smallstatsfont" from="basesmall">
             <color>#ffffff</color>
-            <size>10</size>
+            <size>15</size>
         </fontdef>
 
         <fontdef name="statserror" from="basesmall">
             <color>#ff0000</color>
-            <size>10</size>
+            <size>15</size>
         </fontdef>
 
         <shape name="bottombackground" from="basebackground">
-            <area>30,70,1220,500</area>
+            <area>45,105,1830,750</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>0,10,1280,50</area>
+            <area>0,15,1920,75</area>
             <font>title</font>
             <align>center</align>
             <value>Select Archive Items</value>
         </textarea>
 
         <buttonlist name="archivelist">
-            <area>60,80,1180,420</area>
+            <area>90,120,1770,630</area>
             <layout>vertical</layout>
             <spacing>5</spacing>
-            <buttonarea>0,0,1145,420</buttonarea>
+            <buttonarea>0,0,1717,630</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,1145,100</area>
+                <area>0,0,1717,150</area>
                 <state name="active">
                     <imagetype name="buttonbackground">
-                        <area>0,0,1145,100</area>
+                        <area>0,0,1717,150</area>
                         <shape name="burngradient1">
                             <fill style="gradient">
                                 <gradient start="#505050" end="#000000" alpha="200" />
@@ -225,30 +225,30 @@ MythArchive GUI theme
                         </shape>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>10,5,470,30</area>
+                        <area>15,7,705,45</area>
                         <font>basesmallyellow</font>
                     </textarea>
                     <textarea name="subtitle" from="basetextarea">
-                        <area>10,40,300,30</area>
+                        <area>15,60,450,45</area>
                         <font>basesmallpurple</font>
                     </textarea>
                     <textarea name="date" from="basetextarea">
-                        <area>10,70,285,30</area>
+                        <area>15,105,427,45</area>
                     </textarea>
                     <textarea name="size" from="basetextarea">
-                        <area>930,5,200,30</area>
+                        <area>1395,7,300,45</area>
                         <align>right</align>
                     </textarea>
                     <textarea name="profile" from="size">
-                        <area>830,40,300,30</area>
+                        <area>1245,60,450,45</area>
                     </textarea>
                     <!-- optional cut status text
                     <textarea name="cutlist" from="size">
-                        <area>830,70,300,30</area>
+                        <area>1245,105,450,45</area>
                     </textarea>
                     -->
                     <statetype name="cutliststatus">
-                        <position>1095,70</position>
+                        <position>1642,105</position>
                         <state name="none"></state>
                         <state name="using">
                             <imagetype name="statusimage">
@@ -262,7 +262,7 @@ MythArchive GUI theme
                         </state>
                     </statetype>
                     <statetype name="movestate">
-                        <position>1070,77</position>
+                        <position>1605,115</position>
                         <state name="off"></state>
                         <state name="on">
                             <imagetype name="statusimage">
@@ -300,7 +300,7 @@ MythArchive GUI theme
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>240,370</position>
+                <position>360,555</position>
                 <state type="on">
                     <imagetype name="upon">
                         <filename>up_arrow.png</filename>
@@ -308,7 +308,7 @@ MythArchive GUI theme
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>456,370</position>
+                <position>684,555</position>
                 <state type="on">
                     <imagetype name="dnon">
                         <filename>down_arrow.png</filename>
@@ -318,45 +318,45 @@ MythArchive GUI theme
         </buttonlist>
 
         <textarea name="nofiles" from="basetextarea">
-            <area>50,70,1100,175</area>
+            <area>75,105,1650,262</area>
             <align>allcenter</align>
             <value>No files are selected for archive</value>
         </textarea>
 
         <button name="addrecording_button" from="basebutton">
-            <position>60,510</position>
+            <position>90,765</position>
             <value>Add Recording</value>
         </button>
 
         <button name="addvideo_button" from="basebutton">
-            <position>550,510</position>
+            <position>825,765</position>
             <value>Add Video</value>
         </button>
 
         <button name="addfile_button" from="basebutton">
-            <position>1060,510</position>
+            <position>1590,765</position>
             <value>Add File</value>
         </button>
 
         <progressbar name="size_bar" from="baseprogressbar">
-            <position>372,600</position>
+            <position>558,900</position>
         </progressbar>
 
         <textarea name="maxsize" from="basetextarea">
-            <area>798,580,100,30</area>
+            <area>1197,870,150,45</area>
             <font>smallstatsfont</font>
             <align>right</align>
             <value>xxxxx MB</value>
         </textarea>
 
         <textarea name="minsize" from="basetextarea">
-            <area>383,580,100,30</area>
+            <area>574,870,150,45</area>
             <font>smallstatsfont</font>
             <value>0 MB</value>
         </textarea>
 
         <textarea name="currentsize" from="basetextarea">
-            <area>372,580,536,30</area>
+            <area>558,870,804,45</area>
             <font>smallstatsfont</font>
             <align>hcenter</align>
             <value>xxxxx MB</value>
@@ -367,17 +367,17 @@ MythArchive GUI theme
         </textarea>
 
         <button name="cancel_button" from="basebutton">
-            <position>55,650</position>
+            <position>82,975</position>
             <value>Cancel</value>
         </button>
 
         <button name="prev_button" from="basebutton">
-            <position>900,650</position>
+            <position>1350,975</position>
             <value>Previous</value>
         </button>
 
         <button name="next_button" from="basebutton">
-            <position>1060,650</position>
+            <position>1590,975</position>
             <value>Next</value>
         </button>
 
@@ -396,11 +396,11 @@ MythArchive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
-            <area>0,15,800,50</area>
+            <area>0,22,1200,75</area>
             <font>title</font>
             <align>allcenter</align>
             <value>Archive Item Details</value>
@@ -411,29 +411,29 @@ MythArchive GUI theme
         -->
 
         <textarea name="title_label" from="basetextarea">
-            <area>45,70,170,50</area>
+            <area>67,105,255,75</area>
             <font>basesmallyellow</font>
             <align>right,vcenter</align>
             <value>Title:</value>
         </textarea>
 
         <textarea name="subtitle_label" from="title_label">
-            <area>45,135,170,50</area>
+            <area>67,202,255,75</area>
             <value>Subtitle:</value>
         </textarea>
 
         <textarea name="startdate_label" from="title_label">
-            <area>45,200,170,50</area>
+            <area>67,300,255,75</area>
             <value>Start Date:</value>
         </textarea>
 
         <textarea name="starttime_label" from="title_label">
-            <area>45,265,170,50</area>
+            <area>67,397,255,75</area>
             <value>Time:</value>
         </textarea>
 
         <textarea name="description_label" from="title_label">
-            <area>45,330,170,50</area>
+            <area>67,495,255,75</area>
             <value>Description:</value>
         </textarea>
 
@@ -442,35 +442,35 @@ MythArchive GUI theme
         -->
 
         <textedit name="title_edit" from="basetextedit">
-            <position>225,70</position>
+            <position>337,105</position>
         </textedit>
 
         <textedit name="subtitle_edit" from="basetextedit">
-            <position>225,135</position>
+            <position>337,202</position>
         </textedit>
 
         <textedit name="startdate_edit" from="basetextedit">
-            <position>225,200</position>
+            <position>337,300</position>
         </textedit>
 
         <textedit name="starttime_edit" from="basetextedit">
-            <position>225,265</position>
+            <position>337,397</position>
         </textedit>
 
         <textedit name="description_edit" from="basetextedit">
-            <position>225,330</position>
+            <position>337,495</position>
         </textedit>
 
         <!--
             Push buttons
         -->
         <button name="ok_button" from="basebutton">
-            <position>250,540</position>
+            <position>375,810</position>
             <value>OK</value>
         </button>
 
         <button name="cancel_button" from="basebutton">
-            <position>450,540</position>
+            <position>675,810</position>
             <value>Cancel</value>
         </button>
     </window>
@@ -482,23 +482,23 @@ MythArchive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>24</size>
+            <size>36</size>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
-            <area>0,10,800,45</area>
+            <area>0,15,1200,67</area>
             <font>title</font>
             <align>allcenter</align>
             <value>Thumb Image Selector</value>
         </textarea>
 
         <imagetype name="topbgimage">
-            <area>420,65,365,80</area>
+            <area>630,97,547,120</area>
             <filename>trans-cr-background.png</filename>
         </imagetype>
 
         <button name="frame_button">
-            <position>22,65</position>
+            <position>33,97</position>
             <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
@@ -520,66 +520,66 @@ MythArchive GUI theme
         </button>
 
         <imagetype name="frameimage">
-            <area>27,70,360,229</area>
+            <area>40,105,540,343</area>
             <filename>ma_black.png</filename>
         </imagetype>
 
         <textarea name="label1" from="basetextarea">
-            <area>420,75,365,20</area>
+            <area>630,112,547,30</area>
             <font>basesmallyellow</font>
             <align>center</align>
             <value>Current Position</value>
         </textarea>
 
         <textarea name="currentpos" from="basetextarea">
-            <area>420,95,365,40</area>
+            <area>630,142,547,60</area>
             <align>center</align>
             <value>0:00:00.00</value>
         </textarea>
 
         <imagetype name="bottombgimage">
-            <area>420,175,365,80</area>
+            <area>630,262,547,120</area>
             <filename>trans-cr-background.png</filename>
         </imagetype>
 
         <textarea name="label2" from="basetextarea">
-            <area>420,185,365,20</area>
+            <area>630,277,547,30</area>
             <align>center</align>
             <font>basesmallyellow</font>
             <value>Seek Amount</value>
         </textarea>
 
         <textarea name="seekamount" from="basetextarea">
-            <area>420,210,365,40</area>
+            <area>630,315,547,60</area>
             <align>center</align>
             <value>Frame</value>
         </textarea>
 
         <imagetype name="positionimage">
-            <area>425,142,350,25</area>
+            <area>637,213,525,37</area>
             <filename>trans-cr-background.png</filename>
         </imagetype>
 
         <button name="cancel_button" from="basebutton">
-            <position>425,260</position>
+            <position>637,390</position>
             <value>Cancel</value>
         </button>
 
         <button name="save_button" from="basebutton">
-            <position>625,260</position>
+            <position>937,390</position>
             <value>Save</value>
         </button>
 
         <buttonlist name="thumblist">
-            <area>25,320,760,280</area>
+            <area>37,480,1140,420</area>
             <layout>grid</layout>
             <spacing>5</spacing>
-            <buttonarea>0,0,760,270</buttonarea>
+            <buttonarea>0,0,1140,405</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,144,125</area>
+                    <area>0,0,216,187</area>
                     <imagetype name="buttonbackground">
-                        <area>0,0,144,125</area>
+                        <area>0,0,216,187</area>
                         <shape name="burngradient6">
                             <fill style="gradient">
                                 <gradient start="#505050" end="#000000" alpha="200" />
@@ -587,12 +587,12 @@ MythArchive GUI theme
                         </shape>
                     </imagetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>5,100,134,30</area>
+                        <area>7,150,201,45</area>
                         <font>basesmall</font>
                         <align>hcenter,top</align>
                     </textarea>
                     <imagetype name="buttonimage">
-                        <area>5,5,134,90</area>
+                        <area>7,7,201,135</area>
                         <preserveaspect>false</preserveaspect>
                         <filename>mv_browse_nocover.png</filename>
                     </imagetype>

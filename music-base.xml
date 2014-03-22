@@ -4,7 +4,7 @@
 
     <!-- previous track button -->
     <button name="baseprevbutton">
-        <position>680,650</position>
+        <position>1020,975</position>
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
@@ -27,7 +27,7 @@
 
     <!-- rewind button -->
     <button name="baserewbutton">
-        <position>740,650</position>
+        <position>1110,975</position>
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
@@ -50,7 +50,7 @@
 
     <!-- pause button -->
     <button name="basepausebutton">
-        <position>800,650</position>
+        <position>1200,975</position>
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
@@ -73,7 +73,7 @@
 
     <!-- play button -->
     <button name="baseplaybutton">
-        <position>840,650</position>
+        <position>1260,975</position>
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
@@ -96,7 +96,7 @@
 
     <!-- stop button -->
     <button name="basestopbutton">
-        <position>885,650</position>
+        <position>1327,975</position>
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
@@ -119,7 +119,7 @@
 
     <!-- fast forward button -->
     <button name="baseffbutton">
-        <position>935,650</position>
+        <position>1402,975</position>
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
@@ -142,7 +142,7 @@
 
     <!-- next track button -->
     <button name="basenextbutton">
-        <position>995,650</position>
+        <position>1492,975</position>
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
@@ -165,7 +165,7 @@
 
     <!-- moving track statetype -->
     <statetype name="basemovingtracksstate">
-        <position>1220,380</position>
+        <position>1830,570</position>
         <state name="off"></state>
         <state name="on">
             <imagetype name="statusimage">
@@ -176,28 +176,28 @@
 
     <!-- current playlist button list -->
     <buttonlist name="basecurrentplaylist" from="basebuttonlist2">
-        <area>35,20,1210,340</area>
+        <area>52,30,1815,510</area>
         <spacing>4</spacing>
         <layout>vertical</layout>
         <arrange>stack</arrange>
         <showarrow>no</showarrow>
-        <buttonarea>0,0,1210,340</buttonarea>
+        <buttonarea>0,0,1815,510</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <area>0,0,1210,35</area>
+                <area>0,0,1815,52</area>
                 <shape name="buttonbackground">
-                    <area>30,0,1162,25</area>
+                    <area>45,0,1743,37</area>
                     <type>roundbox</type>
                     <fill color="#000000" alpha="0" />
-                    <cornerradius>13</cornerradius>
+                    <cornerradius>19</cornerradius>
                 </shape>
                 <imagetype name="buttonimage">
-                    <area>5,0,35,35</area>
+                    <area>7,0,52,52</area>
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
 
                 <statetype name="playstate">
-                    <position>1180,0</position>
+                    <position>1770,0</position>
                     <state name="playing">
                         <imagetype name="animation">
                             <position>0,0</position>
@@ -207,174 +207,174 @@
                     </state>
                     <state name="paused">
                         <imagetype name="animation">
-                            <position>5,5</position>
+                            <position>7,7</position>
                             <filename>mm_pauseicon.png</filename>
                         </imagetype>
                     </state>
                     <state name="stopped">
                         <imagetype name="animation">
-                            <position>5,5</position>
+                            <position>7,7</position>
                             <filename>mm_stopicon.png</filename>
                         </imagetype>
                     </state> 
                 </statetype>
 
                 <statetype name="movestate" from="basemovingtracksstate">
-                    <position>1185,65</position>
+                    <position>1777,97</position>
                 </statetype>
 
                 <textarea name="title" from="buttontext">
-                    <area>150,0,520,35</area>
+                    <area>225,0,780,52</area>
                     <align>left,vcenter</align>
                     <font>basesmall</font>
                 </textarea>
 
                 <textarea name="artist" from="buttontext">
-                    <area>700,0,350,35</area>
+                    <area>1050,0,525,52</area>
                     <font>basesmall</font>
                     <align>left,vcenter</align>
                 </textarea>
                 <textarea name="tracknum" from="artist">
-                    <area>90,0,50,35</area>
+                    <area>135,0,75,52</area>
                     <align>right,vcenter</align>
                     <template>%1 -</template>
                 </textarea>
                 <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
+                    <area>1560,0,180,52</area>
                     <align>right,vcenter</align>
                     <font>basesmall</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
-                <area>0,0,1210,90</area>
+                <area>0,0,1815,135</area>
                 <imagetype name="buttonimage">
-                    <area>5,5,80,80</area>
+                    <area>7,7,120,120</area>
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
                 <shape name="selectbar">
-                    <area>0,0,1210,90</area>
+                    <area>0,0,1815,135</area>
                     <type>roundbox</type>
                     <fill color="#666666" alpha="150" />
-                    <cornerradius>13</cornerradius>
+                    <cornerradius>19</cornerradius>
                 </shape>
                 <textarea name="title" from="buttontext">
-                    <area>150,0,520,35</area>
+                    <area>225,0,780,52</area>
                     <align>left,top</align>
                     <font>basesmall</font>
                 </textarea>
 
                 <textarea name="artist" from="buttontext">
-                    <area>700,0,350,35</area>
+                    <area>1050,0,525,52</area>
                     <font>basesmall</font>
                     <align>left,top</align>
                 </textarea>
                 <textarea name="tracknum" from="artist">
-                    <area>90,0,50,35</area>
+                    <area>135,0,75,52</area>
                     <align>right,top</align>
                     <template>%1 -</template>
                 </textarea>
                 <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
+                    <area>1560,0,180,52</area>
                     <align>right,top</align>
                     <font>basesmall</font>
                 </textarea>
 
                 <textarea name="album" from="buttontext">
-                    <area>150,30,520,30</area>
+                    <area>225,45,780,45</area>
                     <font>basesmall</font>
                     <align>left,top</align>
                 </textarea>
                 <textarea name="genre" from="buttontext">
-                    <area>700,30,300,30</area>
+                    <area>1050,45,450,45</area>
                     <font>basesmall</font>
                     <align>left,top</align>
                 </textarea>
 
                 <statetype name="ratingstate" from="baseratingstate">
-                    <position>150,63</position>
+                    <position>225,94</position>
                 </statetype>
                 <textarea name="lastplayed" from="buttontext">
-                    <area>700,60,250,30</area>
+                    <area>1050,90,375,45</area>
                     <font>basesmall</font>
                 </textarea>
                 <textarea name="playcount" from="buttontext">
-                    <area>940,60,220,30</area>
+                    <area>1410,90,330,45</area>
                     <align>right,top</align>
                     <font>basesmall</font>
                     <template>Played %1 times</template>
                 </textarea>
                 <statetype name="playstate">
-                    <position>1180,30</position>
+                    <position>1770,45</position>
                 </statetype>
             </state>
             <state name="selectedinactive" from="active">
-                <area>0,0,1210,90</area>
+                <area>0,0,1815,135</area>
                 <imagetype name="buttonimage">
-                    <area>5,5,80,80</area>
+                    <area>7,7,120,120</area>
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
 
 
                 <textarea name="title" from="buttontext">
-                    <area>150,0,520,35</area>
+                    <area>225,0,780,52</area>
                     <align>left,top</align>
                     <font>basesmall</font>
                 </textarea>
                 <textarea name="artist" from="buttontext">
-                    <area>700,0,350,35</area>
+                    <area>1050,0,525,52</area>
                     <font>basesmall</font>
                     <align>left,top</align>
                 </textarea>
                 <textarea name="tracknum" from="artist">
-                    <area>90,0,50,35</area>
+                    <area>135,0,75,52</area>
                     <align>right,top</align>
                     <template>%1 -</template>
                 </textarea>
                 <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
+                    <area>1560,0,180,52</area>
                     <align>right,top</align>
                     <font>basesmall</font>
                 </textarea>
 
                 <textarea name="album" from="buttontext">
-                    <area>150,30,520,30</area>
+                    <area>225,45,780,45</area>
                     <font>basesmall</font>
                     <align>left,top</align>
                 </textarea>
                 <textarea name="genre" from="buttontext">
-                    <area>700,30,300,30</area>
+                    <area>1050,45,450,45</area>
                     <font>basesmall</font>
                     <align>left,top</align>
                 </textarea>
 
                 <statetype name="ratingstate" from="baseratingstate">
-                    <position>150,63</position>
+                    <position>225,94</position>
                 </statetype>
                 <textarea name="lastplayed" from="buttontext">
-                    <area>700,60,250,30</area>
+                    <area>1050,90,375,45</area>
                 </textarea>
                 <textarea name="playcount" from="buttontext">
-                    <area>940,60,220,30</area>
+                    <area>1410,90,330,45</area>
                     <align>right,top</align>
                     <font>basesmall</font>
                     <template>Played %1 times</template>
                 </textarea>
                 <statetype name="playstate">
-                    <position>1180,30</position>
+                    <position>1770,45</position>
                 </statetype>
             </state>
         </statetype>
         <statetype name="upscrollarrow">
-            <position>1150,345</position>
+            <position>1725,517</position>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>1180,345</position>
+            <position>1770,517</position>
         </statetype>
     </buttonlist>
 
     <!-- playlist progress bar  -->
     <progressbar name="baseplaylistprogress">
-        <position>40,395</position>
+        <position>60,592</position>
         <layout>horizontal</layout>
         <style>reveal</style>
         <imagetype name="background">
@@ -387,24 +387,24 @@
 
     <!-- repeat statetype -->
     <statetype name="baserepeatstate">
-        <area>700,390,250,35</area>
+        <area>1050,585,375,52</area>
         <state name="off">
             <textarea name="repeattext" from="basetextarea">
-                <area>0,0,250,35</area>
+                <area>0,0,375,52</area>
                 <font>basesmall</font>
                 <value>Repeat Mode: Off</value>
             </textarea>
         </state>
         <state name="track">
             <textarea name="repeattext" from="basetextarea">
-                <area>0,0,250,35</area>
+                <area>0,0,375,52</area>
                 <font>basesmall</font>
                 <value>Repeat Mode: Track</value>
             </textarea>
         </state>
         <state name="all">
             <textarea name="repeattext" from="basetextarea">
-                <area>0,0,250,35</area>
+                <area>0,0,375,52</area>
                 <font>basesmall</font>
                 <value>Repeat Mode: All</value>
             </textarea>
@@ -413,38 +413,38 @@
 
     <!-- shuffle statetype -->
     <statetype name="baseshufflestate">
-        <area>970,390,300,35</area>
+        <area>1455,585,450,52</area>
         <state name="off">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,35</area>
+                <area>0,0,450,52</area>
                 <font>basesmall</font>
                 <value>Shuffle Mode: Off</value>
             </textarea>
         </state>
         <state name="random">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,35</area>
+                <area>0,0,450,52</area>
                 <font>basesmall</font>
                 <value>Shuffle Mode: Random</value>
             </textarea>
         </state>
         <state name="intelligent">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,35</area>
+                <area>0,0,450,52</area>
                 <font>basesmall</font>
                 <value>Shuffle Mode: Intelligent</value>
             </textarea>
         </state>
         <state name="album">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,35</area>
+                <area>0,0,450,52</area>
                 <font>basesmall</font>
                 <value>Shuffle Mode: Album</value>
             </textarea>
         </state>
         <state name="artist">
             <textarea name="shuffletext" from="basetextarea">
-                <area>0,0,300,35</area>
+                <area>0,0,450,52</area>
                 <font>basesmall</font>
                 <value>Shuffle Mode: Artist</value>
             </textarea>
@@ -453,7 +453,7 @@
 
     <!-- track progress bar -->
     <progressbar name="basetrackprogress">
-        <position>230,670</position>
+        <position>345,1005</position>
         <layout>horizontal</layout>
         <style>reveal</style>
         <imagetype name="background">
@@ -466,7 +466,7 @@
 
     <!-- mute statetype -->
     <statetype name="basemutestate">
-        <position>30,670</position>
+        <position>45,1005</position>
         <state name="off">
             <imagetype name="statusimage">
                 <filename>mm_volume.png</filename>
@@ -481,7 +481,7 @@
 
     <!-- volume text -->
     <textarea name="basevolume" from="basetextarea">
-        <area>70,667,250,25</area>
+        <area>105,1000,375,37</area>
         <font>basesmall</font>
         <template>%VOLUMEPERCENT% %|(MUTE|)%</template>
     </textarea>
@@ -491,95 +491,95 @@
     </buttonlist>
 
     <buttonlist name="basegallerybuttonlist">
-        <area>0,0,1225,380</area>
+        <area>0,0,1837,570</area>
         <layout>grid</layout>
         <spacing>10</spacing>
         <searchposition>-1,430</searchposition>
-        <buttonarea>0,0,1225,380</buttonarea>
+        <buttonarea>0,0,1837,570</buttonarea>
         <statetype name="buttonitem">
-            <area>0,0,195,150</area>
+            <area>0,0,292,225</area>
             <state name="active">
                 <shape name="buttonbackground">
-                    <area>0,0,195,150</area>
+                    <area>0,0,292,225</area>
                     <type>roundbox</type> 
-                    <cornerradius>3</cornerradius>
+                    <cornerradius>4</cornerradius>
                     <fill style="gradient">
                         <gradient start="#e8e262" end="#fe9735" alpha="50"/>
                     </fill>
                 </shape>
 
                 <imagetype name="buttonimage">
-                    <area>42,10,110,110</area>
+                    <area>63,15,165,165</area>
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
 
                 <statetype name="nodetype">
-                    <position>42,10</position>
+                    <position>63,15</position>
                     <state name="default" />
                     <state name="alltracks">
                         <imagetype name="alltracks">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_alltracks.png</filename>
                         </imagetype>
                     </state>
                     <state name="genres">
                         <imagetype name="genres">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_genres.png</filename>
                         </imagetype>
                     </state>
                     <state name="albums">
                         <imagetype name="albums">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_albums.png</filename>
                         </imagetype>
                     </state>
                     <state name="artists">
                         <imagetype name="artists">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_artists.png</filename>
                         </imagetype>
                     </state>
                     <state name="compartists">
                         <imagetype name="compartists">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_compartists.png</filename>
                         </imagetype>
                     </state>
                     <state name="ratings">
                         <imagetype name="ratings">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_ratings.png</filename>
                         </imagetype>
                     </state>
                     <state name="years">
                         <imagetype name="years">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_years.png</filename>
                         </imagetype>
                     </state>
                     <state name="compilations">
                         <imagetype name="compilations">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_compilations.png</filename>
                         </imagetype>
                     </state>
                     <state name="playlists">
                         <imagetype name="playlists">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_playlists.png</filename>
                         </imagetype>
                     </state>
                     <state name="smartplaylists">
                         <imagetype name="smartplaylists">
-                            <area>0,0,110,110</area>
+                            <area>0,0,165,165</area>
                             <filename>mm_smartplaylists.png</filename>
                         </imagetype>
                     </state>
                 </statetype>
 
                 <statetype name="buttoncheck">
-                    <position>15,100</position>
+                    <position>22,150</position>
                     <showempty>yes</showempty>
                     <state type="full">
                         <imagetype name="marked">
@@ -589,16 +589,16 @@
                 </statetype>
 
                 <textarea name="buttontext" from="basetextarea">
-                    <area>5,120,184,30</area>
+                    <area>7,180,276,45</area>
                     <align>hcenter,bottom</align>
                     <font>basesmall</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
                 <shape name="buttonbackground">
-                    <area>0,0,195,150</area>
+                    <area>0,0,292,225</area>
                     <type>roundbox</type> 
-                    <cornerradius>3</cornerradius>
+                    <cornerradius>4</cornerradius>
                     <fill style="gradient">
                         <gradient start="#e8e262" end="#fe9735" alpha="255" />
                     </fill>
@@ -609,9 +609,9 @@
             </state>
             <state name="selectedinactive" from="active">
                 <shape name="buttonbackground">
-                    <area>0,0,195,150</area>
+                    <area>0,0,292,225</area>
                     <type>roundbox</type> 
-                    <cornerradius>3</cornerradius>
+                    <cornerradius>4</cornerradius>
                     <fill style="gradient">
                         <gradient start="#e8e262" end="#fe9735" alpha="150" />
                     </fill>
@@ -623,7 +623,7 @@
             </state>
         </statetype>
         <statetype name="upscrollarrow">
-            <position>240,270</position>
+            <position>360,405</position>
             <state type="on">
                 <imagetype name="upon">
                     <filename>up_arrow.png</filename>
@@ -631,7 +631,7 @@
             </state>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>456,270</position>
+            <position>684,405</position>
             <state type="on">
                 <imagetype name="dnon">
                     <filename>down_arrow.png</filename>
@@ -641,173 +641,173 @@
     </buttonlist>
 
     <group name="basemusiccontrols">
-        <area>650,650,200,50</area>
+        <area>975,975,300,75</area>
 
         <button name="prev" from="baseprevbutton">
             <position>0,0</position>
         </button>
 
         <button name="rew" from="baserewbutton">
-            <position>60,0</position>
+            <position>90,0</position>
         </button>
 
         <button name="pause" from="basepausebutton">
-            <position>120,0</position>
+            <position>180,0</position>
         </button>
 
         <button name="play" from="baseplaybutton">
-            <position>160,0</position>
+            <position>240,0</position>
         </button>
 
         <button name="stop" from="basestopbutton">
-            <position>205,0</position>
+            <position>307,0</position>
         </button>
 
         <button name="ff" from="baseffbutton">
-            <position>255,0</position>
+            <position>382,0</position>
         </button>
 
         <button name="next" from="basenextbutton">
-            <position>315,0</position>
+            <position>472,0</position>
         </button>
 
     </group>
 
     <group name="baseinfopanel">
-        <area>0,400,1280,235</area>
+        <area>0,600,1920,352</area>
 
         <shape name="track_info_background" from="basebackground">
-            <area>15,0,1250,235</area>
+            <area>22,0,1875,352</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="150" />
             <line color="#FFFFFF" alpha="0" width="0" />
-            <cornerradius>10</cornerradius>
+            <cornerradius>15</cornerradius>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>230,5,900,34</area>
+            <area>345,7,1350,51</area>
             <font>baselarge</font>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>230,45,900,34</area>
+            <area>345,67,1350,51</area>
             <font>basemedium</font>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>230,80,900,34</area>
+            <area>345,120,1350,51</area>
             <font>basemedium</font>
         </textarea>
 
         <statetype name="ratingstate" from="baseratingstate">
-            <position>230,115</position>
+            <position>345,172</position>
         </statetype>
 
         <textarea name="nexttitle" from="basetextarea">
             <font>basesmall</font>
-            <area>230,145,840,35</area>
+            <area>345,217,1260,52</area>
             <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
         </textarea>
 
         <progressbar name="progress" from="basetrackprogress">
-            <position>230,205</position>
+            <position>345,307</position>
         </progressbar>
 
         <textarea name="time" from="basetextarea">
-            <area>230,175,175,35</area>
+            <area>345,262,262,52</area>
             <font>basesmall</font>
         </textarea>
 
         <imagetype name="visualizer_border">
             <filename>mm_blackhole_border.png</filename>
-            <area>1082,9,162,162</area>
+            <area>1623,13,243,243</area>
         </imagetype>
 
         <video name="visualizer">
-            <area>1085,13,156,155</area>
+            <area>1627,19,234,232</area>
         </video>
 
         <textarea name="visualizername" from="basetextarea">
-            <area>1085,170,156,35</area>
+            <area>1627,255,234,52</area>
             <font>basesmall</font>
             <align>center</align>
         </textarea>
 
         <statetype name="mutestate" from="basemutestate">
-            <position>30,205</position>
+            <position>45,307</position>
         </statetype>
 
         <textarea name="volume" from="basevolume">
-            <position>70,202</position>
+            <position>105,303</position>
         </textarea>
 
         <imagetype name="mm_blackhole_border">
             <filename>mm_blackhole_border.png</filename>
-            <area>32,9,162,162</area>
+            <area>48,13,243,243</area>
         </imagetype>
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
-            <area>35,13,156,155</area>
+            <area>52,19,234,232</area>
         </imagetype>
 
         <group name="musiccontrols" from="basemusiccontrols">
-            <position>685,185</position>
+            <position>1027,277</position>
         </group>
     </group>
 
     <group name="baseplayliststatusgroup">
         <textarea name="playlistposition" from="basetextarea">
-            <area>40,0,170,30</area>
+            <area>60,0,255,45</area>
             <font>basesmall</font>
             <align>left,top</align>
         </textarea>
 
         <textarea name="playlisttime" from="basetextarea">
-            <area>210,0,230,30</area>
+            <area>315,0,345,45</area>
             <font>basesmall</font>
             <align>right,top</align>
         </textarea>
 
         <progressbar name="playlistprogress" from="baseplaylistprogress">
-            <position>40,30</position>
+            <position>60,45</position>
         </progressbar>
 
         <statetype name="repeatstate" from="baserepeatstate">
-            <position>600,25</position>
+            <position>900,37</position>
         </statetype>
 
         <statetype name="shufflestate" from="baseshufflestate">
-            <position>870,25</position>
+            <position>1305,37</position>
         </statetype>
     </group>
 
     <group name="basesmallinfopanel">
         <shape name="trackinfo_background" from="basebackground">
-            <area>15,0,1250,50</area>
+            <area>22,0,1875,75</area>
             <fill color="#000000" alpha="50" />
         </shape>
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
-            <area>30,5,40,40</area>
+            <area>45,7,60,60</area>
         </imagetype>
 
         <statetype name="trackstate">
-            <position>90,12</position>
+            <position>135,18</position>
             <state name="playing">
                 <imagetype name="playicon">
                     <filename>mm_playicon.png</filename>
                 </imagetype>
             </state>
             <state name="paused">
-                <position>0,4</position>
+                <position>0,6</position>
                 <imagetype name="pauseicon">
                     <filename>mm_pauseicon.png</filename>
                 </imagetype>
             </state>
             <state name="stopped">
-                <position>0,4</position>
+                <position>0,6</position>
                 <imagetype name="stopicon">
                     <filename>mm_stopicon.png</filename>
                 </imagetype>
@@ -815,13 +815,13 @@
         </statetype>
 
         <textarea name="title" from="basetextarea">
-            <area>120,10,930,34</area>
+            <area>180,15,1395,51</area>
             <font>basemedium</font>
             <template>Now Playing: %TITLE% by %ARTIST% on %ALBUM%</template>
         </textarea>
 
         <textarea name="time" from="basetextarea">
-            <area>1070,15,185,34</area>
+            <area>1605,22,277,51</area>
             <align>right</align>
             <font>basesmall</font>
         </textarea>
@@ -829,28 +829,28 @@
 
     <group name="baseplaylistpanel">
         <shape name="playlist_background" from="basebackground">
-            <area>15,0,1250,265</area>
+            <area>22,0,1875,397</area>
             <fill color="#000000" alpha="50" />
         </shape>
 
         <buttonlist name="currentplaylist" from="basebuttonlist2">
-            <area>30,15,1220,210</area>
+            <area>45,22,1830,315</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
             <arrange>stack</arrange>
             <showarrow>no</showarrow>
-            <buttonarea>0,0,1220,190</buttonarea>
+            <buttonarea>0,0,1830,285</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,46</area>
+                    <area>0,0,100%,69</area>
 
                     <imagetype name="buttonimage">
-                        <area>5,5,36,36</area>
+                        <area>7,7,54,54</area>
                         <filename>mm_nothumb.png</filename>
                     </imagetype>
 
                     <statetype name="playstate">
-                        <position>1185,10</position>
+                        <position>1777,15</position>
                         <state name="default">
                         </state>
                         <state name="playing">
@@ -862,20 +862,20 @@
                         </state>
                         <state name="paused">
                             <imagetype name="animation">
-                                <position>5,5</position>
+                                <position>7,7</position>
                                 <filename>mm_pauseicon.png</filename>
                             </imagetype>
                         </state>
                         <state name="stopped">
                             <imagetype name="animation">
-                                <position>5,5</position>
+                                <position>7,7</position>
                                 <filename>mm_stopicon.png</filename>
                             </imagetype>
                         </state>
                     </statetype>
 
                     <statetype name="movestate">
-                        <position>1190,15</position>
+                        <position>1785,22</position>
                         <state name="off"></state>
                         <state name="on">
                             <imagetype name="statusimage">
@@ -885,7 +885,7 @@
                     </statetype>
 
                     <textarea name="title" from="buttontext">
-                        <area>50,0,1090,46</area>
+                        <area>75,0,1635,69</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
                         <template>%TITLE% by %ARTIST% on %ALBUM%</template>
@@ -894,29 +894,29 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <imagetype name="buttonimage">
-                        <area>5,5,36,36</area>
+                        <area>7,7,54,54</area>
                         <filename>mm_nothumb.png</filename>
                     </imagetype>
                     <shape name="selectbar">
-                        <area>0,0,1220,46</area>
+                        <area>0,0,1830,69</area>
                     </shape>
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,1220,46</area>
+                        <area>0,0,1830,69</area>
                     </shape>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1160,185</position>
+                <position>1740,277</position>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1190,185</position>
+                <position>1785,277</position>
             </statetype>
         </buttonlist>
 
         <group name="playliststatuspanel" from="baseplayliststatusgroup">
-            <position>0,205</position>
+            <position>0,307</position>
         </group>
     </group>
 

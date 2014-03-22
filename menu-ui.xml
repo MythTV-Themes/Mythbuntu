@@ -3,46 +3,46 @@
     <window name="mainmenu">
 
         <shape name="titlebox">
-            <area>-10,-10,1300,130</area>
+            <area>-15,-15,1950,195</area>
             <type>box</type>
             <fill color="#000000" alpha="150" />
         </shape>
 
         <shape name="infobox">
-            <area>-10,599,1300,150</area>
+            <area>-15,898,1950,225</area>
             <type>box</type>
             <fill color="#000000" alpha="150" />
         </shape>
 
         <fontdef name="menufont" from="baseextralarge">
             <color>#FFFFFF</color>
-            <size>28</size>
+            <size>42</size>
         </fontdef>
 
         <fontdef name="selectedmenufont" from="menufont">
             <color>#FFFFFF</color>
-            <size>36</size>
+            <size>54</size>
         </fontdef>
 
         <buttonlist name="menu">
-            <area>40,95,740,580</area>
+            <area>60,142,1110,870</area>
             <layout>vertical</layout>
-            <spacing>30</spacing>
+            <spacing>20</spacing>
             <wrapstyle>items</wrapstyle>
-            <buttonarea>40,55,730,460</buttonarea>
+            <buttonarea>60,82,1095,690</buttonarea>
             <triggerevent context="Global" action="SELECT">RIGHT</triggerevent>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,700,60</area>
+                    <area>0,0,1050,90</area>
                     <shape name="slctbr">
-                        <area>0,0,680,60</area>
+                        <area>0,0,1020,90</area>
                         <type>roundbox</type> 
                         <fill color="#666666" alpha="50" />
-                        <cornerradius>30</cornerradius> 
+                        <cornerradius>45</cornerradius> 
                     </shape>
                     <textarea name="buttontext">
-                        <area>30,0,620,60</area>
+                        <area>45,0,930,90</area>
                         <font>menufont</font>
                         <align>left,vcenter</align>
                         <cutdown>yes</cutdown>
@@ -50,21 +50,15 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="slctbr">
-                        <area>-10,-10,700,80</area>
+                        <area>0,0,1020,90</area>
                         <type>roundbox</type> 
                         <fill color="#FFFFFF" alpha="50" />
-                        <cornerradius>40</cornerradius> 
+                        <cornerradius>60</cornerradius> 
                     </shape>
-                    <textarea name="buttontext">
-                        <area>30,-10,640,80</area>
-                        <font>selectedmenufont</font>
-                        <align>left,vcenter</align>
-                        <cutdown>yes</cutdown>
-                    </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>-10,40</position>
+                <position>-15,60</position>
                 <showempty>yes</showempty>
                 <state type="full">
                     <imagetype name="upon">
@@ -73,7 +67,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>-10,465</position>
+                <position>-15,697</position>
                 <showempty>yes</showempty>
                 <state type="full">
                     <imagetype name="dnon">
@@ -793,20 +787,20 @@
             </state>
         </statetype>
 
-        <shape name="titleboxshadow">
-            <area>-10,110,1300,10</area>
+<!--        <shape name="titleboxshadow">
+            <area>-15,165,1950,15</area>
             <fill style="gradient">
                 <gradient start="#ffffff" end="#000000" alpha="50" />
             </fill>
         </shape>
-
+-->
         <imagetype name="overlay">
-            <area>0,0,1280,720</area>
+            <area>0,0,1920,1080</area>
             <filename>panels-with-drop.png</filename>
         </imagetype>
 
         <clock name="clock">
-            <area>100,642,1120,60</area>
+            <area>1350,1000,550,50</area>
             <font>clock</font>
             <align>right</align>
             <template>%DATE%, %TIME%</template>

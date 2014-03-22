@@ -12,10 +12,10 @@
     </types>
 
     <aspect>16:9</aspect>
-    <baseres>1280x720</baseres>
+    <baseres>1920x1080</baseres>
 
     <version>
-        <major>27</major>
+        <major>28</major>
         <minor>1</minor>
     </version>
 
