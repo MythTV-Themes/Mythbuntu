@@ -10,9 +10,9 @@
        </shape>
 
         <clock name="clock">
-            <area>1425,15,450,90</area>
-            <align>vcenter,right</align>
-	    <font>basesmallgrey</font>
+            <area>1350,1000,550,50</area>
+            <font>clock</font>
+            <align>right</align>
             <template>%DATE%, %TIME%</template>
         </clock>
 
