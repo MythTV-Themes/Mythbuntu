@@ -31,6 +31,10 @@
         <size>30</size>
     </fontdef>
 
+    <fontdef name="baserecordingsmedium" from="basesmall">
+        <size>34</size>
+    </fontdef>
+
     <fontdef name="basegallerymedium" from="basesmall">
         <size>27</size>
     </fontdef>
@@ -132,6 +136,22 @@
 
     <fontdef name="basemediumpurple" from="basemedium">
         <color>#9999cc</color>
+    </fontdef>
+
+    <fontdef name="baserecordingsmediumbrightred" from="baserecordingsmedium">
+        <color>#ff2e1e</color>
+    </fontdef>
+
+    <fontdef name="baserecordingsmediumgrey" from="baserecordingsmedium">
+        <color>#bcbcbc</color>
+    </fontdef>
+
+    <fontdef name="baserecordingsmediumyellow" from="baserecordingsmedium">
+        <color>#FFFF33</color>
+    </fontdef>
+
+    <fontdef name="baserecordingsmediumgreen" from="baserecordingsmedium">
+        <color>#80d400</color>
     </fontdef>
 
     <fontdef name="clock" from="basesmall">
@@ -274,10 +294,10 @@
                 <textarea name="buttontext">
                     <area>52,0,1732,37</area>
                     <align>vcenter</align>
-                            <font state="disabled">basesmallgrey</font>
+                            <font state="disabled">baserecordingsmediumgrey</font>
                             <font state="error">basesmallbrightred</font>
                             <font state="warning">basesmallyellow</font>
-                            <font state="normal">basesmall</font>
+                            <font state="normal">baserecordingsmedium</font>
                             <font state="running">basesmallgreen</font>
                             <font state="marked"></font>
                 </textarea>

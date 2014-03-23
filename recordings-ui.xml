@@ -42,9 +42,9 @@
                 <cornerradius>15</cornerradius>
             </shape>
 
-            <buttonlist name="groups" from="basebuttonlist">
+            <buttonlist name="groups">
                 <area>10,10,450,686</area>
-                <buttonarea>0,0,440,696</buttonarea>
+                <buttonarea>0,0,450,696</buttonarea>
                 <spacing>6</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
@@ -54,32 +54,38 @@
                     highlighted entry. -->
                     <state name="active">
                         <shape name="buttonbackground"> 
-                            <area>0,0,440,46</area> 
+                            <area>0,0,450,70</area> 
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
                             <line color="#FFFFFF" alpha="0" width="0" />
                             <cornerradius>22</cornerradius>
                         </shape> 
-                        <textarea name="name" from="buttontext">
-                            <font>basesmallgrey</font>
+                        <textarea name="name">
+                            <area>15,-1,100%,70</area>
+                            <font>baserecordingsmediumgrey</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
                         </textarea>
-                    </state>
-                    <state name="inactive" from="active">
                     </state>
                     <state name="selectedactive" from="active">
                         <shape name="buttonbackground">                         
-                            <area>0,0,440,46</area>
+                            <area>0,0,450,70</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>22</cornerradius>
                         </shape> 
-                        <textarea name="name" from="buttontext">
-                            <font>basesmall</font>
+                        <textarea name="name">
+                            <area>15,-1,100%,70</area>
+                            <font>baserecordingsmediumgrey</font>
+                            <cutdown>yes</cutdown>
+                            <align>left,vcenter</align>
                         </textarea>
+                    </state>
+                    <state name="inactive" from="active">
                     </state>
                     <state name="selectedinactive" from="active">
                         <shape name="buttonbackground">                         
-                            <area>0,0,440,46</area>
+                            <area>0,0,440,70</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>22</cornerradius>
@@ -88,12 +94,21 @@
                 </statetype>
                 <statetype name="upscrollarrow">
                     <position>440,0</position>
+                    <state type="full">
+                        <imagetype name="upoff">
+                            <filename>shared/uparrow.png</filename>
+                        </imagetype>
+                    </state>
                 </statetype>
                 <statetype name="downscrollarrow">
                     <position>440,646</position>
+                    <state type="full">
+                        <imagetype name="dnoff">
+                            <filename>shared/downarrow.png</filename>
+                        </imagetype>
+                    </state>
                 </statetype>
             </buttonlist>
-
         </group>
 
         <group name="coverartgroup">
@@ -143,7 +158,7 @@
                 <cornerradius>15</cornerradius>
             </shape>
 
-            <buttonlist name="recordings" from="basebuttonlist">
+            <buttonlist name="recordings">
                 <area>10,10,1370,686</area>
                 <buttonarea>20,7,1360,696</buttonarea>
                 <spacing>6</spacing>
@@ -155,26 +170,29 @@
                         highlighted entry. -->
                     <state name="active">
                         <shape name="buttonbackground">
-                            <area>10,0,1360,46</area>
+                            <area>10,0,1360,70</area>
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
                             <cornerradius>22</cornerradius>
                         </shape>
-                        <textarea name="titlesubtitle" from="buttontext">
-                            <area>50,0,1065,46</area>
-                            <font>basesmallgrey</font>
-                            <font state="error">basesmallred</font>
-                            <font state="running">basesmallgreen</font>
+                        <textarea name="titlesubtitle">
+                            <area>50,0,1005,70</area>
+                            <font state="disabled">baserecordingsmediumgrey</font>
+                            <font state="error">bbaserecordingsmediumbrightred</font>
+                            <font state="warning">baserecordingsmediumyellow</font>
+                            <font state="normal">baserecordingsmedium</font>
+                            <font state="running">baserecordingsmediumgreen</font>
+                            <font state="marked"></font>
                             <align>vcenter</align>
                             <template>%TITLESUBTITLE% %YEARSTARS%</template>
                         </textarea>
                         <textarea name="shortstartdate" from="titlesubtitle">
-                            <area>1115,0,100,46</area>
+                            <area>1015,0,130,70</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
                         </textarea>
                         <textarea name="starttime" from="shortstartdate">
-                            <area>1215,0,135,46</area>
+                            <area>1145,0,205,70</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
                         </textarea>
@@ -208,7 +226,7 @@
                     <state name="inactive" from="active" />
                     <state name="selectedactive" from="active">
                         <shape name="buttonbackground">
-                            <area>10,0,1360,46</area>
+                            <area>10,0,1360,70</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>22</cornerradius>
@@ -218,9 +236,19 @@
                 </statetype>
                 <statetype name="upscrollarrow">
                     <position>-5,0</position>
+                    <state type="full">
+                        <imagetype name="upoff">
+                            <filename>shared/uparrow.png</filename>
+                        </imagetype>
+                    </state>
                 </statetype>
                 <statetype name="downscrollarrow">
                     <position>-5,646</position>
+                    <state type="full">
+                        <imagetype name="dnoff">
+                            <filename>shared/downarrow.png</filename>
+                        </imagetype>
+                    </state>
                 </statetype>
             </buttonlist>
 
