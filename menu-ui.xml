@@ -16,7 +16,7 @@
 
         <fontdef name="menufont" from="baseextralarge">
             <color>#FFFFFF</color>
-            <size>42</size>
+            <size>62</size>
         </fontdef>
 
         <fontdef name="selectedmenufont" from="menufont">
@@ -34,15 +34,15 @@
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,1050,90</area>
+                    <area>0,0,1050,115</area>
                     <shape name="slctbr">
-                        <area>0,0,1020,90</area>
+                        <area>0,0,1020,115</area>
                         <type>roundbox</type> 
                         <fill color="#666666" alpha="50" />
                         <cornerradius>45</cornerradius> 
                     </shape>
                     <textarea name="buttontext">
-                        <area>45,0,930,90</area>
+                        <area>45,0,930,115</area>
                         <font>menufont</font>
                         <align>left,vcenter</align>
                         <cutdown>yes</cutdown>
@@ -50,10 +50,10 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="slctbr">
-                        <area>0,0,1020,90</area>
+                        <area>0,0,1020,115</area>
                         <type>roundbox</type> 
                         <fill color="#FFFFFF" alpha="50" />
-                        <cornerradius>60</cornerradius> 
+                        <cornerradius>45</cornerradius> 
                     </shape>
                 </state>
             </statetype>
