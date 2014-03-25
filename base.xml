@@ -146,6 +146,10 @@
         <color>#bcbcbc</color>
     </fontdef>
 
+    <fontdef name="baserecordingsmediumdarkgrey" from="baserecordingsmedium">
+        <color>#848484</color>
+    </fontdef>
+
     <fontdef name="baserecordingsmediumyellow" from="baserecordingsmedium">
         <color>#FFFF33</color>
     </fontdef>
@@ -294,11 +298,11 @@
                 <textarea name="buttontext">
                     <area>52,0,1732,37</area>
                     <align>vcenter</align>
-                            <font state="disabled">baserecordingsmediumgrey</font>
-                            <font state="error">basesmallbrightred</font>
-                            <font state="warning">basesmallyellow</font>
-                            <font state="normal">baserecordingsmedium</font>
-                            <font state="running">basesmallgreen</font>
+                            <font state="disabled">baserecordingsmediumdarkgrey</font>
+                            <font state="error">baserecordingsmediumbrightred</font>
+                            <font state="warning">baserecordingsmediumyellow</font>
+                            <font state="normal">baserecordingsmediumgrey</font>
+                            <font state="running">baserecordingsmediumgreen</font>
                             <font state="marked"></font>
                 </textarea>
             </state>
