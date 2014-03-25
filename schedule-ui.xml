@@ -156,7 +156,7 @@
                         <font>baseextrasmallblack</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
-			<multiline>yes</multiline>
+                        <multiline>yes</multiline>
                     </textarea>
                     <imagetype name="channelicon">
                         <area>15,9,88,66</area>
@@ -177,7 +177,7 @@
                         <font state="favunavailable">basesmallpurple</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
-			<multiline>yes</multiline>
+                        <multiline>yes</multiline>
                         <template>%CHANNELNUMBER|\n%%CALLSIGN%</template>
                   </textarea>
                 </state>
@@ -691,11 +691,11 @@
 
         <buttonlist name="schedules" from="proglistlist" />
 
-	<group name="details" from="detailsgroup">
-	    <position>-1,555</position>
-	</group>
+        <group name="details" from="detailsgroup">
+            <position>-1,555</position>
+        </group>
 
-	<group name="idstatus" from="idstatusgroup" />
+        <group name="idstatus" from="idstatusgroup" />
 
         <textarea name="norecordings_info">
             <area>150,285,1620,165</area>
@@ -744,7 +744,7 @@
                     </statetype>
                     <textarea name="chanstr" from="buttontext">
                         <area>142,1,150,36</area>
-			<align>center</align>
+                        <align>center</align>
                     </textarea>
                     <textarea name="callsign" from="chanstr">
                         <area>330,1,300,36</area>
