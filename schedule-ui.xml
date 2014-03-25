@@ -178,7 +178,7 @@
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
                         <multiline>yes</multiline>
-                        <!--<template>%CHANNELNUMBER|\n%%CALLSIGN%</template>-->
+                        <template>%CHANNELNUMBER|\n%%CALLSIGN%</template>
                   </textarea>
                 </state>
                 <state name="selectedactive" from="active"/>
