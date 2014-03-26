@@ -1590,45 +1590,46 @@
         </shape>
 
         <textarea name="callsignlabel" from="basetextarea">
-            <area>952,22,150,60</area>
+            <area>922,22,150,60</area>
             <value>Channel</value>
             <align>right,vcenter</align>
         </textarea>
         <textarea name="lastrecordedlabel" from="basetextarea">
-            <area>1192,22,435,60</area>
+            <area>1222,22,435,60</area>
             <value>Last Recorded</value>
             <align>right,vcenter</align>
         </textarea>
 
         <textarea name="prioritylabel" from="basetextarea">
-            <area>1642,22,142,60</area>
+            <area>1676,22,142,60</area>
             <value>Priority</value>
             <align>right,vcenter</align>
         </textarea>
 
         <buttonlist name="programs" from="basebuttonlist2">
-            <position>37,97</position>
-            <buttonarea>0,0,1140,510</buttonarea>
+            <position>7,97</position>
+            <buttonarea>0,0,1170,510</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="rectype" from="buttontext">
-                        <area>45,1,30,36</area>
+                        <area>25,1,30,36</area>
                         <align>hcenter</align>
                     </textarea>
                     <textarea name="title" from="buttontext">
-                        <area>90,1,750,36</area>
+                        <area>70,1,750,36</area>
+                        <align>vcenter</align>
                     </textarea>
                     <textarea name="callsign" from="buttontext">
-                        <area>855,1,210,36</area>
-                        <align>right</align>
+                        <area>835,1,210,36</area>
+                        <align>right,vcenter</align>
                     </textarea>
                     <textarea name="lastrecorded" from="buttontext">
-                        <area>1080,1,510,36</area>
-                        <align>right</align>
+                        <area>1060,1,604,36</area>
+                        <align>right,vcenter</align>
                     </textarea>
                     <textarea name="finalpriority" from="buttontext">
-                        <area>1650,1,60,36</area>
-                        <align>right</align>
+                        <area>1684,1,80,36</area>
+                        <align>right,vcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active" />
