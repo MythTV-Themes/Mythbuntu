@@ -1543,12 +1543,14 @@
                             <area>20,0,380,50</area>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
+                            <font state="disabled">basesmallblue</font>
+                            <font state="error">basesmallbrightred</font>
+                            <font state="warning">basesmallyellow</font>
+                            <font state="normal">basesmallgrey</font>
+                            <font state="running">basesmallgreen</font>
                         </textarea>
                     </state>
                     <state name="selectedactive" from="active">
-                        <textarea name="buttontext">
-                            <font>basesmall</font>
-                        </textarea>
                         <shape name="buttonbackground">
                             <area>0,0,420,50</area>
                             <type>roundbox</type>
