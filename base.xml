@@ -32,7 +32,7 @@
     </fontdef>
 
     <fontdef name="baserecordingsmedium" from="basesmall">
-        <size>34</size>
+        <size>30</size>
     </fontdef>
 
     <fontdef name="basegallerymedium" from="basesmall">
@@ -158,9 +158,13 @@
         <color>#80d400</color>
     </fontdef>
 
+    <fontdef name="baserecordingsmediumblue" from="baserecordingsmedium">
+        <color>#70DBFF</color>
+    </fontdef>
+
     <fontdef name="clock" from="basesmall">
         <size>30</size>
-        <color>#FFFFFF</color>
+        <color>#bcbcbc</color>
     </fontdef>
 
     <!-- Base definition of a shape used as a background on many screens -->
@@ -276,7 +280,7 @@
                 </imagetype>
             </state>
         </statetype>
-    </buttonlist>
+    </buttonlist>blue
 
 
     <!-- Base definition of a buttonlist in wide configuration -->
@@ -298,7 +302,7 @@
                 <textarea name="buttontext">
                     <area>52,0,1732,37</area>
                     <align>vcenter</align>
-                            <font state="disabled">baserecordingsmediumdarkgrey</font>
+                            <font state="disabled">baserecordingsmediumblue</font>
                             <font state="error">baserecordingsmediumbrightred</font>
                             <font state="warning">baserecordingsmediumyellow</font>
                             <font state="normal">baserecordingsmediumgrey</font>

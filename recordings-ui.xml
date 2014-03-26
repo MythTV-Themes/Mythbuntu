@@ -76,7 +76,7 @@
                         </shape> 
                         <textarea name="name">
                             <area>15,-1,100%,70</area>
-                            <font>baserecordingsmediumgrey</font>
+                            <font>baserecordingsmedium</font>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
                         </textarea>
@@ -177,10 +177,10 @@
                         </shape>
                         <textarea name="titlesubtitle">
                             <area>50,0,1005,70</area>
-                            <font state="disabled">baserecordingsmediumgrey</font>
+                            <font state="disabled">baserecordingsmediumblue</font>
                             <font state="error">bbaserecordingsmediumbrightred</font>
                             <font state="warning">baserecordingsmediumyellow</font>
-                            <font state="normal">baserecordingsmedium</font>
+                            <font state="normal">baserecordingsmediumgrey</font>
                             <font state="running">baserecordingsmediumgreen</font>
                             <font state="marked"></font>
                             <align>vcenter</align>
@@ -231,6 +231,17 @@
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>22</cornerradius>
                         </shape>
+                        <textarea name="titlesubtitle">
+                            <area>50,0,1005,70</area>
+                            <font state="disabled">baserecordingsmediumblue</font>
+                            <font state="error">bbaserecordingsmediumbrightred</font>
+                            <font state="warning">baserecordingsmediumyellow</font>
+                            <font state="normal">baserecordingsmedium</font>
+                            <font state="running">baserecordingsmediumgreen</font>
+                            <font state="marked"></font>
+                            <align>vcenter</align>
+                            <template>%TITLESUBTITLE% %YEARSTARS%</template>
+                        </textarea>
                     </state>
                     <state name="selectedinactive" from="selectedactive" />
                 </statetype>
