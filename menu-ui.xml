@@ -15,8 +15,8 @@
         </shape>
 
         <fontdef name="menufont" from="baseextralarge">
-            <color>#FFFFFF</color>
-            <size>62</size>
+            <color>#C3C3C3</color>
+            <size>42</size>
         </fontdef>
 
         <fontdef name="selectedmenufont" from="menufont">
@@ -55,6 +55,12 @@
                         <fill color="#FFFFFF" alpha="50" />
                         <cornerradius>45</cornerradius> 
                     </shape>
+                    <textarea name="buttontext">
+                        <area>45,0,930,115</area>
+                        <font>selectedmenufont</font>
+                        <align>left,vcenter</align>
+                        <cutdown>yes</cutdown>
+                    </textarea>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
