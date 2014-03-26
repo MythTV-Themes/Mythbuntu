@@ -1552,7 +1552,7 @@
                     </state>
                     <state name="selectedactive" from="active">
                         <shape name="buttonbackground">
-                            <area>0,0,420,50</area>
+                            <area>0,0,410,50</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="75" />
                             <cornerradius>22</cornerradius>
