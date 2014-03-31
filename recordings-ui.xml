@@ -243,7 +243,7 @@
                             <template>%TITLESUBTITLE% %YEARSTARS%</template>
                         </textarea>
                     </state>
-                    <state name="selectedinactive" from="selectedactive" />
+                    <state name="selectedinactive" from="active" />
                 </statetype>
                 <statetype name="upscrollarrow">
                     <position>-5,0</position>
