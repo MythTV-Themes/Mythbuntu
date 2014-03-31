@@ -107,7 +107,7 @@
     </fontdef>
 
     <fontdef name="basesmallblue" from="basesmall">
-        <color>#0492A7</color>
+        <color>#002966</color>
     </fontdef>
 
     <fontdef name="basesmallred" from="basesmall">
@@ -159,7 +159,7 @@
     </fontdef>
 
     <fontdef name="baserecordingsmediumblue" from="baserecordingsmedium">
-        <color>#70DBFF</color>
+        <color>#002966</color>
     </fontdef>
 
     <fontdef name="clock" from="basesmall">
@@ -280,7 +280,7 @@
                 </imagetype>
             </state>
         </statetype>
-    </buttonlist>blue
+    </buttonlist>
 
 
     <!-- Base definition of a buttonlist in wide configuration -->

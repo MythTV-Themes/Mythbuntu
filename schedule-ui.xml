@@ -17,14 +17,14 @@
         </shape>
 
         <shape name="shape3" from="baseboxbackground">
-            <area>30,112,1275,60</area>
+            <area>30,105,1275,70</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="30"></fill>
             <cornerradius>22</cornerradius>
         </shape>
 
         <shape name="shape4" from="baseboxbackground">
-            <area>1320,112,570,60</area>
+            <area>1320,105,570,70</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="30"></fill>
             <cornerradius>22</cornerradius>
@@ -243,27 +243,29 @@
         </textarea>
 
         <clock name="time">
-            <area>1425,15,450,90</area>
+            <area>1425,105,450,35</area>
             <align>vcenter,right</align>
             <font>basesmallgrey</font>
             <template>%DATE%, %TIME%</template>
         </clock>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>250,120,1054,45</area>
-            <align>left,vcenter</align>
+            <area>250,82,1054,90</area>
+            <align>left,bottom</align>
+            <multiline>yes</multiline>
             <font>basesmall</font>
-	    <template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>
+	    <!--<template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>-->
+	    <template>%STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>1320,120,555,45</area>
-            <align>right,vcenter</align>
+            <area>1320,127,555,45</area>
+            <align>right,bottom</align>
             <font>basesmallyellow</font>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>75,195,1770,135</area>
+            <area>75,195,1770,145</area>
             <multiline>yes</multiline>
 	    <align>justify</align>
             <!-- <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template> -->
@@ -300,14 +302,14 @@
         </shape>
 
         <shape name="shape3">
-            <area>45,112,750,60</area>
+            <area>240,105,635,70</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="30"></fill>
             <cornerradius>22</cornerradius>
         </shape>
 
         <shape name="shape4">
-            <area>810,112,570,60</area>
+            <area>900,105,475,70</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="30"></fill>
             <cornerradius>22</cornerradius>
@@ -379,14 +381,16 @@
             <statetype name="buttonitem">
                 <area>0,0,387,54</area>
                 <state name="active">
-                    <imagetype name="buttonbackground">
+                    <shape name="buttonbackground">
                         <area>0,0,387,54</area>
-                        <filename>gg-times.png</filename>
-                    </imagetype>
+                        <fill color="#222222" alpha="150" />
+                        <type>roundbox</type>
+                        <cornerradius>27</cornerradius>
+                    </shape>
                     <textarea name="buttontext" from="basetextarea">
                         <area>0,0,387,54</area>
                         <font>basesmall</font>
-                        <align>hcenter,bottom</align>
+                        <align>center</align>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active"/>
@@ -530,25 +534,37 @@
         </textarea>
 
         <textarea name="subtitle" from="basetextarea">
-            <area>250,120,529,45</area>
-            <align>left,vcenter</align>
+            <area>250,82,630,90</area>
+            <align>left,bottom</align>
+            <multiline>yes</multiline>
             <font>basesmall</font>
-	    <template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>
+	    <!--<template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>-->
+	    <template>%STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>810,120,555,45</area>
-            <align>right,vcenter</align>
+            <area>910,127,455,45</area>
+            <align>right,bottom</align>
             <font>basesmallyellow</font>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>60,195,1305,135</area>
+            <area>60,195,1305,145</area>
             <multiline>yes</multiline>
 	    <align>justify</align>
             <!-- <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template> -->
             <template>%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
+
+        <!-- jmm add clock back -->
+        <clock name="time">
+	    <area>910,105,455,35</area> <!-- by video -->
+	    <!-- top clock <area>1230,35,135,45</area> --> <!-- top of video -->
+	    <!--<area>1660,315,200,45</area>--> <!-- below video -->
+            <align>right,bottom</align>
+            <font>basesmallgrey</font>
+            <format>%DATE%, %TIME%</format>
+        </clock>
 
     </window>
 
