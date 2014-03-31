@@ -2,7 +2,9 @@
 str BackgroundColor=#404040
 # Color of lines, text, etc
 str ForegroundColor=white
- 
+# Pixmap to use for the background
+str BackgroundPixmap=background.png
+
 # Colors for the different program categories
 str Cat_Comedy=DarkOrchid
 str Cat_Animals=ForestGreen
@@ -25,10 +27,10 @@ str Cat_Drama=rosybrown3
 str Cat_Classic=grey62
 str Cat_Crime=MediumVioletRed
 str Cat_Talk=MediumTurquoise
- 
+
 # Forground for dialogs
 str ActiveForeground=#FFFFFF
- 
+
 # This is the background for inactive buttons
 str ActiveButton=#404040
 str ActiveLight=#606060
@@ -43,7 +45,7 @@ str ActiveBackground=#404040
 str ActiveShadow=#000000
 str ActiveHighlight=#808080
 str ActiveHighlightedText=#FFFFFF
- 
+
 str InactiveForeground=#FFFFFF
 str InactiveButton=#254A55
 str InactiveLight=#435B70
@@ -58,7 +60,7 @@ str InactiveBackground=#264F57
 str InactiveShadow=#000000
 str InactiveHighlight=#2D733F
 str InactiveHighlightedText=#000000
- 
+
 str DisabledForeground=#FFFFFF
 str DisabledButton=#404040
 str DisabledLight=#24385C
@@ -73,7 +75,7 @@ str DisabledBackground=#1E3356
 str DisabledShadow=#000000
 str DisabledHighlight=#274E57
 str DisabledHighlightedText=#ffffff
- 
+
 str curTimeChan_bgColor=#8f2813
 str curTimeChan_fgColor=#ffffff
 str date_bgColor=#0f2e8f
