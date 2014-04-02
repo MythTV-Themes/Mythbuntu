@@ -25,9 +25,9 @@
         </fontdef>
 
         <buttonlist name="menu">
-            <area>60,142,1110,870</area>
+            <area>60,110,1110,870</area>,.
             <layout>vertical</layout>
-            <spacing>20</spacing>
+            <spacing>27</spacing>
             <wrapstyle>items</wrapstyle>
             <buttonarea>60,82,1095,690</buttonarea>
             <triggerevent context="Global" action="SELECT">RIGHT</triggerevent>
@@ -39,7 +39,7 @@
                         <area>0,0,1020,115</area>
                         <type>roundbox</type> 
                         <fill color="#666666" alpha="50" />
-                        <cornerradius>45</cornerradius> 
+                        <cornerradius>90</cornerradius> 
                     </shape>
                     <textarea name="buttontext">
                         <area>45,0,930,115</area>
@@ -53,7 +53,7 @@
                         <area>0,0,1020,115</area>
                         <type>roundbox</type> 
                         <fill color="#FFFFFF" alpha="50" />
-                        <cornerradius>45</cornerradius> 
+                        <cornerradius>90</cornerradius> 
                     </shape>
                     <textarea name="buttontext">
                         <area>45,0,930,115</area>
@@ -64,7 +64,7 @@
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>-15,60</position>
+                <position>-15,85</position>
                 <showempty>yes</showempty>
                 <state type="full">
                     <imagetype name="upon">
@@ -73,7 +73,7 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>-15,697</position>
+                <position>-15,750</position>
                 <showempty>yes</showempty>
                 <state type="full">
                     <imagetype name="dnon">
@@ -814,4 +814,3 @@
 
     </window>
 </mythuitheme>
-
