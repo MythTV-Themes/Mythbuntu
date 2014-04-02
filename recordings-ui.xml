@@ -44,8 +44,8 @@
 
             <buttonlist name="groups">
                 <area>10,10,450,686</area>
-                <buttonarea>0,0,450,696</buttonarea>
-                <spacing>6</spacing>
+                <buttonarea>0,7,450,696</buttonarea>
+                <spacing>15</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
                 <!-- <scrollstyle>center</scrollstyle> -->
@@ -54,14 +54,14 @@
                     highlighted entry. -->
                     <state name="active">
                         <shape name="buttonbackground"> 
-                            <area>0,0,440,70</area> 
+                            <area>0,0,440,60</area> 
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
                             <line color="#FFFFFF" alpha="0" width="0" />
-                            <cornerradius>22</cornerradius>
+                            <cornerradius>90</cornerradius>
                         </shape> 
                         <textarea name="name">
-                            <area>15,-1,100%,70</area>
+                            <area>15,-1,100%,60</area>
                             <font>baserecordingsmediumgrey</font>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
@@ -69,13 +69,13 @@
                     </state>
                     <state name="selectedactive" from="active">
                         <shape name="buttonbackground">                         
-                            <area>0,0,440,70</area>
+                            <area>0,0,440,60</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
-                            <cornerradius>22</cornerradius>
+                            <cornerradius>90</cornerradius>
                         </shape> 
                         <textarea name="name">
-                            <area>15,-1,100%,70</area>
+                            <area>15,-1,100%,60</area>
                             <font>baserecordingsmedium</font>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
@@ -85,10 +85,10 @@
                     </state>
                     <state name="selectedinactive" from="active">
                         <shape name="buttonbackground">                         
-                            <area>0,0,440,70</area>
+                            <area>0,0,440,60</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
-                            <cornerradius>22</cornerradius>
+                            <cornerradius>90</cornerradius>
                         </shape> 
                     </state>
                 </statetype>
@@ -161,7 +161,7 @@
             <buttonlist name="recordings">
                 <area>10,10,1370,686</area>
                 <buttonarea>20,7,1360,696</buttonarea>
-                <spacing>7</spacing>
+                <spacing>15</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
                 <!-- <scrollstyle>center</scrollstyle> -->
@@ -173,7 +173,7 @@
                             <area>10,0,1360,60</area>
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
-                            <cornerradius>22</cornerradius>
+                            <cornerradius>90</cornerradius>
                         </shape>
                         <textarea name="titlesubtitle">
                             <area>50,0,1005,60</area>
@@ -229,7 +229,7 @@
                             <area>10,0,1360,60</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
-                            <cornerradius>22</cornerradius>
+                            <cornerradius>90</cornerradius>
                         </shape>
                         <textarea name="titlesubtitle">
                             <area>50,0,1005,60</area>
