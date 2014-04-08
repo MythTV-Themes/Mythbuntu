@@ -237,9 +237,10 @@
             <font>baseextralarge</font>
         </textarea>
 
-        <textarea name="title" from="basetextarea" depends="!mediastate">
+        <textarea name="title_nomedia" from="basetextarea" depends="!mediastate">
             <area>170,100,-10,35</area>
             <font>baseextralarge</font>
+	    <template>%TITLE%</template>
         </textarea>
 
         <textarea name="origin" from="basetextarea">
@@ -248,13 +249,9 @@
         </textarea>
 
         <textarea name="description" from="basetextarea" depends="progress">
-            <area>170,100%-146,-10,30</area>
+            <area>170,100%-155,-10,30</area>
             <font>basemedium</font>
-        </textarea>
-
-        <textarea name="extra" from="basetextarea" depends="progress">
-            <area>170,100%-155,300,30</area>
-            <font>basemedium</font>
+	    <template>%DESCRIPTION% %(|EXTRA|)%</template>
         </textarea>
 
         <textarea name="progress_text" from="basetextarea" depends="progress">
@@ -268,11 +265,11 @@
         </progressbar>
 
         <textarea name="description_noprogress" from="basetextarea" depends="!progress">
-            <area>170,100%-155,-10,115</area>
+            <area>170,100%-155,-10,145</area>
             <font>basemedium</font>
             <multiline>yes</multiline>
             <align>left,top</align>
-            <template>%DESCRIPTION%</template>
+            <template>%DESCRIPTION% %\n(|EXTRA|)%</template>
         </textarea>
     </window>
 
