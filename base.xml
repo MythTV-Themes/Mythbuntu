@@ -32,7 +32,7 @@
     </fontdef>
 
     <fontdef name="baserecordingsmedium" from="basesmall">
-        <size>30</size>
+        <size>28</size>
     </fontdef>
 
     <fontdef name="basegallerymedium" from="basesmall">
@@ -1678,12 +1678,13 @@
         <buttonlist name="proglistlist" from="basebuttonlist2">
             <area>45,120,1830,540</area>
             <buttonarea>0,12,1800,525</buttonarea>
+            <spacing>13</spacing>
             <statetype name="buttonitem">
                 <area>0,0,1800,37</area>
                 <state name="active">
                     <textarea name="shortstarttimedate" from="buttontext">
                         <area>67,0,349,36</area>
-			<font>basesmallgrey</font>
+                        <font>basesmallgrey</font>
                     </textarea>
                     <textarea name="channel" from="shortstarttimedate">
                         <area>439,0,270,36</area>

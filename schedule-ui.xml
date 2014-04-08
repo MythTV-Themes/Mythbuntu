@@ -1625,6 +1625,7 @@
         <buttonlist name="programs" from="basebuttonlist2">
             <position>7,97</position>
             <buttonarea>0,0,1170,510</buttonarea>
+            <spacing>13</spacing>
             <statetype name="buttonitem">
                 <state name="active">
                     <textarea name="rectype" from="buttontext">
