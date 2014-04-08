@@ -23,7 +23,7 @@
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>18,10,-10,35</area>
+            <area>18,5,-10,35</area>
             <font>baselarge</font>
         </textarea>
 
@@ -126,7 +126,7 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>170,10,-10,35</area>
+            <area>170,5,-10,35</area>
             <font>baselarge</font>
         </textarea>
 
