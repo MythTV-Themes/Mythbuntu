@@ -58,6 +58,13 @@
         <color>#bcbcbc</color>
     </fontdef>
 
+    <fontdef name="basesmallblackoutline" from="basesmall">
+        <color>#bcbcbc</color>
+        <outlinecolor>#000000</outlinecolor>
+        <outlinesize>4</outlinesize>
+    </fontdef>
+
+
     <fontdef name="baseextrasmallgrey" from="basesmallgrey">
         <size>19</size>
     </fontdef>

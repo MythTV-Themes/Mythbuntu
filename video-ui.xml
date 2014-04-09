@@ -536,7 +536,7 @@
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
                         <area>55,145,60,30</area>
-                        <font>basesmallblack</font>
+                        <font>basesmallblackoutline</font>
                         <align>right</align>
                     </textarea>
                 </state>
@@ -563,6 +563,7 @@
             <case>capitaliseall</case>
             <multiline>yes</multiline>
             <font>baseextralarge</font>
+            <scroll direction="left" />
             <template>%TITLE%% - |SUBTITLE%</template>
         </textarea>
 
@@ -572,6 +573,7 @@
             <case>capitaliseall</case>
             <multiline>no</multiline>
             <font>baseextralarge</font>
+            <scroll direction="left" />
             <template>%TITLE%% - |SUBTITLE%</template>
         </textarea>
 <!--
@@ -661,7 +663,7 @@
                     </textarea>
                     <textarea name="childcount" from="basetextarea">
                         <area>0,20,30,30</area>
-                        <font>basesmallgrey</font>
+                        <font>basesmallblackoutline</font>
                         <align>right</align>
                     </textarea>
                 </state>
