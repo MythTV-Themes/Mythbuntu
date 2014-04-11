@@ -1279,23 +1279,23 @@
         </shape>
 
         <textarea name="curview" from="basetextarea">
-           <area>930,15,915,45</area>
-           <align>right,vcenter</align>
+            <area>930,15,915,45</area>
+            <align>right,vcenter</align>
         </textarea>
 
         <textarea name="position" from="basetextarea">
-           <area>930,60,915,45</area>
-           <align>right,vcenter</align>
-	   <font>basesmallgrey</font>
+            <area>930,60,915,45</area>
+            <align>right,vcenter</align>
+            <font>basesmallgrey</font>
         </textarea>
 
         <buttonlist name="proglist" from="proglistlist" />
 
-	<group name="details" from="detailsgroup">
-	    <position>-1,555</position>
-	</group>
+        <group name="details" from="detailsgroup">
+            <position>-1,555</position>
+        </group>
 
-	<group name="idstatus" from="idstatusgroup" />
+        <group name="idstatus" from="idstatusgroup" />
 
         <textarea name="msg" from="basetextarea">
             <area>0,315,1920,105</area>
@@ -1888,7 +1888,7 @@
             <font>baselarge</font>
         </textarea>
 
-	<group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup" />
 
         <buttonlist name="rules" from="basewideselector">
             <position>585,465</position>

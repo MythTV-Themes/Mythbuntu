@@ -1478,8 +1478,8 @@
             <area>277,30,532,187</area>
             <align>allcenter</align>
             <multiline>yes</multiline>
-	    <font>basegallerymedium</font>
-	    <value>Please Wait...</value>
+            <font>basegallerymedium</font>
+            <value>Please Wait...</value>
         </textarea>
 
     </window>
