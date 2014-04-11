@@ -1101,7 +1101,7 @@
             <area>277,30,532,187</area>
             <align>allcenter</align>
             <multiline>yes</multiline>
-	    <font>basegallerymedium</font>
+            <font>basegallerymedium</font>
         </textarea>
     </window>
 
@@ -1122,7 +1122,7 @@
             <area>30,30,810,60</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
-	    <font>basegallerymedium</font>
+            <font>basegallerymedium</font>
         </textarea>
         <progressbar name="progressbar" from="baseprogressbar">
             <position>33,120</position>
