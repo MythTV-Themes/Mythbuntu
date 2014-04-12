@@ -162,18 +162,18 @@
         <textarea name="observation_time" from="basetextarea">
             <area>1140,30,720,60</area>
             <align>right,vcenter</align>
-	    <font>basesmalldarkgrey</font>
+            <font>basesmalldarkgrey</font>
         </textarea>
 
         <imagetype name="copyrightlogo">
             <area>1740,1005,120,60</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
             <area>60,1005,1710,60</area>
             <align>left,vcenter</align>
-	    <font>basesmalldarkgrey</font>
+            <font>basesmalldarkgrey</font>
         </textarea>
     </window>
 
@@ -283,7 +283,7 @@
 
         <imagetype name="copyrightlogo">
             <area>1740,1005,120,60</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
@@ -455,7 +455,7 @@
 
         <imagetype name="copyrightlogo">
             <area>1740,1005,120,60</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
@@ -479,7 +479,7 @@
 
         <imagetype name="copyrightlogo">
             <area>1740,1005,120,60</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
@@ -504,7 +504,7 @@
 
         <imagetype name="copyrightlogo">
             <area>1740,1005,120,60</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
@@ -537,7 +537,7 @@
 
         <imagetype name="copyrightlogo">
             <area>1740,1005,120,60</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">
@@ -710,7 +710,7 @@
 
         <imagetype name="copyrightlogo">
             <area>1740,1005,120,60</area>
-	    <preserveaspect>true</preserveaspect>
+            <preserveaspect>true</preserveaspect>
         </imagetype>
 
         <textarea name="copyright" from="basetextarea">

@@ -93,7 +93,7 @@
         <textarea name="name" from="basetextarea">
             <area>1020,750,420,52</area>
             <multiline>no</multiline>
-	    <font>basemedium</font>
+            <font>basemedium</font>
             <align>left,vcenter</align>
             <cutdown>yes</cutdown>
         </textarea>
@@ -103,8 +103,8 @@
             <multiline>no</multiline>
             <font>baseextrasmall</font>
             <align>left,vcenter</align>
-	    <template>For %ASPECT% displays.% By |AUTHORNAME%% &lt;|AUTHOREMAIL|&gt;%.</template>
-	    <multiline>yes</multiline>
+            <template>For %ASPECT% displays.% By |AUTHORNAME%% &lt;|AUTHOREMAIL|&gt;%.</template>
+            <multiline>yes</multiline>
         </textarea>
 
         <textarea name="description" from="basetextarea">
@@ -113,8 +113,8 @@
             <font>basesmallgrey</font>
             <align>justify,top</align>
             <cutdown>yes</cutdown>
-	    <template>%DESCRIPTION|\n%%ERRATA%</template>
-	    <scroll direction="up" />
+            <template>%DESCRIPTION|\n%%ERRATA%</template>
+            <scroll direction="up" />
         </textarea>
 
         <buttonlist name="themes">
@@ -133,7 +133,7 @@
                     <shape name="item">
                         <area>0,0,900,99</area>
                         <type>roundbox</type>
-			<cornerradius>45</cornerradius>
+                        <cornerradius>45</cornerradius>
                         <fill color="#666666" alpha="50" />
                         <line color="#FFFFFF" alpha="0" width="0" />
                     </shape>
@@ -231,8 +231,8 @@
         <textarea name="update_text" from="basetextarea">
             <area>6%,85%,90%,90</area>
             <align>left,vcenter</align>
-	    <multiline>yes</multiline>
-	    <font>baseextrasmall</font>
+            <multiline>yes</multiline>
+            <font>baseextrasmall</font>
            <value>= Update available</value>
         </textarea>
 

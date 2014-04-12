@@ -240,7 +240,7 @@
         <textarea name="title_nomedia" from="basetextarea" depends="!mediastate">
             <area>170,100,-10,35</area>
             <font>baseextralarge</font>
-	    <template>%TITLE%</template>
+            <template>%TITLE%</template>
         </textarea>
 
         <textarea name="origin" from="basetextarea">
@@ -251,7 +251,7 @@
         <textarea name="description" from="basetextarea" depends="progress">
             <area>170,100%-155,-10,30</area>
             <font>basemedium</font>
-	    <template>%DESCRIPTION% %(|EXTRA|)%</template>
+            <template>%DESCRIPTION% %(|EXTRA|)%</template>
         </textarea>
 
         <textarea name="progress_text" from="basetextarea" depends="progress">

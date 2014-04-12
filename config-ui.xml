@@ -52,19 +52,19 @@
             </statetype>
             <statetype name="upscrollarrow">
                 <position>1725,795</position>
-		<state type="full">
+                <state type="full">
                     <imagetype name="upoff">
-			<filename>shared/uparrow.png</filename>
+                        <filename>shared/uparrow.png</filename>
                     </imagetype>
-		</state>
+                </state>
             </statetype>
             <statetype name="downscrollarrow">
                 <position>1770,795</position>
-		<state type="full">
+                <state type="full">
                     <imagetype name="dnoff">
-			<filename>shared/downarrow.png</filename>
+                        <filename>shared/downarrow.png</filename>
                     </imagetype>
-		</state>
+                </state>
             </statetype>
         </buttonlist>
 
@@ -143,14 +143,14 @@
                         <area>1657,-27,120,90</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
-		</state>
+                </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
             <statetype name="upscrollarrow">
-		<position>1785,0</position>
+                <position>1785,0</position>
             </statetype>
             <statetype name="downscrollarrow">
-		<position>1785,465</position>
+                <position>1785,465</position>
             </statetype>
         </buttonlist>
 

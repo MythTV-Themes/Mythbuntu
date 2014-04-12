@@ -16,11 +16,11 @@
             <area>22,1005,1875,57</area>
             <imagetype name="background">
                 <filename>mb_progressbar_background.png</filename>
-		<area>22,1005,1875,57</area>
+                <area>22,1005,1875,57</area>
             </imagetype>
             <imagetype name="progressimage">
                 <filename>mb_progressbar_fill.png</filename>
-		<area>22,1005,1875,57</area>
+                <area>22,1005,1875,57</area>
             </imagetype>
         </progressbar>
 
@@ -68,13 +68,13 @@
             <statetype name="buttonitem">
                 <area>0,0,270,45</area>
                 <state name="active">
-            		<area>0,0,270,45</area>
-            	    <shape name="buttonbackground">
-            		<area>0,0,270,45</area>
-            		<type>roundbox</type>
-	                <fill color="#666666" alpha="50" />
-            		<cornerradius>22</cornerradius>
-            	    </shape>
+                            <area>0,0,270,45</area>
+                        <shape name="buttonbackground">
+                            <area>0,0,270,45</area>
+                            <type>roundbox</type>
+                        <fill color="#666666" alpha="50" />
+                            <cornerradius>22</cornerradius>
+                        </shape>
                     <textarea name="buttontext">
                         <area>15,0,240,45</area>
                         <font>basesmall</font>
@@ -84,9 +84,9 @@
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
-            	    <shape name="buttonbackground">
-	                <fill color="#ffffff" alpha="50" />
-            	    </shape>
+                        <shape name="buttonbackground">
+                        <fill color="#ffffff" alpha="50" />
+                        </shape>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>

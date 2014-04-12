@@ -6,7 +6,7 @@
             <area>120,15,1680,90</area>
             <font>baseextralarge</font>
             <align>center</align>
-	    <alphapulse min="96" max="255" change="1"/>
+            <alphapulse min="96" max="255" change="1"/>
             <value>Welcome to MythTV</value>
         </textarea>
 
@@ -23,7 +23,7 @@
         <textarea name="status_text" from="basetextarea">
             <area>48,120,1824,90</area>
             <multiline>yes</multiline>
-	    <font>basesmallgrey</font>
+            <font>basesmallgrey</font>
             <align>center</align>
             <value>MythTV is idle and will shutdown shortly.</value>
         </textarea>
@@ -61,7 +61,7 @@
         -->
         <textarea name="conflicts_text" from="basetextarea">
             <area>48,855,1824,45</area>
-	    <font>basesmallyellow</font>
+            <font>basesmallyellow</font>
             <align>center</align>
             <value>WARNING: There are conflicting scheduled recordings!</value>
         </textarea>

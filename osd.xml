@@ -345,7 +345,7 @@
                 <area>25,109,195,150</area>
             </imagetype>
 
-	    <group name="noicongroup" depends="!iconpath">
+            <group name="noicongroup" depends="!iconpath">
 
                 <shape name="channelnamebox">
                     <area>25,109,195,150</area>
@@ -364,7 +364,7 @@
                     <value>MythTV</value>
                 </textarea>
 
-	    </group>
+            </group>
 
             <textarea name="callsign">
                 <font>smaller</font>

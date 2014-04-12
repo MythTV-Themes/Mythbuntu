@@ -2,12 +2,12 @@
 
     <window name="programguide">
 
-	<!-- <animation trigger="AboutToShow"> -->
-	<!--     <section duration="250"> -->
-	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="250"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
         <!--         <position start="-1,-720," end="-1,-1" /> -->
-	<!--     </section> -->
-	<!-- </animation> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <shape name="shape2" from="baseboxbackground">
             <area>30,187,1860,150</area>
@@ -50,12 +50,12 @@
 
         <guidegrid name="guidegrid">
             <area>330,442,1548,592</area>
-	    <!-- <animation trigger="AboutToShow"> -->
-	    <!-- 	<section duration="250"> -->
-	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!-- <animation trigger="AboutToShow"> -->
+            <!--         <section duration="250"> -->
+            <!--             <alpha start="0" end="255" easingcurve="OutQuart"/> -->
             <!--         <position start="1280,-1," end="-1,-1" /> -->
-	    <!-- 	</section> -->
-	    <!-- </animation> -->
+            <!--         </section> -->
+            <!-- </animation> -->
             <layout>horizontal</layout>
             <channels>7</channels>
             <timeslots>4</timeslots>
@@ -167,7 +167,7 @@
                     <!--     <type>roundbox</type> -->
                     <!--     <fill color="#000000" alpha="0" /> -->
                     <!--     <line color="#000000" alpha="255" width="3" /> -->
-		    <!-- 	<cornerradius>9</cornerradius> -->
+                    <!--         <cornerradius>9</cornerradius> -->
                     <!-- </shape> -->
                     <textarea name="channelnumber" from="basetextarea">
                         <area>112,1,157,82</area>
@@ -224,7 +224,7 @@
             <font>basesmallblack</font>
         </textarea>
 
-	<imagetype name="channelicon">
+        <imagetype name="channelicon">
             <area>45,30,190,142</area>
         </imagetype>
 
@@ -254,8 +254,8 @@
             <align>left,bottom</align>
             <multiline>yes</multiline>
             <font>basesmall</font>
-	    <!--<template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>-->
-	    <template>%STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
+            <!--<template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>-->
+            <template>%STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
@@ -267,7 +267,7 @@
         <textarea name="description" from="basetextarea">
             <area>75,195,1770,145</area>
             <multiline>yes</multiline>
-	    <align>justify</align>
+            <align>justify</align>
             <!-- <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template> -->
             <template>%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
@@ -276,12 +276,12 @@
 
     <window name="programguide-video">
 
-	<!-- <animation trigger="AboutToShow"> -->
-	<!--     <section duration="250"> -->
-	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="250"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
         <!--         <position start="-1,-720," end="-1,-1" /> -->
-	<!--     </section> -->
-	<!-- </animation> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <imagetype name="video">
             <area>1410,60,450,255</area>
@@ -342,12 +342,12 @@
 
         <guidegrid name="guidegrid">
             <area>330,442,1548,592</area>
-	    <!-- <animation trigger="AboutToShow"> -->
-	    <!-- 	<section duration="250"> -->
-	    <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!-- <animation trigger="AboutToShow"> -->
+            <!--         <section duration="250"> -->
+            <!--             <alpha start="0" end="255" easingcurve="OutQuart"/> -->
             <!--         <position start="1280,-1," end="-1,-1" /> -->
-	    <!-- 	</section> -->
-	    <!-- </animation> -->
+            <!--         </section> -->
+            <!-- </animation> -->
             <layout>horizontal</layout>
             <channels>7</channels>
             <timeslots>4</timeslots>
@@ -448,7 +448,7 @@
                         <font>baseextrasmallblack</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
-			<multiline>yes</multiline>
+                        <multiline>yes</multiline>
                     </textarea>
                     <imagetype name="channelicon">
                         <area>15,9,88,66</area>
@@ -458,7 +458,7 @@
                     <!--     <type>roundbox</type> -->
                     <!--     <fill color="#000000" alpha="0" /> -->
                     <!--     <line color="#000000" alpha="255" width="3" /> -->
-		    <!-- 	<cornerradius>9</cornerradius> -->
+                    <!--         <cornerradius>9</cornerradius> -->
                     <!-- </shape> -->
                     <textarea name="channelnumber" from="basetextarea">
                         <area>112,1,157,82</area>
@@ -468,7 +468,7 @@
                         <font state="favunavailable">basesmallpurple</font>
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
-			<multiline>yes</multiline>
+                        <multiline>yes</multiline>
                         <template>%CHANNELNUMBER|\n%%CALLSIGN%</template>
                   </textarea>
                 </state>
@@ -515,7 +515,7 @@
             <font>basesmallblack</font>
         </textarea>
 
-	<imagetype name="channelicon">
+        <imagetype name="channelicon">
             <area>45,30,190,142</area>
         </imagetype>
 
@@ -538,8 +538,8 @@
             <align>left,bottom</align>
             <multiline>yes</multiline>
             <font>basesmall</font>
-	    <!--<template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>-->
-	    <template>%STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
+            <!--<template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>-->
+            <template>%STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
@@ -551,16 +551,16 @@
         <textarea name="description" from="basetextarea">
             <area>60,195,1305,145</area>
             <multiline>yes</multiline>
-	    <align>justify</align>
+            <align>justify</align>
             <!-- <template>%LONGREPEAT%%YEARSTARS%%DESCRIPTION%</template> -->
             <template>%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
         <!-- jmm add clock back -->
         <clock name="time">
-	    <area>910,105,455,35</area> <!-- by video -->
-	    <!-- top clock <area>1230,35,135,45</area> --> <!-- top of video -->
-	    <!--<area>1660,315,200,45</area>--> <!-- below video -->
+            <area>910,105,455,35</area> <!-- by video -->
+            <!-- top clock <area>1230,35,135,45</area> --> <!-- top of video -->
+            <!--<area>1660,315,200,45</area>--> <!-- below video -->
             <align>right,bottom</align>
             <font>basesmallgrey</font>
             <format>%DATE%, %TIME%</format>
@@ -663,12 +663,12 @@
 
     <window name="viewscheduled">
 
-	<!-- <animation trigger="AboutToShow"> -->
-	<!--     <section duration="250"> -->
-	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="250"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
         <!--         <position start="-1,-720," end="-1,-1" /> -->
-	<!--     </section> -->
-	<!-- </animation> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <shape name="titlebox" from="baseboxbackground">
             <area>15,15,1065,90</area>
@@ -907,7 +907,7 @@
             <area>1275,652,240,75</area>
             <font>baseextrasmall</font>
             <align>vcenter,right</align>
-	    <multiline>yes</multiline>
+            <multiline>yes</multiline>
         </textarea>
 
         <textarea name="scheduleinfo" from="basetextarea">
@@ -921,7 +921,7 @@
         <textarea name="recprioritylabel" from="basetextarea">
             <area>1050,735,435,45</area>
             <value>Priority:</value>
-	    <align>right,vcenter</align>
+            <align>right,vcenter</align>
         </textarea>
 
         <textarea name="recpriority" from="basetextarea">
@@ -1054,12 +1054,12 @@
 
     <window name="phrasepopup">
 
-	<animation trigger="AboutToShow">
-	    <section duration="125">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-		<zoom start="0" end="100" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="125">
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" />
+            </section>
+        </animation>
 
         <area>-1,-1,750,750</area>
 
@@ -1084,7 +1084,7 @@
 
         <button name="ok_button" from="basebutton">
             <position>22,660</position>
-	    <value>Search</value>
+            <value>Search</value>
         </button>
 
         <button name="delete_button" from="basebutton">
@@ -1099,12 +1099,12 @@
 
     <window name="timepopup">
 
-	<animation trigger="AboutToShow">
-	    <section duration="125">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-		<zoom start="0" end="100" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="125">
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" />
+            </section>
+        </animation>
 
         <area>-1,-1,870,247</area>
 
@@ -1135,12 +1135,12 @@
 
     <window name="powersearchpopup">
 
-	<animation trigger="AboutToShow">
-	    <section duration="125">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-		<zoom start="0" end="100" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="125">
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" />
+            </section>
+        </animation>
 
         <area>-1,-1,750,750</area>
 
@@ -1175,12 +1175,12 @@
 
     <window name="editpowersearchpopup">
 
-	<animation trigger="AboutToShow">
-	    <section duration="125">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-		<zoom start="0" end="100" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="125">
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" />
+            </section>
+        </animation>
 
         <area>-1,-1,750,825</area>
 
@@ -1198,7 +1198,7 @@
         <textarea name="titlelabel" from="basetextarea">
             <area>90,90,570,45</area>
             <value>Optional title phrase:</value>
-	    <align>center</align>
+            <align>center</align>
         </textarea>
 
         <textedit name="title_edit" from="basetextedit">
@@ -1237,19 +1237,19 @@
 
         <button name="ok_button" from="basebutton">
             <position>255,735</position>
-	    <value>Search</value>
+            <value>Search</value>
         </button>
 
     </window>
 
     <window name="programlist">
 
-	<!-- <animation trigger="AboutToShow"> -->
-	<!--     <section duration="250"> -->
-	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="250"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
         <!--         <position start="-1,-720," end="-1,-1" /> -->
-	<!--     </section> -->
-	<!-- </animation> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <shape name="titlebox" from="baseboxbackground">
             <area>15,15,885,90</area>
@@ -1308,12 +1308,12 @@
 
     <window name="progdetails">
 
-	<!-- <animation trigger="AboutToShow"> -->
-	<!--     <section duration="250"> -->
-	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="250"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
         <!--         <position start="-1,-720," end="-1,-1" /> -->
-	<!--     </section> -->
-	<!-- </animation> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <textarea name="title" from="basetextarea">
             <area>120,30,1080,60</area>
@@ -1321,59 +1321,59 @@
             <value>Program Details</value>
         </textarea>
 
-	<group name="infohelpgroup">
-	    <area>0,1005,960,0</area>
-	    <minsize>50,100%</minsize>
+        <group name="infohelpgroup">
+            <area>0,1005,960,0</area>
+            <minsize>50,100%</minsize>
 
-	    <group name="infobutton" from="basekeybutton">
+            <group name="infobutton" from="basekeybutton">
 
-		<area>10%,0,150,60</area>
+                <area>10%,0,150,60</area>
 
-		<group name="keybutton">
+                <group name="keybutton">
                     <textarea name="text">
-			<value>INFO</value>
+                        <value>INFO</value>
                     </textarea>
-		</group>
+                </group>
 
-	    </group>
+            </group>
 
             <textarea name="infohelptext" from="basetextarea">
-		<area>24%,0,300,60</area>
-		<value>for more</value>
-		<minsize>50,100%</minsize>
+                <area>24%,0,300,60</area>
+                <value>for more</value>
+                <minsize>50,100%</minsize>
             </textarea>
 
-	    <group name="zoominbutton" from="infobutton">
+            <group name="zoominbutton" from="infobutton">
 
-		<area>30%,0,100%,100%</area>
+                <area>30%,0,100%,100%</area>
 
-		<group name="keybutton">
+                <group name="keybutton">
                     <textarea name="text">
-			<value>ZOOMIN</value>
+                        <value>ZOOMIN</value>
                     </textarea>
-		</group>
+                </group>
 
-	    </group>
+            </group>
 
-	    <group name="zoomoutbutton" from="infobutton">
+            <group name="zoomoutbutton" from="infobutton">
 
-		<area>65%,0,100%,100%</area>
+                <area>65%,0,100%,100%</area>
 
-		<group name="keybutton">
+                <group name="keybutton">
                     <textarea name="text">
-			<value>ZOOMOUT</value>
+                        <value>ZOOMOUT</value>
                     </textarea>
-		</group>
+                </group>
 
-	    </group>
+            </group>
 
             <textarea name="menuhelptext" from="basetextarea">
-		<area>93%,0,300,60</area>
-		<value>to adjust text size</value>
-		<minsize>50,100%</minsize>
+                <area>93%,0,300,60</area>
+                <value>to adjust text size</value>
+                <minsize>50,100%</minsize>
             </textarea>
 
-	</group>
+        </group>
 
         <shape name="background" from="baseboxbackground">
             <area>105,90,1710,900</area>
@@ -1389,12 +1389,12 @@
 
     <window name="searchpopup" from="MythTextInputDialog">
 
-	<animation trigger="AboutToShow">
-	    <section duration="125">
-		<alpha start="0" end="255" easingcurve="OutQuart"/>
-		<zoom start="0" end="100" />
-	    </section>
-	</animation>
+        <animation trigger="AboutToShow">
+            <section duration="125">
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" />
+            </section>
+        </animation>
 
         <area>442,33,498,255</area>
 
@@ -1422,12 +1422,12 @@
 
     <window name="programfind">
 
-	<!-- <animation trigger="AboutToShow"> -->
-	<!--     <section duration="250"> -->
-	<!-- 	<alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="250"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
         <!--         <position start="-1280,-1," end="-1,-1" /> -->
-	<!--     </section> -->
-	<!-- </animation> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <textarea name="screentitle" from="basetextarea">
             <area>75,15,1107,90</area>
@@ -1812,7 +1812,7 @@
             <area>75,780,360,127</area>
             <value>Additional Tables:</value>
             <align>right,vcenter</align>
-	    <multiline>yes</multiline>
+            <multiline>yes</multiline>
         </textarea>
 
         <textedit name="subtitle">
@@ -1968,7 +1968,7 @@
             <font>baselarge</font>
         </textarea>
 
-	<group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup" />
 
         <spinbox name="priority" from="basewidespinbox">
             <position>565,465</position>
@@ -2088,7 +2088,7 @@
             <area>520,420,879,645</area>
         </shape>
 
-	<group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup" />
 
         <buttonlist name="recprofile" from="basewideselector">
             <position>565,465</position>
@@ -2158,7 +2158,7 @@
             <template>%DATE%, %TIME%</template>
         </clock>
 
-	<group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup" />
 
         <shape name="options_background" from="baseboxbackground">
             <area>520,420,879,645</area>
@@ -2296,11 +2296,11 @@
             </statetype>
         </buttonlist>
 
-	<group name="details" from="detailsgroup">
-	    <position>-1,555</position>
-	</group>
+        <group name="details" from="detailsgroup">
+            <position>-1,555</position>
+        </group>
 
-	<group name="idstatus" from="idstatusgroup" />
+        <group name="idstatus" from="idstatusgroup" />
 
         <textarea name="nochanges" from="basetextarea">
             <area>0,315,1920,105</area>
@@ -2318,7 +2318,7 @@
             <cornerradius>45</cornerradius>
         </shape>
 
-	<group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup" />
 
         <textarea name="windowtitle" from="basetextarea">
             <area>75,15,885,90</area>

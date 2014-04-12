@@ -39,7 +39,7 @@
             <area>75,15,1020,90</area>
             <font>baselarge</font>
             <value>News Feeds</value>
-    	    <align>left,vcenter</align>
+                <align>left,vcenter</align>
         </textarea>
 
         <buttonlist name="siteslist" from="basebuttonlist">
@@ -66,7 +66,7 @@
             <area>60,690,1530,105</area>
             <font>baselarge</font>
             <multiline>no</multiline>
-	    <scroll direction="left"/>
+            <scroll direction="left"/>
         </textarea>
 
         <textarea name="description" from="basetextarea">

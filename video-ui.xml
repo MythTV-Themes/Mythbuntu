@@ -118,7 +118,7 @@
         <shape name="itemdetailbox" from="basebackground">
             <area>0,0,1767,861</area>
         </shape>
-	
+        
         <imagetype name="coverart">
             <area>42,150,340,525</area>
             <filename>mv_browse_nocover_large.png</filename>
@@ -136,7 +136,7 @@
         <textarea name="description" from="basetextarea">
             <area>426,150,1275,210</area>
             <multiline>yes</multiline>
-	    <align>justify</align>
+            <align>justify</align>
         </textarea>
 
         <textarea name="cast" from="basetextarea">
@@ -187,11 +187,11 @@
             <area>643,585,417,52</area>
         </textarea>
 
-	<textarea name="ratinglbl" from="basetextarea">
-	    <area>1072,585,210,52</area>
-	    <value>Rated:</value>
-	    <align>right,vcenter</align>
-	</textarea>
+        <textarea name="ratinglbl" from="basetextarea">
+            <area>1072,585,210,52</area>
+            <value>Rated:</value>
+            <align>right,vcenter</align>
+        </textarea>
 
         <textarea name="rating" from="basetextarea">
             <area>1290,585,147,52</area>
@@ -228,14 +228,14 @@
         
         <shape name="infobox"> 
             <area>22,120,1875,525</area> 
-    	    <type>roundbox</type> 
+                <type>roundbox</type> 
             <fill color="#000000" alpha="150" />
             <cornerradius>15</cornerradius> 
         </shape>
         
         <shape name="listbox"> 
             <area>-3,660,1926,427</area> 
-    	    <type>box</type> 
+                <type>box</type> 
             <fill color="#000000" alpha="150" />
         </shape>
         
@@ -749,13 +749,13 @@
 
         <shape name="infobox">
             <area>0,750,1920,330</area>
-    	    <type>box</type>
+                <type>box</type>
             <fill color="#000000" alpha="150" />
         </shape>
 
         <shape name="treebox"> 
             <area>22,120,1875,615</area> 
-    	    <type>roundbox</type> 
+                <type>roundbox</type> 
             <fill color="#000000" alpha="150" />
             <cornerradius>15</cornerradius> 
         </shape>
@@ -789,7 +789,7 @@
             <area>330,757,1530,60</area>
             <case>capitaliseall</case>
             <font>baselarge</font>
-	    <template>%TITLE%% - |SUBTITLE%</template>
+            <template>%TITLE%% - |SUBTITLE%</template>
         </textarea>
 
         <textarea name="director" from="basetextarea">
@@ -1055,9 +1055,9 @@
 
         <button name="coverart_button">
             <area>255,487,45,45</area>
-        	<statetype name="buttonstate">
-        	    <state name="active">
-                	<imagetype name="background">
+                <statetype name="buttonstate">
+                    <state name="active">
+                        <imagetype name="background">
                         <filename>blankbutton_off.png</filename>
                     </imagetype>
                 </state>
@@ -1092,7 +1092,7 @@
 
         <button name="screenshot_button">
             <area>255,562,45,45</area>
-        	<statetype name="buttonstate">
+                <statetype name="buttonstate">
                 <state name="active">
                     <imagetype name="background">
                         <filename>blankbutton_off.png</filename>
@@ -1130,7 +1130,7 @@
         <button name="banner_button">
             <area>255,637,45,45</area>
             <statetype name="buttonstate">
-            	<state name="active">
+                    <state name="active">
                     <imagetype name="background">
                         <filename>blankbutton_off.png</filename>
                     </imagetype>
@@ -1268,7 +1268,7 @@
 
         <shape name="bgbox">
             <area>345,120,1230,825</area>
-    	    <type>roundbox</type>
+                <type>roundbox</type>
             <fill color="#000000" alpha="150" />
             <cornerradius>15</cornerradius>
         </shape>

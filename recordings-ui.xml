@@ -28,10 +28,10 @@
             <area>10,10,480,696</area>
 
             <!-- <animation trigger="AboutToShow"> -->
-            <!-- 	<section duration="500"> -->
-            <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <section duration="500"> -->
+            <!--             <alpha start="0" end="255" easingcurve="OutQuart"/> -->
                 <!--         <position start="-1280,-1," end="-1,-1" /> -->
-            <!-- 	</section> -->
+            <!--         </section> -->
             <!-- </animation> -->
 
             <shape name="groupbox">
@@ -116,10 +116,10 @@
             <minsize vanish="yes">100%,100%</minsize>
 
             <!-- <animation trigger="AboutToShow"> -->
-            <!-- 	<section duration="500"> -->
-            <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <section duration="500"> -->
+            <!--             <alpha start="0" end="255" easingcurve="OutQuart"/> -->
                 <!--         <position start="-1280,-1," end="-1,-1" /> -->
-            <!-- 	</section> -->
+            <!--         </section> -->
             <!-- </animation> -->
 
             <shape name="groupbox">
@@ -144,10 +144,10 @@
             <area>500,10,1410,696</area>
             
             <!-- <animation trigger="AboutToShow"> -->
-            <!-- 	<section duration="500"> -->
-            <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <section duration="500"> -->
+            <!--             <alpha start="0" end="255" easingcurve="OutQuart"/> -->
                 <!--         <position start="1280,-1," end="-1,-1" /> -->
-            <!-- 	</section> -->
+            <!--         </section> -->
             <!-- </animation> -->
 
             <shape name="recordingsbox">
@@ -274,10 +274,10 @@
 
             <area>0,716,1920,366</area>
             <!-- <animation trigger="AboutToShow"> -->
-            <!-- 	<section duration="500"> -->
-            <!-- 	    <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+            <!--         <section duration="500"> -->
+            <!--             <alpha start="0" end="255" easingcurve="OutQuart"/> -->
                 <!--         <position start="-1,720," end="-1,-1" /> -->
-            <!-- 	</section> -->
+            <!--         </section> -->
             <!-- </animation> -->
 
             <shape name="infobox">

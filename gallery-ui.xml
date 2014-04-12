@@ -25,7 +25,7 @@
             <statetype name="buttonitem">
                 <area>0,0,225,172</area>
                 <state name="active">
-            	    <shape name="btnbckgrnd">
+                        <shape name="btnbckgrnd">
                         <area>0,0,225,172</area>
                         <type>roundbox</type> 
                         <fill color="#666666" alpha="50" />
@@ -47,9 +47,9 @@
                     </statetype>
                 </state>
                 <state name="selectedactive" from="active">
-            	    <shape name="btnbckgrnd">
-            		<fill color="#FFFFFF" alpha="50" />
-            	    </shape>
+                        <shape name="btnbckgrnd">
+                            <fill color="#FFFFFF" alpha="50" />
+                        </shape>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
