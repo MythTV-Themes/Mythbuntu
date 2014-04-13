@@ -2053,7 +2053,7 @@
         </textarea>
 
         <buttonlist name="filters" from="basebuttonlist">
-            <area>60,90,667,570</area>
+            <area>60,90,667,450</area>
             <showarrow>no</showarrow>
         </buttonlist>
 
