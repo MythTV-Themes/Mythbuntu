@@ -5,7 +5,7 @@
 
         <fontdef name="menu" from="basesmall">
             <color>#ffffff</color>
-            <size>24</size>
+            <pixelsize>33</pixelsize>
         </fontdef>
 
         <fontdef name="title" face="baselarge">
@@ -13,7 +13,7 @@
             <shadowcolor>#666666</shadowcolor>
             <shadowoffset>2,2</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>36</size>
+            <pixelsize>50</pixelsize>
         </fontdef>
 
         <buttonlist name="images">

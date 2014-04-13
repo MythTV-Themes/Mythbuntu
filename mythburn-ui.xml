@@ -67,7 +67,7 @@ MythArchive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>36</size>
+            <pixelsize>50</pixelsize>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
@@ -184,17 +184,17 @@ MythArchive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>36</size>
+            <pixelsize>50</pixelsize>
         </fontdef>
 
         <fontdef name="smallstatsfont" from="basesmall">
             <color>#ffffff</color>
-            <size>15</size>
+            <pixelsize>20</pixelsize>
         </fontdef>
 
         <fontdef name="statserror" from="basesmall">
             <color>#ff0000</color>
-            <size>15</size>
+            <pixelsize>20</pixelsize>
         </fontdef>
 
         <shape name="bottombackground" from="basebackground">
@@ -396,7 +396,7 @@ MythArchive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>36</size>
+            <pixelsize>50</pixelsize>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
@@ -482,7 +482,7 @@ MythArchive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>36</size>
+            <pixelsize>50</pixelsize>
         </fontdef>
 
         <textarea name="title" from="basetextarea">

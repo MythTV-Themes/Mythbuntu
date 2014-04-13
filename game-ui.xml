@@ -8,7 +8,7 @@
 
     <fontdef name="largetitle" face="DejaVu Sans">
         <color>#ffffff</color>
-        <size>48</size>
+        <pixelsize>66</pixelsize>
         <shadowcolor>#000000</shadowcolor>
         <shadowoffset>3,3</shadowoffset>
         <shadowalpha>64</shadowalpha>
@@ -16,7 +16,7 @@
 
     <fontdef name="infofont" face="DejaVu Sans">
         <color>#ffffff</color>
-        <size>27</size>
+        <pixelsize>37</pixelsize>
     </fontdef>
 
     <buttontree name="gametreelist">

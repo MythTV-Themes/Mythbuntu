@@ -16,12 +16,12 @@
 
         <fontdef name="menufont" from="baseextralarge">
             <color>#C3C3C3</color>
-            <size>42</size>
+            <pixelsize>58</pixelsize>
         </fontdef>
 
         <fontdef name="selectedmenufont" from="menufont">
             <color>#FFFFFF</color>
-            <size>54</size>
+            <pixelsize>75</pixelsize>
         </fontdef>
 
         <buttonlist name="menu">

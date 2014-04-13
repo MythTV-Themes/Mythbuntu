@@ -5,7 +5,7 @@
 
     <!-- Base Font Definitions -->
     <fontdef name="basesmall" face="Ubuntu">
-        <size>22</size>
+        <pixelsize>30</pixelsize>
         <color>#FFFFFF</color>
     </fontdef>
 
@@ -14,11 +14,11 @@
     </fontdef>
 
     <fontdef name="baseextrasmall" from="basesmall">
-        <size>19</size>
+        <pixelsize>26</pixelsize>
     </fontdef>
 
     <fontdef name="basesupersmall" from="basesmall">
-        <size>16</size>
+        <pixelsize>22</pixelsize>
     </fontdef>
 
     <fontdef name="basesmalldrop" from="basesmall">
@@ -28,26 +28,26 @@
     </fontdef>
 
     <fontdef name="basemedium" from="basesmall">
-        <size>30</size>
+        <pixelsize>41</pixelsize>
     </fontdef>
 
     <fontdef name="baserecordingsmedium" from="basesmall">
-        <size>28</size>
+        <pixelsize>38</pixelsize>
     </fontdef>
 
     <fontdef name="basegallerymedium" from="basesmall">
-        <size>27</size>
+        <pixelsize>37</pixelsize>
     </fontdef>
 
     <fontdef name="baselarge" from="basesmall">
-        <size>33</size>
+        <pixelsize>45</pixelsize>
         <shadowcolor>#000000</shadowcolor>
         <shadowoffset>4,4</shadowoffset>
         <shadowalpha>64</shadowalpha>
     </fontdef>
 
     <fontdef name="baseextralarge" from="basesmall">
-        <size>36</size>
+        <pixelsize>50</pixelsize>
         <shadowcolor>#000000</shadowcolor>
         <shadowoffset>4,4</shadowoffset>
         <shadowalpha>64</shadowalpha>
@@ -66,11 +66,11 @@
 
 
     <fontdef name="baseextrasmallgrey" from="basesmallgrey">
-        <size>19</size>
+        <pixelsize>26</pixelsize>
     </fontdef>
 
     <fontdef name="basesupersmallgrey" from="basesmallgrey">
-        <size>16</size>
+        <pixelsize>22</pixelsize>
     </fontdef>
 
     <fontdef name="basesmallstrikeout" from="basesmallgrey">
@@ -94,11 +94,11 @@
     </fontdef>
 
     <fontdef name="baseextrasmallblack" from="basesmallblack">
-        <size>19</size>
+        <pixelsize>26</pixelsize>
     </fontdef>
 
     <fontdef name="basesupersmallblack" from="basesmallblack">
-        <size>16</size>
+        <pixelsize>22</pixelsize>
     </fontdef>
 
     <fontdef name="basesmallyellow" from="basesmall">
@@ -170,7 +170,7 @@
     </fontdef>
 
     <fontdef name="clock" from="basesmall">
-        <size>30</size>
+        <pixelsize>41</pixelsize>
         <color>#bcbcbc</color>
     </fontdef>
 

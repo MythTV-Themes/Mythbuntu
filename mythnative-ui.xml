@@ -16,37 +16,37 @@ MythTV Archive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>36</size>
+            <pixelsize>50</pixelsize>
         </fontdef>
 
         <fontdef name="description" from="basesmall">
             <color>#ffffff</color>
-            <size>27</size>
+            <pixelsize>37</pixelsize>
         </fontdef>
 
         <fontdef name="detail" from="basesmall">
             <color>#ffffff</color>
-            <size>21</size>
+            <pixelsize>29</pixelsize>
         </fontdef>
 
         <fontdef name="detailtitle" from="basesmall">
             <color>#ffff00</color>
-            <size>21</size>
+            <pixelsize>29</pixelsize>
         </fontdef>
 
         <fontdef name="label" from="basesmall">
             <color>#ffff00</color>
-            <size>24</size>
+            <pixelsize>33</pixelsize>
         </fontdef>
 
         <fontdef name="smallstatsfont" from="basesmall">
             <color>#ffffff</color>
-            <size>15</size>
+            <pixelsize>20</pixelsize>
         </fontdef>
 
         <fontdef name="statserror" from="basesmall">
             <color>#ff0000</color>
-            <size>15</size>
+            <pixelsize>20</pixelsize>
         </fontdef>
 
         <shape name="topbackground" from="basebackground">
@@ -178,7 +178,7 @@ MythTV Archive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>36</size>
+            <pixelsize>50</pixelsize>
         </fontdef>
 
         <textarea name="title" from="basetextarea">
@@ -296,7 +296,7 @@ MythTV Archive GUI theme
             <shadowcolor>#000000</shadowcolor>
             <shadowoffset>3,3</shadowoffset>
             <shadowalpha>64</shadowalpha>
-            <size>36</size>
+            <pixelsize>50</pixelsize>
         </fontdef>
 
         <textarea name="title1" from="basetextarea">
