@@ -1465,9 +1465,9 @@
         <!-- function here, including flipbook; hopefully this will be -->
         <!-- fixed. -->
 
-        <area>0,0,1920,1080</area>
+        <area>-1,-1,870,247</area>
         <shape name="backimg" from="basebackground">
-            <area>0,0,100%,100%</area>
+            <area>0,0,870,247</area>
         </shape>
         <imagetype name="animation">
             <position>60,45</position>
