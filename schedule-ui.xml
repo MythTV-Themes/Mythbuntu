@@ -707,8 +707,42 @@
 
         <buttonlist name="schedules" from="proglistlist" />
 
-        <group name="details" from="detailsgroup">
-            <position>-1,555</position>
+        <group name="details">
+			
+			<area>180,660,1545,300</area>
+			
+			<shape name="details_background" from="baseboxbackground">
+                <area>0,0,100%,100%</area>
+            </shape>
+			
+            <textarea name="title" from="basetextarea">
+                <area>10,10,1215,67</area>
+                <font>baselarge</font>
+            </textarea>
+
+            <textarea name="category" from="basetextarea">
+                <area>100%-250,10,240,75</area>
+                <font>baseextrasmall</font>
+                <align>vcenter,right</align>
+                <multiline>yes</multiline>
+            </textarea>
+
+            <textarea name="timedate" from="basetextarea">
+                <area>10,80,660,45</area>
+                <align>top</align>
+            </textarea>
+
+            <textarea name="longchannel" from="basetextarea">
+                <area>100%-805,80,795,45</area>
+                <align>top,right</align>
+            </textarea>
+
+            <textarea name="description" from="basetextarea">
+                <area>10,130,1470,150</area>
+                <multiline>yes</multiline>
+                <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
+                <align>justify</align>
+            </textarea>
         </group>
 
         <group name="idstatus" from="idstatusgroup" />
