@@ -707,45 +707,13 @@
 
         <buttonlist name="schedules" from="proglistlist" />
 
-        <group name="details">
-			
-			<area>180,660,1545,300</area>
-			
-			<shape name="details_background" from="baseboxbackground">
-                <area>0,0,100%,100%</area>
-            </shape>
-			
-            <textarea name="title" from="basetextarea">
-                <area>10,10,1215,67</area>
-                <font>baselarge</font>
-            </textarea>
-
-            <textarea name="category" from="basetextarea">
-                <area>100%-250,10,240,75</area>
-                <font>baseextrasmall</font>
-                <align>vcenter,right</align>
-                <multiline>yes</multiline>
-            </textarea>
-
-            <textarea name="timedate" from="basetextarea">
-                <area>10,80,660,45</area>
-                <align>top</align>
-            </textarea>
-
-            <textarea name="longchannel" from="basetextarea">
-                <area>100%-805,80,795,45</area>
-                <align>top,right</align>
-            </textarea>
-
-            <textarea name="description" from="basetextarea">
-                <area>10,130,1470,150</area>
-                <multiline>yes</multiline>
-                <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
-                <align>justify</align>
-            </textarea>
+        <group name="details" from="detailsgroup">
+            <position>180,670</position>
         </group>
 
-        <group name="idstatus" from="idstatusgroup" />
+        <group name="idstatus" from="idstatusgroup">
+            <position>180,980</position>
+        </group>
 
         <textarea name="norecordings_info">
             <area>150,285,1620,165</area>
@@ -1326,10 +1294,12 @@
         <buttonlist name="proglist" from="proglistlist" />
 
         <group name="details" from="detailsgroup">
-            <position>-1,555</position>
+            <position>180,670</position>
         </group>
 
-        <group name="idstatus" from="idstatusgroup" />
+        <group name="idstatus" from="idstatusgroup">
+            <position>180,980</position>
+        </group>
 
         <textarea name="msg" from="basetextarea">
             <area>0,315,1920,105</area>
@@ -1614,7 +1584,7 @@
         </group>
 
         <group name="details" from="detailsgroup">
-            <position>-1,555</position>
+            <position>180,670</position>
         </group>
 
         <textarea name="help1text" from="basetextarea">
@@ -1922,7 +1892,9 @@
             <font>baselarge</font>
         </textarea>
 
-        <group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup">
+            <position>15,115</position>
+        </group>
 
         <buttonlist name="rules" from="basewideselector">
             <position>585,465</position>
@@ -2002,7 +1974,9 @@
             <font>baselarge</font>
         </textarea>
 
-        <group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup">
+            <position>15,115</position>
+        </group>
 
         <spinbox name="priority" from="basewidespinbox">
             <position>565,465</position>
@@ -2122,7 +2096,9 @@
             <area>520,420,879,645</area>
         </shape>
 
-        <group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup">
+            <position>15,115</position>
+        </group>
 
         <buttonlist name="recprofile" from="basewideselector">
             <position>565,465</position>
@@ -2192,7 +2168,9 @@
             <template>%DATE%, %TIME%</template>
         </clock>
 
-        <group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup">
+            <position>15,115</position>
+        </group>
 
         <shape name="options_background" from="baseboxbackground">
             <area>520,420,879,645</area>
@@ -2331,10 +2309,12 @@
         </buttonlist>
 
         <group name="details" from="detailsgroup">
-            <position>-1,555</position>
+            <position>180,670</position>
         </group>
 
-        <group name="idstatus" from="idstatusgroup" />
+        <group name="idstatus" from="idstatusgroup">
+            <position>180,980</position>
+        </group>
 
         <textarea name="nochanges" from="basetextarea">
             <area>0,315,1920,105</area>
@@ -2352,7 +2332,9 @@
             <cornerradius>45</cornerradius>
         </shape>
 
-        <group name="details" from="detailsgroup" />
+        <group name="details" from="detailsgroup">
+            <position>15,115</position>
+        </group>
 
         <textarea name="windowtitle" from="basetextarea">
             <area>75,15,885,90</area>

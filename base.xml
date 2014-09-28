@@ -1647,34 +1647,36 @@
 
         <group name="detailsgroup">
 
-            <shape name="details_background" from="baseboxbackground">
-                <area>187,120,1545,285</area>
-            </shape>
+            <area>180,660,1545,300</area>
 
+            <shape name="details_background" from="baseboxbackground">
+                <area>0,0,100%,100%</area>
+            </shape>
+        
             <textarea name="title" from="basetextarea">
-                <area>225,135,1215,67</area>
+                <area>10,10,1215,67</area>
                 <font>baselarge</font>
             </textarea>
 
             <textarea name="category" from="basetextarea">
-                <area>1455,127,240,75</area>
+                <area>100%-250,10,240,75</area>
                 <font>baseextrasmall</font>
                 <align>vcenter,right</align>
                 <multiline>yes</multiline>
             </textarea>
 
             <textarea name="timedate" from="basetextarea">
-                <area>225,202,660,45</area>
+                <area>10,80,660,45</area>
                 <align>top</align>
             </textarea>
 
             <textarea name="longchannel" from="basetextarea">
-                <area>900,202,795,45</area>
+                <area>100%-805,80,795,45</area>
                 <align>top,right</align>
             </textarea>
 
             <textarea name="description" from="basetextarea">
-                <area>225,255,1470,150</area>
+                <area>10,130,1470,150</area>
                 <multiline>yes</multiline>
                 <template>%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%%YEARSTARS| %%DESCRIPTION%</template>
                 <align>justify</align>
@@ -1717,17 +1719,19 @@
 
         <group name="idstatusgroup">
 
+            <area>187,960,1545,65</area>
+
             <shape name="idstatusbackground" from="baseboxbackground">
-                <area>187,960,1545,75</area>
+                <area>0,0,100%,100%</area>
             </shape>
 
             <textarea name="programid" from="basetextarea">
-                <area>223,975,660,45</area>
+                <area>10,10,660,45</area>
                 <font>basesmallgrey</font>
             </textarea>
 
             <textarea name="rectypestatus" from="basetextarea">
-                <area>1066,975,630,45</area>
+                <area>100%-640,10,630,45</area>
                 <font>basesmallyellow</font>
                 <align>right,vcenter</align>
             </textarea>
