@@ -225,7 +225,7 @@
                     <align>left,vcenter</align>
                 </textarea>
                 <statetype name="buttoncheck">
-                    <position>-30,12</position>
+                    <position>6,15</position>
                     <imagetype name="checkoff">
                         <filename>shared/checkbox_background_off.png</filename>
                     </imagetype>
