@@ -563,7 +563,7 @@
             <!--<area>1660,315,200,45</area>--> <!-- below video -->
             <align>right,bottom</align>
             <font>basesmallgrey</font>
-            <format>%DATE%, %TIME%</format>
+            <template>%DATE%, %TIME%</template>
         </clock>
 
     </window>

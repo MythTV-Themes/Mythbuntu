@@ -25,7 +25,7 @@
         </fontdef>
 
         <buttonlist name="menu">
-            <area>60,110,1110,870</area>,.
+            <area>60,110,1110,870</area>
             <layout>vertical</layout>
             <spacing>27</spacing>
             <wrapstyle>items</wrapstyle>
