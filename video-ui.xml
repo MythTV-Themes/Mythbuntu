@@ -597,12 +597,6 @@
 
     <window name="gallery">
 
-        <imagetype name="fanart">
-            <filename>background.png</filename>
-            <area>0,0,1920,1080</area> 
-            <preserveaspect>yes</preserveaspect>
-        </imagetype>
-
         <shape name="titlebox">
             <area>15,15,1385,90</area>
             <type>roundbox</type>
@@ -618,25 +612,27 @@
         </shape>
 
         <buttonlist name="videos">
-            <area>30,120,1890,960</area>
+            <area>50,120,1860,950</area>
             <layout>grid</layout>
-            <spacing>35</spacing>
-            <wrapstyle>flowing</wrapstyle>
-            <buttonarea>0,0,1890,960</buttonarea>
+            <spacing>15</spacing>
+            <wrapstyle>items</wrapstyle>
+            <scrollstyle>center</scrollstyle>
+            <buttonarea>0,0,1830,930</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,450,525</area>
+                <area>0,0,210,280</area>
                 <state name="active">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
-                        <area>0,15,345,275</area>
-                        <fill color="#000000" alpha="150" />
-                        <cornerradius>15</cornerradius>
+                        <area>0,0,190,284</area>
+                        <line color="#FFFFFF" alpha="0" width="1"/>
+                        <cornerradius>30</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>15,30,315,210</area>
-                        <preserveaspect>true</preserveaspect>
-                        <alpha>150</alpha>
+                        <area>2,2,178,280</area>
+                        <preserveaspect>false</preserveaspect>
+                        <alpha>125</alpha>
                         <filename>mv_browse_nocover.png</filename>
+                        <mask>gallery-mask.png</mask>
                     </imagetype>
                     <statetype name="nodetype">
                         <area>100%-75,0,75,75</area>
@@ -655,12 +651,6 @@
                             </imagetype>
                         </state>
                     </statetype>
-                    <textarea name="buttontext">
-                        <area>13,232,324,67</area>
-                        <font>basesmallgrey</font>
-                        <align>hcenter,vcenter</align>
-                        <multiline>yes</multiline>
-                    </textarea>
                     <textarea name="childcount" from="basetextarea">
                         <area>0,20,30,30</area>
                         <font>basesmallblackoutline</font>
@@ -670,21 +660,19 @@
                 <state name="selectedinactive" from="active" />
                 <state name="selectedactive" from="active">
                     <shape name="buttonbackground">
-                        <area>-15,-7,375,315</area>
-                        <fill color="#666666" alpha="150" />
+                        <type>roundbox</type>
+                        <area>0,0,180,284</area>
+                        <line color="#FFFFFF" alpha="255" width="2"/>
+                        <cornerradius>30</cornerradius>
                     </shape>
-                    <textarea name="buttontext">
-                        <area>3,237,345,82</area>
-                        <font>basegallerymedium</font>
-                        <multiline>yes</multiline>
-                    </textarea>
                     <imagetype name="buttonimage">
-                        <area>0,7,345,240</area>
-                        <preserveaspect>true</preserveaspect>
+                        <area>2,2,178,280</area>
+                        <preserveaspect>false</preserveaspect>
                         <filename>mv_browse_nocover.png</filename>
                         <alpha>255</alpha>
+                        <mask>gallery-mask.png</mask>
                     </imagetype>
-                        <textarea name="childcount" from="basetextarea">
+                    <textarea name="childcount" from="basetextarea">
                         <area>-10,0,30,30</area>
                         <font>basesmallgrey</font>
                         <align>right</align>
