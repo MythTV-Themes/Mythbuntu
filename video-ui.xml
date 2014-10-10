@@ -600,45 +600,46 @@
         <shape name="titlebox">
             <area>15,15,1385,90</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
+            <fill color="#FFFFFF" alpha="25" />
             <cornerradius>45</cornerradius>
         </shape>
         
         <shape name="positionbox">
             <area>1590,15,307,90</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
+            <fill color="#FFFFFF" alpha="25" />
             <cornerradius>45</cornerradius>
         </shape>
 
         <buttonlist name="videos">
-            <area>50,120,1860,950</area>
+            <area>33,120,1854,945</area>
             <layout>grid</layout>
-            <spacing>15</spacing>
+            <spacing>0</spacing>
             <wrapstyle>items</wrapstyle>
             <scrollstyle>center</scrollstyle>
-            <buttonarea>0,0,1830,930</buttonarea>
+            <buttonarea>0,0,1854,945</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,210,280</area>
                 <state name="active">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
-                        <area>0,0,190,284</area>
+                        <area>0,0,206,315</area>
                         <line color="#FFFFFF" alpha="0" width="1"/>
                         <cornerradius>30</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>2,2,178,280</area>
+                        <area>50%-89,50%-140,178,280</area>
                         <preserveaspect>false</preserveaspect>
                         <alpha>125</alpha>
                         <filename>mv_browse_nocover.png</filename>
                         <mask>gallery-mask.png</mask>
                     </imagetype>
                     <statetype name="nodetype">
-                        <area>100%-75,0,75,75</area>
+                        <area>100%-100,20,75,75</area>
                         <state name="subfolder">
                             <imagetype name="icon">
                                 <area>0,0,75,75</area>
+                                <alpha>255</alpha>
                                 <filename>gallery-folder-reg.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
@@ -646,13 +647,14 @@
                         <state name="upfolder">
                             <imagetype name="icon">
                                 <area>0,0,75,75</area>
+                                <alpha>255</alpha>
                                 <filename>mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>0,20,30,30</area>
+                        <area>20,40,30,30</area>
                         <font>basesmallblackoutline</font>
                         <align>right</align>
                     </textarea>
@@ -661,39 +663,18 @@
                 <state name="selectedactive" from="active">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
-                        <area>0,0,180,284</area>
-                        <line color="#FFFFFF" alpha="255" width="2"/>
+                        <area>50%-96,50%-146,189,292</area>
+                            
+                        <fill color="#FFFFFF" alpha="255"/>
                         <cornerradius>30</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>2,2,178,280</area>
+                        <area>50%-89,50%-140,178,280</area>
                         <preserveaspect>false</preserveaspect>
                         <filename>mv_browse_nocover.png</filename>
                         <alpha>255</alpha>
                         <mask>gallery-mask.png</mask>
                     </imagetype>
-                    <textarea name="childcount" from="basetextarea">
-                        <area>-10,0,30,30</area>
-                        <font>basesmallgrey</font>
-                        <align>right</align>
-                    </textarea>
-                    <statetype name="nodetype">
-                        <area>100%-80,-15,75,75</area>
-                        <state name="subfolder">
-                            <imagetype name="icon">
-                                <area>0,0,75,75</area>
-                                <filename>gallery-folder-reg.png</filename>
-                                <preserveaspect>yes</preserveaspect>
-                            </imagetype>
-                        </state>
-                        <state name="upfolder">
-                            <imagetype name="icon">
-                                <area>0,0,75,75</area>
-                                <filename>mv_gallery_dir_up.png</filename>
-                                <preserveaspect>yes</preserveaspect>
-                            </imagetype>
-                        </state>
-                    </statetype>
                 </state>
             </statetype>
         </buttonlist>
@@ -708,14 +689,14 @@
 
         <textarea name="##x##">
             <area>1185,15,200,90</area>
-            <font>basesmallgrey</font>
+            <font>baselarge</font>
             <align>vcenter,right</align>
         </textarea>
 
         <textarea name="position" from="basetextarea">
-            <area>1560,15,285,90</area>
+            <area>1615,15,255,90</area>
             <align>vcenter,right</align>
-            <font>basesmall</font>
+            <font>baselarge</font>
         </textarea>
 
         <textarea name="novideos" from="basetextarea">
