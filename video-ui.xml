@@ -612,27 +612,27 @@
         </shape>
 
         <buttonlist name="videos">
-            <area>-100,125,1980,945</area>
+            <area>-150,125,1980,945</area>
             <layout>grid</layout>
-            <spacing>0</spacing>
+            <spacing>10</spacing>
             <wrapstyle>items</wrapstyle>
             <scrollstyle>center</scrollstyle>
-            <buttonarea>0,0,2274,945</buttonarea>
+            <buttonarea>0,0,2274,1245</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,210,280</area>
+                <area>0,0,210,382</area>
                 <state name="active">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
-                        <area>0,0,190,310</area>
+                        <area>0,0,240,382</area>
                         <line color="#FFFFFF" alpha="0" width="1"/>
                         <cornerradius>30</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>50%-89,50%-140,178,280</area>
+                        <area>50%-120,50%-180,240,382</area>
                         <preserveaspect>false</preserveaspect>
                         <alpha>125</alpha>
                         <filename>mv_browse_nocover.png</filename>
-                        <mask>gallery-mask.png</mask>
+                        <mask>gallery-mask-big.png</mask>
                     </imagetype>
                     <statetype name="nodetype">
                         <area>100%-100,20,75,75</area>
@@ -663,17 +663,17 @@
                 <state name="selectedactive" from="active">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
-                        <area>50%-96,50%-146,189,292</area>
+                        <area>50%-130,50%-190,250,392</area>
                             
                         <fill color="#FFFFFF" alpha="255"/>
                         <cornerradius>30</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>50%-89,50%-140,178,280</area>
+                        <area>50%-125,50%-185,240,382</area>
                         <preserveaspect>false</preserveaspect>
                         <filename>mv_browse_nocover.png</filename>
                         <alpha>255</alpha>
-                        <mask>gallery-mask.png</mask>
+                        <mask>gallery-mask-big.png</mask>
                     </imagetype>
                 </state>
             </statetype>
