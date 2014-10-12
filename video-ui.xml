@@ -612,7 +612,7 @@
         </shape>
 
         <buttonlist name="videos">
-            <area>-150,125,1980,945</area>
+            <area>-160,125,1980,945</area>
             <layout>grid</layout>
             <spacing>10</spacing>
             <wrapstyle>items</wrapstyle>
@@ -639,24 +639,24 @@
                         <state name="subfolder">
                             <imagetype name="icon">
                                 <area>0,0,75,75</area>
-                                <alpha>255</alpha>
-                                <filename>gallery-folder-reg.png</filename>
+                                <filename>folder_6_256x256x32.png</filename>
                                 <preserveaspect>yes</preserveaspect>
+                                <alpha>200</alpha>
                             </imagetype>
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
                                 <area>0,0,75,75</area>
-                                <alpha>255</alpha>
                                 <filename>mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>20,40,30,30</area>
+                        <area>100%-80,50,30,30</area>
+                        <alpha>255</alpha>
                         <font>basesmallblackoutline</font>
-                        <align>right</align>
+                        <align>center</align>
                     </textarea>
                 </state>
                 <state name="selectedinactive" from="active" />
@@ -664,7 +664,6 @@
                     <shape name="buttonbackground">
                         <type>roundbox</type>
                         <area>50%-130,50%-190,250,392</area>
-                            
                         <fill color="#FFFFFF" alpha="255"/>
                         <cornerradius>30</cornerradius>
                     </shape>
