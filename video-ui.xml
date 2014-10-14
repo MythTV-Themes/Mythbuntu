@@ -597,30 +597,17 @@
 
     <window name="gallery">
 
-        <shape name="titlebox">
-            <area>15,15,1385,90</area>
-            <type>roundbox</type>
-            <fill color="#FFFFFF" alpha="25" />
-            <cornerradius>45</cornerradius>
-        </shape>
-        
-        <shape name="positionbox">
-            <area>1590,15,307,90</area>
-            <type>roundbox</type>
-            <fill color="#FFFFFF" alpha="25" />
-            <cornerradius>45</cornerradius>
-        </shape>
-
         <buttonlist name="videos">
-            <area>-160,125,1980,945</area>
+            <area>-160,-50,2240,1400</area>
             <layout>grid</layout>
             <spacing>10</spacing>
             <wrapstyle>items</wrapstyle>
-            
-            <scrollstyle>center</scrollstyle>
-            <buttonarea>0,0,2250,1245</buttonarea>
+            <arrange>stack</arrange>
+            <align>center</align>
+            <scrollstyle>groupcenter</scrollstyle>
+            <buttonarea>-1,-1,2250,1245</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,210,382</area>
+                <area>0,0,240,382</area>
                 <state name="active">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
@@ -629,7 +616,7 @@
                         <cornerradius>30</cornerradius>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>50%-120,50%-180,240,382</area>
+                        <area>50%-125,50%-185,240,382</area>
                         <preserveaspect>false</preserveaspect>
                         <alpha>125</alpha>
                         <filename>mv_browse_nocover.png</filename>
@@ -684,6 +671,31 @@
                 </state>
             </statetype>
         </buttonlist>
+
+        <shape name="GalleryFade"> 
+            <area>0,0,1920,400</area> 
+            <type>box</type> 
+            <fill style="gradient">
+                <gradient direction="vertical" alpha="255">
+                    <stop position="0" color="#000000" />
+                    <stop position="100" color="#000000" alpha="0" />
+                </gradient>
+            </fill>
+        </shape> 
+
+        <shape name="titlebox">
+            <area>15,15,1385,90</area>
+            <type>roundbox</type>
+            <fill color="#FFFFFF" alpha="25" />
+            <cornerradius>45</cornerradius>
+        </shape>
+        
+        <shape name="positionbox">
+            <area>1590,15,307,90</area>
+            <type>roundbox</type>
+            <fill color="#FFFFFF" alpha="25" />
+            <cornerradius>45</cornerradius>
+        </shape>
 
         <textarea name="title" from="basetextarea">
             <area>75,15,1100,90</area>
