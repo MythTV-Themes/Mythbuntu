@@ -670,7 +670,7 @@
                         <align>center</align>
                     </textarea>
                     <textarea name="s##e##">
-                        <area>10,300,220,100</area>
+                        <area>10,300,220,50</area>
                         <font>basesmallblackoutline</font>
                         <align>hcenter,top</align>
                     </textarea>
