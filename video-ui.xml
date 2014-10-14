@@ -616,8 +616,9 @@
             <layout>grid</layout>
             <spacing>10</spacing>
             <wrapstyle>items</wrapstyle>
+            
             <scrollstyle>center</scrollstyle>
-            <buttonarea>0,0,2274,1245</buttonarea>
+            <buttonarea>0,0,2250,1245</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,210,382</area>
                 <state name="active">
@@ -634,6 +635,12 @@
                         <filename>mv_browse_nocover.png</filename>
                         <mask>gallery-mask-big.png</mask>
                     </imagetype>
+                    <textarea name="title" depends="!buttonimage">
+                        <area>10,272,220,100</area>
+                        <font>basesmallblackoutline</font>
+                        <multiline>yes</multiline>
+                        <align>hcenter,bottom</align>
+                    </textarea>
                     <statetype name="nodetype">
                         <area>100%-100,20,75,75</area>
                         <state name="subfolder">
@@ -646,7 +653,7 @@
                         </state>
                         <state name="upfolder">
                             <imagetype name="icon">
-                                <area>0,0,75,75</area>
+                                <area>10,0,65,75</area>
                                 <filename>mv_gallery_dir_up.png</filename>
                                 <preserveaspect>yes</preserveaspect>
                             </imagetype>
