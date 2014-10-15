@@ -598,14 +598,14 @@
     <window name="gallery">
 
         <buttonlist name="videos">
-            <area>-160,-50,2240,1400</area>
+            <area>0,0,1920,1080</area>
             <layout>grid</layout>
             <spacing>10</spacing>
             <wrapstyle>items</wrapstyle>
             <arrange>stack</arrange>
             <align>center</align>
             <scrollstyle>groupcenter</scrollstyle>
-            <buttonarea>-1,-1,2250,1245</buttonarea>
+            <buttonarea>-160,-10,2250,1200</buttonarea>
             <statetype name="buttonitem">
                 <area>0,0,240,376</area>
                 <state name="active">
