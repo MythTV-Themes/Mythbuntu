@@ -600,38 +600,41 @@
         <buttonlist name="videos">
             <area>0,0,1920,1080</area>
             <layout>grid</layout>
-            <spacing>10</spacing>
+            <spacing>15</spacing>
             <wrapstyle>items</wrapstyle>
             <arrange>stack</arrange>
             <align>center</align>
             <scrollstyle>groupcenter</scrollstyle>
-            <buttonarea>-160,-10,2250,1200</buttonarea>
+            <buttonarea>-160,-125,2250,1425</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,240,376</area>
+                <area>0,0,293,460</area>
                 <state name="active">
                     <shape name="buttonbackground">
                         <type>roundbox</type>
-                        <area>0,0,240,376</area>
+                        <area>0,0,293,460</area>
                         <line color="#FFFFFF" alpha="0" width="1"/>
                         <cornerradius>30</cornerradius>
                     </shape>
                     <shape name="buttonbackground2" depends="s##e##">
                         <type>roundbox</type>
-                        <area>5,5,230,366</area>
+                        <!--<area>5,5,230,366</area>-->
+                        <area>5,5,283,450</area>
                         <fill color="#000000" alpha="125"/>
                         <cornerradius>30</cornerradius>
                     </shape>
                     <imagetype name="screenshot" depends="!childcount">
-                        <area>5,5,230,366</area>
+                        <!--<area>5,5,230,366</area>-->
+                        <area>5,5,283,450</area>
                         <preserveaspect>true</preserveaspect>
                         <alpha>125</alpha>
                     </imagetype>
                     <imagetype name="coverart" depends="!screenshot|childcount">
-                        <area>5,5,230,366</area>
+                        <!--<area>5,5,230,366</area>-->
+                        <area>5,5,283,450</area>
                         <preserveaspect>false</preserveaspect>
                         <alpha>125</alpha>
                         <filename>mv_browse_nocover.png</filename>
-                        <mask>gallery-mask.png</mask>
+                        <mask>gallery-mask-big.png</mask>
                     </imagetype>
                     <textarea name="title" depends="!coverart">
                         <area>10,30,220,200</area>
