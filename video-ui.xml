@@ -617,19 +617,16 @@
                     </shape>
                     <shape name="buttonbackground2" depends="s##e##">
                         <type>roundbox</type>
-                        <!--<area>5,5,230,366</area>-->
                         <area>5,5,283,450</area>
                         <fill color="#000000" alpha="125"/>
                         <cornerradius>30</cornerradius>
                     </shape>
                     <imagetype name="screenshot" depends="!childcount">
-                        <!--<area>5,5,230,366</area>-->
                         <area>5,5,283,450</area>
                         <preserveaspect>true</preserveaspect>
                         <alpha>125</alpha>
                     </imagetype>
                     <imagetype name="coverart" depends="!screenshot|childcount">
-                        <!--<area>5,5,230,366</area>-->
                         <area>5,5,283,450</area>
                         <preserveaspect>false</preserveaspect>
                         <alpha>125</alpha>
@@ -637,13 +634,13 @@
                         <mask>gallery-mask-big.png</mask>
                     </imagetype>
                     <textarea name="title" depends="!coverart">
-                        <area>10,30,220,200</area>
+                        <area>10,30,273,200</area>
                         <font>basesmallblackoutline</font>
                         <multiline>yes</multiline>
                         <align>hcenter,top</align>
                     </textarea>
-                    <textarea name="subtitle">
-                        <area>10,30,220,100</area>
+                    <textarea name="subtitle" depends="screenshot">
+                        <area>10,30,273,100</area>
                         <font>basesmallblackoutline</font>
                         <multiline>yes</multiline>
                         <align>hcenter,top</align>
@@ -673,7 +670,7 @@
                         <align>center</align>
                     </textarea>
                     <textarea name="s##e##">
-                        <area>10,300,220,50</area>
+                        <area>10,350,273,50</area>
                         <font>basesmallblackoutline</font>
                         <align>hcenter,top</align>
                     </textarea>
@@ -697,7 +694,7 @@
         </buttonlist>
 
         <shape name="GalleryFade"> 
-            <area>0,0,1920,400</area> 
+            <area>0,0,1920,200</area> 
             <type>box</type> 
             <fill style="gradient">
                 <gradient direction="vertical" alpha="255">
