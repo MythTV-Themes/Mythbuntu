@@ -176,7 +176,7 @@
                             <cornerradius>90</cornerradius>
                         </shape>
                         <textarea name="titlesubtitle">
-                            <area>50,0,1005,60</area>
+                            <area>50,0,930,60</area>
                             <font state="disabled">baserecordingsmediumblue</font>
                             <font state="error">bbaserecordingsmediumbrightred</font>
                             <font state="warning">baserecordingsmediumyellow</font>
@@ -187,12 +187,12 @@
                             <template>%TITLESUBTITLE% %YEARSTARS%</template>
                         </textarea>
                         <textarea name="shortstartdate" from="titlesubtitle">
-                            <area>1015,0,130,60</area>
+                            <area>980,0,150,60</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
                         </textarea>
                         <textarea name="starttime" from="shortstartdate">
-                            <area>1145,0,205,60</area>
+                            <area>1130,0,220,60</area>
                             <align>right,vcenter</align>
                             <template>%1</template>
                         </textarea>
@@ -231,17 +231,6 @@
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>90</cornerradius>
                         </shape>
-                        <textarea name="titlesubtitle">
-                            <area>50,0,1005,60</area>
-                            <font state="disabled">baserecordingsmediumblue</font>
-                            <font state="error">bbaserecordingsmediumbrightred</font>
-                            <font state="warning">baserecordingsmediumyellow</font>
-                            <font state="normal">baserecordingsmedium</font>
-                            <font state="running">baserecordingsmediumgreen</font>
-                            <font state="marked"></font>
-                            <align>vcenter</align>
-                            <template>%TITLESUBTITLE% %YEARSTARS%</template>
-                        </textarea>
                     </state>
                     <state name="selectedinactive" from="active" />
                 </statetype>
@@ -313,7 +302,7 @@
             </group>
 
             <group name="statusbargroup">
-                <area>20,300,1400,60</area>
+                <area>20,300,1175,60</area>
 
                 <imagetype name="autoexpire">
                     <filename>type/autoexpire.png</filename>
@@ -421,13 +410,14 @@
                 </statetype>
 
                 <textarea name="filesize_str" from="basetextarea">
-                    <area>555,0,253,45</area>
+                    <area>510,0,180,40</area>
                     <align>vcenter,left</align>
                     <font>basesmallgrey</font>
+                    <minsize vanish="yes">0,0</minsize>
                 </textarea>
 
                 <textarea name="freereport" from="basetextarea">
-                    <area>823,0,450,50</area>
+                    <area>700,0,475,40</area>
                     <align>vcenter,left</align>
                     <font>basesmallgrey</font>
                     <template>%1</template>
@@ -489,7 +479,7 @@
         </group>
 
         <clock name="clock">
-            <area>1350,1000,550,50</area>
+            <area>1250,1016,650,50</area>
             <font>clock</font>
             <align>right</align>
             <template>%DATE%, %TIME%</template>
