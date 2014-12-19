@@ -653,7 +653,7 @@
                         <align>hcenter,top</align>
                     </textarea>
                     <textarea name="title" depends="childcount">
-                        <area>10,225,273,36</area>
+                        <area>15,225,255,72</area>
                         <font>basesmallblackoutline</font>
                         <multiline>yes</multiline>
                         <align>hcenter,top</align>
@@ -695,7 +695,7 @@
                         <fill color="#000000" alpha="255"/>
                     </shape>
                     <shape name="buttonbackground3" depends="!screenshot|childcount">
-                        <fill color="#191919" alpha="255"/>
+                        <fill color="#303030" alpha="255"/>
                     </shape>
                     <imagetype name="coverart" depends="!screenshot&amp;!childcount">
                         <alpha>255</alpha>
