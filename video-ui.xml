@@ -666,14 +666,6 @@
                     </textarea>
                     <statetype name="nodetype">
                         <area>100%-100,100%-100,75,75</area>
-                        <state name="subfolder">
-                            <imagetype name="icon">
-                                <area>0,0,75,75</area>
-                                <filename>folder_6_256x256x32.png</filename>
-                                <preserveaspect>yes</preserveaspect>
-                                <alpha>200</alpha>
-                            </imagetype>
-                        </state>
                         <state name="upfolder">
                             <imagetype name="icon">
                                 <area>10,0,65,75</area>
@@ -683,7 +675,7 @@
                         </state>
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
-                        <area>100%-100,100%-70,75,30</area>
+                        <area>190,300,75,30</area>
                         <alpha>255</alpha>
                         <font>basesmallblackoutline</font>
                         <align>center</align>
