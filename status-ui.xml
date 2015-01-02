@@ -106,9 +106,10 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="log" from="basebuttonlist2">
+        <buttonlist name="log" from="basebuttonlist">
             <area>45,217,1800,675</area>
             <buttonarea>0,0,1755,660</buttonarea>
+            <spacing>10</spacing>
 
             <statetype name="upscrollarrow">
                 <position>1785,-12</position>
