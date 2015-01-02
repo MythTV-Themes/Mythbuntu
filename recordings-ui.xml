@@ -25,7 +25,7 @@
 
         <group name="groupgroup" depends="!coverart">
 
-            <area>10,10,480,696</area>
+            <area>10,10,480,703</area>
 
             <!-- <animation trigger="AboutToShow"> -->
             <!--         <section duration="500"> -->
@@ -44,8 +44,8 @@
 
             <buttonlist name="groups">
                 <area>10,10,450,686</area>
-                <buttonarea>0,7,450,696</buttonarea>
-                <spacing>15</spacing>
+                <buttonarea>0,0,450,696</buttonarea>
+                <spacing>10</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
                 <!-- <scrollstyle>center</scrollstyle> -->
@@ -61,7 +61,7 @@
                             <cornerradius>90</cornerradius>
                         </shape> 
                         <textarea name="name">
-                            <area>15,-1,100%,60</area>
+                            <area>25,-1,100%,60</area>
                             <font>baserecordingsmediumgrey</font>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
@@ -74,12 +74,6 @@
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>90</cornerradius>
                         </shape> 
-                        <textarea name="name">
-                            <area>15,-1,100%,60</area>
-                            <font>baserecordingsmedium</font>
-                            <cutdown>yes</cutdown>
-                            <align>left,vcenter</align>
-                        </textarea>
                     </state>
                     <state name="inactive" from="active">
                     </state>
@@ -112,7 +106,7 @@
         </group>
 
         <group name="coverartgroup">
-            <area>10,10,480,696</area>
+            <area>10,10,480,703</area>
             <minsize vanish="yes">100%,100%</minsize>
 
             <!-- <animation trigger="AboutToShow"> -->
@@ -132,7 +126,7 @@
             </shape>
 
             <imagetype name="coverart">
-                <area>10,10,460,676</area>
+                <area>10,5,460,696</area>
                 <preserveaspect>yes</preserveaspect>
                 <minsize vanish="yes">100%,100%</minsize>
             </imagetype>
@@ -141,7 +135,7 @@
 
         <group name="recordingsgroup">
 
-            <area>500,10,1410,696</area>
+            <area>500,10,1410,703</area>
             
             <!-- <animation trigger="AboutToShow"> -->
             <!--         <section duration="500"> -->
@@ -160,8 +154,8 @@
 
             <buttonlist name="recordings">
                 <area>10,10,1370,686</area>
-                <buttonarea>20,7,1360,696</buttonarea>
-                <spacing>15</spacing>
+                <buttonarea>20,0,1360,696</buttonarea>
+                <spacing>10</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
                 <!-- <scrollstyle>center</scrollstyle> -->
@@ -199,7 +193,7 @@
                         <statetype name="watched">
                             <state name="yes">
                                 <imagetype name="yes">
-                                    <area>20,13,20,20</area>
+                                    <area>15,15,30,30</area>
                                     <filename>type/watched.png</filename>
                                 </imagetype>
                             </state>
@@ -216,7 +210,7 @@
                         <statetype name="playlist">
                             <state name="yes">
                                 <imagetype name="playlistyes">
-                                    <position>-10,10</position>
+                                    <position>-10,15</position>
                                     <filename>shared/playlist_yes.png</filename>
                                 </imagetype>
                             </state>
