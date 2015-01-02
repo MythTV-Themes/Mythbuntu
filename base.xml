@@ -186,7 +186,7 @@
     <!-- Base definition of a shape used as a box background on many screens -->
     <shape name="baseboxbackground">
             <type>roundbox</type>
-            <cornerradius>18</cornerradius>
+            <cornerradius>15</cornerradius>
             <area>0,0,15,15</area>
             <fill color="#000000" alpha="150" />
     </shape>
@@ -294,35 +294,70 @@
     <buttonlist name="basebuttonlist2">
         <area>0,0,1860,525</area>
         <layout>vertical</layout>
-        <spacing>4</spacing>
+        <spacing>7</spacing>
         <wrapstyle>selection</wrapstyle>
         <buttonarea>0,0,1800,525</buttonarea>
         <statetype name="buttonitem">
-            <area>0,0,1800,37</area>
+            <area>0,0,1800,45</area>
             <state name="active">
+                <statetype name="status">
+                    <position>10,10</position>
+                    <state name="disabled">
+                        <imagetype name="statusimage">
+                            <filename>shared/schedule_disabled.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="error">
+                        <imagetype name="statusimage">
+                            <filename>shared/schedule_conflict.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="warning">
+                        <imagetype name="statusimage">
+                            <filename>shared/schedule_other.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="normal">
+                        <imagetype name="statusimage">
+                            <filename>shared/schedule_record.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="running">
+                        <imagetype name="statusimage">
+                            <filename>shared/schedule_recording.png</filename>
+                        </imagetype>
+                    </state>
+                    <state name="marked"></state>
+                </statetype>
                 <!-- <shape name="buttonbackground"> -->
                 <!--     <area>45,0,1743,37</area> -->
                 <!--     <type>roundbox</type> -->
                 <!--     <fill color="#000000" alpha="150" /> -->
                 <!--     <cornerradius>19</cornerradius> -->
                 <!-- </shape> -->
+                <shape name="buttonbackground">
+                    <area>45,0,1743,45</area>
+                    <type>roundbox</type>
+                    <fill color="#666666" alpha="50" />
+                    <cornerradius>90</cornerradius>
+                </shape>
                 <textarea name="buttontext">
-                    <area>52,0,1732,37</area>
+                    <area>52,0,1732,45</area>
                     <align>vcenter</align>
-                            <font state="disabled">baserecordingsmediumblue</font>
-                            <font state="error">baserecordingsmediumbrightred</font>
+                            <font state="error">bbaserecordingsmediumbrightred</font>
                             <font state="warning">baserecordingsmediumyellow</font>
                             <font state="normal">baserecordingsmediumgrey</font>
                             <font state="running">baserecordingsmediumgreen</font>
-                            <font state="marked"></font>
+                            <font state="marked">baserecordingsmediumgrey</font>
+                            <font state="disabled">baserecordingsmediumgrey</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
                 <shape name="selectbar">
-                    <area>45,0,1743,37</area>
+                    <area>45,0,1743,45</area>
                     <type>roundbox</type>
                     <fill color="#666666" alpha="150" />
-                    <cornerradius>19</cornerradius>
+                    <cornerradius>90</cornerradius>
                 </shape>
                 <textarea name="buttontext">
                     <font>basesmall</font>
