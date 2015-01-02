@@ -1719,38 +1719,38 @@
 
         </group>
 
-        <buttonlist name="proglistlist" from="basebuttonlist2">
-            <area>45,120,1830,540</area>
-            <buttonarea>0,12,1800,525</buttonarea>
-            <spacing>13</spacing>
-            <statetype name="buttonitem">
-                <area>0,0,1800,37</area>
-                <state name="active">
-                    <textarea name="shortstarttimedate" from="buttontext">
-                        <area>67,0,349,36</area>
-                        <font>basesmallgrey</font>
-                    </textarea>
-                    <textarea name="channel" from="shortstarttimedate">
-                        <area>439,0,270,36</area>
-                    </textarea>
-                    <textarea name="titlesubtitle" from="shortstarttimedate">
-                        <area>732,0,985,36</area>
-                        <template>%TITLESUBTITLE% %YEARSTARS%</template>
-                    </textarea>
-                    <textarea name="card" from="shortstarttimedate">
-                        <area>1740,0,52,36</area>
-                    </textarea>
-                </state>
-                <state name="selectedactive" from="active" />
-                <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>1785,0</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>1785,483</position>
-            </statetype>
-        </buttonlist>
+    <buttonlist name="proglistlist" from="basebuttonlist2">
+        <area>45,120,1830,560</area>
+        <buttonarea>0,12,1800,545</buttonarea>
+        <spacing>10</spacing>
+        <statetype name="buttonitem">
+            <area>0,0,1800,45</area>
+            <state name="active">
+                <textarea name="shortstarttimedate" from="buttontext">
+                    <area>67,0,349,45</area>
+                    <font>basesmallgrey</font>
+                </textarea>
+                <textarea name="channel" from="shortstarttimedate">
+                    <area>439,0,270,45</area>
+                </textarea>
+                <textarea name="titlesubtitle" from="shortstarttimedate">
+                    <area>732,0,985,45</area>
+                    <template>%TITLESUBTITLE% %YEARSTARS%</template>
+                </textarea>
+                <textarea name="card" from="shortstarttimedate">
+                    <area>1740,0,52,45</area>
+                </textarea>
+            </state>
+            <state name="selectedactive" from="active" />
+            <state name="selectedinactive" from="active" />
+        </statetype>
+        <statetype name="upscrollarrow">
+            <position>1795,0</position>
+        </statetype>
+        <statetype name="downscrollarrow">
+            <position>1795,523</position>
+        </statetype>
+    </buttonlist>
 
         <group name="idstatusgroup">
 

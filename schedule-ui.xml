@@ -702,17 +702,17 @@
         </textarea>
 
         <shape name="list_background" from="baseboxbackground">
-            <area>22,120,1875,540</area>
+            <area>22,120,1875,560</area>
         </shape>
 
-        <buttonlist name="schedules" from="proglistlist" />
+        <buttonlist name="schedules" from="proglistlist"/>
 
         <group name="details" from="detailsgroup">
-            <position>180,670</position>
+            <position>180,690</position>
         </group>
 
         <group name="idstatus" from="idstatusgroup">
-            <position>180,980</position>
+            <position>180,1000</position>
         </group>
 
         <textarea name="norecordings_info">
