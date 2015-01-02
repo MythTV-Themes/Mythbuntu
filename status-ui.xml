@@ -9,13 +9,6 @@
            <cornerradius>45</cornerradius>
        </shape>
 
-        <clock name="clock">
-            <area>1350,1000,550,50</area>
-            <font>clock</font>
-            <align>right</align>
-            <template>%DATE%, %TIME%</template>
-        </clock>
-
         <shape name="infobox">
             <area>-15,892,1950,555</area>
             <type>box</type>
@@ -126,12 +119,19 @@
         <!-- </textarea> -->
 
         <textarea name="helptext" from="basetextarea">
-            <area>97,900,1777,270</area>
+            <area>97,900,1777,150</area>
             <value>This screen displays the status of various system components</value>
             <multiline>yes</multiline>
             <font>basesmallgrey</font>
             <align>top</align>
         </textarea>
+        
+        <clock name="clock">
+            <area>1250,1016,650,50</area>
+            <font>clock</font>
+            <align>right</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
 
     </window>
 
