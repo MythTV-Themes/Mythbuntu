@@ -134,7 +134,6 @@
         </group>
 
         <group name="recordingsgroup">
-
             <area>500,10,1410,703</area>
             
             <!-- <animation trigger="AboutToShow"> -->
@@ -153,8 +152,8 @@
             </shape>
 
             <buttonlist name="recordings">
-                <area>10,10,1370,686</area>
-                <buttonarea>20,0,1360,696</buttonarea>
+                <area>10,10,1410,686</area>
+                <buttonarea>20,0,1410,696</buttonarea>
                 <spacing>10</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
