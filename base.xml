@@ -169,6 +169,10 @@
         <color>#002966</color>
     </fontdef>
 
+    <fontdef name="baserecordingsmediumpink" from="baserecordingsmedium">
+        <color>#FF69B4</color>
+    </fontdef>
+
     <fontdef name="clock" from="basesmall">
         <pixelsize>41</pixelsize>
         <color>#bcbcbc</color>
@@ -344,12 +348,7 @@
                 <textarea name="buttontext">
                     <area>52,0,1732,45</area>
                     <align>vcenter</align>
-                            <font state="error">bbaserecordingsmediumbrightred</font>
-                            <font state="warning">baserecordingsmediumyellow</font>
-                            <font state="normal">baserecordingsmediumgrey</font>
-                            <font state="running">baserecordingsmediumgreen</font>
-                            <font state="marked">baserecordingsmediumgrey</font>
-                            <font state="disabled">baserecordingsmediumgrey</font>
+                    <font>baserecordingsmediumgrey</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
@@ -1728,7 +1727,6 @@
             <state name="active">
                 <textarea name="shortstarttimedate" from="buttontext">
                     <area>67,0,349,45</area>
-                    <font>basesmallgrey</font>
                 </textarea>
                 <textarea name="channel" from="shortstarttimedate">
                     <area>439,0,270,45</area>
