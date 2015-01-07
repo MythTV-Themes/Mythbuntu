@@ -460,7 +460,7 @@
                     <!--     <line color="#000000" alpha="255" width="3" /> -->
                     <!--         <cornerradius>9</cornerradius> -->
                     <!-- </shape> -->
-                    <textarea name="channelnumber" from="basetextarea">
+                    <textarea name="buttontext" from="basetextarea">
                         <area>112,1,157,82</area>
                         <font>basesmall</font>
                         <font state="favourite">basesmallyellow</font>
@@ -469,7 +469,6 @@
                         <cutdown>no</cutdown>
                         <align>allcenter</align>
                         <multiline>yes</multiline>
-                        <template>%CHANNELNUMBER|\n%%CALLSIGN%</template>
                   </textarea>
                 </state>
                 <state name="selectedactive" from="active"/>
