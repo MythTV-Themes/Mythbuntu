@@ -1736,7 +1736,7 @@
                     <template>%TITLESUBTITLE% %YEARSTARS%</template>
                 </textarea>
                 <textarea name="card" from="shortstarttimedate">
-                    <area>1740,0,52,45</area>
+                    <area>1740,0,57,45</area>
                 </textarea>
             </state>
             <state name="selectedactive" from="active" />
