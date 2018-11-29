@@ -23,7 +23,7 @@
         <!--     <value>Watch Recordings</value> -->
         <!-- </textarea> -->
 
-        <group name="groupgroup" depends="!coverart">
+        <group name="groupgroup">
 
             <area>10,10,480,703</area>
 
