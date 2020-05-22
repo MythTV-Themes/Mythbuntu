@@ -536,7 +536,7 @@
                     </statetype>
                     <textarea name="childcount" from="basetextarea">
                         <area>55,145,60,30</area>
-                        <font>basesmallblackoutline</font>
+                        <font>basesmallgrey</font>
                         <align>right</align>
                     </textarea>
                 </state>
@@ -648,19 +648,19 @@
                     </imagetype>
                     <textarea name="title" depends="screenshot&amp;!childcount">
                         <area>10,30,273,200</area>
-                        <font>basesmallblackoutline</font>
+                        <font>basesmallgrey</font>
                         <multiline>yes</multiline>
                         <align>hcenter,top</align>
                     </textarea>
                     <textarea name="title" depends="childcount">
                         <area>15,225,255,72</area>
-                        <font>basesmallblackoutline</font>
+                        <font>basesmallgrey</font>
                         <multiline>yes</multiline>
                         <align>hcenter,top</align>
                     </textarea>
                     <textarea name="subtitle" depends="screenshot">
                         <area>10,30,273,100</area>
-                        <font>basesmallblackoutline</font>
+                        <font>basesmallgrey</font>
                         <multiline>yes</multiline>
                         <align>hcenter,top</align>
                     </textarea>
@@ -677,12 +677,12 @@
                     <textarea name="childcount" from="basetextarea">
                         <area>190,300,75,30</area>
                         <alpha>255</alpha>
-                        <font>basesmallblackoutline</font>
+                        <font>basesmallgrey</font>
                         <align>center</align>
                     </textarea>
                     <textarea name="s##e##">
                         <area>10,350,273,50</area>
-                        <font>basesmallblackoutline</font>
+                        <font>basesmallgrey</font>
                         <align>hcenter,top</align>
                     </textarea>
                 </state>
