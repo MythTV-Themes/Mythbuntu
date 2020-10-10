@@ -66,6 +66,7 @@
             <area>60,690,1530,105</area>
             <font>baselarge</font>
             <multiline>no</multiline>
+            <cutdown>none</cutdown>
             <scroll direction="left"/>
         </textarea>
 
