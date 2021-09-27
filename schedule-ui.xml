@@ -1989,7 +1989,7 @@
         </group>
 
         <spinbox name="priority" from="basewidespinbox">
-            <position>565,465</position>
+            <position>565,430</position>
             <template type="negative">Reduce priority by %n</template>
             <template type="zero">Normal recording priority</template>
             <template type="positive">Raise priority by %n</template>
@@ -1997,12 +1997,12 @@
         </spinbox>
 
         <buttonlist name="input" from="basewideselector">
-            <position>565,532</position>
+            <position>565,492</position>
             <helptext></helptext>
         </buttonlist>
 
         <spinbox name="startoffset" from="basewidespinbox">
-            <position>565,600</position>
+            <position>565,554</position>
             <template type="negative">Start recording %n minute(s) late</template>
             <template type="zero">Start recording on time</template>
             <template type="positive">Start recording %n minute(s) early</template>
@@ -2010,7 +2010,7 @@
         </spinbox>
 
         <spinbox name="endoffset" from="basewidespinbox">
-            <position>565,667</position>
+            <position>565,616</position>
             <template type="negative">End recording %n minute(s) early</template>
             <template type="zero">End recording on time</template>
             <template type="positive">End recording %n minute(s) late</template>
@@ -2018,11 +2018,16 @@
         </spinbox>
 
         <buttonlist name="dupmethod" from="basewideselector">
-            <position>565,735</position>
+            <position>565,678</position>
             <helptext></helptext>
         </buttonlist>
 
         <buttonlist name="dupscope" from="basewideselector">
+            <position>565,740</position>
+            <helptext></helptext>
+        </buttonlist>
+
+        <buttonlist name="autoextend" from="basewideselector">
             <position>565,802</position>
             <helptext></helptext>
         </buttonlist>
