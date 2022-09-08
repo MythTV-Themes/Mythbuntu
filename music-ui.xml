@@ -176,6 +176,82 @@
 
     </window>
 
+    <!-- some copy-n-paste from playlistview above for similar layout -->
+    <window name="trackslyricsview">
+        <shape name="clockbox">
+            <area>1200,15,690,90</area>
+            <type>roundbox</type>
+            <fill color="#000000" alpha="150" />
+            <line color="#FFFFFF" alpha="0" width="0" />
+            <cornerradius>45</cornerradius>
+        </shape>
+        <clock name="clock">
+            <area>1260,15,570,90</area>
+            <font>baselarge</font>
+            <align>vcenter,right</align>
+            <template>%DATE%, %TIME%</template>
+        </clock>
+        
+        <shape name="playlist_background" from="basebackground">
+            <area>22,120,1875,577</area>
+            <type>roundbox</type>
+            <cornerradius>15</cornerradius>
+        </shape>
+
+        <buttonlist name="lyrics_list">
+            <area>40,135,1840,550</area>
+            <buttonarea>0,0,115,550</buttonarea>
+            <spacing>20</spacing>
+            <layout>vertical</layout>
+            <arrange>stack</arrange>
+            <showarrow>yes</showarrow>
+            <searchposition>-1,410</searchposition>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,100%,30</area>
+                    <textarea name="buttontext">
+                        <area>0,0,100%,100%</area>
+                        <align>left,vcenter</align>
+                        <font>basemedium</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <textarea name="buttontext">
+                        <area>0,0,100%,100%</area>
+                        <align>left,vcenter</align>
+                        <font>basemediumyellow</font>
+                    </textarea>
+                </state>
+                <state name="selectedinactive" from="selectedactive">
+
+                </state>
+            </statetype>
+        </buttonlist>
+
+        <statetype name="loading_state">
+            <position>900,350</position>
+            <state name="off"></state>
+            <state name="on">
+                <imagetype name="loadinganimation">
+                    <position>0,0</position>
+                    <filepattern low="0" high="24">busyimages/%1.png</filepattern>
+                    <delay>150</delay>
+                </imagetype>
+            </state>
+        </statetype>
+
+        <textarea name="status_text" from="basetextarea">
+            <area>100,370,1080,50</area>
+            <font>basemediumyellow</font>
+            <align>center</align>
+        </textarea>
+
+        <group name="trackinfopanel" from="baseinfopanel">
+            <area>0,712,1875,352</area>
+        </group>
+
+    </window>
+
     <window name="playlisteditorview_tree" include="music-base.xml">
 
         <shape name="browser_background" from="basebackground">
