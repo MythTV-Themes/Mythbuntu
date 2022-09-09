@@ -245,12 +245,17 @@
             <font>small</font>
             <area>15,75,1534,45</area>
             <align>hcenter,bottom</align>
-            <template>%DESCRIPTION% %VALUE%%UNITS%</template>
+            <template>%PLAYEDTIME% of %TOTALTIME% %(|REMAININGTIME|)%%(|BEHINDTIME|)%</template>
+        </textarea>
+        <textarea name="recordedtime">
+            <font>small</font>
+            <area>15,15,1534,45</area>
+            <align>right,top</align>
         </textarea>
         <clock name="clock">
-            <area>1249,75,300,45</area>
+            <area>15,75,1534,45</area>
             <font>basesmallgrey</font>
-            <template>%TIME%</template>
+            <template>%DATE%, %TIME%</template>
             <align>right,bottom</align>
         </clock>
         <progressbar name="position">
