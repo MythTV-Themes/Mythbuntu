@@ -515,28 +515,28 @@
             </textarea>
 
             <textarea name="artist_label" from="quality_label">
-                <position>0,82</position>
+                <position>0,62</position>
                 <value>Artist:</value>
             </textarea>
 
             <textarea name="album_label" from="quality_label">
-                <position>0,165</position>
+                <position>0,135</position>
                 <value>Album:</value>
             </textarea>
 
             <textarea name="genre_text" from="quality_label">
-                <position>0,247</position>
+                <position>0,207</position>
                 <value>Genre:</value>
             </textarea>
 
-            <textarea name="comp_label" from="quality_label">
-                <position>562,330</position>
-                <value>Multi-Artist:</value>
+            <textarea name="year_label" from="quality_label">
+                <position>0,280</position>
+                <value>Year:</value>
             </textarea>
 
-            <textarea name="year_label" from="quality_label">
-                <position>0,333</position>
-                <value>Year:</value>
+            <textarea name="comp_label" from="quality_label">
+                <position>562,350</position>
+                <value>Multi-Artist:</value>
             </textarea>
 
             <!-- edits -->
@@ -554,31 +554,31 @@
             </button>
 
             <textedit name="album" from="basetextedit">
-                <position>420,165</position>
+                <position>420,155</position>
             </textedit>
 
             <button name="searchalbum" from="basesearchbutton">
-                <position>997,175</position>
+                <position>997,161</position>
             </button>
 
             <textedit name="genre" from="basetextedit">
-                <position>420,247</position>
+                <position>420,227</position>
             </textedit>
 
             <button name="searchgenre" from="basesearchbutton">
-                <position>997,258</position>
+                <position>997,233</position>
             </button>
 
             <textedit name="year" from="basetextedit">
-                <area>420,333,150,75</area>
+                <area>420,298,150,75</area>
             </textedit>
 
             <checkbox name="compilation" from="basecheckbox">
-                <position>997,345</position>
+                <position>997,370</position>
             </checkbox>
 
             <button name="switch" from="basebutton">
-                <area>1087,337,300,67</area>
+                <area>1087,363,300,67</area>
                 <value>Switch Titles</value>
             </button>
 
@@ -601,7 +601,7 @@
         </textarea>
 
         <textarea name="length_label" from="track_label">
-            <area>1665,465,150,45</area>
+            <area>1615,465,200,45</area>
             <align>right,bottom</align>
             <value>Length</value>
         </textarea>
@@ -621,7 +621,7 @@
                 <state name="active">
                     <area>0,0,100%,52</area>
                     <statetype name="buttoncheck">
-                        <position>15,12</position>
+                        <position>0,12</position>
                         <state type="off">
                             <imagetype name="checkoff">
                                 <filename>lb-check-empty.png</filename>
@@ -655,12 +655,12 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,1740,52</area>
+                        <area>0,0,1700,52</area>
                     </shape>
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,1740,52</area>
+                        <area>0,0,1700,52</area>
                     </shape>
                 </state>
             </statetype>
@@ -2152,7 +2152,7 @@
                     </textarea>
 
                     <textarea name="length">
-                        <area>1665,0,150,69</area>
+                        <area>1660,0,150,69</area>
                         <align>right,vcenter</align>
                         <font>basesmall</font>
                     </textarea>
