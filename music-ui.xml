@@ -282,7 +282,7 @@
         </textarea>
 
         <buttontree name="playlist_tree">
-            <area>45,90,1830,465</area>
+            <area>45,90,1830,470</area>
             <numlists>3</numlists>
             <spacing>10</spacing>
             <buttonlist name="listtemplate" from="basetreebuttonlist" />
