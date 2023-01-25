@@ -230,7 +230,7 @@
                 </textarea>
 
                 <textarea name="artist" from="buttontext">
-                    <area>1050,0,525,52</area>
+                    <area>1050,0,600,52</area>
                     <font>basesmall</font>
                     <align>left,vcenter</align>
                 </textarea>
@@ -259,35 +259,40 @@
                 </shape>
                 <textarea name="title" from="buttontext">
                     <area>225,0,780,52</area>
-                    <align>left,top</align>
+                    <align>left,vcenter</align>
                     <font>basesmall</font>
                 </textarea>
 
                 <textarea name="artist" from="buttontext">
-                    <area>1050,0,525,52</area>
+                    <area>1050,0,600,52</area>
                     <font>basesmall</font>
-                    <align>left,top</align>
+                    <align>left,vcenter</align>
                 </textarea>
                 <textarea name="tracknum" from="artist">
                     <area>135,0,75,52</area>
-                    <align>right,top</align>
+                    <align>right,vcenter</align>
                     <template>%1 -</template>
                 </textarea>
                 <textarea name="length" from="artist">
                     <area>1560,0,180,52</area>
-                    <align>right,top</align>
+                    <align>right,vcenter</align>
                     <font>basesmall</font>
                 </textarea>
 
                 <textarea name="album" from="buttontext">
                     <area>225,45,780,45</area>
                     <font>basesmall</font>
-                    <align>left,top</align>
+                    <align>left,vcenter</align>
                 </textarea>
                 <textarea name="genre" from="buttontext">
                     <area>1050,45,450,45</area>
                     <font>basesmall</font>
-                    <align>left,top</align>
+                    <align>left,vcenter</align>
+                </textarea>
+                <textarea name="year" from="buttontext">
+                    <area>1520,45,330,45</area>
+                    <font>basesmall</font>
+                    <align>left,vcenter</align>
                 </textarea>
 
                 <statetype name="ratingstate" from="baseratingstate">
@@ -298,8 +303,8 @@
                     <font>basesmall</font>
                 </textarea>
                 <textarea name="playcount" from="buttontext">
-                    <area>1410,90,330,45</area>
-                    <align>right,top</align>
+                    <area>1520,90,330,45</area>
+                    <align>left,vcenter</align>
                     <font>basesmall</font>
                     <template>Played %1 times</template>
                 </textarea>
@@ -314,14 +319,13 @@
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
 
-
                 <textarea name="title" from="buttontext">
                     <area>225,0,780,52</area>
                     <align>left,top</align>
                     <font>basesmall</font>
                 </textarea>
                 <textarea name="artist" from="buttontext">
-                    <area>1050,0,525,52</area>
+                    <area>1050,0,600,52</area>
                     <font>basesmall</font>
                     <align>left,top</align>
                 </textarea>
@@ -673,8 +677,10 @@
 
     </group>
 
+    <!-- common bits now shared by music-ui and stream-ui -->
+
     <group name="baseinfopanel">
-        <area>0,600,1920,352</area>
+        <area>0,712,1920,352</area>
 
         <shape name="track_info_background" from="basebackground">
             <area>22,0,1875,352</area>
@@ -685,35 +691,45 @@
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>345,7,1350,51</area>
+            <area>345,7,1300,51</area>
             <font>baselarge</font>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>345,67,1350,51</area>
+            <area>345,67,1255,51</area>
+            <font>basemedium</font>
+        </textarea>
+
+        <textarea name="year" from="basetextarea">
+            <area>1500,67,145,51</area>
             <font>basemedium</font>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>345,120,1350,51</area>
+            <area>345,120,1300,51</area>
             <font>basemedium</font>
         </textarea>
 
-        <statetype name="ratingstate" from="baseratingstate">
-            <position>345,172</position>
-        </statetype>
+        <!-- ratingstate moved to music-ui, not stream-ui -->
 
         <textarea name="nexttitle" from="basetextarea">
             <font>basesmall</font>
-            <area>345,217,1260,52</area>
-            <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
+            <area>345,217,1300,52</area>
+            <template>Next: %NEXTTITLE% \ %NEXTARTIST% \ %NEXTALBUM%</template>
         </textarea>
 
-        <progressbar name="progress" from="basetrackprogress">
+        <progressbar name="progress" from="basetrackprogress" depends="!channel">
+            <position>345,307</position>
+        </progressbar>
+        <progressbar name="bufferprogress" from="basetrackprogress" depends="channel">
             <position>345,307</position>
         </progressbar>
 
-        <textarea name="time" from="basetextarea">
+        <textarea name="time" from="basetextarea" depends="!channel">
+            <area>345,262,262,52</area>
+            <font>basesmall</font>
+        </textarea>
+        <textarea name="bufferstatus" from="basetextarea" depends="channel">
             <area>345,262,262,52</area>
             <font>basesmall</font>
         </textarea>
@@ -751,9 +767,8 @@
             <area>52,19,234,232</area>
         </imagetype>
 
-        <group name="musiccontrols" from="basemusiccontrols">
-            <position>1027,277</position>
-        </group>
+        <!-- musiccontrols moved to music-ui and stream-ui -->
+
     </group>
 
     <group name="baseplayliststatusgroup">
