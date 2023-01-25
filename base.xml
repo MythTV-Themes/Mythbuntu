@@ -201,6 +201,38 @@
         <fill color="#FFFFFF" alpha="50" />
     </shape>
 
+    <!-- Base definition of a vertical scrollbar -->
+    <!-- moved earlier since basebuttonlist3 below needs this! -->
+
+    <scrollbar name="basevertscrollbar">
+        <area>1114,0,10,970</area>
+        <layout>vertical</layout>
+        <hidedelay>0</hidedelay>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <line color="#000000" alpha="0" width="0" />
+            <fill color="#000000" alpha="0"/>
+            <cornerradius>5</cornerradius>
+        </shape>
+        <shape name="slider">
+            <area>0,0,100%,40</area>
+            <type>roundbox</type>
+            <line color="#ffffff" alpha="50" width="0" />
+            <fill color="#ffffff" alpha="50"/>
+            <cornerradius>5</cornerradius>
+        </shape>
+    </scrollbar>
+
+    <!-- Base definition of a horizontal scrollbar -->
+    <scrollbar name="basehorizscrollbar" from="basevertscrollbar">
+        <area>20,1030,1880,14</area>
+        <layout>horizontal</layout>
+        <shape name="slider">
+            <area>0,0,40,14</area>
+        </shape>
+    </scrollbar>
+
     <buttonlist name="basebuttonlist">
         <area>0,0,450,375</area>
         <layout>vertical</layout>
@@ -376,6 +408,21 @@
         </statetype>
     </buttonlist>
 
+    <!-- scrollbar and transparent item backgrounds -->
+    <buttonlist name="basebuttonlist3" from="basebuttonlist2">
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <scrollbar name="scrollbar" from="basevertscrollbar">
+            <area>100%-10,0,10,100%</area>
+	</scrollbar>
+        <statetype name="buttonitem">
+            <state name="active">
+                <shape name="buttonbackground">
+                    <fill color="#666666" alpha="0" />
+                </shape>
+            </state>
+        </statetype>
+    </buttonlist>
+
     <!-- Base definition of a button -->
     <button name="basebutton">
         <position>0,0</position>
@@ -478,7 +525,7 @@
             <state name="selected">
                 <shape name="selected">
                   <area>0,0,45,45</area>
-                  <fill color="#ffffff" alpha="150" />  
+                  <fill color="#ffffff" alpha="150" />
                 </shape>
                 <imagetype name="background">
                     <position>12,12</position>
@@ -749,6 +796,9 @@
         <area>0,0,562,60</area>
         <layout>horizontal</layout>
         <buttonarea>0,0,532,60</buttonarea>
+        <scrollbar name="scrollbar" from="basehorizscrollbar">
+            <area>0,0,532,10</area>
+        </scrollbar>
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,7,532,45</area>
@@ -1064,7 +1114,7 @@
         <!-- <shape name="background" from="basebackground"> -->
         <!--     <area>15,15,1890,1050</area> -->
         <!-- </shape> -->
-        
+
         <!-- <textarea name="title" from="basetextarea"> -->
         <!--     <area>30,22,1890,75</area> -->
         <!--     <font>baselarge</font> -->
@@ -1463,7 +1513,7 @@
         <shape name="backimg" from="basebackground">
             <area>0,0,870,247</area>
         </shape>
-        
+
         <textarea name="message" from="basetextarea">
             <area>15,12,840,75</area>
             <align>allcenter</align>
@@ -1485,7 +1535,7 @@
         </button>
 
     </window>
-       
+
     <window name="videowindow">
 
         <!-- Copy of MythBusyDialog without zoomin animation and -->
@@ -1680,7 +1730,7 @@
             <shape name="details_background" from="baseboxbackground">
                 <area>0,0,100%,100%</area>
             </shape>
-        
+
             <textarea name="title" from="basetextarea">
                 <area>10,10,1215,67</area>
                 <font>baselarge</font>

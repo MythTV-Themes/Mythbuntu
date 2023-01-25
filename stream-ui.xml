@@ -28,21 +28,15 @@
             <value>Press MENU to add some radio streams to play.</value>
         </textarea>
 
-        <buttonlist name="streamlist" from="basebuttonlist2">
+        <buttonlist name="streamlist" from="basebuttonlist3">
             <area>37,37,1837,369</area>
             <spacing>5</spacing>
             <layout>vertical</layout>
             <arrange>stack</arrange>
-            <showarrow>no</showarrow>
-            <buttonarea>0,0,1837,345</buttonarea>
+            <buttonarea>0,0,100%-10,100%</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,52</area>
-                    <shape name="buttonbackground">
-                      <type>roundbox</type>
-                      <area>0,0,100%,95%</area>
-                      <fill color="#333333" alpha="0" />
-                    </shape>
                     <imagetype name="buttonimage">
                         <area>25,0,52,52</area>
                         <filename>mm_icecast.png</filename>
@@ -111,21 +105,16 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="playedtrackslist" from="basebuttonlist2">
+        <buttonlist name="playedtrackslist" from="basebuttonlist3">
             <area>37,447,1837,233</area>
             <spacing>5</spacing>
             <layout>vertical</layout>
             <arrange>stack</arrange>
             <showarrow>no</showarrow>
-            <buttonarea>0,0,1837,225</buttonarea>
+            <buttonarea>0,0,100%-10,100%</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,52</area>
-                    <shape name="buttonbackground">
-                      <type>roundbox</type>
-                      <area>0,0,100%,95%</area>
-                      <fill color="#333333" alpha="0" />
-                    </shape>
                     <imagetype name="buttonimage">
                         <area>25,0,52,52</area>
                         <filename>mm_icecast.png</filename>
@@ -186,7 +175,7 @@
         <textarea name="album" from="basetextarea">
             <template></template>
         </textarea>
-      
+
        <textarea name="channel" from="basetextarea">
             <area>345,127,1300,51</area>
             <font>basemedium</font>
@@ -408,22 +397,17 @@
             <value></value>
         </textarea>
 
-        <buttonlist name="streamlist" from="basebuttonlist2">
+        <buttonlist name="streamlist" from="basebuttonlist3">
             <area>45,322,1830,750</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
             <arrange>stack</arrange>
             <showarrow>no</showarrow>
             <searchposition>-1,50</searchposition>
-            <buttonarea>0,0,1830,750</buttonarea>
+            <buttonarea>0,0,100%-10,100%</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,100%,54</area>
-                    <shape name="buttonbackground">
-                      <type>roundbox</type>
-                      <area>0,0,100%,95%</area>
-                      <fill color="#333333" alpha="0" />
-                    </shape>
                     <imagetype name="buttonimage">
                         <area>55,0,52,52</area>
                         <filename>mm_icecast.png</filename>
