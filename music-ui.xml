@@ -119,15 +119,11 @@
             <align>vcenter,left</align>
             <value>Listen to Music</value>
         </textarea>
-        
-        <shape name="clockbox">
+
+        <shape name="clockbox" from="titlebox">
             <area>1200,15,690,90</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <line color="#FFFFFF" alpha="0" width="0" />
-            <cornerradius>45</cornerradius>
         </shape>
-        
+
         <clock name="clock">
             <area>1260,15,570,90</area>
             <font>baselarge</font>
@@ -135,7 +131,6 @@
             <template>%DATE%, %TIME%</template>
         </clock>
 
-        
         <shape name="playlist_background" from="basebackground">
             <area>22,120,1875,577</area>
             <type>roundbox</type>
@@ -165,7 +160,12 @@
         </group>
 
         <group name="infopanel" from="baseinfopanel">
-            <area>0,712,1875,352</area>
+            <statetype name="ratingstate" from="baseratingstate">
+                <position>345,190</position>
+            </statetype>
+            <group name="musiccontrols" from="basemusiccontrols">
+                <position>1027,277</position>
+            </group>
         </group>
 
         <!-- <imagetype name="animation"> -->
@@ -191,7 +191,7 @@
             <align>vcenter,right</align>
             <template>%DATE%, %TIME%</template>
         </clock>
-        
+
         <shape name="playlist_background" from="basebackground">
             <area>22,120,1875,577</area>
             <type>roundbox</type>
@@ -200,11 +200,14 @@
 
         <buttonlist name="lyrics_list">
             <area>40,135,1840,550</area>
-            <buttonarea>0,0,115,550</buttonarea>
+            <buttonarea>0,0,100%-10,100%</buttonarea>
+            <scrollbar name="scrollbar" from="basevertscrollbar">
+                <area>100%-10,0,10,100%</area>
+            </scrollbar>
             <spacing>20</spacing>
             <layout>vertical</layout>
             <arrange>stack</arrange>
-            <showarrow>yes</showarrow>
+            <showarrow>no</showarrow>
             <searchposition>-1,410</searchposition>
             <statetype name="buttonitem">
                 <state name="active">
@@ -247,7 +250,12 @@
         </textarea>
 
         <group name="trackinfopanel" from="baseinfopanel">
-            <area>0,712,1875,352</area>
+            <statetype name="ratingstate" from="baseratingstate">
+                <position>345,190</position>
+            </statetype>
+            <group name="musiccontrols" from="basemusiccontrols">
+                <position>1027,277</position>
+            </group>
         </group>
 
     </window>
@@ -274,7 +282,7 @@
         </textarea>
 
         <buttontree name="playlist_tree">
-            <area>45,90,1830,465</area>
+            <area>45,90,1830,470</area>
             <numlists>3</numlists>
             <spacing>10</spacing>
             <buttonlist name="listtemplate" from="basetreebuttonlist" />
@@ -362,7 +370,7 @@
             <area>1605,52,225,45</area>
         </textarea>
 
-        <buttonlist name="tracks_list" from="basebuttonlist2">
+        <buttonlist name="tracks_list" from="basebuttonlist3">
             <area>45,132,1830,420</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
@@ -392,7 +400,7 @@
                         <area>75,0,1635,69</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
-                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
+                        <template>%TITLE% \ %ARTIST% \ %ALBUM%</template>
                     </textarea>
 
                 </state>
@@ -448,10 +456,10 @@
 
     <!-- used in the visualiser screen to show some track details after a track change -->
     <window name="trackinfo_popup">
-        <area>-1,750,1500,285</area>
+        <area>-1,750,1300,285</area>
 
         <shape name="background" from="basebackground">
-            <area>0,0,1500,285</area>
+            <area>0,0,1300,285</area>
             <type>roundbox</type>
         <fill color="#000000" alpha="150" />
         <line color="#222222" alpha="150" width="2" />
@@ -464,33 +472,40 @@
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>270,22,622,51</area>
+            <area>270,22,1030,51</area>
             <font>baselarge</font>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>270,75,622,52</area>
+            <area>270,75,900,51</area>
             <font>basemedium</font>
+        </textarea>
+        <textarea name="year" from="basetextarea">
+          <area>1170,75,130,51</area>
+          <font>basemedium</font>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>270,120,622,52</area>
+            <area>270,128,900,51</area>
             <font>basemedium</font>
         </textarea>
 
-        <statetype name="ratingstate" from="baseratingstate">
-            <position>270,172</position>
-        </statetype>
-
-<!--
-        <textarea name="length" from="basetextarea">
-            <area>255,187,277,37</area>
-        </textarea>
--->
         <textarea name="nexttitle" from="basetextarea">
-            <area>270,217,1200,37</area>
-            <template>Next: %NEXTTITLE% by %NEXTARTIST%</template>
+            <area>270,217,1030,37</area>
+            <template>Next: %NEXTTITLE% \ %NEXTARTIST% \ %NEXTALBUM%</template>
         </textarea>
+        <textarea name="url" from="basetextarea" depends="!nexttitle">
+            <area>270,217,1030,37</area>
+        </textarea>
+
+        <textarea name="length" from="basetextarea" depends="nexttitle">
+            <area>1170,128,130,51</area>
+            <font>basemedium</font>
+        </textarea>
+
+        <statetype name="ratingstate" from="baseratingstate" depends="nexttitle">
+            <position>270,187</position>
+        </statetype>
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
@@ -610,7 +625,7 @@
             <area>60,510,1800,450</area>
         </shape>
 
-        <buttonlist name="tracks" from="basebuttonlist2">
+        <buttonlist name="tracks" from="basebuttonlist3">
             <area>90,540,1740,405</area>
             <buttonarea>0,0,1740,375</buttonarea>
             <spacing>0</spacing>
@@ -1482,6 +1497,9 @@
         <buttonlist name="coverartlist">
             <area>322,82,270,915</area>
             <buttonarea>0,0,255,832</buttonarea>
+            <scrollbar name="scrollbar" from="basevertscrollbar">
+                <area>100%-10,0,10,100%</area>
+            </scrollbar>
             <layout>grid</layout>
             <spacing>5</spacing>
             <statetype name="buttonitem">
@@ -1633,7 +1651,7 @@
             <value>Of The Following Conditions</value>
         </textarea>
 
-        <buttonlist name="criterialist" from="basebuttonlist2">
+        <buttonlist name="criterialist" from="basebuttonlist3">
             <area>300,405,1200,315</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
@@ -1951,6 +1969,9 @@
             <arrange>stack</arrange>
             <showarrow>no</showarrow>
             <buttonarea>0,0,630,225</buttonarea>
+            <scrollbar name="scrollbar" from="basevertscrollbar">
+                <area>100%-10,0,10,100%</area>
+            </scrollbar>
             <statetype name="buttonitem">
                 <state name="active">
                     <area>0,0,630,69</area>
@@ -2128,7 +2149,7 @@
             <fill color="#000000" alpha="50" />
         </shape>
 
-        <buttonlist name="tracklist" from="basebuttonlist2">
+        <buttonlist name="tracklist" from="basebuttonlist3">
             <area>45,90,1830,975</area>
             <spacing>2</spacing>
             <layout>vertical</layout>
@@ -2148,7 +2169,7 @@
                         <area>75,0,1560,69</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
-                        <template>%TITLE% by %ARTIST% on %ALBUM%</template>
+                        <template>%TITLE% \ %ARTIST% \ %ALBUM%</template>
                     </textarea>
 
                     <textarea name="length">
