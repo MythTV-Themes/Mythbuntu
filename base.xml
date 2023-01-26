@@ -27,6 +27,10 @@
         <shadowalpha>64</shadowalpha>
     </fontdef>
 
+    <fontdef name="basesmallyellowdrop" from="basesmalldrop">
+        <color>#FFFF33</color>
+    </fontdef>
+
     <fontdef name="basemedium" from="basesmall">
         <pixelsize>41</pixelsize>
     </fontdef>
@@ -283,11 +287,11 @@
             <state name="selectedactive" from="active">
                 <shape name="buttonbackground">
                     <type>roundbox</type>
-                    <fill color="#ffffff" alpha="50" />
+                    <fill color="#ffffff" alpha="100" />
                     <cornerradius>22</cornerradius>
                 </shape>
                 <textarea name="buttontext">
-                    <font>basesmall</font>
+                    <font>basesmallyellowdrop</font>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active">
