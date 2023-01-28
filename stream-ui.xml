@@ -208,7 +208,7 @@
     <window name="editstreammetadata">
 
         <textarea name="title" from="basetextarea">
-            <area>22,7,1200,75</area>
+            <area>22,7,1200,45</area>
             <font>baselarge</font>
             <value>Add/Edit Music Stream</value>
         </textarea>
@@ -241,7 +241,7 @@
             <value>Description:</value>
         </textarea>
         <textedit name="descriptionedit" from="broadcasteredit">
-            <area>420,240,1455,75</area>
+            <area>420,240,1360,75</area>
         </textedit>
 
         <textarea name="urllabel" from="broadcasterlabel">
@@ -339,7 +339,7 @@
     <window name="searchstream">
 
         <textarea name="title" from="basetextarea">
-            <area>22,7,1200,75</area>
+            <area>22,7,1200,45</area>
             <font>baselarge</font>
             <value>Search for Music Stream</value>
         </textarea>
