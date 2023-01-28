@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 
 <mythuitheme>
@@ -417,7 +417,7 @@
         <buttonarea>0,0,100%,100%</buttonarea>
         <scrollbar name="scrollbar" from="basevertscrollbar">
             <area>100%-10,0,10,100%</area>
-	</scrollbar>
+        </scrollbar>
         <statetype name="buttonitem">
             <state name="active">
                 <shape name="buttonbackground">
@@ -916,10 +916,11 @@
     <textedit name="basetextedit">
         <area>0,0,562,45</area>
         <statetype name="background">
+            <area>0,0,100%,45</area>
             <state name="active">
-                <area>0,0,562,45</area>
+                <area>0,0,100%,45</area>
                 <shape name="textbackground">
-                    <area>0,0,532,45</area>
+                    <area>0,0,100%,45</area>
                     <type>roundbox</type>
                     <cornerradius>22</cornerradius>
                     <fill color="#666666" alpha="175" />
@@ -936,7 +937,7 @@
             <filename>cursor.png</filename>
         </imagetype>
         <textarea name="text">
-            <area>37,0,457,45</area>
+            <area>35,0,100%-45,45</area>
             <align>vcenter,left</align>
             <font>basesmallblack</font>
         </textarea>
