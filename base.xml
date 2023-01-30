@@ -243,6 +243,9 @@
         <spacing>5</spacing>
         <wrapstyle>selection</wrapstyle>
         <buttonarea>0,0,100%,97%</buttonarea>
+        <scrollbar name="scrollbar" from="basevertscrollbar">
+            <area>100%-10,0,10,100%</area>
+        </scrollbar>
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,0,100%,45</area>
@@ -641,6 +644,9 @@
         <area>0,0,330,60</area>
         <layout>horizontal</layout>
         <buttonarea>0,0,300,60</buttonarea>
+        <scrollbar name="scrollbar" from="basehorizscrollbar">
+            <area>0,0,300,10</area>
+        </scrollbar>
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,7,300,45</area>
@@ -694,6 +700,9 @@
         <area>0,0,150,60</area>
         <layout>horizontal</layout>
         <buttonarea>0,0,120,60</buttonarea>
+        <scrollbar name="scrollbar" from="basehorizscrollbar">
+            <area>0,0,120,10</area>
+        </scrollbar>
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,7,120,45</area>
@@ -747,6 +756,9 @@
         <area>0,0,187,60</area>
         <layout>horizontal</layout>
         <buttonarea>0,0,157,60</buttonarea>
+        <scrollbar name="scrollbar" from="basehorizscrollbar">
+            <area>0,0,157,10</area>
+        </scrollbar>
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,7,157,45</area>
@@ -856,6 +868,9 @@
         <area>0,0,787,60</area>
         <layout>horizontal</layout>
         <buttonarea>0,0,757,60</buttonarea>
+        <scrollbar name="scrollbar" from="basehorizscrollbar">
+            <area>0,0,757,10</area>
+        </scrollbar>
         <statetype name="buttonitem">
             <state name="active">
                 <area>0,7,757,45</area>
@@ -1422,6 +1437,9 @@
             <area>7,105,750,660</area>
             <layout>grid</layout>
             <buttonarea>0,0,750,645</buttonarea>
+            <scrollbar name="scrollbar" from="basehorizscrollbar">
+                <area>0,0,750,10</area>
+            </scrollbar>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">

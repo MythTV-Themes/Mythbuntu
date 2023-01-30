@@ -45,6 +45,9 @@
             <buttonlist name="groups">
                 <area>10,10,450,686</area>
                 <buttonarea>0,0,450,696</buttonarea>
+                <scrollbar name="scrollbar" from="basevertscrollbar">
+                    <area>100%,0,10,100%</area>
+                </scrollbar>
                 <spacing>10</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
@@ -154,6 +157,9 @@
             <buttonlist name="recordings">
                 <area>10,10,1410,686</area>
                 <buttonarea>20,0,1410,696</buttonarea>
+                <scrollbar name="scrollbar" from="basevertscrollbar">
+                    <area>5,0,10,100%</area>
+                </scrollbar>
                 <spacing>10</spacing>
                 <wrapstyle>items</wrapstyle>
                 <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
@@ -750,11 +756,14 @@
         </textarea>
 
         <buttonlist name="iconlist">
-            <area>30,105,990,675</area>
+            <area>30,105,990,615</area>
             <layout>vertical</layout>
             <spacing>4</spacing>
             <wrapstyle>selection</wrapstyle>
             <buttonarea>0,0,990,615</buttonarea>
+            <scrollbar name="scrollbar" from="basevertscrollbar">
+                <area>100%-10,0,10,100%</area>
+            </scrollbar>
             <statetype name="buttonitem">
                 <area>0,0,990,60</area>
                 <state name="active">
