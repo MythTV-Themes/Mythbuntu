@@ -244,7 +244,7 @@
         <wrapstyle>selection</wrapstyle>
         <buttonarea>0,0,100%,97%</buttonarea>
         <scrollbar name="scrollbar" from="basevertscrollbar">
-            <area>100%-10,0,10,100%</area>
+            <area>100%-10,0,10,97%</area>
         </scrollbar>
         <statetype name="buttonitem">
             <state name="active">
@@ -334,6 +334,9 @@
         <spacing>7</spacing>
         <wrapstyle>selection</wrapstyle>
         <buttonarea>0,0,1800,525</buttonarea>
+        <scrollbar name="scrollbar" from="basevertscrollbar">
+            <area>100%-10,0,10,100%</area>
+        </scrollbar>
         <statetype name="buttonitem">
             <area>0,0,1800,45</area>
             <state name="active">
@@ -392,7 +395,7 @@
                     <cornerradius>90</cornerradius>
                 </shape>
                 <textarea name="buttontext">
-                    <font>basesmall</font>
+                    <font>basesmallyellowdrop</font>
                 </textarea>
             </state>
             <state name="selectedinactive" from="active" />
@@ -1437,9 +1440,9 @@
             <area>7,105,750,660</area>
             <layout>grid</layout>
             <buttonarea>0,0,750,645</buttonarea>
-            <scrollbar name="scrollbar" from="basehorizscrollbar">
-                <area>0,0,750,10</area>
-            </scrollbar>
+            <!-- <scrollbar name="scrollbar" from="basehorizscrollbar"> -->
+            <!--     <area>0,0,750,10</area> -->
+            <!-- </scrollbar> -->
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1785,9 +1788,12 @@
 
         </group>
 
-    <buttonlist name="proglistlist" from="basebuttonlist2">
+    <buttonlist name="proglistlist" from="basebuttonlist3">
         <area>45,120,1830,560</area>
         <buttonarea>0,12,1800,545</buttonarea>
+        <!-- <scrollbar name="scrollbar" from="basevertscrollbar"> -->
+        <!--     <area>100%-10,0,10,100%</area> -->
+        <!-- </scrollbar> -->
         <spacing>10</spacing>
         <statetype name="buttonitem">
             <area>0,0,1800,45</area>

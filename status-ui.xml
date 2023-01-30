@@ -35,6 +35,9 @@
             <layout>horizontal</layout>
             <spacing>10</spacing>
             <buttonarea>49,0,1785,60</buttonarea>
+            <!-- <scrollbar name="scrollbar" from="basehorizscrollbar"> -->
+            <!--     <area>49,0,1785,10</area> -->
+            <!-- </scrollbar> -->
             <triggerevent context="Global" action="ESCAPE">UP</triggerevent>
             <statetype name="buttonitem">
                 <area>0,0,270,60</area>
@@ -62,6 +65,9 @@
                         <line color="#FFFFFF" alpha="0" width="0" />
                         <cornerradius>30</cornerradius>
                     </shape>
+                    <textarea name="buttontext">
+                        <font>basesmallyellowdrop</font>
+                    </textarea>
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="list_background">
@@ -103,7 +109,13 @@
             <area>45,217,1800,675</area>
             <buttonarea>0,0,1755,660</buttonarea>
             <spacing>10</spacing>
-
+            <statetype name="buttonitem">
+                <state name="active">
+                    <shape name="buttonbackground">
+                      <fill color="#666666" alpha="0" />
+                    </shape>
+                </state>
+            </statetype>
             <statetype name="upscrollarrow">
                 <position>1785,-12</position>
             </statetype>

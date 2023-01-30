@@ -1204,7 +1204,7 @@
         </textarea>
 
         <textedit name="title_edit" from="basetextedit">
-            <area>15%,142,10%,100%</area>
+            <area>15%,142,80%,100%</area>
         </textedit>
 
         <textarea name="subtitlelabel" from="titlelabel">
@@ -1454,9 +1454,12 @@
                 <area>0,0,100%,100%</area>
             </shape>
 
-            <buttonlist name="alphabet" from="basebuttonlist2">
+            <buttonlist name="alphabet" from="basebuttonlist3">
                 <area>20,20,50,100%-20</area>
                 <buttonarea>0,0,50,100%</buttonarea>
+		<scrollbar name="scrollbar" from="basevertscrollbar">
+		    <area>0,0,10,100%</area>
+		</scrollbar>
                 <scrollstyle>center</scrollstyle>
                 <wrapstyle>items</wrapstyle>
                 <spacing>6</spacing>
@@ -1470,7 +1473,7 @@
                     </state>
                     <state name="selectedactive" from="active">
                         <textarea name="buttontext">
-                            <font>basesmall</font>
+                            <font>basesmallyellowdrop</font>
                         </textarea>
                         <shape name="selectbar">
                             <area>0,0,0,0</area>
@@ -1532,7 +1535,7 @@
                     </state>
                     <state name="selectedactive" from="active">
                         <textarea name="buttontext">
-                            <font>basesmall</font>
+                            <font>basesmallyellowdrop</font>
                         </textarea>
                         <shape name="buttonbackground">
                             <area>0,0,1300,50</area>
