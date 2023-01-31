@@ -56,13 +56,13 @@
                     <!-- Active = the focused pane. Selected = the
                     highlighted entry. -->
                     <state name="active">
-                        <shape name="buttonbackground"> 
-                            <area>0,0,440,60</area> 
+                        <shape name="buttonbackground">
+                            <area>0,0,440,60</area>
                             <type>roundbox</type>
                             <fill color="#666666" alpha="50" />
                             <line color="#FFFFFF" alpha="0" width="0" />
                             <cornerradius>90</cornerradius>
-                        </shape> 
+                        </shape>
                         <textarea name="name">
                             <area>25,-1,100%,60</area>
                             <font>baserecordingsmediumgrey</font>
@@ -71,22 +71,22 @@
                         </textarea>
                     </state>
                     <state name="selectedactive" from="active">
-                        <shape name="buttonbackground">                         
+                        <shape name="buttonbackground">
                             <area>0,0,440,60</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>90</cornerradius>
-                        </shape> 
+                        </shape>
                     </state>
                     <state name="inactive" from="active">
                     </state>
                     <state name="selectedinactive" from="active">
-                        <shape name="buttonbackground">                         
+                        <shape name="buttonbackground">
                             <area>0,0,440,60</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>90</cornerradius>
-                        </shape> 
+                        </shape>
                     </state>
                 </statetype>
                 <statetype name="upscrollarrow">
@@ -133,12 +133,12 @@
                 <preserveaspect>yes</preserveaspect>
                 <minsize vanish="yes">100%,100%</minsize>
             </imagetype>
-            
+
         </group>
 
         <group name="recordingsgroup">
             <area>500,10,1410,703</area>
-            
+
             <!-- <animation trigger="AboutToShow"> -->
             <!--         <section duration="500"> -->
             <!--             <alpha start="0" end="255" easingcurve="OutQuart"/> -->
@@ -280,9 +280,9 @@
                 <!-- Originally 330x186, but rounding meant that one pixel of -->
                 <!-- the grey backing shape would stick out in some direction -->
                 <!-- depending on aspect ratio of preview -->
-                
+
                 <area>20,10,500,280</area>
-                
+
                 <minsize vanish="yes">100%,100%</minsize>
 
                 <!--<shape name="previewshape">
@@ -726,7 +726,7 @@
         <textedit name="description" from="basemultilinetextedit">
             <area>165,367,100%,100%</area>
         </textedit>
-        
+
         <button name="ok" from="basebutton">
             <position>337,652</position>
             <value>OK</value>
