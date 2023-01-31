@@ -242,10 +242,10 @@
             <font>baseextralarge</font>
         </textarea>
 
-        <clock name="time">
-            <area>1425,105,450,35</area>
-            <align>vcenter,right</align>
-            <font>basesmallgrey</font>
+        <clock name="clock">
+            <area>1250,15,650,90</area>
+            <font>clock</font>
+            <align>right,vcenter</align>
             <template>%DATE%, %TIME%</template>
         </clock>
 
@@ -255,7 +255,7 @@
             <multiline>yes</multiline>
             <font>basesmall</font>
             <!--<template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>-->
-            <template>%STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
+            <template>%STARTDATE% %STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
@@ -1056,12 +1056,12 @@
 
     <window name="phrasepopup">
 
-        <animation trigger="AboutToShow">
-            <section duration="125">
-                <alpha start="0" end="255" easingcurve="OutQuart"/>
-                <zoom start="0" end="100" />
-            </section>
-        </animation>
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="125"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <zoom start="0" end="100" /> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <area>-1,-1,750,750</area>
 
@@ -1101,12 +1101,12 @@
 
     <window name="timepopup">
 
-        <animation trigger="AboutToShow">
-            <section duration="125">
-                <alpha start="0" end="255" easingcurve="OutQuart"/>
-                <zoom start="0" end="100" />
-            </section>
-        </animation>
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="125"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <zoom start="0" end="100" /> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <area>-1,-1,870,247</area>
 
@@ -1137,12 +1137,12 @@
 
     <window name="powersearchpopup">
 
-        <animation trigger="AboutToShow">
-            <section duration="125">
-                <alpha start="0" end="255" easingcurve="OutQuart"/>
-                <zoom start="0" end="100" />
-            </section>
-        </animation>
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="125"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <zoom start="0" end="100" /> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <area>-1,-1,750,750</area>
 
@@ -1177,12 +1177,12 @@
 
     <window name="editpowersearchpopup">
 
-        <animation trigger="AboutToShow">
-            <section duration="125">
-                <alpha start="0" end="255" easingcurve="OutQuart"/>
-                <zoom start="0" end="100" />
-            </section>
-        </animation>
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="125"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <zoom start="0" end="100" /> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <area>-1,-1,750,825</area>
 
@@ -1393,12 +1393,12 @@
 
     <window name="searchpopup" from="MythTextInputDialog">
 
-        <animation trigger="AboutToShow">
-            <section duration="125">
-                <alpha start="0" end="255" easingcurve="OutQuart"/>
-                <zoom start="0" end="100" />
-            </section>
-        </animation>
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="125"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <zoom start="0" end="100" /> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <area>442,33,498,255</area>
 
@@ -1441,9 +1441,9 @@
         </textarea>
 
         <clock name="clock">
-            <area>1250,1016,650,50</area>
+            <area>1250,15,650,90</area>
             <font>clock</font>
-            <align>right</align>
+            <align>right,vcenter</align>
             <template>%DATE%, %TIME%</template>
         </clock>
 
@@ -1457,9 +1457,9 @@
             <buttonlist name="alphabet" from="basebuttonlist3">
                 <area>20,20,50,100%-20</area>
                 <buttonarea>0,0,50,100%</buttonarea>
-		<scrollbar name="scrollbar" from="basevertscrollbar">
-		    <area>0,0,10,100%</area>
-		</scrollbar>
+                <scrollbar name="scrollbar" from="basevertscrollbar">
+                    <area>0,0,10,100%</area>
+                </scrollbar>
                 <scrollstyle>center</scrollstyle>
                 <wrapstyle>items</wrapstyle>
                 <spacing>6</spacing>
@@ -1527,7 +1527,7 @@
                     <area>10,0,1300,50</area>
                     <state name="active">
                         <textarea name="buttontext">
-                            <area>10,0,1300,50</area>
+                            <area>20,0,1300,50</area>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
                             <template>%1</template>
@@ -1554,7 +1554,7 @@
                     </state>
                 </statetype>
             </buttonlist>
-            
+
             <buttonlist name="times" from="alphabet">
                 <area>1400,20,420,100%-20</area>
                 <buttonarea>0,0,420,100%</buttonarea>
@@ -1563,7 +1563,7 @@
                     <area>0,0,420,50</area>
                     <state name="active">
                         <textarea name="buttontext">
-                            <area>20,0,380,50</area>
+                            <area>50,0,380,50</area>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
                             <font state="disabled">basesmallblue</font>
@@ -1588,6 +1588,10 @@
 
         <group name="details" from="detailsgroup">
             <position>180,670</position>
+        </group>
+
+        <group name="idstatus" from="idstatusgroup">
+            <position>180,1000</position>
         </group>
 
         <textarea name="help1text" from="basetextarea">
@@ -1616,7 +1620,7 @@
             <value>Channel</value>
             <align>right,vcenter</align>
         </textarea>
-        
+
         <textarea name="lastrecordedlabel" from="basetextarea">
             <area>1222,22,435,60</area>
             <value>Last Recorded</value>
@@ -1669,21 +1673,20 @@
 
         <group name="itemdetail">
             <area>30,825,1860,250</area>
-            
+
             <shape name="detail_background" from="baseboxbackground">
                 <area>0,0,100%,100%</area>
             </shape>
-            
+
             <textarea name="title" from="basetextarea">
                 <area>25,5,1087,60</area>
                 <font>basemedium</font>
             </textarea>
-            
+
             <textarea name="recordingtype" from="basetextarea">
                 <area>25,65,645,45</area>
             </textarea>
-            
-            
+
             <textarea name="scheduleinfo" from="basetextarea">
                 <area>25,110,1110,45</area>
             </textarea>
@@ -1735,9 +1738,9 @@
             <textarea name="recordingprofile" from="recordinggroup">
                 <area>1420,200,425,45</area>
             </textarea>
-            
+
         </group>
-        
+
     </window>
 
     <window name="customedit">
@@ -2058,12 +2061,12 @@
 
     <window name="schedulefiltereditor">
 
-        <animation trigger="AboutToShow">
-            <section duration="125">
-                <alpha start="0" end="255" easingcurve="OutQuart"/>
-                <zoom start="0" end="100" />
-            </section>
-        </animation>
+        <!-- <animation trigger="AboutToShow"> -->
+        <!--     <section duration="125"> -->
+        <!--         <alpha start="0" end="255" easingcurve="OutQuart"/> -->
+        <!--         <zoom start="0" end="100" /> -->
+        <!--     </section> -->
+        <!-- </animation> -->
 
         <area>-1,-1,750,622</area>
 
@@ -2263,7 +2266,7 @@
             <value>Back</value>
         </button>
     </window>
-    
+
     <window name="schedulediff">
 
         <shape name="titlebox" from="baseboxbackground">
