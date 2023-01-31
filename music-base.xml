@@ -838,7 +838,7 @@
         <textarea name="title" from="basetextarea">
             <area>180,15,1395,51</area>
             <font>basemedium</font>
-            <template>Now Playing: %TITLE% by %ARTIST% on %ALBUM%</template>
+            <template>Now Playing: %TITLE% \ %ARTIST% \ %ALBUM%</template>
         </textarea>
 
         <textarea name="time" from="basetextarea">
