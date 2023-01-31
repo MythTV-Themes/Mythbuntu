@@ -28,7 +28,7 @@
             <value>Press MENU to add some radio streams to play.</value>
         </textarea>
 
-        <buttonlist name="streamlist" from="basebuttonlist3">
+        <buttonlist name="streamlist" from="basebuttonlist2">
             <area>37,37,1837,369</area>
             <spacing>5</spacing>
             <layout>vertical</layout>
@@ -105,7 +105,7 @@
             </statetype>
         </buttonlist>
 
-        <buttonlist name="playedtrackslist" from="basebuttonlist3">
+        <buttonlist name="playedtrackslist" from="basebuttonlist2">
             <area>37,447,1837,233</area>
             <spacing>5</spacing>
             <layout>vertical</layout>
@@ -397,7 +397,7 @@
             <value></value>
         </textarea>
 
-        <buttonlist name="streamlist" from="basebuttonlist3">
+        <buttonlist name="streamlist" from="basebuttonlist2">
             <area>45,322,1830,750</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
