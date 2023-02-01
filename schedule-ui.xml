@@ -1566,10 +1566,10 @@
                             <area>50,0,500,50</area>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
-                            <font state="disabled">basesmallblue</font>
+                            <font state="disabled">basesmallgrey</font>
                             <font state="error">basesmallbrightred</font>
                             <font state="warning">basesmallyellow</font>
-                            <font state="normal">basesmallgrey</font>
+                            <font state="normal">basesmallblue</font>
                             <font state="running">basesmallgreen</font>
                         </textarea>
                     </state>
