@@ -140,7 +140,7 @@
                 <area>0,0,285,111</area>
                 <state name="active">
                     <shape name="buttonbackground">
-                        <area>0,0,285,84</area>
+                        <area>0,0,285,83</area>
                         <fill color="#000000" alpha="150" />
                         <type>roundbox</type>
                         <cornerradius>15</cornerradius>
