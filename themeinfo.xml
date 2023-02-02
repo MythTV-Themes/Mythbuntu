@@ -9,19 +9,21 @@
     <types>
         <!-- Type. Legal Values are one or more of: UI, OSD and Menu -->
         <type>UI</type>
+        <type>OSD</type>
+        <type>Menu</type>
     </types>
 
     <aspect>16:9</aspect>
     <baseres>1920x1080</baseres>
 
     <version>
-        <major>30</major>
-        <minor>2</minor>
+        <major>32</major>
+        <minor>0</minor>
     </version>
 
     <detail>
         <thumbnail name="preview">preview.png</thumbnail>
         <description>A sleek black theme that is the default theme for the Mythbuntu distribution. The Mythbuntu theme is inspired by ProjectGrayhem.</description> 
-        <errata></errata>
+        <errata>License: GPLv2</errata>
     </detail>
 </themeinfo>
