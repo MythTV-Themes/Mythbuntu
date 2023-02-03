@@ -370,7 +370,7 @@
             <area>1605,52,225,45</area>
         </textarea>
 
-        <buttonlist name="tracks_list" from="basebuttonlist3">
+        <buttonlist name="tracks_list" from="basebuttonlist2">
             <area>45,132,1830,420</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
@@ -625,7 +625,7 @@
             <area>60,510,1800,450</area>
         </shape>
 
-        <buttonlist name="tracks" from="basebuttonlist3">
+        <buttonlist name="tracks" from="basebuttonlist2">
             <area>90,540,1740,405</area>
             <buttonarea>0,0,1740,375</buttonarea>
             <spacing>0</spacing>
@@ -1651,7 +1651,7 @@
             <value>Of The Following Conditions</value>
         </textarea>
 
-        <buttonlist name="criterialist" from="basebuttonlist3">
+        <buttonlist name="criterialist" from="basebuttonlist2">
             <area>300,405,1200,315</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
@@ -2149,7 +2149,7 @@
             <fill color="#000000" alpha="50" />
         </shape>
 
-        <buttonlist name="tracklist" from="basebuttonlist3">
+        <buttonlist name="tracklist" from="basebuttonlist2">
             <area>45,90,1830,975</area>
             <spacing>2</spacing>
             <layout>vertical</layout>

@@ -206,7 +206,7 @@
     </shape>
 
     <!-- Base definition of a vertical scrollbar -->
-    <!-- moved earlier since basebuttonlist3 below needs this! -->
+    <!-- moved earlier since buttonarareas below need this! -->
 
     <scrollbar name="basevertscrollbar">
         <area>1114,0,10,970</area>
@@ -333,12 +333,11 @@
         <layout>vertical</layout>
         <spacing>7</spacing>
         <wrapstyle>selection</wrapstyle>
-        <buttonarea>0,0,1800,525</buttonarea>
+        <buttonarea>0,0,100%,100%</buttonarea>
         <scrollbar name="scrollbar" from="basevertscrollbar">
             <area>100%-10,0,10,100%</area>
         </scrollbar>
         <statetype name="buttonitem">
-            <area>0,0,1800,45</area>
             <state name="active">
                 <statetype name="status">
                     <position>10,10</position>
@@ -369,27 +368,15 @@
                     </state>
                     <state name="marked"></state>
                 </statetype>
-                <!-- <shape name="buttonbackground"> -->
-                <!--     <area>45,0,1743,37</area> -->
-                <!--     <type>roundbox</type> -->
-                <!--     <fill color="#000000" alpha="150" /> -->
-                <!--     <cornerradius>19</cornerradius> -->
-                <!-- </shape> -->
-                <shape name="buttonbackground">
-                    <area>45,0,1743,45</area>
-                    <type>roundbox</type>
-                    <fill color="#666666" alpha="50" />
-                    <cornerradius>90</cornerradius>
-                </shape>
                 <textarea name="buttontext">
-                    <area>52,0,1732,45</area>
+                    <area>52,0,95%,45</area>
                     <align>vcenter</align>
                     <font>baserecordingsmediumgrey</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
                 <shape name="selectbar">
-                    <area>45,0,1743,45</area>
+                    <area>45,0,1750,45</area>
                     <type>roundbox</type>
                     <fill color="#666666" alpha="150" />
                     <cornerradius>90</cornerradius>
@@ -401,7 +388,7 @@
             <state name="selectedinactive" from="active" />
         </statetype>
         <statetype name="upscrollarrow">
-            <position>1785,-15</position>
+            <position>100%-15,100%-15</position>
             <state type="full">
                 <imagetype name="upoff">
                     <filename>shared/uparrow.png</filename>
@@ -409,26 +396,11 @@
             </state>
         </statetype>
         <statetype name="downscrollarrow">
-            <position>1785,465</position>
+            <position>100%-5,100%-15</position>
             <state type="full">
                 <imagetype name="dnoff">
                     <filename>shared/downarrow.png</filename>
                 </imagetype>
-            </state>
-        </statetype>
-    </buttonlist>
-
-    <!-- scrollbar and transparent item backgrounds -->
-    <buttonlist name="basebuttonlist3" from="basebuttonlist2">
-        <buttonarea>0,0,100%,100%</buttonarea>
-        <scrollbar name="scrollbar" from="basevertscrollbar">
-            <area>100%-10,0,10,100%</area>
-        </scrollbar>
-        <statetype name="buttonitem">
-            <state name="active">
-                <shape name="buttonbackground">
-                    <fill color="#666666" alpha="0" />
-                </shape>
             </state>
         </statetype>
     </buttonlist>
@@ -1788,17 +1760,14 @@
 
         </group>
 
-    <buttonlist name="proglistlist" from="basebuttonlist3">
+    <buttonlist name="proglistlist" from="basebuttonlist2">
         <area>45,120,1830,560</area>
-        <buttonarea>0,12,1800,545</buttonarea>
-        <!-- <scrollbar name="scrollbar" from="basevertscrollbar"> -->
-        <!--     <area>100%-10,0,10,100%</area> -->
-        <!-- </scrollbar> -->
+        <buttonarea>0,12,100%,100%</buttonarea>
         <spacing>10</spacing>
         <statetype name="buttonitem">
             <area>0,0,1800,45</area>
             <state name="active">
-                <textarea name="shortstarttimedate" from="buttontext">
+                <textarea name="shortstarttimedate" from="basetextarea">
                     <area>67,0,349,45</area>
                 </textarea>
                 <textarea name="channel" from="shortstarttimedate">

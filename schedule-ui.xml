@@ -1454,9 +1454,9 @@
                 <area>0,0,100%,100%</area>
             </shape>
 
-            <buttonlist name="alphabet" from="basebuttonlist3">
-                <area>20,20,50,100%-20</area>
-                <buttonarea>0,0,50,100%</buttonarea>
+            <buttonlist name="alphabet" from="basebuttonlist2">
+                <area>20,20,100,100%-20</area>
+                <buttonarea>0,0,100,100%</buttonarea>
                 <scrollbar name="scrollbar" from="basevertscrollbar">
                     <area>0,0,10,100%</area>
                 </scrollbar>
@@ -1466,7 +1466,7 @@
                 <statetype name="buttonitem">
                     <state name="active">
                         <textarea name="buttontext" from="basetextarea">
-                            <area>0,0,50,50</area>
+                            <area>0,0,100,50</area>
                             <align>allcenter</align>
                             <font>basesmallgrey</font>
                         </textarea>
@@ -1479,7 +1479,7 @@
                             <area>0,0,0,0</area>
                         </shape>
                         <shape name="buttonbackground">
-                            <area>0,0,50,50</area>
+                            <area>0,0,100,50</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="75" />
                             <cornerradius>22</cornerradius>
@@ -1487,7 +1487,7 @@
                     </state>
                     <state name="selectedinactive" from="active">
                         <shape name="buttonbackground">
-                        <area>0,0,50,50</area>
+                        <area>0,0,100,50</area>
                         <type>roundbox</type>
                         <fill color="#ffffff" alpha="50" />
                         <cornerradius>22</cornerradius>
@@ -1521,13 +1521,13 @@
             </buttonlist>
 
             <buttonlist name="shows" from="alphabet">
-                <area>80,20,1310,100%-20</area>
-                <buttonarea>0,0,1310,100%</buttonarea>
+                <area>150,20,1100,100%-20</area>
+                <buttonarea>0,0,1100,100%</buttonarea>
                 <statetype name="buttonitem">
-                    <area>10,0,1300,50</area>
+                    <area>10,0,1100,50</area>
                     <state name="active">
                         <textarea name="buttontext">
-                            <area>20,0,1300,50</area>
+                            <area>20,0,1100,50</area>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
                             <template>%1</template>
@@ -1538,7 +1538,7 @@
                             <font>basesmallyellowdrop</font>
                         </textarea>
                         <shape name="buttonbackground">
-                            <area>0,0,1300,50</area>
+                            <area>0,0,1100,50</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="75" />
                             <cornerradius>22</cornerradius>
@@ -1546,7 +1546,7 @@
                     </state>
                     <state name="selectedinactive" from="active">
                         <shape name="buttonbackground">
-                            <area>0,0,1300,50</area>
+                            <area>0,0,1100,50</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="50" />
                             <cornerradius>22</cornerradius>
@@ -1556,26 +1556,26 @@
             </buttonlist>
 
             <buttonlist name="times" from="alphabet">
-                <area>1400,20,420,100%-20</area>
-                <buttonarea>0,0,420,100%</buttonarea>
+                <area>1280,20,600,100%-20</area>
+                <buttonarea>0,0,600,100%</buttonarea>
                 <wrapstyle>selection</wrapstyle>
                 <statetype name="buttonitem">
-                    <area>0,0,420,50</area>
+                    <area>0,0,600,50</area>
                     <state name="active">
                         <textarea name="buttontext">
-                            <area>50,0,380,50</area>
+                            <area>50,0,500,50</area>
                             <cutdown>yes</cutdown>
                             <align>left,vcenter</align>
-                            <font state="disabled">basesmallblue</font>
+                            <font state="disabled">basesmallgrey</font>
                             <font state="error">basesmallbrightred</font>
                             <font state="warning">basesmallyellow</font>
-                            <font state="normal">basesmallgrey</font>
+                            <font state="normal">basesmallblue</font>
                             <font state="running">basesmallgreen</font>
                         </textarea>
                     </state>
                     <state name="selectedactive" from="active">
                         <shape name="buttonbackground">
-                            <area>0,0,410,50</area>
+                            <area>0,0,510,50</area>
                             <type>roundbox</type>
                             <fill color="#ffffff" alpha="75" />
                             <cornerradius>22</cornerradius>
@@ -1635,7 +1635,7 @@
 
         <buttonlist name="programs" from="basebuttonlist2">
             <area>40,100,1840,715</area>
-            <buttonarea>0,0,1840,715</buttonarea>
+            <buttonarea>0,0,100%,100%</buttonarea>
             <spacing>10</spacing>
             <statetype name="buttonitem">
                 <state name="active">
