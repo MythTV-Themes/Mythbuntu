@@ -245,16 +245,16 @@
             <font>small</font>
             <area>15,75,1534,45</area>
             <align>hcenter,bottom</align>
-            <template>%PLAYEDTIME% of %TOTALTIME% %(|REMAININGTIME|)%%(|BEHINDTIME|)%</template>
+            <template>%PLAYEDTIME% / %TOTALTIME% %(|REMAININGTIME|)%%(|BEHINDTIME|)%</template>
         </textarea>
         <textarea name="recordedtime">
-            <font>small</font>
+            <font>basesmallgrey</font>
             <area>15,15,1534,45</area>
             <align>right,top</align>
         </textarea>
         <clock name="clock">
             <area>15,75,1534,45</area>
-            <font>basesmallgrey</font>
+            <font>small</font>
             <template>%DATE%, %TIME%</template>
             <align>right,bottom</align>
         </clock>
