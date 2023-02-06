@@ -140,7 +140,7 @@
                 <area>0,0,285,111</area>
                 <state name="active">
                     <shape name="buttonbackground">
-                        <area>0,0,285,84</area>
+                        <area>0,0,285,83</area>
                         <fill color="#000000" alpha="150" />
                         <type>roundbox</type>
                         <cornerradius>15</cornerradius>
@@ -432,7 +432,7 @@
                 <area>0,0,285,111</area>
                 <state name="active">
                     <shape name="buttonbackground">
-                        <area>0,0,285,84</area>
+                        <area>0,0,285,83</area>
                         <fill color="#000000" alpha="150" />
                         <type>roundbox</type>
                         <cornerradius>15</cornerradius>
@@ -539,7 +539,7 @@
             <multiline>yes</multiline>
             <font>basesmall</font>
             <!--<template>%STARTTIME%%-|ENDTIME| %%"|SUBTITLE|" %%00X00| %%(|ORIGINALAIRDATE|)\n%</template>-->
-            <template>%STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
+            <template>%STARTDATE% %STARTTIME%%-|ENDTIME| %%00X00| %\n%"|SUBTITLE|" %%(|ORIGINALAIRDATE|)%</template>
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
