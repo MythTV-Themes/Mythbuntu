@@ -245,7 +245,7 @@
             <font>small</font>
             <area>15,15,1534,45</area>
             <align>hcenter,top</align>
-	    <template>%DESCRIPTION% %VALUE%%UNITS%</template>
+            <template>%DESCRIPTION% %VALUE%%UNITS%</template>
         </textarea>
         <textarea name="remaining">
             <font>basesmallgrey</font>
