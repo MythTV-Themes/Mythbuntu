@@ -243,21 +243,27 @@
         </textarea>
         <textarea name="description">
             <font>small</font>
+            <area>15,15,1534,45</area>
+            <align>hcenter,top</align>
+	    <template>%DESCRIPTION% %VALUE%%UNITS%</template>
+        </textarea>
+        <textarea name="remaining">
+            <font>basesmallgrey</font>
             <area>15,75,1534,45</area>
             <align>hcenter,bottom</align>
-            <template>%PLAYEDTIME% / %TOTALTIME% %(|REMAININGTIME|)%%(|BEHINDTIME|)%</template>
-        </textarea>
-        <textarea name="recordedtime">
-            <font>basesmallgrey</font>
-            <area>15,15,1534,45</area>
-            <align>right,top</align>
+            <template>%(|REMAININGTIME|)%%(|BEHINDTIME|)%</template>
         </textarea>
         <clock name="clock">
-            <area>15,75,1534,45</area>
+            <area>15,15,1534,45</area>
             <font>small</font>
             <template>%DATE%, %TIME%</template>
-            <align>right,bottom</align>
+            <align>right,top</align>
         </clock>
+        <textarea name="recordedtime">
+            <font>basesmallgrey</font>
+            <area>15,75,1534,45</area>
+            <align>right,bottom</align>
+        </textarea>
         <progressbar name="position">
             <area>15,63,1534,10</area>
             <layout>horizontal</layout>
