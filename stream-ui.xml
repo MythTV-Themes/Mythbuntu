@@ -129,6 +129,7 @@ its infopanel, add clock, show 5 channels and 5 history
                         <area>75,0,100,52</area>
                         <align>right,vcenter</align>
                         <template>%1 -</template>
+                        <font>basesmall</font>
                     </textarea>
 
                     <textarea name="title" from="buttontext">
