@@ -707,8 +707,12 @@
         </textarea>
 
         <textarea name="year" from="basetextarea">
-            <area>1500,67,145,51</area>
-            <font>basemedium</font>
+            <area>1460,67,145,51</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+        <textarea name="tracknum" from="year">
+            <position>1460,120</position>
         </textarea>
 
         <textarea name="album" from="basetextarea">
@@ -720,8 +724,8 @@
 
         <textarea name="nexttitle" from="basetextarea">
             <font>basesmall</font>
-            <area>345,217,1300,52</area>
-            <template>Next: %NEXTTITLE% \ %NEXTARTIST% \ %NEXTALBUM%</template>
+            <area>345,217,1280,52</area>
+            <template>Next: %NEXTTITLE% \ %NEXTARTIST% \ %NEXTALBUM% \ %NEXTTRACKNUM%</template>
         </textarea>
 
         <progressbar name="progress" from="basetrackprogress" depends="!channel">
@@ -732,7 +736,7 @@
         </progressbar>
 
         <textarea name="time" from="basetextarea" depends="!channel">
-            <area>345,262,262,52</area>
+            <area>345,262,320,52</area>
             <font>basesmall</font>
         </textarea>
         <textarea name="bufferstatus" from="basetextarea" depends="channel">
@@ -770,6 +774,7 @@
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
+            <preserveaspect>true</preserveaspect>
             <area>52,19,234,232</area>
         </imagetype>
 
@@ -785,9 +790,9 @@
         </textarea>
 
         <textarea name="playlisttime" from="basetextarea">
-            <area>315,0,345,45</area>
+            <area>315,0,500,45</area>
             <font>basesmall</font>
-            <align>right,top</align>
+            <align>left,top</align>
         </textarea>
 
         <progressbar name="playlistprogress" from="baseplaylistprogress">
@@ -836,13 +841,13 @@
         </statetype>
 
         <textarea name="title" from="basetextarea">
-            <area>180,15,1395,51</area>
+            <area>180,15,1350,51</area>
             <font>basemedium</font>
             <template>Now Playing: %TITLE% \ %ARTIST% \ %ALBUM%</template>
         </textarea>
 
         <textarea name="time" from="basetextarea">
-            <area>1605,22,277,51</area>
+            <area>1550,22,320,51</area>
             <align>right</align>
             <font>basesmall</font>
         </textarea>

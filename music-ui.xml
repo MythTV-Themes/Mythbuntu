@@ -475,37 +475,46 @@
             <area>270,22,1030,51</area>
             <font>baselarge</font>
         </textarea>
-
         <textarea name="artist" from="basetextarea">
             <area>270,75,900,51</area>
             <font>basemedium</font>
         </textarea>
-        <textarea name="year" from="basetextarea">
-          <area>1170,75,130,51</area>
-          <font>basemedium</font>
+        <textarea name="album" from="artist">
+            <area>270,128,990,51</area>
         </textarea>
 
-        <textarea name="album" from="basetextarea">
-            <area>270,128,900,51</area>
-            <font>basemedium</font>
+        <textarea name="channel"> <!--radio stream?-->
+            <area>0,0,0,0</area>          <!--hidden-->
+        </textarea>
+        <textarea name="year" from="basetextarea">
+            <area>880,75,390,51</area>
+            <font>basesmall</font>
+            <align>right,vcenter</align>
+        </textarea>
+        <textarea name="tracknum" from="year" depends="!channel">
+            <position>880,128</position>
+        </textarea>
+        <textarea name="time" from="year" depends="!channel">
+            <position>880,165</position>
+        </textarea>
+        <textarea name="length" from="year" depends="!time">
+            <position>880,165</position>
         </textarea>
 
         <textarea name="nexttitle" from="basetextarea">
             <area>270,217,1030,37</area>
-            <template>Next: %NEXTTITLE% \ %NEXTARTIST% \ %NEXTALBUM%</template>
+            <template>Next: %NEXTTITLE% \ %NEXTARTIST% \ %NEXTALBUM% \ %NEXTTRACKNUM%</template>
         </textarea>
-        <textarea name="url" from="basetextarea" depends="!nexttitle">
+        <textarea name="url" from="basetextarea" depends="channel">
             <area>270,217,1030,37</area>
         </textarea>
 
-        <textarea name="length" from="basetextarea" depends="nexttitle">
-            <area>1170,128,130,51</area>
-            <font>basemedium</font>
-        </textarea>
-
-        <statetype name="ratingstate" from="baseratingstate" depends="nexttitle">
+        <statetype name="ratingstate" from="baseratingstate" depends="!channel">
             <position>270,187</position>
         </statetype>
+        <progressbar name="progress" from="basetrackprogress">
+            <position>550,187</position>
+        </progressbar>
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
@@ -2229,7 +2238,7 @@
         </textarea>
 
         <textarea name="title" from="basetextarea">
-            <area>780,75,945,52</area>
+            <area>780,75,1065,52</area>
             <font>basemedium</font>
         </textarea>
 
@@ -2239,7 +2248,7 @@
         </textarea>
 
         <textarea name="artist" from="title">
-            <area>780,150,945,52</area>
+            <area>780,150,1065,52</area>
         </textarea>
 
         <textarea name="albumlbl" from="titlelbl">
@@ -2248,7 +2257,7 @@
         </textarea>
 
         <textarea name="album" from="title">
-            <area>780,225,945,52</area>
+            <area>780,225,1065,52</area>
         </textarea>
 
         <textarea name="genrelbl" from="titlelbl">
@@ -2333,7 +2342,8 @@
         </textarea>
 
         <textarea name="filename" from="title">
-            <area>780,825,945,135</area>
+            <area>780,825,1065,135</area>
+            <align>top</align>
             <font>basesmall</font>
             <multiline>yes</multiline>
         </textarea>
