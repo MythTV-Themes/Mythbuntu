@@ -2,6 +2,15 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
+    <!-- define boxes in one place for easy tweaking -->
+    <shape name="musicbox">
+        <area>0,0,15,15</area>
+        <type>roundbox</type>
+        <fill color="#000000" alpha="150" />
+        <line color="#222222" alpha="150" width="2" />
+        <cornerradius>30</cornerradius>
+    </shape>
+
     <!-- previous track button -->
     <button name="baseprevbutton">
         <position>1020,975</position>
@@ -688,12 +697,8 @@
     <group name="baseinfopanel">
         <area>0,712,1920,352</area>
 
-        <shape name="track_info_background" from="basebackground">
+        <shape name="track_info_background" from="musicbox">
             <area>22,0,1875,352</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <line color="#FFFFFF" alpha="0" width="0" />
-            <cornerradius>15</cornerradius>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -707,12 +712,15 @@
         </textarea>
 
         <textarea name="year" from="basetextarea">
-            <area>1460,67,145,51</area>
+            <area>1400,67,205,51</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
         </textarea>
         <textarea name="tracknum" from="year">
-            <position>1460,120</position>
+            <position>1400,120</position>
+        </textarea>
+        <textarea name="info" from="year">
+            <position>1400,173</position>
         </textarea>
 
         <textarea name="album" from="basetextarea">
@@ -809,9 +817,8 @@
     </group>
 
     <group name="basesmallinfopanel">
-        <shape name="trackinfo_background" from="basebackground">
+        <shape name="trackinfo_background" from="musicbox">
             <area>22,0,1875,75</area>
-            <fill color="#000000" alpha="50" />
         </shape>
 
         <imagetype name="coverart">
@@ -854,9 +861,8 @@
     </group>
 
     <group name="baseplaylistpanel">
-        <shape name="playlist_background" from="basebackground">
+        <shape name="playlist_background" from="musicbox">
             <area>22,0,1875,397</area>
-            <fill color="#000000" alpha="50" />
         </shape>
 
         <buttonlist name="currentplaylist" from="basebuttonlist2">

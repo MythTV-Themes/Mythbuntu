@@ -15,11 +15,8 @@ its infopanel, add clock, show 5 channels and 5 history
 
     <window name="streamview"  include="music-base.xml">
 
-        <shape name="streamlist_background" from="basebackground">
+        <shape name="streamlist_background" from="musicbox">
             <area>22,22,1875,327</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <line color="#FFFFFF" alpha="0" width="0" />
         </shape>
 
         <shape name="playlist_background" from="streamlist_background">
@@ -45,6 +42,7 @@ its infopanel, add clock, show 5 channels and 5 history
                     <imagetype name="buttonimage">
                         <area>25,0,52,52</area>
                         <filename>mm_icecast.png</filename>
+                        <preserveaspect>true</preserveaspect>
                     </imagetype>
 
                     <statetype name="playstate">
@@ -91,6 +89,7 @@ its infopanel, add clock, show 5 channels and 5 history
                     <imagetype name="buttonimage">
                         <area>25,0,52,52</area>
                         <filename>mm_icecast.png</filename>
+                        <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <shape name="selectbar">
                         <area>0,0,100%,52</area>
@@ -123,6 +122,7 @@ its infopanel, add clock, show 5 channels and 5 history
                     <imagetype name="buttonimage">
                         <area>25,0,52,52</area>
                         <filename>mm_icecast.png</filename>
+                        <preserveaspect>true</preserveaspect>
                     </imagetype>
 
                     <textarea name="tracknum" from="buttontext">
@@ -155,6 +155,7 @@ its infopanel, add clock, show 5 channels and 5 history
                     <imagetype name="buttonimage">
                         <area>25,0,52,52</area>
                         <filename>mm_icecast.png</filename>
+                        <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <shape name="selectbar">
                         <area>0,0,100%,52</area>
@@ -417,6 +418,7 @@ its infopanel, add clock, show 5 channels and 5 history
                     <imagetype name="buttonimage">
                         <area>55,0,52,52</area>
                         <filename>mm_icecast.png</filename>
+                        <preserveaspect>true</preserveaspect>
                     </imagetype>
 
                     <statetype name="selectedstate">
@@ -452,6 +454,7 @@ its infopanel, add clock, show 5 channels and 5 history
                     <imagetype name="buttonimage">
                         <area>0,1,163,163</area>
                         <filename>mm_icecast.png</filename>
+                        <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <shape name="selectbar">
                         <area>0,0,1830,165</area>
