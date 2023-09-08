@@ -177,17 +177,7 @@ its infopanel, add clock, show 5 channels and 5 history
 
     <group name="streaminfopanel" from="baseinfopanel">
 
-        <!-- replace album with channel to re-use infopanel -->
-
-        <textarea name="album" from="basetextarea">
-            <template></template>
-        </textarea>
-
-       <textarea name="channel" from="basetextarea">
-            <area>345,127,1300,51</area>
-            <font>basemedium</font>
-            <template>%BROADCASTER| - %%CHANNEL%</template>
-        </textarea>
+        <!-- tweak infopanel shared with music-ui via music-base -->
 
         <textarea name="url" from="basetextarea">
             <font>basesmall</font>

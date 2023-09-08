@@ -387,7 +387,7 @@
                         <area>75,0,1635,69</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
-                        <template>%TITLE% \ %ARTIST% \ %ALBUM%</template>
+                        <template>%TITLE% \ %ARTIST% \ %ALBUM% \ %TRACKNUM%</template>
                     </textarea>
 
                 </state>
@@ -2166,7 +2166,7 @@
                         <area>75,0,1560,69</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
-                        <template>%TITLE% \ %ARTIST% \ %ALBUM%</template>
+                        <template>%TITLE% \ %ARTIST% \ %ALBUM% \ %TRACKNUM%</template>
                     </textarea>
 
                     <textarea name="length">

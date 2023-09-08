@@ -697,22 +697,30 @@
     <group name="baseinfopanel">
         <area>0,712,1920,352</area>
 
+        <textarea name="channel"> <!--radio stream?-->
+            <area>0,0,0,0</area>          <!--hidden-->
+        </textarea>
         <shape name="track_info_background" from="musicbox">
             <area>22,0,1875,352</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
-            <area>345,7,1300,51</area>
+            <area>345,10,1300,51</area>
             <font>baselarge</font>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>345,67,1255,51</area>
+            <area>345,65,1255,51</area>
+            <font>basemedium</font>
+        </textarea>
+
+        <textarea name="album" from="basetextarea">
+            <area>345,120,1300,51</area>
             <font>basemedium</font>
         </textarea>
 
         <textarea name="year" from="basetextarea">
-            <area>1400,67,205,51</area>
+            <area>1400,65,205,51</area>
             <font>basesmall</font>
             <align>right,vcenter</align>
         </textarea>
@@ -721,11 +729,6 @@
         </textarea>
         <textarea name="info" from="year">
             <position>1400,173</position>
-        </textarea>
-
-        <textarea name="album" from="basetextarea">
-            <area>345,120,1300,51</area>
-            <font>basemedium</font>
         </textarea>
 
         <!-- ratingstate moved to music-ui, not stream-ui -->
@@ -754,15 +757,15 @@
 
         <imagetype name="visualizer_border">
             <filename>mm_blackhole_border.png</filename>
-            <area>1623,13,243,243</area>
+            <area>1623,33,243,243</area>
         </imagetype>
 
         <video name="visualizer">
-            <area>1627,19,234,232</area>
+            <area>1627,39,234,232</area>
         </video>
 
         <textarea name="visualizername" from="basetextarea">
-            <area>1627,255,234,52</area>
+            <area>1627,275,234,52</area>
             <font>basesmall</font>
             <align>center</align>
         </textarea>
@@ -777,13 +780,13 @@
 
         <imagetype name="mm_blackhole_border">
             <filename>mm_blackhole_border.png</filename>
-            <area>48,13,243,243</area>
+            <area>50,33,243,243</area>
         </imagetype>
 
         <imagetype name="coverart">
             <filename>mm_nothumb.png</filename>
             <preserveaspect>true</preserveaspect>
-            <area>52,19,234,232</area>
+            <area>54,39,234,232</area>
         </imagetype>
 
         <!-- musiccontrols moved to music-ui and stream-ui -->
@@ -850,7 +853,7 @@
         <textarea name="title" from="basetextarea">
             <area>180,15,1350,51</area>
             <font>basemedium</font>
-            <template>Now Playing: %TITLE% \ %ARTIST% \ %ALBUM%</template>
+            <template>Now Playing: %TITLE% \ %ARTIST% \ %ALBUM% \ %TRACKNUM%</template>
         </textarea>
 
         <textarea name="time" from="basetextarea">
@@ -920,7 +923,7 @@
                         <area>75,0,1635,69</area>
                         <align>left,vcenter</align>
                         <font>basesmall</font>
-                        <template>%TITLE% \ %ARTIST% \ %ALBUM%</template>
+                        <template>%TITLE% \ %ARTIST% \ %ALBUM% \ %TRACKNUM%</template>
                     </textarea>
 
                 </state>
