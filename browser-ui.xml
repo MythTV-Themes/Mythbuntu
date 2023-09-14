@@ -32,11 +32,8 @@
     </window>
 
     <window name="bookmarkmanager">
-        <shape name="headingbox">
-            <area>15,15,1170,90</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>45</cornerradius>
+        <shape name="headingbox" from="baseboxbackground">
+            <area>22,15,1170,90</area>
         </shape>
 
         <textarea name="title" from="basetextarea">
@@ -47,11 +44,8 @@
             <font>baselarge</font>
         </textarea>
 
-        <shape name="topbackground">
+        <shape name="topbackground" from="baseboxbackground">
             <area>22,120,1875,165</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="120" />
-            <cornerradius>18</cornerradius>
         </shape>
 
         <textarea name="categorylabel">
@@ -134,13 +128,9 @@
             <value>URL</value>
         </textarea>
 
-        <shape name="bottombackground">
+        <shape name="bottombackground" from="baseboxbackground">
             <area>22,360,1875,675</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="120" />
-            <cornerradius>18</cornerradius>
         </shape>
-
 
         <buttonlist name="bookmarklist" from="basebuttonlist2">
             <area>60,390,1800,630</area>

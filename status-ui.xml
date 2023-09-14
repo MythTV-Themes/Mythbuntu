@@ -2,17 +2,12 @@
 
     <window name="status">
 
-       <shape name="titlebox">
-           <area>15,15,1170,90</area>
-           <type>roundbox</type>
-           <fill color="#000000" alpha="150" />
-           <cornerradius>45</cornerradius>
+       <shape name="titlebox" from="baseboxbackground">
+           <area>30,15,1170,90</area>
        </shape>
 
-        <shape name="infobox">
-            <area>-15,892,1950,555</area>
-            <type>box</type>
-            <fill color="#000000" alpha="150" />
+        <shape name="infobox" from="baseboxbackground">
+            <area>30,892,1860,555</area>
         </shape>
 
         <textarea name="heading">
@@ -23,11 +18,8 @@
             <value>System Status</value>
         </textarea>
 
-        <shape name="list_background">
+        <shape name="list_background" from="baseboxbackground">
             <area>30,202,1860,675</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>18</cornerradius>
         </shape>
 
         <buttonlist name="category">
@@ -139,7 +131,7 @@
         </textarea>
         
         <clock name="clock">
-            <area>1250,1016,650,50</area>
+            <area>1200,1016,650,50</area>
             <font>clock</font>
             <align>right</align>
             <template>%DATE%, %TIME%</template>

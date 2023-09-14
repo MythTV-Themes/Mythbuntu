@@ -10,31 +10,19 @@
         <!-- </animation> -->
 
         <shape name="shape2" from="baseboxbackground">
-            <area>30,187,1860,150</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="30"></fill>
-            <cornerradius>22</cornerradius>
+            <area>30,187,1860,160</area>
         </shape>
 
         <shape name="shape3" from="baseboxbackground">
-            <area>30,105,1275,70</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="30"></fill>
-            <cornerradius>22</cornerradius>
+            <area>30,15,1275,160</area>
         </shape>
 
         <shape name="shape4" from="baseboxbackground">
             <area>1320,105,570,70</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="30"></fill>
-            <cornerradius>22</cornerradius>
         </shape>
 
         <shape name="shape5" from="baseboxbackground">
             <area>30,360,1860,682</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="30"></fill>
-            <cornerradius>22</cornerradius>
         </shape>
 
         <textarea name="datetext" from="basetextarea">
@@ -259,8 +247,8 @@
         </textarea>
 
         <textarea name="rectypestatus" from="basetextarea">
-            <area>1320,127,555,45</area>
-            <align>right,bottom</align>
+            <area>1320,105,550,70</area>
+            <align>right,vcenter</align>
             <font>basesmallyellow</font>
         </textarea>
 

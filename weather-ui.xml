@@ -8,11 +8,8 @@
             <position>0,0</position>
         </imagetype>
 
-        <shape name="topbackground">
+        <shape name="topbackground" from="baseboxbackground">
             <area>22,120,1875,60</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>30</cornerradius>
         </shape>
 
 <!--        <shape name="middlebackground">
@@ -22,18 +19,12 @@
             <cornerradius>15</cornerradius>
         </shape>
 -->
-        <shape name="bottombackground">
+        <shape name="bottombackground" from="baseboxbackground">
             <area>22,1005,1875,60</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>30</cornerradius>
         </shape>
 
-        <shape name="headerbox">
-            <area>15,15,1875,90</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>45</cornerradius>
+        <shape name="headerbox" from="baseboxbackground">
+            <area>22,15,1875,90</area>
         </shape>
 
         <textarea name="header" from="basetextarea">
@@ -62,11 +53,8 @@
 
     <window name="Current Conditions">
 
-        <shape name="background1">
+        <shape name="background1" from="baseboxbackground">
             <area>22,195,1245,795</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>15</cornerradius>
         </shape>
 
         <textarea name="cclocation" from="basetextarea">
@@ -133,11 +121,8 @@
             <area>622,742,450,75</area>
         </textarea>
 
-        <shape name="background3">
+        <shape name="background3" from="baseboxbackground">
             <area>1282,195,615,795</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>15</cornerradius>
         </shape>
 
         <textarea name="temp" from="basetextarea">
@@ -185,11 +170,8 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0">
+        <shape name="background-0" from="baseboxbackground">
             <area>225,315,375,487</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>15</cornerradius>
         </shape>
 
         <shape name="background-1" from="background-0">
@@ -300,11 +282,8 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0">
+        <shape name="background-0" from="baseboxbackground">
             <area>135,232,525,345</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>15</cornerradius>
         </shape>
 
         <shape name="background-1" from="background-0">
@@ -522,11 +501,8 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="middlebackground">
+        <shape name="middlebackground" from="baseboxbackground">
             <area>22,195,1875,795</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>15</cornerradius>
         </shape>
 
         <textarea name="alerts" from="basetextarea">
@@ -554,11 +530,8 @@
             <align>allcenter</align>
         </textarea>
 
-        <shape name="background-0">
+        <shape name="background-0" from="baseboxbackground">
             <area>135,232,525,345</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>15</cornerradius>
         </shape>
 
         <shape name="background-1" from="background-0">

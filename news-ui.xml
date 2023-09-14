@@ -8,31 +8,20 @@
             <position>0,0</position>
         </imagetype>
 
-        <shape name="headingbox">
-            <area>15,15,1170,90</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>45</cornerradius>
+        <shape name="headingbox" from="baseboxbackground">
+            <area>30,15,1170,90</area>
         </shape>
 
-        <shape name="siteslistbox">
-            <area>52,120,673,540</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>18</cornerradius>
+        <shape name="siteslistbox" from="baseboxbackground">
+            <area>30,120,700,540</area>
         </shape>
 
-        <shape name="articleslistbox">
+        <shape name="articleslistbox" from="baseboxbackground">
             <area>741,120,1141,540</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>18</cornerradius>
         </shape>
 
-        <shape name="bottombox">
+        <shape name="bottombox" from="baseboxbackground">
             <area>-7,675,1935,412</area>
-            <type>box</type>
-            <fill color="#000000" alpha="150" />
         </shape>
 
         <textarea name="heading" from="basetextarea">
@@ -105,10 +94,8 @@
 
     <window name="editor">
 
-        <shape name="headingbox">
+        <shape name="headingbox" from="baseboxbackground">
             <area>15,15,1170,90</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
             <cornerradius>45</cornerradius>
         </shape>
 
@@ -118,11 +105,8 @@
             <align>left,vcenter</align>
         </textarea>
 
-        <shape name="editbox">
+        <shape name="editbox" from="baseboxbackground">
             <area>450,120,1020,870</area>
-            <type>roundbox</type>
-            <fill color="#000000" alpha="150" />
-            <cornerradius>18</cornerradius>
         </shape>
 
         <textarea name="namelabel" from="basetextarea">
