@@ -140,7 +140,7 @@
             <area>52,127,1815,510</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
-            <value>You haven't selected any tracks to play</value>
+            <value>Hit M (Menu) to add and play tracks</value>
         </textarea>
 
         <buttonlist name="currentplaylist" from="basecurrentplaylist">
@@ -478,10 +478,10 @@
             <position>880,128</position>
         </textarea>
         <textarea name="time" from="year" depends="!channel">
-            <position>880,165</position>
+            <position>880,170</position>
         </textarea>
         <textarea name="length" from="year" depends="!channel&amp;!time">
-            <position>880,165</position>
+            <position>880,170</position>
         </textarea>
 
         <textarea name="nexttitle" from="basetextarea">
