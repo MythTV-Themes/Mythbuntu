@@ -334,9 +334,8 @@
 
     <window name="searchview">
 
-        <shape name="playlist_background" from="basebackground">
+        <shape name="playlist_background" from="musicbox">
             <area>22,22,1875,555</area>
-            <fill color="#000000" alpha="50" />
         </shape>
 
         <buttonlist name="field_list" from="baseselector">
@@ -1139,6 +1138,7 @@
         </textarea>
         <shape name="background" from="musicbox">
             <area>0,0,885,285</area>
+            <fill color="#000000" alpha="200" />
         </shape>
 
         <imagetype name="mm_blackhole_border">

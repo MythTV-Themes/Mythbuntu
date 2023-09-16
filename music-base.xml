@@ -2,13 +2,11 @@
 <!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
 <mythuitheme>
 
-    <!-- define boxes in one place for easy tweaking -->
-    <shape name="musicbox">
-        <area>0,0,15,15</area>
-        <type>roundbox</type>
-        <fill color="#000000" alpha="150" />
-        <line color="#222222" alpha="150" width="2" />
-        <cornerradius>30</cornerradius>
+    <!-- music can have a different box look here, but default to the
+         global look.  See base.xml for the baseboxbackground -->
+    <shape name="musicbox" from="baseboxbackground">
+        <!-- for testing we can give music a different color -->
+        <!-- <line color="#008800" alpha="150" width="2" /> -->
     </shape>
 
     <!-- previous track button -->
