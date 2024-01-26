@@ -183,7 +183,6 @@
         <cornerradius>30</cornerradius>
         <fill color="#000000" alpha="255" />
         <line color="#222222" alpha="255" width="2" />
-        <line color="#222222" alpha="255" width="2" />
         <!-- for testing, we can see this with a colored border: -->
         <!-- <line color="#880000" alpha="255" width="2" /> -->
     </shape>
