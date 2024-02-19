@@ -34,12 +34,10 @@
             <!--         </section> -->
             <!-- </animation> -->
 
-            <shape name="groupbox">
+            <shape name="groupbox" from="baseboxbackground">
                 <area>0,0,100%,100%</area>
-                <type>roundbox</type>
                 <fill color="#000000" alpha="200" />
                 <line color="#FFFFFF" alpha="0" width="0" />
-                <cornerradius>15</cornerradius>
             </shape>
 
             <buttonlist name="groups">
@@ -119,17 +117,13 @@
             <!--         </section> -->
             <!-- </animation> -->
 
-            <shape name="groupbox">
+            <shape name="groupbox" from="baseboxbackground">
                 <area>0,0,100%,100%</area>
-                <type>roundbox</type>
-                <fill color="#000000" alpha="200" />
+                <fill color="#000000" alpha="255" />
                 <line color="#FFFFFF" alpha="0" width="0" />
-                <cornerradius>15</cornerradius>
-                <minsize vanish="yes">100%,100%</minsize>
             </shape>
-
             <imagetype name="coverart">
-                <area>10,5,460,696</area>
+                <area>2%,2%,98%,98%</area>
                 <preserveaspect>yes</preserveaspect>
                 <minsize vanish="yes">100%,100%</minsize>
             </imagetype>
@@ -146,12 +140,10 @@
             <!--         </section> -->
             <!-- </animation> -->
 
-            <shape name="recordingsbox">
+            <shape name="recordingsbox" from="baseboxbackground">
                 <area>0,0,100%,100%</area>
-                <type>roundbox</type>
                 <fill color="#000000" alpha="200" />
                 <line color="#FFFFFF" alpha="0" width="0" />
-                <cornerradius>15</cornerradius>
             </shape>
 
             <buttonlist name="recordings">
@@ -185,6 +177,26 @@
                             <align>vcenter</align>
                             <template>%TITLESUBTITLE% %YEARSTARS%</template>
                         </textarea>
+
+                        <!-- Watched progress -->
+                        <progressbar name="buttonprogress1">
+                          <area>35,56,100%,7</area>
+                          <layout>horizontal</layout>
+                          <style>reveal</style>
+                          <shape name="progressimage">
+                            <area>0,1,100%,100%-1</area>
+                            <type>box</type>
+                            <fill color="#FFFFFF" alpha="128"/>
+                          </shape>
+                        </progressbar>
+
+                        <!-- Recorded progress -->
+                        <progressbar name="buttonprogress2" from="buttonprogress1">
+                          <shape name="progressimage">
+                            <fill color="#84D708" alpha="128"/>
+                          </shape>
+                        </progressbar>
+
                         <textarea name="shortstartdate" from="titlesubtitle">
                             <area>980,0,150,60</area>
                             <align>right,vcenter</align>
@@ -268,7 +280,7 @@
             <!--         </section> -->
             <!-- </animation> -->
 
-            <shape name="infobox">
+            <shape name="infobox" from="baseboxbackground">
                 <area>0,0,100%,100%</area>
                 <type>box</type>
                 <fill color="#000000" alpha="200" />
@@ -449,6 +461,14 @@
 
                 <textarea name="longchannel" from="basetextarea">
                     <area>10,60,585,45</area>
+                </textarea>
+
+                <textarea name="watchedmagic">
+                    <template>%watchedpercent%</template>
+                </textarea>
+                <textarea name="watchedpercent" from="basetextarea" depends="watchedmagic">
+                    <area>500,60,500,45</area>
+                    <template>%|watchedpercent|%% watched</template>
                 </textarea>
 
                 <textarea name="timedate" from="basetextarea">

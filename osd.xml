@@ -184,7 +184,7 @@
             <shadowoffset>1,1</shadowoffset>
             <shadowcolor>#000000</shadowcolor>
         </fontdef>
-        <area>600,75,720,105</area>
+        <area>600,175,720,105</area>
         <shape name="background">
             <area>0,0,100%,100%</area>
             <type>roundbox</type>
